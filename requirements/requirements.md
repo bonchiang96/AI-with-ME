@@ -13,6 +13,8 @@
    - Their operating relationships.
    - Optional supporting Database services.
 
+   It is a portable AI Operating Framework across supported environments.
+
 2. **Intended outcome.** The Framework must support reusable, portable AI work with:
 
    - Clear responsibility.
@@ -197,7 +199,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 ### 3.1 Governance resources and dependencies
 
-1. **Google authority.** Google Drive / Docs must be the common authoritative resource for System and Project governance and required records.
+1. **Google authority.** Google Drive / Docs must provide the main authoritative document environment for governance and required records.
 
    This authority applies across:
 
@@ -205,97 +207,77 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Local environments.
    - Future independent AI execution.
 
-2. **System Root.** One designated Google System Root must contain:
+2. **System Root.** One designated Google System Root must provide access to:
 
    - Central System Context.
-   - System Rules.
-   - Separate Project folders.
+   - Applicable System Rules.
+   - Resources for registered working Scopes.
 
-   Each Project must have its own Project Context and Project Rules. It must have applicable Project Commands and meaningful destinations for its work.
+   Environment System Rules govern their actual storage structure. System Initiation design remains subject to Section 12.
 
-3. **System Context.** System Context must maintain:
+3. **System Context.** System Context must contain the central Registry of:
 
-   - The Project Directory.
-   - The single complete Agent Directory, including each Identity and its assigned Scope.
-   - System configuration.
+   - Identities.
+   - Knowledge Bases.
 
-   Maintain one authoritative registration per Agent Identity there.
+   Each registered Identity must have an exact Identity Context Locator.
+   Maintain one authoritative registration per Identity, including its assigned Responsibility and Scope.
 
-   Preserve current governing relationships and appropriate optional Database connection references. Routine Project progress belongs in its owning work records.
+   Preserve current System configuration and appropriate optional Database connection references.
+   Routine progress belongs in its owning records or current Identity references.
 
 4. **System Rules.** System Rules must express user-defined shared operating conventions.
+   Environment System Rules must govern:
 
-   Google System Rules govern:
+   - Authoritative storage structure.
+   - Folders or Tabs.
+   - Resource maintenance.
+   - Synchronization.
+   - Database Atomic Action order and timing.
 
-   - Google files.
-   - Google folders.
-   - Google Tabs.
-   - Google resource maintenance.
-
-   Local System Rules govern:
+   Apply the rules for the actual execution environment.
+   Local System Rules must also govern:
 
    - Local files.
    - Local execution.
    - Google update obligations.
    - Optional Database usage.
 
-   Apply each set according to the action and scope.
+   Rule priority follows Section 3.1.8.
 
-5. **Project Rules.** Project Rules must identify:
-
-   - Project-specific operating requirements.
-   - Applicable Work/Deliverable Lifecycles.
-   - Authoritative destinations.
-   - Necessary Commands.
-
-   They must define known deliverables. For each maintained resource, define the following at a useful level:
+5. **Resource purposes and destinations.** Governing configuration must define known deliverables and meaningful destinations.
+   For each maintained resource, identify the necessary:
 
    - Purpose.
    - Expected outcome.
    - Location.
-   - Responsible Agent.
+   - Responsible Identity.
 
-   Project Rules must register authoritative Target Locations for each operating Agent Identity and its relevant record categories.
-   Applicable categories include:
+   Identity Context must reference its own applicable record destinations under Section 3.2.3.
+   Storage follows Section 3.1.4.
 
-   - Meeting Working Records.
-   - Closed Minutes.
-   - Drafting Records.
-   - Other Job Records.
-   - Additional Agent-owned records or resources.
-
-   Register matching Target Locations when adding relevant Identities.
-
-6. **Lifecycle customization.** Project Rules may customize:
+6. **Workflow customization.** Governed working arrangements may customize a Workflow's:
 
    - Stage outcomes.
    - Deliverables.
-   - Target locations.
+   - Target Locations.
    - Assigned maintenance responsibilities.
 
-   Their configuration may evolve through governed decisions as practical Project work develops.
+   These arrangements may evolve through confirmed decisions and practical work.
+   Preserve Role Lifecycle authority under Section 5.2.
 
-7. **Project Context.** One shared Project Context must serve as the Project-wide resource directory. Authorized Agents may read and maintain entries within their Responsibility.
+7. **Context discovery.** An Identity must open its own Identity Context to discover relevant:
 
-   References may include:
-
-   - Documents.
-   - Resources.
-   - Knowledge Bases.
+   - Records.
+   - Collaboration partners.
    - Deliverables.
-   - Future matters.
+   - Working references.
 
-   Project Context must not duplicate the central Agent Directory.
+   System Context supplies the registered Identity Context Locator.
 
-   Keep detailed status reports and Deliverable content in their owning resources. Specialized deliverables may maintain domain contexts appropriate to their workflows.
+8. **Contextual priority.** Applicable System Rules override conflicting Plugin instructions for the environment operations in Section 3.1.4.
 
-8. **Contextual priority.** Apply these contextual levels:
-
-   1. Project Rules have the highest contextual priority for their Project.
-   2. System Rules provide the next common level.
-   3. Plugin resources provide the shared base.
-
-   The AI interprets overlap using:
+   Interpret other governing overlap using:
 
    - Context.
    - Purpose.
@@ -305,9 +287,9 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    An exhaustive override matrix or mechanical conflict algorithm is not required.
 
-9. **Source loading.** Agents should reuse static instructions available in the effective Conversation Context unless their applicability changes. They must read dynamic context and working data when current information is needed. Load Project Commands selectively at the relevant Lifecycle stage.
+9. **Source loading.** Agents should reuse static instructions available in the effective Conversation Context unless their applicability changes. They must read dynamic context and working data when current information is needed. Load applicable Commands selectively at the relevant Lifecycle stage.
 
-10. **Meaningful resources.** Every maintained resource should serve an identified purpose. Resource creation must follow the confirmed Project definition and actual operating needs.
+10. **Meaningful resources.** Every maintained resource should serve an identified purpose. Resource creation must follow authorized Responsibility, Scope and actual operating needs.
 
 11. **Optional Database.** Database services are optional.
 
@@ -321,7 +303,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
     Common usage guidance belongs in the Plugin. Configuration references belong in System Context.
 
-12. **Database-free operation.** Without Database services, Agents must omit unavailable Database-dependent operations. Apply the manual handoff requirements in Section 8. Project discovery and essential governance must remain possible through Google resources.
+12. **Database-free operation.** Without Database services, Agents must omit unavailable Database-dependent operations. Apply the manual handoff requirements in Section 8. Identity discovery and essential governance must remain possible through Google resources.
 
 13. **Integration expression.** Integration requirements must identify:
 
@@ -338,13 +320,78 @@ These Non-functional Requirements bind relevant design and maintenance of:
     - A useful Description.
     - A useful Locator.
 
-    Add fields only when they serve a genuine directory purpose. Project Context must remain a compact directory rather than a Project tracker.
+    Add fields only when they serve a genuine directory purpose. Keep each directory compact. Identity Context current references follow Section 3.2.
 
-### 3.2 Project Knowledge Base
+### 3.2 Identity Context
 
-1. **Knowledge resources.** The Project Knowledge Base contains General Knowledge and Meeting-approved Specific Topic Knowledge. Register existing Knowledge Base resources in Project Context. Create a new Specific Topic only when a Meeting decides it is needed.
+1. **Current Truth.** Every Identity must maintain one consolidated long-term Identity Context.
+   It contains current working information, future work and operating references.
+   Complete historical evidence belongs in its original Records and Minutes.
 
-2. **Current knowledge.** Include only currently valid, confirmed substantive Project Knowledge. Preserve adopted future directions as future directions rather than completed implementation.
+2. **Required Chapters.** Identity Context must contain these six Chapters:
+
+   1. Context Management Rules.
+   2. Future Topics.
+   3. Working Group.
+   4. Important Learning.
+   5. Important Things or High-Priority Items.
+   6. Deliverable Index.
+
+   Working Group contains peer Identities and Handoff relationships.
+   Deliverable Index contains the latest authoritative Deliverable locations and present condition.
+
+3. **Own record locations.** Identity Context must reference applicable Target Locations for its own:
+
+   - Minutes.
+   - Working Records.
+   - Job Records.
+   - Additional Identity-owned records or resources.
+
+   Distinguish sources for reading from authorized record-writing destinations.
+
+4. **Independently derived information.** An Identity may update its independently derived information whenever useful.
+   Such maintenance must remain within its Responsibility and Scope.
+
+5. **User-supplied matters.** User-supplied matters may enter authoritative Identity Context only after verified Closed Meeting Minutes.
+   Preserve the relevant source reference.
+
+6. **Recurring collaboration.** Working Group may retain useful Identity pairings and collaboration patterns.
+   Working Group may record a selected recurring collaborator after verified Closed Minutes.
+
+7. **Selected current references.** Identity Context may preserve useful:
+
+   - Workflow references.
+   - Useful Workflow usage.
+   - The current Workflow stage.
+   - Related Minutes.
+   - Meaningful verified accomplishments.
+
+8. **Organization.** Each Identity controls content organization within the six required Chapters.
+   Keep each Chapter's meaning within its purpose.
+
+### 3.3 Scoped Knowledge Base
+
+1. **Knowledge resources.** A Knowledge Base must store external subject information for a defined Scope.
+   Examples include:
+
+   - A company.
+   - A Brand.
+   - A specialist domain.
+
+   One Scope may contain multiple Knowledge Bases.
+   Multiple Identities may use or maintain the same Knowledge Base.
+   Register each Knowledge Base in System Context.
+   Any Identity may maintain a corresponding System Context Registry entry when it performs either action:
+
+   - Creates the Knowledge Base.
+   - Changes the Knowledge Base's Scope or Topic.
+
+2. **Current content.** Include only currently valid content within the Knowledge Base's Scope:
+
+   - Confirmed external subject knowledge.
+   - User-created Workflows permitted under Section 5.19.
+
+   Preserve adopted future directions as future directions rather than completed implementation.
 
    Exclude:
 
@@ -354,28 +401,29 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Future Jobs.
    - Deliverable progress.
 
-   Historical Closed Minutes preserve past Decisions.
+   Historical Closed Minutes and Records preserve past evidence.
 
 3. **Decision classification.** After every Meeting closes with verified Closed Minutes, review the entire Minutes. Classify confirmed Meeting outcomes, including each Decision, by their actual meaning.
 
    One Decision may contain:
 
-   - Project Knowledge.
+   - External subject knowledge.
    - Governance configuration.
-   - Drafting/Execution instructions.
+   - Execution instructions.
 
    Route each part to its accountable owner without losing material meaning.
 
-4. **Semantic routing.** Route substantive meaning according to its owner:
+4. **Semantic routing.** Route confirmed meaning according to its owner:
 
-   1. Project subject knowledge belongs in General Knowledge or Specific Topic Knowledge.
-   2. Project Governance belongs in the applicable governing resources.
-   3. Job-specific instructions remain in applicable Closed Minutes and Job authority.
+   1. External subject knowledge belongs in an applicable scoped Knowledge Base.
+   2. Identity operating information belongs in Identity Context under Section 3.2.
+   3. Governance belongs in its applicable authoritative resources.
+   4. Job-specific instructions remain in relevant Closed Minutes and Job authority.
 
-   Mentioning the Project alone does not make an instruction Project Knowledge.
+   Mentioning a working Scope does not itself make an instruction subject knowledge.
 
-5. **Consolidation.** For a routine update, read the complete current Knowledge Base and newly verified Closed Minutes from Section 3.2.3.
-   Consolidate applicable Project Knowledge throughout the complete current Knowledge Base.
+5. **Consolidation.** For a routine update, read the complete current Knowledge Base and new relevant verified Closed Minutes.
+   Consolidate confirmed facts throughout the complete current Knowledge Base.
    Ordinary updates do not require rereading the full Historical Minutes collection.
 
    During consolidation:
@@ -386,9 +434,9 @@ These Non-functional Requirements bind relevant design and maintenance of:
    4. Apply Global Writing Requirements Standard Mode.
    5. Useful paragraph-level source references may be included.
 
-6. **Execution sources.** Drafting/Execution must use relevant Project Knowledge Base resources for current subject knowledge. It must also use the specific authoritative Closed Minutes for work instructions. Drafting/Execution completion alone does not trigger Knowledge Base maintenance.
+6. **Execution sources.** Execution must use relevant scoped Knowledge Bases for current subject knowledge. It must also use the specific authoritative Closed Minutes for work instructions. Execution completion alone does not trigger Knowledge Base maintenance.
 
-### 3.3 PROFIT + A Framework
+### 3.4 PROFIT + A Framework
 
 1. **Framework purpose.** PROFIT + A must provide a reusable Framework for defining AI tasks and Prompts.
    PROFIT defines the task. A defines the readiness handshake before execution.
@@ -462,81 +510,91 @@ These Non-functional Requirements bind relevant design and maintenance of:
    During Framework review or drafting, describe definitions naturally.
    Do not force I / You wording before composing the final Prompt.
 
-## 4. Initiation, identity, and Project creation
+## 4. Identity selection and governed setup
 
-1. **Conditional System Initiation.** The Plugin must check:
+1. **System entry.** The Framework must assess access to:
 
    - The designated Google System Root.
-   - Accessibility.
    - System Context.
-   - System Rules.
+   - Applicable System Rules.
 
-   If required resources exist and are accessible, it must use them without repeating System Initiation.
+   Use existing accessible resources without repeating their establishment.
+   Detailed System Initiation remains deferred under Section 12.
 
-2. **Bootstrap ownership.** When necessary System resources are genuinely missing, the Project Management Agent must establish or complete them. Inaccessibility alone does not prove absence. Resolve access or location uncertainty before creating another Root.
+2. **Bootstrap ownership.** When necessary System resources are genuinely missing, the Execution Identity assigned System administration must establish or complete them. Inaccessibility alone does not prove absence. Resolve access or location uncertainty before creating another Root.
 
-3. **Minimum identities.** A usable System must expose at least the System-wide Meeting Agent and Project Management Agent Identities.
+3. **Minimum identities.** A usable System must expose at least the System-wide Meeting Identity and an Execution Identity assigned System administration.
 
-4. **Conversation Initiation.** In an established System, the AI must read System Context. Let the user select a Project and Agent Identity. An unselected Identity must not automatically select Project Management.
+4. **Conversation Initiation.** In an established System, the AI must read System Context.
+   Let the user select an Identity.
+   An unselected Identity must not automatically select System administration.
 
-   For the chosen assignment, load applicable:
+   For the assignment, load applicable:
 
-   - Project Rules.
-   - Project Context.
+   - Identity Context.
    - System Rules.
    - Plugin Instructions.
+   - The Role Lifecycle.
 
-5. **Project discovery.** Discovery must support a directly supplied Project Folder and a Project name or identifier resolved through the central Directory. Both paths must lead to the owning Project's authoritative resources. Discovery must work independently of Database services.
+5. **Identity discovery.** Discovery must support a directly supplied Identity Context Locator or a registered Identity resolved through System Context.
+   Both paths must reach the Identity's authoritative Context.
+   Discovery must work independently of Database services.
+   Detailed cross-environment Locator design remains deferred under Section 12.
 
-6. **Identity meaning.** Each Agent Identity must identify:
+6. **Identity meaning.** Each Identity must identify:
 
-   - Its owning Project.
    - Its exact Agent Key.
    - Its Role.
-   - Its Scope.
    - Its Responsibility.
+   - Its Scope.
+   - Its Identity Context Locator.
 
-   Its Role selects reusable Plugin Instructions and the applicable Forward Lifecycle. Identity registration follows the System Context requirements in Section 3.1.
+   Its Role selects reusable Plugin Instructions and the common Role Lifecycle.
+   Identity registration follows Section 3.1.3.
 
-7. **Identity isolation.** Each Project must use distinct operational Agent Identities and message inboxes. Separate identities may share the same packaged Role Instruction. System-level Project Management's authorized responsibilities do not merge Project identities or inboxes.
+7. **Identity isolation.** Distinct operational Identities must retain their own assignments and message inboxes.
+   Separate Identities may share the same packaged Role Instruction.
+   System administration responsibilities do not merge other Identities or their inboxes.
 
-8. **Stable assignments.** An Agent Key must remain stable across Conversations serving the same assignment. Resolve the user's assignment against registered scope information. Resolve missing or ambiguous identities before scoped Messaging. An unresolved scoped assignment must not default to a Project-wide identity.
+8. **Stable assignments.** An Agent Key must remain stable across Conversations serving the same assignment. Resolve the user's assignment against registered scope information. Resolve missing or ambiguous identities before scoped Messaging. An unresolved scoped assignment must not default to another Identity.
 
-9. **Initial Project definition.** Project creation must begin with a recorded System-wide Meeting.
+9. **Identity definition.** Establish new user-defined Identity assignments through a recorded, confirmed Meeting.
 
-   Confirm:
+   Confirm the necessary:
 
-   - The Project name.
+   - Name.
    - Purpose.
-   - Scope.
+   - Responsibility and Scope.
    - Intended work.
-   - Applicable Lifecycle references.
-   - Anticipated deliverables.
-   - Agent needs.
+   - Applicable Workflow references.
+   - Anticipated Deliverables.
+   - Identity needs.
 
-   Work purpose guides Lifecycle selection without requiring a rigid Project taxonomy.
+   Work purpose guides Workflow selection without requiring a rigid Scope taxonomy.
 
-10. **Initial Agent selection.** The defining Meeting must identify the Project-wide Meeting Agent. It may identify narrower Agent assignments when distinct deliverables or responsibilities justify them. Initial scopes must guide conduct without prescribing every possible overlap.
+10. **Initial assignment selection.** The defining Meeting must identify the responsible Meeting Identity.
+    It may identify narrower assignments when distinct Deliverables or responsibilities justify them.
+    Initial scopes guide conduct without prescribing every possible overlap.
 
-11. **Project setup.** After the recorded, approved Project definition, Project Management must initiate and register:
+11. **Authorized setup.** After the recorded, approved assignment definition, the responsible Execution Identity must establish and register authorized:
 
-    - The Project.
-    - Necessary resources.
-    - Templates.
     - Identities.
+    - Resources.
+    - Templates.
 
-    It must preserve suitable durable setup and registration evidence.
+    Preserve durable setup and registration evidence.
+    Detailed System Initiation remains deferred under Section 12.
 
-12. **Project refinement.** The Project-wide Meeting Agent must refine the following through governed decisions:
+12. **Governance refinement.** The Meeting Identity responsible for the governing Scope must refine adopted:
 
     - Rules.
-    - Lifecycle usage.
+    - Workflow usage.
     - Resource purposes.
     - Output destinations.
     - Assignments.
     - Operating details.
 
-    Authorized implementation remains with the responsible owner.
+    Implementation follows the responsible owner's authority and applicable Scope approvals.
 
 13. **Identity changes.** Inactive or archived identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
 
@@ -552,25 +610,18 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Output identifies actual deliverables or result evidence. Each confirmed Job Scope must remain within the assigned Agent's authority.
 
-2. **Lifecycle families.** Meeting Agents use the Meeting Lifecycle.
+2. **Roles and Lifecycles.** The two principal Roles are Meeting Agent and Execution Agent.
+   A Role is distinguished by its internal Lifecycle or Protocol.
+   Every Identity must use the common Lifecycle of its Role.
 
-   These Roles inherit the shared Execution Parent Lifecycle:
-
-   - Drafting.
-   - Project Management.
-   - Library Management.
-   - Database Engineer.
-   - Central QA.
-
-   Inheritance transfers stages and control checkpoints.
-
-   Each Role retains its own:
+   Each Identity retains its own:
 
    - Responsibility.
    - Scope.
    - Output.
 
-   Agent Forward Lifecycles govern Agent work. Work/Deliverable Lifecycles guide subject-matter development.
+   Lifecycle governs the Role's internal work.
+   Workflow guides a particular Task or Deliverable across relevant Agents.
 
 3. **Meeting responsibility.** Meeting Agents organize:
 
@@ -579,69 +630,58 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Planning.
    - Substantive decisions.
 
-   The Project-wide Meeting Agent governs:
+   Each Meeting Identity governs only its assigned Scope.
+   A governance assignment may include applicable operating rules and Commands.
+   Approved Post-Meeting Actions follow Section 6.4.
 
-   - Project Rules.
-   - Project Commands.
-   - Substantive Project configuration decisions.
+4. **Document drafting responsibility.** An Execution Identity assigned document drafting must completely and readably preserve confirmed decisions.
+   These independent documents are normally human-facing and high-requirement.
+   A typical small document count is not a hard limit.
 
-   Scoped Meeting Agents govern only their assigned scopes.
-
-4. **Drafting responsibility.** Drafting prepares independent documents that completely and readably preserve confirmed decisions. Such documents are normally human-facing and high-requirement. A typical small document count is not a hard limit.
-
-   Drafting owns the following within its Scope:
+   The substantive author determines permitted:
 
    - Organization.
    - Methods.
    - Verification.
 
-5. **Reusable resource maintenance.** Library Management's responsibility is coherent maintenance of authoritative reusable operating resources. Its writing must express rules and relationships precisely enough for AI interpretation and reuse. Independent documents remain with Drafting or their assigned domain owner. Library Management is outside the primary initial System-level design focus.
+   Execution Parent and Sub-agent responsibilities follow Section 7.4.
 
-6. **Project Management responsibility.** Project Management owns:
+5. **Reusable resource maintenance.** An assigned Execution Identity must maintain coherent authoritative reusable operating resources.
+   Its writing must express rules and relationships precisely enough for AI interpretation and reuse.
+   Independent documents and other Deliverables remain with their assigned owners.
 
-   - System Bootstrap.
-   - Authorized Project initiation.
-   - Agent Identity setup.
-   - Authorized synchronization or updates.
+6. **System administration responsibility.** An assigned Execution Identity owns authorized:
 
-   It must preserve each affected Project's:
+   - System resource establishment.
+   - Identity setup.
+   - Synchronization or updates.
+
+   It must preserve each affected working Scope's:
 
    - Functional working state.
    - Adopted Governance.
    - Assignments.
    - Customization.
 
-   It implements approved System-level or Project-level decisions under its own Job approvals.
+   Implement approved governing decisions under the Identity's own Job approvals.
+   Authorized targets may include System Context and applicable System Rules.
+   Respect the owning Scope's Governance authority.
 
-   Authorized targets may include:
+7. **Resource ownership.** Each Meeting Identity maintains its own Meeting Working Records and final Minutes.
+   These must remain separate authoritative resources.
+   Each Execution Identity maintains its Job Record and approved Deliverables.
 
-   - System Context.
-   - System Rules.
-   - Project Rules.
-   - Project Commands.
-
-   It must respect the owning Project's Governance authority.
-
-7. **Resource ownership.** The Meeting Agent maintains:
-
-   - Its Meeting Working Records.
-   - Its final Minutes.
-   - The Project Knowledge Base.
-
-   Meeting Working Records and Closed Minutes must remain separate authoritative resources. Drafting maintains its particular Job Record and approved Document Deliverables.
-
-   The following remain in that Job Record:
+   The following belong in the Job Record:
 
    - Its Proposal.
    - Approvals.
    - Changes.
    - QA.
 
-   Do not create an additional generic Drafting Working Context.
+   Identity Context maintenance follows Section 3.2.
+   Shared Knowledge Base maintenance follows Section 3.3.
 
-   Shared Project Context maintenance follows Section 3.1.
-
-8. **Database Engineer responsibility.** Database Engineering owns the following within approved database work:
+8. **Database Engineer responsibility.** An Execution Identity assigned Database Engineering owns the following within approved database work:
 
    - Infrastructure.
    - Implementation.
@@ -652,13 +692,14 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    It must inspect current state. It must verify actual behavior. Routine Agents use applicable interfaces directly within their authority.
 
-9. **Central QA responsibility.** One dedicated Central QA role provides assessments and reports that are:
+9. **Independent QA responsibility.** One dedicated Execution Identity assigned Central QA must provide assessments and reports that are:
 
    - Independent.
    - Complete.
    - Objective.
 
-   Its Jobs and reports remain under System-level authority. It may inspect other Projects within specifically approved Scope.
+   Its Jobs and reports remain under System-level authority.
+   It may inspect other working Scopes only within specifically approved Job Scope.
 
    It must respect these limits:
 
@@ -666,13 +707,13 @@ These Non-functional Requirements bind relevant design and maintenance of:
    2. Do not authorize remediation.
    3. Do not independently schedule audits.
 
-10. **Ad Hoc responsibility.** Ad Hoc directly delivers small, self-contained work within its own Responsibility. Its discussion and execution checkpoints follow Section 6.4.
+10. **Meeting execution responsibility.** A Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables within Section 6.4.
 
-11. **Command ownership.** The Agent Lifecycle controls stage order and selects the needed Project Command.
+11. **Command ownership.** The Agent Lifecycle controls stage order and selects the needed applicable Command.
 
     Commands define:
 
-    - Project-specific actions.
+    - Applicable actions.
     - Outputs.
     - Customization.
     - Relevant constraints.
@@ -683,20 +724,46 @@ These Non-functional Requirements bind relevant design and maintenance of:
     2. Do not expand authority.
     3. Do not duplicate Lifecycle sequencing.
 
-12. **Command organization.** Project Rules must provide a compact Command Index resolving each needed Command to its definition. A native Google Docs Tab per Command is preferred when using Google Docs. Necessary Command content may be reused within the active Conversation.
+12. **Command organization.** Necessary Command definitions must be discoverable through Identity Context operating references.
+    Keep the Command Index compact and resolve each needed Command to its definition.
+    A native Google Docs Tab per Command is preferred when using Google Docs.
+    Necessary Command content may be reused within the active Conversation.
 
 13. **Command readiness.** Required Commands and dependencies must be usable for their assigned actions. An Agent must report missing definitions or inaccessible dependencies. It must not claim incomplete actions succeeded. Detailed execution mechanics remain with authorized implementation.
 
-14. **Shared Execution foundation.** Execution Roles may share a broad Execution Protocol and Global Requirements. Each distinct Role must have appropriate Agent Instructions and Project-local Commands reflecting its Responsibility and work type.
+14. **Shared Execution foundation.** Execution Identities must apply shared Global Requirements.
+    Assigned Instructions and applicable Commands must reflect each Identity's Responsibility and work type.
+    Apply the common Role Lifecycle under Section 5.2.
 
-15. **Same-Role Commands.** Identities with the same Role and Responsibility inside one Project must share that Role's Commands. Separate scoped Identities retain distinct scopes and own work records. Different Roles may require distinct Commands despite sharing the Execution Protocol.
+15. **Shared Commands.** Identities with the same Role and Responsibility must share applicable Commands.
+    Separate scoped Identities retain distinct scopes and own work records.
+    Meeting and Execution Roles may require different Commands.
 
-16. **Dynamic Command resolution.** Shared Meeting, Drafting, Job and CREATE RECORD Commands must identify the invoking Agent Identity and record category.
+16. **Dynamic Command resolution.** Shared Meeting, Job and CREATE RECORD Commands must identify the invoking Identity and record category.
 
-    Resolve the Identity's currently authorized Scope from System Context.
-    Resolve the category's applicable Target Location from current Project Rules.
+    Resolve the Identity's currently authorized Responsibility and Scope from System Context.
+    Resolve the applicable record Target Location through Identity Context and current System Rules.
 
-    A shared Command must not assume a particular Agent Identity or fixed Workspace. Commands must not copy or widen Identity Scope. Resolve missing Scope before acting.
+    A shared Command must not assume a particular Identity or fixed Workspace.
+    Commands must not copy or widen Identity Scope.
+    Resolve missing Scope before acting.
+
+17. **Discovery before repeated questions.** All Agents must discover accessible information before requesting it again from the user.
+
+    Discover relevant:
+
+    - Context.
+    - Messages.
+    - Work Requests.
+    - Records.
+    - Sources.
+
+18. **Supported options.** Agents must present supported options and their best available Proposal.
+    The user may provide new inputs, select alternatives or revise the direction.
+
+19. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.
+    User-created Workflows may reside in an appropriate Knowledge Base.
+    Identity Context operating references follow Section 3.2.7.
 
 ## 6. Meeting Lifecycle
 
@@ -704,14 +771,14 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 1. **Initialization.** Resolve the assigned:
 
-   - Project.
+   - Identity.
    - Role.
    - Scope.
    - Exact Agent Key.
 
    Load applicable governing instructions. When Messaging is enabled, preserve Initialization RECEIVE AGENT MESSAGES and NEW MEETING READ MESSAGES as distinct checkpoints.
 
-2. **Active Meeting continuity.** At NEW MEETING, first search for an existing active Meeting and prioritize continuing it. Each assigned Meeting Agent may have only one active Meeting at a time.
+2. **Active Meeting continuity.** At NEW MEETING, first search for an existing active Meeting and prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
 
 3. **Agenda sources.** Collect relevant:
 
@@ -728,14 +795,17 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Expected Outcome.
 
    Propose a bounded Agenda that may combine compatible selected matters.
+   Every Meeting Agenda must allow meaningful free user input.
 
-4. **Message selection.** A Message selected for the current Agenda must retain its identifier and source. It does not require an intermediate Project Context entry. Unselected new matters enter Future Meeting Topics only when the user explicitly chooses future consideration.
+4. **Message selection.** A Message selected for the current Agenda must retain its identifier and source.
+   Unselected new matters enter Future Topics only when the user explicitly chooses future consideration.
+   Apply the user-supplied Context rule in Section 3.2.5.
 
 5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Working Record and optional index. Verify those resources.
 
    Preserve:
 
-   - Project and Agent identity.
+   - Assigned Identity and Scope.
    - Actual Opening Time.
    - The confirmed Agenda.
    - Authoritative source references.
@@ -780,7 +850,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 4. **Record substance.** The authoritative Working Record must preserve substantive Meeting outcomes rather than a transcript. Ordinary content changes do not require Database index updates. Precise persistence timing and detailed record design remain subject to Section 12.
 
-5. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Agent's own Responsibility and Scope. Prepare other Agents' work for handoff.
+5. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Identity's own Responsibility and Scope. Prepare other Agents' work for handoff.
 
 ### 6.3 Closing and handoff
 
@@ -801,7 +871,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Dispositions.
    - The intended Handoff Plan.
 
-   Preserve essential constraints. Identify material gaps without speculation. Later Drafting/Execution reads finalized Minutes for applicable instructions without requiring access to the internal live Meeting Record.
+   Preserve essential constraints. Identify material gaps without speculation. Later Execution reads finalized Minutes for applicable instructions without requiring access to the internal live Meeting Record.
 
 3. **Closing order.** Complete substantive closing work and required artifact checks before finalizing closure. Record the actual Closing Time consistently in Minutes and the Working Record.
 
@@ -821,7 +891,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Preserve unrelated metadata and the Working Record reference. Verify the resulting state before claiming closure.
 
-5. **Future Meeting Topics.** After verified closure, register confirmed carry-forward topics in the owning Project Context.
+5. **Future Meeting Topics.** After verified closure, register confirmed carry-forward topics in the owning Identity Context Future Topics Chapter.
 
    Each entry needs:
 
@@ -845,7 +915,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    - Deliverable.
    - Document.
-   - Project.
+   - Working Scope.
    - Resource.
 
    Send handoffs only after full Meeting Protocol completion.
@@ -855,13 +925,20 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Approved Scope.
    - Approval gates.
 
-### 6.4 Ad Hoc Lifecycle
+### 6.4 Post-Meeting Actions
 
-1. **Discussion and confirmation.** Ad Hoc uses the Meeting-style discussion Lifecycle. Discuss the task with the user. Confirm the intended outcome and work.
+1. **Own operating resources.** Meeting Identities maintain their own Context and current Working Records within governing rules.
+   They may maintain applicable shared Knowledge Bases within their Responsibility and Scope.
+   Identity Context maintenance follows Section 3.2.
+   Knowledge Base maintenance follows Section 3.3.
 
-2. **Direct Post-Actions.** Confirmed execution work becomes Post-Actions. The Ad Hoc Agent performs these actions directly and owns its Deliverables.
+2. **Other Deliverables.** Before editing other Deliverables or files, the Meeting Identity must obtain approval for the relevant Scope.
+   Authority depends on Responsibility and approval, regardless of amendment size or file type.
+   The Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables.
 
-3. **Closing transition.** CLOSE MEETING initiates Closing and normal Post-Action execution.
+3. **Closing transition.** CLOSE MEETING initiates Closing and normal approved Post-Action execution.
+   Minutes and Job Records retain their applicable Record Lifecycles.
+   Apply the finalized record requirements in Section 6.3.3.
 
 4. **Immediate execution.** Before Closing, execute an identified action only when the user expressly authorizes immediate execution.
 
@@ -897,13 +974,17 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Before interpreting a candidate's substantive Scope, read:
 
-   - Relevant Project Context.
+   - Relevant Identity Context.
    - Work Requests.
    - The candidate's authoritative Closed Minutes.
 
-4. **Previous checkpoint.** Consult the immediately preceding Job's last processed request or source checkpoint for the same Project and exact Agent Identity. Compare identifiers only within the same sequence. Preserve valid pending or excluded work.
+4. **Previous checkpoint.** Consult the immediately preceding Job's last processed request or source checkpoint for the same exact Identity.
+   Use the applicable indexed Scope when locating that record. Compare identifiers only within the same sequence. Preserve valid pending or excluded work.
 
-5. **Future Execution List.** Automatically retain every valid Work Request not wholly incorporated into a confirmed Job. Group entries by owning Agent in Project Context. Remove unincorporated work only through explicit user direction.
+5. **Future Execution work.** Automatically retain every valid Work Request not wholly incorporated into a confirmed Job.
+   Keep pending work in the Execution Identity's Future Topics Chapter.
+   Preserve each originating Identity and relevant source relationship.
+   Remove unincorporated work only through explicit user direction.
 
 6. **Pending entry content.** Each entry must contain:
 
@@ -928,7 +1009,8 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Present unmet or unverified dependencies before Scope selection. The user may authorize earlier progress within actual technical and authority limits. Preserve the dependency's true state.
 
-8. **Consolidation.** A Job may combine Work Requests from multiple Meetings.
+8. **Consolidated Job.** Consolidate selected eligible Work Requests from multiple originating Identities into one confirmed Job.
+   The Job may contain multiple Deliverables.
 
    Reconcile:
 
@@ -937,11 +1019,14 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Supersession.
    - Conflict.
 
-   Preserve all source references. Present eligible Scope and useful combinations for the user's selection.
+   Every Deliverable must retain its originating Identity, Work Request and source references.
+   Present eligible Scope and useful combinations for the user's selection.
+   Assign substantive execution under Section 7.4.
 
-9. **Scope transition.** After Scope confirmation, establish and verify the Working Document and applicable Job index. Remove only incorporated portions from the Future Execution List after successful establishment. Retain partial and unselected remainders.
+9. **Scope transition.** After Scope confirmation, establish and verify the Working Document and applicable Job index. Remove only incorporated portions from the retained future work after successful establishment. Retain partial and unselected remainders.
 
-10. **Working Document.** Use “Working Document” as an environment-neutral term. Its physical form may differ by execution environment. Apply the authoritative result-return requirements in Section 11.
+10. **Working Document.** Use “Working Document” as an environment-neutral term. Its physical form may differ by execution environment. A Job may use a fresh Conversation Context while preserving the durable Execution Identity Context.
+    Apply the authoritative result-return requirements in Section 11.
 
 ### 7.2 Proposal and execution
 
@@ -953,7 +1038,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    4. Save the Plan.
    5. Present the saved Plan for approval.
 
-   The responsible author determines substantive organization and permitted implementation methods. Apply Section 7.4 when using delegated execution.
+   The responsible author determines substantive organization and permitted implementation methods. Apply the Parent and Sub-agent responsibilities in Section 7.4.
 
 2. **Plan content.** The saved Plan must identify:
 
@@ -986,9 +1071,10 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Maintain corresponding Job index references when Database services are enabled. Detailed writing checkpoints remain subject to Section 12.
 
-6. **Document registration.** When indexing is enabled, create or update the appropriate document index for substantive Document Deliverables. Preserve exact source and originating Job links. Verify existing indexes to avoid duplication.
+6. **Document registration.** When indexing is enabled, create or update the appropriate document index for substantive Document Deliverables. Preserve exact source and originating Job links.
+   Index local documents only after verified synchronization under Section 11. Verify existing indexes to avoid duplication.
 
-7. **Decision gaps.** A missing substantive decision must return to the Meeting process. Suspend the affected action until authoritative Closed Minutes resolve it. Preserve completed in-scope work. Drafting organization and permitted implementation methods remain execution judgments.
+7. **Decision gaps.** A missing substantive decision must return to the Meeting process. Suspend the affected action until authoritative Closed Minutes resolve it. Preserve completed in-scope work. Deliverable organization and permitted implementation methods remain execution judgments.
 
 ### 7.3 Completion and communication
 
@@ -1023,23 +1109,22 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Freeze the verified completed record as concise Proof of Job.
 
-3. **Per-Project outcomes.** Multi-Project work must preserve distinct actual outcomes and verification status for each affected Project.
+3. **Distinct outcomes.** Work across multiple Scopes or originating Identities must preserve each Deliverable's actual outcome and verification status.
 
-4. **Completion authority.** Each executing Agent must perform its own internal QA under Section 9. Self-verification does not create another dedicated QA role. Delegated execution also requires the Parent's independent acceptance under Section 7.4.
+4. **Completion authority.** Each executing Agent must perform its own internal QA under Section 9. Self-verification does not establish an independent Central QA assignment. Delegated execution also requires the Parent's independent acceptance under Section 7.4.
 
-5. **After-Job recipients.** After verified completion, review every incorporated Work Request and its authoritative sources. Notify original request senders and directly related registered Agents, including relevant Execution Agents. Resolve exact identities and recipient relevance. Avoid unrelated or duplicate notices.
+5. **After-Job recipients.** After verification, send a relevant Completion Notice to each originating Identity.
+   Review every incorporated Work Request and its authoritative sources.
+   Notify other directly related registered Identities when their current Responsibilities intersect the completed outcome.
+   Resolve exact identities and relevance.
+   Avoid unrelated or duplicate notices.
+   Use Manual Handoff under Section 8.2 when Agent Messaging is unavailable.
 
-### 7.4 Optional Parent–Child execution
+### 7.4 Execution Parent and Sub-agents
 
-1. **Environment and execution choice.** At NEW JOB, the Execution Agent must check its actual environment's capabilities. When genuine Child creation and supervision are available and appropriate, it may use Parent–Child execution.
-
-   Otherwise, execute directly under the same:
-
-   - Job Scope.
-   - Proposal.
-   - Separate Execution Approval.
-   - Quality controls.
-
+1. **Genuine substantive delegation.** Assign every Deliverable to a distinct genuine Sub-agent for substantive execution.
+   The Execution Parent must check actual Child creation and supervision capabilities.
+   Report an unavailable required capability under Section 2.8.
    A simulated Child must never be represented as genuine delegation.
 
 2. **Parent control.** The Parent coordinates:
@@ -1081,7 +1166,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 4. **Sources and authorship.** The Parent supplies complete applicable:
 
-   - Project Knowledge.
+   - Scoped subject knowledge.
    - Instruction-bearing Closed Minutes.
    - Constraints.
    - Supporting sources.
@@ -1119,11 +1204,10 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Temporary review copies are not accepted Deliverables.
 
-9. **Delegation arrangement.** The following remain flexible under user instructions and available capabilities:
-
-   - Child model choice.
-   - Reasoning level.
-   - Technical arrangements.
+9. **Delegation arrangement.** Follow model decisions from authoritative Minutes where specified.
+   Otherwise offer models available in the actual execution environment for user selection.
+   Past model choices and delivery methods may inform nonbinding advisory Proposals.
+   Reasoning level and technical arrangements follow applicable user decisions and available capabilities.
 
    The five-retry rule applies to genuine delegated execution.
 
@@ -1134,7 +1218,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 1. **Durable records.** Agents should preserve appropriate durable evidence for:
 
    - Substantive Meetings.
-   - Project creation.
+   - Scope establishment.
    - Agent assignments.
    - Identity changes.
 
@@ -1154,13 +1238,13 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Previous Job lookup must distinguish:
 
-   - Project.
+   - Applicable indexed Scope.
    - Job category.
    - Exact Agent Identity.
 
    Preserve historical sources and unresolved identity uncertainty.
 
-4. **Database Contracts.** Database Engineering must maintain authoritative interface definitions for approved database services. Applicable Project Contracts must expose only needed operations and shared semantics. Commands own when and why interfaces are used.
+4. **Database Contracts.** The Execution Identity assigned Database Engineering must maintain authoritative interface definitions for approved database services. Applicable operating Contracts must expose only needed operations and shared semantics. Commands own when and why interfaces are used.
 
    Contracts own:
 
@@ -1190,7 +1274,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Resolve recipients from the central System Context registry using:
 
-   - Owning Project.
+   - Registered Identity.
    - Responsibility.
    - Work type.
    - Scope reference.
@@ -1250,7 +1334,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Corrections.
    - Relevant quality problems.
 
-3. **Other active checkpoints.** Meeting and Ad Hoc operations retain applicable Experience searches at Protocol Start and near completion. They must perform one full-lifecycle Capture at completion. Detailed redesign remains deferred.
+3. **Other active checkpoints.** Meeting operations retain applicable Experience searches at Protocol Start and near completion. They must perform one full-lifecycle Capture at completion. Detailed redesign remains deferred.
 
 4. **Capture outcomes.** Compare actual reusable learning with governing sources and existing Posts.
 
@@ -1373,7 +1457,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
     Authored content may use another language or mixed languages according to purpose and audience. Preserve original authoritative sources when translations exist. Apply active user communication settings in Conversation.
 
-11. **Independent QA Scope.** Central QA must inspect every approved item at the authorized depth.
+11. **Independent QA Scope.** The Identity assigned Central QA must inspect every approved item at the authorized depth.
 
     Possible dimensions include:
 
@@ -1418,13 +1502,13 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 14. **Independent QA limits.** Complete every approved audit item without cached PASS reuse or automatic skipping. QA reports identify deficiencies but do not authorize correction. A completed audit may contain failed or unverifiable findings.
 
-## 10. Reusable Book Development Lifecycle
+## 10. Reusable Book Development Workflow
 
 ### 10.1 Purpose, progression, and foundation
 
-1. **Reusable Lifecycle.** The Plugin must include the existing Book Development Lifecycle as a shared Work/Deliverable resource.
+1. **Reusable Workflow.** The Plugin must include the existing Book Development Workflow as a shared Task/Deliverable resource.
 
-   Project Rules select its application. They may define Project-specific:
+   Approved Scope selects its application. Governing working arrangements may define applicable:
 
    - Outputs.
    - Locations.
@@ -1699,7 +1783,9 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Execution surfaces may use their own Working Documents and assets. Plugin packaging alone does not establish native operation on every host.
 
-2. **Connectors.** Every participating environment must have suitable Google Drive / Docs access. Local execution uses gog/gogcli as its selected Google connector dependency. Other hosts may use suitable connectors. The AI must assess required setup and permissions according to its actual environment.
+2. **Connectors.** Every participating environment must have suitable Google Drive / Docs access. Host-specific integrations and System Rules select the actual connector.
+   Local integration selections remain environment-specific.
+   Local Agents may use Agent Messaging when available. The AI must assess required setup and permissions according to its actual environment.
 
 3. **Governance continuity.** Local and remote work must preserve:
 
@@ -1719,11 +1805,13 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Necessary evidence.
    - Deliverable references.
 
-   Verify required updates before claiming completion. Full workspace copies and every intermediate asset are not automatically required.
+   Verify required updates before claiming completion.
+   Synchronize local documents to Google before eligible Database Record indexing.
+   Database Records require accessible, verified Google Locators. Full workspace copies and every intermediate asset are not automatically required.
 
 5. **Access limitations.** Report unavailable authoritative access or uncompleted required updates accurately. Discuss permitted setup or assistance with the user. Detailed operational access-restoration behavior remains subject to later practical design.
 
-6. **Governed implementation.** System and Project changes must follow:
+6. **Governed implementation.** System and Scope changes must follow:
 
    - Their authorized owner.
    - Source authority.
@@ -1733,7 +1821,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Synchronization must preserve:
 
-   - Current Project Governance.
+   - Current governing decisions.
    - Approved customization.
    - Active work.
    - Records.
@@ -1778,13 +1866,14 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Preserve the adopted ownership and consolidation requirements in Sections 3 and 5.
 
-4. **Deferred Lifecycles.** These remain intended future reusable Lifecycles:
+4. **Deferred Workflows.** These remain intended future reusable Workflows:
 
    - Business Document Development.
    - Governance.
    - Code Development.
 
-   Their detailed stages remain undecided. Refine these and the relationship between Agent and Deliverable work using practical Project experience.
+   Their detailed stages remain undecided.
+   Refine Workflows and their relationship with Role Lifecycles using practical experience.
 
 5. **Remaining implementation design.** The following require later authorized design:
 
@@ -1794,6 +1883,9 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Registry details.
    - Source-refresh behavior.
    - Environment arrangements.
+   - System Initiation.
+   - Workflow Discovery and Invocation.
+   - Cross-environment Locator design.
    - Optional Database services.
 
    Preserve current confirmed outcomes without inventing missing substantive decisions.
@@ -1808,3 +1900,6 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Import of reviewed context and Archive.
 
    Historical material does not automatically override current governance. Database redesign and any transition require independent authorization and verified preservation.
+
+7. **Framework Flow review.** After Requirements drafting, review the complete revised Framework Flow in a separately opened Meeting.
+   Preserve deferred decisions until their governing review and authorization.
