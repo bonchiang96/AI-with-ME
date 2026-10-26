@@ -149,4 +149,4 @@ The Requirements consist of this Overview and the files below. Each file links b
 
 The Plugin packages both rule files. Agents read them without Google Drive reads.
 
-English is the default language. User overrides live only in Google System Rules. Agents read them once at Conversation start.
+Language defaults and user overrides follow [Global Communication Requirements](global-communication-requirements.md).

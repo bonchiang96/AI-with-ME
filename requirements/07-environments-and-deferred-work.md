@@ -87,7 +87,13 @@ Return to the [Requirements Overview](README.md).
 2. **Subsequent Plugin work.** Actual Plugin development must follow the requirements baseline under a separately authorized development Job. A working Plugin and full Documentation are not mandatory initial foundation outputs.
 
 3. **Remaining resource mechanics.** Additional resource mechanics and unusual ownership exceptions require later authorized design.
-   Preserve the adopted ownership, consolidation and record requirements in [Foundation](01-foundation.md), [PROFIT + A Framework](workflows/profit-a.md), [System, Identity and Entry Section 2](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands), [Meeting Lifecycle](03-meeting-lifecycle.md) and [Execution Lifecycle](04-execution-lifecycle.md).
+   Preserve the adopted ownership, consolidation and record requirements in these files:
+
+   - [Foundation](01-foundation.md).
+   - [PROFIT + A Framework](workflows/profit-a.md).
+   - [System, Identity and Entry Section 2](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   - [Meeting Lifecycle](03-meeting-lifecycle.md).
+   - [Execution Lifecycle](04-execution-lifecycle.md).
 
 4. **Deferred Workflows.** These remain future reusable Workflows:
 

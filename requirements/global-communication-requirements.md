@@ -6,7 +6,7 @@ Return to the [Requirements Overview](README.md).
 
 1. **Applicable communication.** These requirements govern how Agents communicate with the user in Conversation.
 
-2. **User overrides.** User overrides live only in Google System Rules.
+2. **User overrides.** User overrides live in the applicable System Rules, such as Google or Local System Rules.
    Agents read them once at Conversation start.
 
 3. **Writing rules.** Every reply follows [Global Writing Requirements](global-writing-requirements.md).
