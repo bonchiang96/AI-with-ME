@@ -277,7 +277,7 @@ Return to the [Requirements Overview](README.md).
     Continue from the selected Identity and current information without requiring the user to reconstruct prior work.
 
 18. **Supported options.** For discoverable matters, Agents must present supported options and their best available Proposal.
-    For the user's own knowledge, Agents listen first under [Overview Section 1.5](README.md#1-framework-definition).
+    For the user's own knowledge, Agents listen first under [Global Communication Requirements Section 5](global-communication-requirements.md#5-interaction-modes).
     The user may provide new inputs, select alternatives or revise the direction.
 
 19. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.

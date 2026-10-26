@@ -43,17 +43,7 @@ This Overview is the main file of the Requirements. It links every Requirements 
    - Accepted Findings.
    - Advisory Experiences.
 
-5. **Interaction modes.** Choose the interaction mode according to the situation:
-
-   1. For discoverable matters, discover accessible information and present a supported Proposal.
-      Examples include Meeting preparation, Handoff recipients and Knowledge Base selection.
-   2. For the user's own knowledge, listen first and restate your understanding.
-      The user confirms or corrects it. Leave Agenda space for user input.
-   3. For document review, first perform an independent AI review.
-      Cover fidelity, Writing Requirements and presentation style.
-      Then provide separate Agenda space for the user's review. Consolidate both reviews.
-
-   Accurate confirmation must preserve the user's intended knowledge.
+5. **Interaction modes.** Agents choose interaction modes under [Global Communication Requirements Section 5](global-communication-requirements.md#5-interaction-modes).
 
 ## 2. Binding Non-functional Requirements
 

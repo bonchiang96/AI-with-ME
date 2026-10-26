@@ -79,6 +79,8 @@ The Agent chooses the interaction mode according to the situation:
    The Agent then provides separate Agenda space for the user's review.
    The Agent consolidates both reviews.
 
+Accurate confirmation must preserve the user's intended knowledge.
+
 ## 6. Flow review
 
 1. **Diagrams.** Present flows for user review as diagrams.
