@@ -740,7 +740,6 @@ These Non-functional Requirements bind relevant design and maintenance of:
 6. **System administration responsibility.** An assigned Execution Identity owns authorized:
 
    - System resource establishment.
-   - Identity setup.
    - Synchronization or updates.
 
    It must preserve each affected working Scope's:
@@ -851,7 +850,8 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
     Continue from the selected Identity and current information without requiring the user to reconstruct prior work.
 
-18. **Supported options.** Agents must present supported options and their best available Proposal.
+18. **Supported options.** For discoverable matters, Agents must present supported options and their best available Proposal.
+    For the user's own knowledge, Agents listen first under Section 1.1.5.
     The user may provide new inputs, select alternatives or revise the direction.
 
 19. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.
@@ -879,10 +879,14 @@ These Non-functional Requirements bind relevant design and maintenance of:
     Leave space for user input. Advise when asked or when direction is unclear.
     After user review, apply this revision rule:
 
-    1. A Meeting Agent may make small wording or formatting changes as approved Post-Meeting Actions.
-    2. Record larger paragraph, structure or meaning changes as feedback in the Minutes.
-    3. The Execution Agent revises from those authoritative Minutes.
+    1. The Meeting Agent assesses whether each change is small or large.
+    2. For a small change, the Meeting Agent proposes a direct edit to the user.
+    3. The Proposal states the impacted range and shows the exact current and amended text.
+    4. With the user's approval, the Meeting Agent makes the edit as an approved Post-Meeting Action.
+    5. Without that approval, or for a large change, record the feedback in the Minutes.
+    6. The Execution Agent revises from those authoritative Minutes.
 
+    Assessment alone does not authorize an edit.
     Preserve the approved Scope and normal approval gates.
 
 ## 6. Meeting Lifecycle
@@ -1791,6 +1795,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    4. The user reviews the draft in a Meeting.
    5. Apply revisions under Section 5.22 and continue until the rough manuscript is complete.
    6. Complete Content Edit and Copy Edit under Section 10.3.
+      Apply the revision ownership rule in Section 5.22 to both edits.
 
    Earlier stages may be revisited when new information materially changes the Book.
    Change the active Book only through explicit user direction.
@@ -2032,13 +2037,14 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Apply a practical completion boundary rather than endless polishing.
 
-8. **Book State.** Keep the following clear:
+8. **Book State.** Keep Book progress in the owning Identity Context under Section 5.21:
 
    - The active stage.
    - The current Part or Chapter.
-   - Confirmed book decisions.
    - Open content gaps.
    - The next step.
+
+   Keep confirmed Book decisions in the Book Knowledge Base under Section 5.19.
 
 ### 10.4 Book Deliverables and Language Editions
 
@@ -2220,12 +2226,4 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Import of reviewed context and Archive.
 
    Historical material does not automatically override current governance. Database redesign and any transition require independent authorization and verified preservation.
-7. **Verification and freeze.** After the drafting Completion Notice, a separate verification Meeting must:
-
-   1. Walk the entry, Meeting and Execution flows against the rewritten Requirements.
-   2. Check every confirmed decision from the governing forward-flow review.
-   3. Let the user freeze the Requirements by exact GitHub commit.
-
-   No separate Central QA audit is requested for this freeze.
-   The rewritten, user-frozen Requirements becomes the baseline for Plugin and Database development.
 
