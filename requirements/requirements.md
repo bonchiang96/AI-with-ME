@@ -1,7 +1,5 @@
 # AI with ME - Operating Framework
 
-## Requirements V1
-
 ## 1. Purpose and interpretation
 
 ### 1.1 Framework definition
@@ -15,10 +13,14 @@
 
    It is a portable AI Operating Framework across supported environments.
 
-2. **Intended outcome.** The Framework must support reusable, portable AI work with:
+2. **Core purpose.** The Framework's core purpose is knowledge transfer.
+   AI helps users express their knowledge accurately in written form.
+   Other AI Agents and people must be able to read and understand that knowledge.
+
+   Support reusable, portable work with:
 
    - Clear responsibility.
-   - Bounded scope.
+   - Bounded Scope.
    - User decisions.
    - Durable authoritative records.
 
@@ -40,6 +42,18 @@
    - Proposals.
    - Accepted Findings.
    - Advisory Experiences.
+
+5. **Interaction modes.** Choose the interaction mode according to the situation:
+
+   1. For discoverable matters, discover accessible information and present a supported Proposal.
+      Examples include Meeting preparation, Handoff recipients and Knowledge Base selection.
+   2. For the user's own knowledge, listen first and restate your understanding.
+      The user confirms or corrects it. Leave Agenda space for user input.
+   3. For document review, first perform an independent AI review.
+      Cover fidelity, Writing Requirements and presentation style.
+      Then provide separate Agenda space for the user's review. Consolidate both reviews.
+
+   Accurate confirmation must preserve the user's intended knowledge.
 
 ### 1.2 Binding Non-functional Requirements
 
@@ -73,7 +87,9 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Information handling.
    - Handoffs.
 
-3. **Priorities and boundaries.** Define meaningful priorities and essential Scope boundaries. Allow reasonable ambiguity.
+3. **Priorities and boundaries.** Define meaningful priorities and essential Scope boundaries.
+   Settle forward-flow requirements under Section 1.2.8.
+   Allow reasonable ambiguity in implementation methods without leaving incompatible forward flows unresolved.
 
    Do not specify every possible:
 
@@ -111,26 +127,39 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 7. **Requirement numbering.** Use the document's Section numbering to locate requirements. Do not add parallel R-prefixed identifiers to every requirement.
 
+8. **Forward-flow completeness.** Requirements must settle every item that determines:
+
+   - Step order.
+   - The responsible owner.
+   - The approver.
+   - Resources read.
+   - Resources written.
+   - The outcome.
+
+   An item belongs in Requirements when two developers could otherwise implement incompatible flows.
+   Implementation design may remain deferred only when the required outcome is stated.
+   Detailed design boundaries follow Section 12.5.
+
 ## 2. Repository, distribution, and installation
 
 1. **Source authority.** One GitHub Repository must be the authoritative development and distribution source for the Plugin and reusable operating resources. Maintain their common instructions in that source.
 
-2. **README.** The root README must provide a concise explanation for human readers and AI Agents.
+2. **README.** The root README must explain the Framework for its readers in plain words.
+   Use Global Writing Requirements Standard Mode.
 
-   It must explain:
+   Include:
 
-   - The Framework.
-   - Its operating concept.
-   - Intended environments.
-   - Mandatory or optional dependencies.
+   - What the Framework is and why it exists.
+   - One simple flow picture.
+   - Required and optional dependencies.
+   - A short getting-started placeholder.
+   - Resource locations.
+   - The License.
 
-   It must direct readers to:
-
-   - Requirements.
-   - Plugin resources.
-   - Installation guidance.
-   - Documentation.
-   - Intentional updates.
+   Link to the Requirements instead of restating their rules.
+   Direct readers to available resources and identify future resources accurately.
+   Neither the Requirements nor README carries version labels.
+   GitHub commit history provides versioning.
 
 3. **Requirements area.** A dedicated Requirements area must contain the consolidated requirements baseline. Source-to-requirement traceability must remain durable. Private governance references belong in private supporting records.
 
@@ -341,8 +370,9 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 ### 3.2 Identity Context
 
-1. **Current Truth.** Every Identity must maintain one consolidated long-term central Google Identity Context.
+1. **Starting context.** Every Identity must maintain one consolidated central Google Identity Context as its starting context for work.
    It contains current working information, future work and operating references.
+   It is not described as memory.
    Complete historical evidence belongs in its original Records and Minutes.
    Local environments use this authoritative Context without creating a duplicate Local Context.
 
@@ -369,7 +399,8 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 4. **Verified operating information.** An Identity may update its independently derived information whenever useful within its Responsibility and Scope.
    Its Deliverable Index may reflect relevant verified Deliverables whenever they become known, without awaiting Minutes.
-   A creating Execution Identity may register its verified result.
+   Register accepted and saved Deliverables under Section 7.2.6.
+   The creating Execution Identity may update its Context Index immediately or consolidate updates at Job close.
    A Meeting Identity may refresh its relevant Index after receiving a Completion Notice at a later Meeting.
 
 5. **User-originated decisions.** User-originated decisions require appropriate authoritative support.
@@ -547,38 +578,46 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 ## 4. Identity selection and governed setup
 
-1. **System entry.** The Framework must assess access to:
-
-   - The designated Google System Root.
-   - System Context.
-   - Applicable System Rules.
-
-   Use existing accessible resources without repeating their establishment.
+1. **System entry.** At every Conversation start, first locate the central Google Drive folder named “AI with me”.
+   Open System Context.
+   The user then selects a registered Identity under Section 4.4.
+   Assess access to applicable System Rules and reuse existing accessible resources.
    Confirm absence before initiating Bootstrap under Section 4.2.
 
-2. **Bootstrap.** When the initial Root or required System resources are confirmed missing, a provisional System Meeting Identity begins a Bootstrap Meeting.
-   It explains the proposed:
+2. **Bootstrap.** When the central folder is confirmed absent, a default provisional Meeting Agent holds a Bootstrap Meeting.
+   Use the normal Meeting Lifecycle.
+   Explain the proposed:
 
    - Root.
    - System Context.
    - System Rules.
    - Responsibilities.
+   - Minimum Identities.
+   - Creation actions.
 
-   The user must confirm the arrangement before separately authorized Execution establishes and registers the resources.
-   The provisional Meeting Identity does not require a pre-existing Registry entry.
+   The user approves the System arrangement and its creation actions in that Meeting.
+   After CLOSE MEETING, the same Meeting Agent performs the approved Post-Meeting Actions:
+
+   1. Create the folder.
+   2. Create System Context and System Rules.
+   3. Register the approved minimum Identities.
+   4. Save the Bootstrap Working Record and Final Minutes as the new System's first records.
+   5. Join the normal entry path at Identity selection.
+
+   Bootstrap records remain in Conversation until the folder exists.
+   The provisional Identity requires no pre-existing Registry entry.
    Optional Database services may be discussed during Bootstrap.
    Inaccessibility alone does not prove absence.
    Resolve access or location uncertainty before creating another Root.
+   Restore genuinely missing resources within existing approved authority and applicable System Rules.
 
 3. **Minimum identities.** A usable System must expose at least the System-wide Meeting Identity and an Execution Identity assigned System administration.
 
-4. **Conversation Initiation.** In an established System, discover registered Identities through central System Context.
-   The user selects the operational Identity.
-   The selected Identity determines its registered Role and loads that Role's shared Lifecycle.
-   It then reads its own central Google Identity Context.
-   An unselected Identity must not automatically select System administration.
-
+4. **Conversation Initiation.** After System entry, the user selects a registered operational Identity from System Context.
+   Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
+   The Identity is then ready for NEW MEETING or NEW JOB.
    Load applicable System Rules and Plugin Instructions for the assignment.
+   An unselected Identity must not automatically select System administration.
    Continue work through the discovery requirements in Section 5.17.
 
 5. **Identity discovery.** Discovery must support a directly supplied Identity Context Locator or a registered Identity resolved through System Context.
@@ -603,32 +642,32 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 8. **Stable assignments.** An Agent Key must remain stable across Conversations serving the same assignment. Resolve the user's assignment against registered scope information. Resolve missing or ambiguous identities before scoped Messaging. An unresolved scoped assignment must not default to another Identity.
 
-9. **Identity definition.** Establish new user-defined Identity assignments through a recorded, confirmed Meeting.
-
-   Confirm the necessary:
+9. **Identity definition.** The user raises a new Identity in a Meeting with the System-wide Meeting Agent.
+   Together they define:
 
    - Name.
-   - Purpose.
-   - Responsibility and Scope.
-   - Intended work.
-   - Applicable Workflow references.
-   - Anticipated Deliverables.
-   - Identity needs.
+   - Role.
+   - Responsibility.
+   - Scope.
+   - Workflows.
+   - Deliverables.
 
+   The user approves the Identity and its setup in that Meeting.
    Work purpose guides Workflow selection without requiring a rigid Scope taxonomy.
 
-10. **Initial assignment selection.** The defining Meeting must identify the responsible Meeting Identity.
-    It may identify narrower assignments when distinct Deliverables or responsibilities justify them.
-    Initial scopes guide conduct without prescribing every possible overlap.
+10. **Assignment grouping.** Meeting Agent Identities are distinguished by Scope.
+    A Book may have its own Book Meeting Identity.
+    Group execution work under a small number of shared Execution Identities.
+    The defining Meeting identifies the responsible Meeting Identity and approved assignment.
 
-11. **Authorized setup.** After the recorded, approved assignment definition, the responsible Execution Identity must establish and register authorized:
+11. **Authorized Identity setup.** After CLOSE MEETING, the System-wide Meeting Agent performs the approved Identity setup as Post-Meeting Actions:
 
-    - Identities.
-    - Resources.
-    - Templates.
+    1. Create the Identity Context.
+    2. Register the Identity in System Context.
+    3. Preserve and verify setup evidence.
 
-    Preserve durable setup and registration evidence.
-    Apply the adopted Bootstrap boundary in Section 4.2 and remaining design boundaries in Section 12.
+    Other approved resource establishment remains with its authorized owner.
+    System administration responsibility follows Section 5.6.
 
 12. **Governance refinement.** The Meeting Identity responsible for the governing Scope must refine adopted:
 
@@ -713,6 +752,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Implement approved governing decisions under the Identity's own Job approvals.
    Authorized targets may include System Context and applicable System Rules.
+   Meeting-owned Bootstrap and Identity setup follow Section 4.
    Respect the owning Scope's Governance authority.
 
 7. **Resource ownership.** Each Meeting Identity maintains its own Meeting Working Records and Final Minutes.
@@ -816,9 +856,11 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 19. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.
     User-created Workflows may reside in an appropriate Knowledge Base.
-    Identity Context operating references follow Section 3.2.7.
+    Workflow outcomes and subject knowledge belong in the relevant Knowledge Base.
+    Workflow progress belongs in the owning Identity's Identity Context.
 
-20. **Task Workflow discovery.** For a new Task, discover an applicable Workflow in the Plugin and scoped Knowledge Bases.
+20. **Task Workflow selection.** The user selects the Workflow when a Task starts.
+    Discover applicable Workflows in the Plugin and scoped Knowledge Bases to support that selection.
     If none is suitable, work normally under the assigned Role Lifecycle using:
 
     - Domain knowledge.
@@ -827,6 +869,21 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
     Absence of a suitable Workflow does not require a mandatory fallback Workflow or special Proposal.
     Existing Scope and approval requirements still apply.
+
+21. **Workflow progress and customization.** Keep the current stage in the Identity Context of the Agent owning the current step.
+    Transfer stage ownership only through a normal Handoff.
+    Each Identity may customize how a Workflow runs within its approved work.
+    The default is one full draft. A large Book may use Chapter-by-Chapter drafting.
+
+22. **User review and revision ownership.** In Book and Business Document Workflows, the user makes final decisions.
+    Leave space for user input. Advise when asked or when direction is unclear.
+    After user review, apply this revision rule:
+
+    1. A Meeting Agent may make small wording or formatting changes as approved Post-Meeting Actions.
+    2. Record larger paragraph, structure or meaning changes as feedback in the Minutes.
+    3. The Execution Agent revises from those authoritative Minutes.
+
+    Preserve the approved Scope and normal approval gates.
 
 ## 6. Meeting Lifecycle
 
@@ -970,23 +1027,18 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 6. **Meeting Plans.** A Meeting Plan remains provisional future work until the user adopts it. Plans and carry-forwards do not automatically open Meetings or authorize Jobs.
 
-7. **Handoff definition.** Identify authorized handoffs before closure.
+7. **Final Handoff.** Identify authorized recipients and authoritative sources before closure.
+   Distinguish sources for reading from authorized writing destinations.
 
-   Each handoff must identify its responsible recipient and authoritative sources or targets.
-   Distinguish authoritative sources for reading from authorized destinations for writing records.
-   Identify the exact target using whichever category applies:
+   Complete the following after verified Meeting closure:
 
-   - Deliverable.
-   - Document.
-   - Working Scope.
-   - Resource.
+   1. Update Identity Context and Future Topics.
+   2. Consolidate qualifying Knowledge Base content under Section 3.3.
+   3. Perform full-lifecycle Experience Capture.
+   4. Send the authorized Handoff last.
 
-   Send handoffs only after full Meeting Protocol completion.
-   Recipients apply their own:
-
-   - Role Protocols.
-   - Approved Scope.
-   - Approval gates.
+   Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
+   Use Manual Handoff under Section 8.2.6 when Messaging is unavailable.
 
 ### 6.4 Post-Meeting Actions
 
@@ -1061,18 +1113,17 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 ### 7.1 Stages and intake
 
-1. **Seven stages.** The shared Execution Parent must use this sequence:
+1. **Shared forward flow.** The Execution Parent must use this sequence:
 
    1. NEW JOB / Information Intake.
    2. Scope Confirmation and Job Record.
    3. Proposal / Execution Plan.
    4. Execution Approval.
-   5. Execution.
-   6. Completion, including:
-      - QA.
-      - Deliverable Registration.
-      - Job Finalisation.
-   7. After-Job Communication.
+   5. Execution, with authoring, review, saving and registration of accepted Deliverables.
+   6. Completion, with verification and Job finalisation.
+   7. Context maintenance, Experience Capture and final communication under Section 7.3.
+
+   Each step preserves its assigned owner and approval boundaries.
 
 2. **Two approvals.** Obtain explicit confirmation of the selected Job Scope. Obtain separate PROCEED EXECUTION approval for the latest saved Execution Plan.
 
@@ -1088,6 +1139,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    Before interpreting a candidate's substantive Scope, read:
 
    - Relevant Identity Context.
+   - Relevant scoped Knowledge Bases.
    - Work Requests.
    - The candidate's authoritative Closed Minutes.
 
@@ -1196,8 +1248,12 @@ These Non-functional Requirements bind relevant design and maintenance of:
    Maintain corresponding Job index references when Database services are enabled.
    Mandatory persistence checkpoints follow Section 7.5.7.
 
-6. **Document registration.** When indexing is enabled, create or update the appropriate document index for substantive Document Deliverables. Preserve exact source and originating Job links.
-   Index local documents only after verified synchronization under Section 11. Verify existing indexes to avoid duplication.
+6. **Deliverable registration.** Register each Deliverable as soon as it is accepted and saved.
+   When Database indexing is enabled, create or update its Document index with exact source and originating Job links.
+   Verify existing indexes to avoid duplication.
+   Required synchronization and verified Google Locators follow Section 11.
+   The Database index may be created before the Identity Context Deliverable Index is updated.
+   Update the Context Index immediately or consolidate it at Job close.
 
 7. **Decision gaps.** A missing substantive decision must return to the Meeting process. Suspend the affected action until authoritative Closed Minutes resolve it. Preserve completed in-scope work. Deliverable organization and permitted implementation methods remain execution judgments.
 
@@ -1205,18 +1261,18 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 1. **Completion sequence.** Complete these actions in order:
 
-   1. Read actual execution results.
-   2. Verify every Deliverable and the final Job Record.
-   3. Verify applicable indexes and links.
-   4. Finalize the Job Record with:
-      - The Completion Report.
-      - QA evidence.
-      - Actual Job Done Time.
-   5. If Job indexing is enabled:
-      - Finalize the existing Job index.
-      - Verify its final state.
+   1. Verify actual saved Deliverables and their required registration.
+   2. Verify the complete final Job Record and applicable indexes.
+   3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
+   4. Freeze the completed Job Record.
+   5. Finalize and verify the existing Job index when enabled.
+   6. Update Identity Context, including any remaining Deliverable Index updates.
+   7. Optionally maintain relevant verified Knowledge Base content within approved authority.
+   8. Perform full-lifecycle Experience Capture in the Experience Forum.
+   9. Send relevant Completion Notices last.
 
-   Apply existing System Rules and Database Atomic Actions before sending Completion Notices.
+   Apply System Rules and Database Atomic Actions to actual persistence and indexing.
+   Knowledge Base maintenance remains discretionary for independently discovered knowledge under Section 3.3.7.
 
 2. **Proof of Job.** A completed Working Document must preserve:
 
@@ -1251,9 +1307,15 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 ### 7.4 Execution Parent and Sub-agents
 
-1. **Genuine substantive delegation.** Assign every Deliverable to a distinct genuine Sub-agent for substantive execution.
-   The Execution Parent must check actual Child creation and supervision capabilities.
-   Report an unavailable required capability under Section 2.8.
+1. **Substantive authorship.** When genuine Sub-agents are available, assign each Deliverable to a distinct genuine Sub-agent.
+   Check actual creation and supervision capabilities.
+   When the environment cannot create genuine Sub-agents:
+
+   1. The Execution Parent authors the Deliverable.
+   2. It performs a separate complete review pass.
+   3. It labels the work as not delegated in the Job Record.
+
+   Report actual capability limits accurately.
    A simulated Child must never be represented as genuine delegation.
 
 2. **Parent control.** The Parent coordinates:
@@ -1497,7 +1559,11 @@ These Non-functional Requirements bind relevant design and maintenance of:
    Exact routing identities do not authenticate individual Agents.
    A frozen Job Record need not be reopened merely to store later Message IDs.
 
-6. **Manual handoff.** When automated Messaging is unavailable, supply copy-ready manual handoff information when appropriate. Include relevant authority and outcome references. The same responsibility and approval boundaries apply.
+6. **Manual Handoff.** Without Database Messaging, the sending Agent supplies copy-ready Handoff text.
+   Include relevant authority, source references and actual outcomes.
+   The user pastes it into the receiving Agent's Conversation.
+   The receiving Agent records it in its own Future Topics.
+   Preserve normal responsibility, Scope and approval boundaries.
 
 ### 8.3 Experience learning
 
@@ -1526,23 +1592,22 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Corrections.
    - Relevant quality problems.
 
-3. **Other active checkpoints.** Meeting operations retain applicable Experience searches at Protocol Start and near completion. They must perform one full-lifecycle Capture at completion. Detailed redesign remains deferred.
+3. **Meeting checkpoints.** Meeting operations retain applicable Experience searches at Protocol Start and near completion.
+   Perform one full-lifecycle Capture after post-closure Knowledge Base consolidation and before the final Handoff.
+   The closing sequence follows Section 6.3.7.
 
 4. **Capture outcomes.** Compare actual reusable learning with governing sources and existing Posts.
 
-   Verify these criteria:
+   Verify:
 
    - Evidence.
    - Novelty.
    - Limitations.
 
-   Apply this check before any of these operations:
-
-   - Publishing.
-   - Replacing.
-   - Reacting.
-
-   Record the verified action or an explicit no-action conclusion. Do not publish merely because a Protocol ended.
+   Then publish, replace, react or conclude that no action is needed.
+   Experience Capture publishes only to the Experience Forum for both Meetings and Jobs.
+   No Experience entry is required in frozen Job Records or Minutes.
+   Do not publish merely because a Protocol ended.
 
 5. **Experience quality.** Authored Topic names and Post content must follow Strict Mode writing requirements.
 
@@ -1704,7 +1769,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 14. **Independent QA limits.** Complete every approved audit item without cached PASS reuse or automatic skipping. QA reports identify deficiencies but do not authorize correction. A completed audit may contain failed or unverifiable findings.
 
-## 10. Reusable Book Development Workflow
+## 10. Reusable development Workflows
 
 ### 10.1 Purpose, progression, and foundation
 
@@ -1718,18 +1783,18 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
 2. **Author intent.** Develop the user's fragmented or conversational input while preserving core thinking and intended meaning. Contribute new ideas only when explicitly requested.
 
-3. **Stages.** Guide one active book through these stages:
+3. **Stages and owners.** Guide one active Book through these stages:
 
-   1. Book Foundation.
-   2. Book Architecture.
-   3. Chapter Development Loop.
-   4. Complete Rough Manuscript.
-   5. Author Review.
-   6. Content Edit.
-   7. Copy Edit.
-   8. Finished Manuscript.
+   1. The Book Meeting Agent develops Book Foundation and Outline with the user.
+   2. It saves confirmed outcomes to the Book Knowledge Base.
+   3. The shared Execution Agent drafts the manuscript with complete QA.
+   4. The user reviews the draft in a Meeting.
+   5. Apply revisions under Section 5.22 and continue until the rough manuscript is complete.
+   6. Complete Content Edit and Copy Edit under Section 10.3.
 
-   Earlier stages may be revisited when new information materially changes the book. Change the active book only through explicit user direction.
+   Earlier stages may be revisited when new information materially changes the Book.
+   Change the active Book only through explicit user direction.
+   Default drafting and permitted Chapter customization follow Section 5.21.
 
 4. **Purpose.** Before manuscript development, clarify WHY the user wants to write the book and WHY NOW it matters.
 
@@ -1835,7 +1900,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    4. **Second Slap with Hope.** This stage further escalates events while revealing possible progress or victory.
    5. **Climax.** Connect it to the Inciting Incident. Resolve the central conflict appropriately.
 
-5. **Chapter loop.** Develop each Chapter through:
+5. **Optional Chapter loop.** When the Identity customizes a large Book for Chapter-by-Chapter drafting, use:
 
    1. Content Extraction.
    2. Chapter Structure.
@@ -1853,7 +1918,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Do not replace missing core ideas without explicit permission to contribute.
 
-6. **Structure confirmation.** Before drafting, identify:
+6. **Structure confirmation.** Within the customized Chapter loop, identify before drafting:
 
    - Chapter purpose.
    - The key message.
@@ -1863,7 +1928,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    Confirm meaning and structure with the user before drafting from them.
 
-7. **Chapter Draft.** Draft confirmed material point by point for the Ideal Reader. Develop author voice from the user's communication and confirmed direction. Accept spoken or conversational input. Organize that material into coherent prose. Repeat the loop until the rough manuscript is complete.
+7. **Chapter Draft.** Draft confirmed material point by point for the Ideal Reader. Develop author voice from the user's communication and confirmed direction. Accept spoken or conversational input. Organize that material into coherent prose. When using the customized Chapter loop, repeat it until the rough manuscript is complete.
 
 ### 10.3 Manuscript completion and review
 
@@ -1975,6 +2040,65 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Open content gaps.
    - The next step.
 
+### 10.4 Book Deliverables and Language Editions
+
+1. **Standard Book Workflow.** The Book ownership and language-cycle requirements in Section 10 belong in the standard Book Development Workflow.
+   Book Meeting Minutes and Job Records follow the standard records in Sections 6 and 7.
+   The manuscript is one Deliverable containing its Chapters.
+
+2. **Base Edition.** One Book cycle produces one finished manuscript in the Base Edition language.
+   Complete and publish the Base Edition before beginning an additional-language cycle.
+
+3. **Language Editions.** Each additional language is a separate cycle.
+   Redraft each Language Edition from the final Base Edition manuscript and Book Knowledge Base.
+   A Language Edition is a redraft, not a translation.
+
+### 10.5 Business Document Development Workflow
+
+1. **Brief and structure.** The Meeting Agent works with the user to:
+
+   1. Agree the document brief.
+   2. Gather sources.
+   3. Confirm the structure.
+
+   The user makes final decisions under Section 5.22.
+
+2. **Full draft and QA.** The shared Execution Agent writes one full draft.
+   Every draft includes its own complete QA under Section 9.
+   The user reviews each draft in a Meeting.
+   Apply the revision ownership rule in Section 5.22.
+
+3. **Numbered revisions.** Each revision produces a new numbered draft based on:
+
+   - The previous draft.
+   - Relevant Closed Minutes.
+   - Relevant Knowledge Bases.
+
+4. **Stable version.** When the user approves a draft, the Meeting Agent records it as the Stable version in the Minutes.
+   The Stable version is the baseline for later drafts.
+   It may be sent to a client or another reader under applicable authorization.
+
+5. **Reference knowledge.** Each document draws on one or more Knowledge Bases appropriate to its subject.
+   Examples include:
+
+   - Brand.
+   - Company profile.
+   - Product.
+
+   Select the content the document needs and write it appropriately.
+   Do not copy whole Knowledge Base contents into the document.
+   The Meeting Agent maintains the relevant Knowledge Bases and Minutes so redrafts preserve confirmed meaning.
+
+6. **Document types.** Main types include:
+
+   - Proposals.
+   - Plans.
+   - Policies.
+   - Resolutions.
+   - Letters.
+   - Emails.
+   - Other business communication or proposal documents.
+
 ## 11. Environments, result return, and governed changes
 
 1. **Execution environments.** The architecture must support authorized work through:
@@ -2039,7 +2163,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
 
    - A usable Repository entry.
    - A concise README.
-   - Consolidated Requirements V1.
+   - Consolidated Requirements.
    - Durable source traceability.
 
    Verify:
@@ -2062,14 +2186,15 @@ These Non-functional Requirements bind relevant design and maintenance of:
 3. **Remaining resource mechanics.** Additional resource mechanics and unusual ownership exceptions require later authorized design.
    Preserve the adopted ownership, consolidation and record requirements in Sections 3, 5, 6 and 7.
 
-4. **Deferred Workflows.** These remain intended future reusable Workflows:
+4. **Deferred Workflows.** These remain future reusable Workflows:
 
-   - Business Document Development.
+   - Website Development.
    - Governance.
    - Code Development.
 
    Their detailed stages remain undecided.
-   Refine Workflows and their relationship with Role Lifecycles using practical experience.
+   Preserve the standard Book and Business Document outcomes in Section 10.
+   Refine permitted methods through practical experience without changing confirmed flow requirements.
 
 5. **Remaining implementation design.** The following require later authorized design:
 
@@ -2095,3 +2220,12 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - Import of reviewed context and Archive.
 
    Historical material does not automatically override current governance. Database redesign and any transition require independent authorization and verified preservation.
+7. **Verification and freeze.** After the drafting Completion Notice, a separate verification Meeting must:
+
+   1. Walk the entry, Meeting and Execution flows against the rewritten Requirements.
+   2. Check every confirmed decision from the governing forward-flow review.
+   3. Let the user freeze the Requirements by exact GitHub commit.
+
+   No separate Central QA audit is requested for this freeze.
+   The rewritten, user-frozen Requirements becomes the baseline for Plugin and Database development.
+

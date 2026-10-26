@@ -1,95 +1,52 @@
 # AI with ME - Operating Framework
 
-AI with ME - Operating Framework is a portable, instruction-led Framework for AI work. It combines:
+AI with ME helps you put your knowledge into words that other people and AI Agents can understand and use. Its core purpose is **knowledge transfer**: preserving what you mean as ideas become decisions, documents and finished work.
 
-- Reusable Plugin instructions.
-- Authoritative Google governance resources.
-- Optional Database services.
+You might use it to develop a book, a proposal, a policy, or other work that needs continuity across conversations. The Framework combines reusable Plugin instructions with shared knowledge and records in Google Drive.
 
-The design preserves user decisions within assigned responsibilities. It maintains durable continuity across Conversations and execution environments.
+## 1. How it works
 
-## 1. Development status and navigation
+The central Google Drive folder, **AI with me**, provides the starting point for choosing the Identity for your work.
 
-This repository is the authoritative development and distribution source for the Plugin and reusable operating resources.
+```mermaid
+flowchart TD
+    A["Open the System and choose an Identity"] --> B["Discuss and confirm your knowledge"]
+    B --> C["Approve a plan and create the work"]
+    C --> D["Review the result"]
+    D -->|"Refine or begin the next task"| B
+```
 
-| Location | Purpose | Status |
+Meeting Agents help you explore ideas and confirm their meaning. Execution Agents create the agreed work with quality checks. You make the final decisions, and reviews give you space to correct or refine the result.
+
+Each AI works through an **Identity**: its named assignment and scope. Its **Identity Context** is the starting point for continuing that work. **Knowledge Bases** hold reusable subject knowledge, while recorded meeting decisions provide instructions for specific work.
+
+The [Requirements](requirements/requirements.md) define the complete operating flow, responsibilities and approval boundaries.
+
+## 2. What you need
+
+| Dependency | Purpose |
+| --- | --- |
+| **Required: an AI environment** | ChatGPT, a suitable local environment, or another supported host with the necessary tools and permissions. |
+| **Required: Google Drive / Docs access** | The shared home for System Context, Identity Contexts, Knowledge Bases and authoritative records. |
+| **Optional: Database services** | Indexes, search, Agent Messaging and handoff support. |
+
+Local environments use the same central Google System. Their working files and synchronization follow the applicable System Rules. Without Database Messaging, you can pass copy-ready handoff text between the Agents' conversations yourself.
+
+## 3. Getting started
+
+Installation guidance will be added here when the Plugin is ready. The intended distribution is a Private Plugin that you can manually install and update from this repository. An AI can help assess the tools and permissions your environment needs.
+
+## 4. Resources
+
+This repository is the development and distribution source for the Framework's Plugin and reusable operating resources. GitHub commit history records changes.
+
+| Resource | What you will find | Status |
 | --- | --- | --- |
-| [Requirements V1](requirements/requirements.md) | Consolidated requirements for Framework development. | Available |
-| `plugin/` | The installable Plugin with shared operating resources and installation guidance. | Planned |
-| `documentation/` | Detailed operating guidance and reference material. | Planned |
+| [Requirements](requirements/requirements.md) | The full Framework specification. | Available |
+| `plugin/` | The installable Plugin, shared instructions and installation guidance. | Planned |
+| `documentation/` | Detailed concepts, operating guidance and environment references. | Planned |
 
-The current deliverables are the repository foundation and Requirements V1. The Requirements define the adopted design. Runtime implementation follows separately approved work.
-
-## 2. Operating concept
-
-1. **Identity and continuity.** The user selects an operational Identity from central Google System Context. Each Identity has a registered Role. Its Responsibility and Scope define its assignment. Its central Google Identity Context holds current operating information and references for continuing work. Agents discover relevant progress and sources before asking the user to reconstruct prior work.
-
-2. **Roles and Workflows.** Meeting Agent and Execution Agent are the two principal Roles. Each Identity uses its Role's shared Lifecycle. A Workflow guides a particular Task or Deliverable. Standard Workflows reside in the Plugin, while user-created Workflows may reside in scoped Knowledge Bases. Without a suitable Workflow, Agents use their available capabilities under the assigned Role Lifecycle and existing approval requirements.
-
-3. **Meetings and decisions.** Meeting Agents organize discussion and confirmed decisions. Each Meeting has an append-oriented Working Record and separate, self-contained Final Minutes. Accepted outcomes are saved and verified at each Agenda boundary. Final Minutes follow completed approved Meeting-owned actions and receive full Content, Writing and Formatting verification. The Working Record requires verified persistence, without mandatory Global Writing Requirements document QA or a Quality Checklist.
-
-4. **Governed execution.** An Execution Parent consolidates selected work into a Job, preserving each Scope's sources. The user confirms Scope and separately approves one complete saved Execution Plan with PROCEED EXECUTION. Each Deliverable has a distinct genuine Sub-agent for substantive execution. The Parent owns the Job Record and independently reviews every complete submission and revision. Only accepted Deliverables proceed to publication after Content, Writing and Formatting PASS.
-
-   Relevant Completion Notices follow verified completion of the full Role Protocol, including formal Job closure.
-
-5. **Scoped knowledge.** Knowledge Bases hold current subject knowledge for their defined Scopes and may serve multiple Identities. Agents may maintain independently discovered, sufficiently verified knowledge whenever useful. Qualifying user-confirmed knowledge must be consolidated from verified Closed Minutes after Meeting closure. Historical evidence remains in its original Records and Minutes.
-
-   Execution Agents use relevant Knowledge Bases for current subject knowledge. They use specific authoritative Closed Minutes for work instructions.
-
-6. **Shared instructions.** The intended installed Plugin supplies reusable resources for normal operation without routine GitHub reads. Current governance and operating references come from their Google authority.
-
-The [Requirements](requirements/requirements.md) provide the complete operating specification.
-
-## 3. Environments and dependencies
-
-The design supports authorized work through:
-
-- ChatGPT.
-- Local environments.
-- Future independent machines.
-
-Each environment needs suitable Google Drive / Docs access and granted permissions. Host-specific integrations determine the actual connector.
-
-1. **Required: Google Drive / Docs.** Google System Context centrally registers Identities and Knowledge Bases. Local environments use the assigned central Identity and its authoritative Context. Google System Rules govern Google-side document persistence.
-
-2. **Optional: Database.** Database services may support:
-
-   - Indexes.
-   - Search.
-   - Agent Messaging.
-   - Handoff.
-
-   System Context holds suitable connection references, while applicable System Rules govern enablement. Without Database services, Agents provide copy-ready Manual Handoff when appropriate. If Supabase is selected, research current official setup guidance when needed.
-
-Local System Rules govern actual local working resources and determine which outputs synchronize to Google. Local Bootstrap establishes missing Local System Rules and required working paths only.
-
-Applicable System Rules override conflicting Plugin instructions for these environment operations:
-
-- Storage.
-- Synchronization.
-- Database Atomic Actions.
-
-Applicable outputs synchronize to designated Google locations at required completion checkpoints. Verify required synchronization before eligible Database indexing, using accessible, verified Google locators. Local Agents need not reread Google for every ordinary file operation.
-
-## 4. Installation, System entry and updates
-
-### 4.1 Installation and updates
-
-The intended distribution lets users create, manually install and manually update their own Private Plugin from this repository.
-
-When the Plugin becomes available:
-
-1. Provide this repository's URL to an AI.
-2. The AI reads this README and locates the Plugin and installation guidance in `plugin/`.
-3. The AI assesses dependencies and assists installation using available tools and granted permissions.
-
-The AI must explain unavailable capabilities or permissions. It must discuss the next authorized step. GitHub supplies source for intentional updates. Installation and update guidance will be discoverable here as those deliverables become available.
-
-### 4.2 System entry
-
-The central Google Drive System Root is named “AI with me”. Use existing accessible resources for normal operation.
-
-When the initial Root or required System resources are confirmed missing, a provisional System Meeting Identity begins a Bootstrap Meeting. It explains the proposed resources and responsibilities. The user confirms the arrangement before separately authorized Execution establishes and registers the resources. Local environments use this central Root.
+The installed Plugin is intended to supply reusable instructions for normal work. Google resources provide current knowledge, context and records. Intentional Plugin updates use the repository source.
 
 ## 5. License
 
