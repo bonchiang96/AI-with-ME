@@ -20,7 +20,7 @@ Meeting Agents help you explore ideas and confirm their meaning. Execution Agent
 
 Each AI works through an **Identity**: its named assignment and scope. Its **Identity Context** is the starting point for continuing that work. **Knowledge Bases** hold reusable subject knowledge, while recorded meeting decisions provide instructions for specific work.
 
-The [Requirements](requirements/requirements.md) define the complete operating flow, responsibilities and approval boundaries.
+The [Requirements](requirements/README.md) define the complete operating flow, responsibilities and approval boundaries.
 
 ## 2. What you need
 
@@ -34,7 +34,7 @@ Local environments use the same central Google System. Their working files and s
 
 ## 3. Getting started
 
-Installation guidance will be added here when the Plugin is ready. The intended distribution is a Private Plugin that you can manually install and update from this repository. An AI can help assess the tools and permissions your environment needs.
+Use the [installation guide](INSTALL.md) to create, manually install or update your Private Plugin from this repository. An AI can help assess your environment and assist through its available tools. The [Plugin package](plugin/) contains the shared Skills, rules and templates.
 
 ## 4. Resources
 
@@ -42,8 +42,9 @@ This repository is the development and distribution source for the Framework's P
 
 | Resource | What you will find | Status |
 | --- | --- | --- |
-| [Requirements](requirements/requirements.md) | The full Framework specification. | Available |
-| `plugin/` | The installable Plugin, shared instructions and installation guidance. | Planned |
+| [Requirements](requirements/README.md) | The full Framework specification. | Available |
+| [Plugin](plugin/) | The Plugin package with shared Skills, rules and templates. | Available |
+| [Installation](INSTALL.md) | Private installation and manual updates. | Available |
 | `documentation/` | Detailed concepts, operating guidance and environment references. | Planned |
 
 The installed Plugin is intended to supply reusable instructions for normal work. Google resources provide current knowledge, context and records. Intentional Plugin updates use the repository source.

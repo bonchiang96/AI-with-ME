@@ -1,0 +1,27 @@
+{
+  "name": "ai-with-me",
+  "version": "0.1.0",
+  "description": "Knowledge transfer through governed Meeting and Execution work.",
+  "author": {
+    "name": "Rocher Lee"
+  },
+  "repository": "https://github.com/bonchiang96/AI-with-ME",
+  "license": "MIT",
+  "keywords": [
+    "knowledge-transfer",
+    "meeting",
+    "execution",
+    "agent-skills"
+  ],
+  "metadata": {
+    "runtimeRequirements": {
+      "connectors": [
+        "Google Drive",
+        "Google Docs"
+      ],
+      "requiredAt": "runtime",
+      "installationBlocking": false,
+      "checkSkill": "system-entry"
+    }
+  }
+}
