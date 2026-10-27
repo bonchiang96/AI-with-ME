@@ -18,7 +18,8 @@ Apply the [Global Communication Rules](../../rules/global-communication-rules.md
 Choose the interaction mode under Global Communication Rules Section 5.
 System Rules take priority over this Skill.
 
-Flow: NEW MEETING → Agenda → Opening → Discussion → CLOSE MEETING → Post-Meeting Actions → Final Minutes → Index → post-closure maintenance → Handoff.
+Flow, part 1: NEW MEETING → Agenda → Opening → Discussion → CLOSE MEETING.
+Flow, part 2: Post-Meeting Actions → Final Minutes → Index → post-closure maintenance → Handoff.
 
 ## 2. Initialization
 
@@ -36,8 +37,8 @@ Use this start order:
    Prioritize continuing it. Only one Meeting may be active per Meeting Identity.
 2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
 3. Review Future Topics in Identity Context.
-4. Establish the Agenda under Section 4.
-5. Search Experiences under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+4. Search Experiences under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+5. Establish the Agenda under Section 4.
 
 Before you ask the user for information, discover it yourself.
 Read the current Identity Context, the 01 Index and the relevant Knowledge Bases first.

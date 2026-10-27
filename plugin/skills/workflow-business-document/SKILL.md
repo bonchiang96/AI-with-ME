@@ -14,7 +14,8 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 4. Keep the current stage in the Identity Context of the Agent that owns the current step.
 5. Transfer stage ownership only through a normal Handoff.
 
-Flow: brief and structure → full draft with QA → user review in a Meeting → numbered revision → Stable version.
+Flow, part 1: brief and structure → full draft with QA → user review in a Meeting.
+Flow, part 2: numbered revision → Stable version.
 
 ## 2. Brief and structure
 

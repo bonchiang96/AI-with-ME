@@ -1,0 +1,17 @@
+{
+  "name": "ai-with-me",
+  "plugins": [
+    {
+      "name": "ai-with-me",
+      "source": {
+        "source": "local",
+        "path": "./plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

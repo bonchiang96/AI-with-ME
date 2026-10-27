@@ -8,7 +8,8 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 
 ## 1. Purpose
 
-A Knowledge Base stores external subject information for a defined Scope, such as a company, a Brand or a specialist domain.
+A Knowledge Base stores external subject information for a defined Scope.
+Examples are a company, a Brand or a specialist domain.
 One Scope may hold several Knowledge Bases.
 Several Identities may use or maintain the same Knowledge Base. No Knowledge Base belongs to an Identity.
 
@@ -103,7 +104,7 @@ Ordinary updates do not require the full Historical Minutes collection.
 1. Search through the discovery levels in Section 4.
 2. In a Job, search once after Scope confirmation and record establishment, before Proposal preparation.
 3. During a Job, search only for genuine difficulties, corrections or relevant quality problems.
-4. In a Meeting, search as the last step of NEW MEETING and as step 3 of CLOSE MEETING.
+4. In a Meeting, search at step 4 of NEW MEETING, before the Agenda, and at step 3 of CLOSE MEETING.
 5. Experiences remain advisory.
 6. Assess evidence, applicability, freshness, Scope and limitations against current requirements.
 7. Experiences cannot override governing decisions, instructions, approvals or assigned Scope.

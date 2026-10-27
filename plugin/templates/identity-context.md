@@ -60,7 +60,7 @@
 
    1. Future Topics is one readable list. Exclude statuses, counters and removal history.
    2. A Meeting Agent Future Topic has a Topic Name, a short Description and a precise source reference.
-   3. An Execution Agent Future Topic has the Work Request Ref and From values, an Agent-authored Description, exact sources and relevant prerequisites.
+   3. An Execution Agent Future Topic has the Work Request Ref and From values. It also has an Agent-authored Description, exact sources and relevant prerequisites.
    4. Working Group holds peer Identities, Handoff relationships, useful Identity pairings and collaboration patterns.
    5. Knowledge Bases holds one row per Knowledge Base the Identity uses or contributes to. Relation is Uses or Contributes.
    6. Update Knowledge Bases at these points:

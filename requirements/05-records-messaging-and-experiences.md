@@ -103,7 +103,7 @@ Return to the [Requirements Overview](README.md).
 
 3. **Meeting checkpoints.** A Meeting searches Experiences at two points:
 
-   1. The last step of NEW MEETING under [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation).
+   1. Step 4 of NEW MEETING, before the Agenda, under [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation).
    2. Step 3 of CLOSE MEETING under [Meeting Lifecycle Section 3.3](03-meeting-lifecycle.md#3-closing-and-handoff).
 
    Perform one full-lifecycle Capture after post-closure Knowledge Base consolidation and before the final Handoff.

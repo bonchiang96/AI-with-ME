@@ -12,7 +12,8 @@ Agents exchange Work Requests and Completion Notices through inbox files.
 Each Identity has its own 02 Inbox. No Identity merges another Identity's inbox.
 The file follows the [Inbox template](../../templates/inbox.md).
 
-Flow: sender writes one row → sender verifies the row → receiver reads at start → receiver routes the outcome → receiver deletes the row.
+Flow, part 1: sender writes one row → sender verifies the row.
+Flow, part 2: receiver reads at start → receiver routes the outcome → receiver deletes the row.
 
 ## 2. Routing
 

@@ -11,7 +11,8 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 This Skill brings each Conversation from its start to a selected, loaded Identity.
 The outcome is an Identity ready for NEW MEETING or NEW JOB.
 
-Flow: access check → locate System Root → open System Context → read System Rules → select Identity → open Identity Context and index → load Role Lifecycle → ready.
+Flow, part 1: access check → locate System Root → open System Context → read System Rules.
+Flow, part 2: select Identity → open Identity Context and index → load Role Lifecycle → ready.
 
 ## 2. Rules for every reply
 

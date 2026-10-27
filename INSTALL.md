@@ -18,6 +18,13 @@ The folder contains:
 
 Both manifests describe the same Skills. The Skills share the rules and templates folders.
 
+The Repository root also holds two marketplace files:
+
+1. [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json): the Claude marketplace.
+2. [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json): the ChatGPT marketplace.
+
+Both marketplace files point to the plugin folder.
+
 ## 2. Install with an AI
 
 Give your AI the Repository URL and the commit you choose. The AI completes these steps:
@@ -42,7 +49,32 @@ The nine Skills are:
 8. workflow-qa.
 9. profit-a.
 
-## 3. Dependencies
+## 3. Install on each host
+
+The root `.claude-plugin/marketplace.json` serves Claude, and `.agents/plugins/marketplace.json` serves ChatGPT.
+Both point to the plugin folder.
+
+Claude on the web, the desktop app or Cowork:
+
+1. Open Customize → Plugins.
+2. Select Add → Add marketplace → Add from a repository.
+3. Enter `bonchiang96/AI-with-ME`.
+4. Add the ai-with-me plugin.
+
+Plugins added there sync to Claude Code under the same account.
+
+Claude Code CLI:
+
+1. Run `/plugin marketplace add bonchiang96/AI-with-ME`.
+2. Run `/plugin install ai-with-me@ai-with-me`.
+
+ChatGPT:
+
+1. Run `codex plugin marketplace add bonchiang96/AI-with-ME`.
+2. Open Plugins in the ChatGPT desktop app.
+3. Install the ai-with-me plugin.
+
+## 4. Dependencies
 
 The Plugin needs Google Drive and Google Docs access at run time.
 The Plugin does not ship these connectors. Your host's integrations select the connector.
@@ -52,13 +84,13 @@ Missing Google access never blocks installation.
 At each Conversation start, the system-entry Skill checks actual access.
 It explains any missing connector, capability or permission and discusses the next authorized step.
 
-## 4. After installation
+## 5. After installation
 
 Start a Conversation and enter the System through the system-entry Skill.
 It locates the Google Drive folder named “AI with me”.
 When that folder is confirmed absent, it starts Bootstrap.
 
-## 5. Updates
+## 6. Updates
 
 An update reinstalls the whole plugin folder from a chosen commit of this Repository.
 Verify again that the host lists all nine Skills.

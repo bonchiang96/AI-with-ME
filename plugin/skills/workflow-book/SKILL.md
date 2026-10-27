@@ -18,7 +18,8 @@ Contribute new ideas only when explicitly requested.
 
 ## 2. Stages and owners
 
-Flow: Foundation and Outline → Book Knowledge Base → rough draft → user review → revisions → Content Edit → Copy Edit → finished manuscript.
+Flow, part 1: Foundation and Outline → Book Knowledge Base → rough draft → user review.
+Flow, part 2: revisions → Content Edit → Copy Edit → finished manuscript.
 
 1. The Book Meeting Agent develops the Book Foundation and Outline with the user.
 2. It saves confirmed outcomes to the Book Knowledge Base.

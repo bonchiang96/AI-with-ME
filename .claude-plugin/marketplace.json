@@ -1,0 +1,14 @@
+{
+  "name": "ai-with-me",
+  "description": "AI with ME - Operating Framework",
+  "owner": {
+    "name": "Rocher Lee"
+  },
+  "plugins": [
+    {
+      "name": "ai-with-me",
+      "source": "./plugin",
+      "description": "Meeting and Execution Agents, Workflows, rules and templates for knowledge transfer."
+    }
+  ]
+}

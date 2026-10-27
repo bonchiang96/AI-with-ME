@@ -44,7 +44,8 @@ Apply the rules for the artifact format: Google Docs, Markdown or another format
 
 ## 5. Independent QA Workflow
 
-Flow: user requests a QA Job → Execution Agent confirms the QA Scope → inspection, usually by a Sub-agent → QA report → Completion Notice.
+Flow, part 1: user requests a QA Job → Execution Agent confirms the QA Scope.
+Flow, part 2: inspection, usually by a Sub-agent → QA report → Completion Notice.
 
 1. The user requests a QA Job from the Execution Agent through a Meeting or directly.
 2. The Execution Agent runs it as a Job Scope under the [execution-agent](../execution-agent/SKILL.md) Lifecycle, usually through a Sub-agent.

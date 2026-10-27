@@ -17,8 +17,8 @@ Return to the [Requirements Overview](README.md).
    1. Check for an active Meeting under [Section 1.2](#1-initialization-and-preparation).
    2. Read the inbox under [Records, Messaging and Experiences Section 2.6](05-records-messaging-and-experiences.md#2-messaging).
    3. Review Future Topics.
-   4. Establish the Agenda under [Section 1.3](#1-initialization-and-preparation).
-   5. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
+   4. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
+   5. Establish the Agenda under [Section 1.3](#1-initialization-and-preparation).
 
 2. **Active Meeting continuity.** At NEW MEETING, first check the latest Tab of the Working Records file for an active Meeting. Prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
 
