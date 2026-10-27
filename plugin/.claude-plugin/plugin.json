@@ -1,0 +1,8 @@
+{
+  "name": "ai-with-me",
+  "displayName": "AI with ME - Operating Framework",
+  "description": "AI with ME - Operating Framework. Meeting and Execution Agents, Workflows, rules and templates for knowledge transfer. Requires Google Drive and Google Docs access.",
+  "repository": "https://github.com/bonchiang96/AI-with-ME",
+  "license": "MIT",
+  "keywords": ["knowledge-transfer", "meeting-agent", "execution-agent", "google-drive", "google-docs"]
+}
