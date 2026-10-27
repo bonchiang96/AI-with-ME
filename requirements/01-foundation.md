@@ -205,11 +205,12 @@ Return to the [Requirements Overview](README.md).
 
     Connector invocation methods belong to the executing AI.
 
-14. **Directory references.** Each Identity entry in System Context requires only:
+14. **Identity directory.** Each Identity entry in System Context has these fields:
 
-    - A useful Title.
-    - A useful Description.
-    - A useful Locator.
+    - Agent Key.
+    - Role.
+    - Responsibility and Scope, in one line or a few sentences.
+    - Location of the identity folder.
 
     Add fields only when they serve a genuine directory purpose. Keep each directory compact. Identity Context current references follow [Section 3](#3-identity-context).
     Index files, the Knowledge Base folder index and Identity Context lists follow their own templates.
