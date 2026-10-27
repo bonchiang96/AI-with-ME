@@ -205,13 +205,14 @@ Return to the [Requirements Overview](README.md).
 
     Connector invocation methods belong to the executing AI.
 
-14. **Directory references.** Each resource reference requires only:
+14. **Directory references.** Each Identity entry in System Context requires only:
 
     - A useful Title.
     - A useful Description.
     - A useful Locator.
 
     Add fields only when they serve a genuine directory purpose. Keep each directory compact. Identity Context current references follow [Section 3](#3-identity-context).
+    Index files, the Knowledge Base folder index and Identity Context lists follow their own templates.
 
 ## 3. Identity Context
 
@@ -222,15 +223,14 @@ Return to the [Requirements Overview](README.md).
    Local environments use this authoritative Context without creating a duplicate Local Context.
    It is the 00 Identity Context file in the identity folder under [Section 5.1](#5-identity-folder-index-and-inbox).
 
-2. **Required Chapters.** Identity Context must contain these seven Chapters:
+2. **Required Chapters.** Identity Context must contain these six Chapters:
 
    1. Operating Guide.
-   2. Context Management Rules.
-   3. Future Topics.
-   4. Working Group.
-   5. Important Learning.
-   6. Important Things or High-Priority Items.
-   7. Knowledge Bases.
+   2. Future Topics.
+   3. Working Group.
+   4. Important Learning.
+   5. Important Things or High-Priority Items.
+   6. Knowledge Bases.
 
    The Operating Guide follows [Section 6](#6-templates-and-operating-guides).
    Working Group contains peer Identities and Handoff relationships.
@@ -261,7 +261,7 @@ Return to the [Requirements Overview](README.md).
    - Related Minutes.
    - Meaningful verified accomplishments.
 
-8. **Organization.** Each Identity controls content organization within the seven required Chapters.
+8. **Organization.** Each Identity controls content organization within the six required Chapters.
    Keep each Chapter's meaning within its purpose.
 
 9. **Knowledge Bases Chapter.** The Knowledge Bases Chapter lists each Knowledge Base the Identity uses or contributes to.
@@ -414,6 +414,9 @@ Return to the [Requirements Overview](README.md).
    A new version leaves the index unchanged.
    Condition values are Draft, Stable, Frozen and Archived.
    The originating Meeting Agent registers a Deliverable when it processes the Completion Notice.
+   Register a Deliverable package when it first appears.
+   Changes inside an indexed package need no index change.
+   The Agent judges when an index or Identity Context update is needed.
 
 5. **Inbox file.** Each inbox row has five columns:
 

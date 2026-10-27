@@ -38,7 +38,12 @@ Return to the [Requirements Overview](README.md).
    Resolve access or location uncertainty before creating another Root.
    Restore genuinely missing resources within existing approved authority and applicable System Rules.
 
-3. **Minimum Identities.** A usable System must expose at least the System-wide Meeting Identity and one Execution Identity.
+3. **Minimum Identities.** Bootstrap establishes two Identities:
+
+   - The General Meeting Agent, with Agent Key `general-meeting`.
+   - The General Execution Agent, with Agent Key `general-execution`.
+
+   The General Meeting Agent creates scoped Identities through Meetings.
 
 4. **Conversation Initiation.** After System entry, the user selects a registered operational Identity from System Context.
    Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
@@ -67,7 +72,7 @@ Return to the [Requirements Overview](README.md).
 
 8. **Stable assignments.** An Agent Key must remain stable across Conversations serving the same assignment. Resolve the user's assignment against registered Scope information. Resolve missing or ambiguous Identities before scoped Messaging. An unresolved scoped assignment must not default to another Identity.
 
-9. **Identity definition.** The user raises a new Identity in a Meeting with the System-wide Meeting Agent.
+9. **Identity definition.** The user raises a new Identity in a Meeting with the General Meeting Agent.
    Together they define:
 
    - Name.
@@ -85,7 +90,7 @@ Return to the [Requirements Overview](README.md).
     Group execution work under a small number of shared Execution Identities.
     The defining Meeting identifies the responsible Meeting Identity and approved assignment.
 
-11. **Authorized Identity setup.** After CLOSE MEETING, the System-wide Meeting Agent performs the approved Identity setup as Post-Meeting Actions:
+11. **Authorized Identity setup.** After CLOSE MEETING, the General Meeting Agent performs the approved Identity setup as Post-Meeting Actions:
 
     1. Create the identity folder and all its files with their Operating Guides under [Foundation Section 5.1](01-foundation.md#5-identity-folder-index-and-inbox).
     2. Record applicable Knowledge Bases in the Identity Context Knowledge Bases Chapter under [Foundation Section 3.9](01-foundation.md#3-identity-context).

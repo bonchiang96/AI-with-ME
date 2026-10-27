@@ -132,6 +132,10 @@ These Non-functional Requirements bind relevant design and maintenance of:
 9. **Requirements inspection.** After all modifications, independently inspect the complete Requirements artifact.
    Cover the three quality dimensions in [Quality Section 1.2](06-quality.md#1-deliverable-quality-and-independent-qa).
 
+9. **Consolidated maintenance.** Maintain every file by consolidation rather than appending.
+   Working Records and Job Records keep their chronological history.
+   Every other file holds only current truth, kept light and accurate.
+
 ## 3. Requirements modules
 
 The Requirements consist of this Overview and the files below. Each file links back to this Overview.

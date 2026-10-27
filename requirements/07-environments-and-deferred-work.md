@@ -119,7 +119,7 @@ Return to the [Requirements Overview](README.md).
 
    Preserve current confirmed outcomes without inventing missing substantive decisions.
 
-6. **Migration boundary.** Existing Projects Migration remains a separate later workstream after Framework development.
+6. **Migration boundary.** Existing Projects Migration remains a separate later workstream after the Plugin is bootstrapped.
 
    Its future direction includes:
 

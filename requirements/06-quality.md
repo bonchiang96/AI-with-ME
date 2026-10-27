@@ -79,6 +79,7 @@ Return to the [Requirements Overview](README.md).
 11. **Independent QA Workflow.** Independent QA is a normal Workflow.
     The Execution Agent runs it as a Job Scope, usually through a Sub-agent.
     It may be review-only. It may run periodically.
+    The user requests a QA Job from the Execution Agent through a Meeting or directly.
     Its assessments and reports must be independent, complete and objective.
     It must inspect every approved item at the authorized depth.
     It may inspect other working Scopes only within specifically approved Job Scope.
