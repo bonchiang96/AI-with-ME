@@ -130,4 +130,4 @@ Return to the [Requirements Overview](README.md).
    - Writing.
    - Formatting.
 
-2. **Subsequent Plugin work.** Actual Plugin development must follow the requirements baseline under a separately authorized development Job. A working Plugin and full Documentation are not mandatory initial foundation outputs.
+2. **Plugin work.** Plugin development must follow the Requirements baseline under an authorized development Job.

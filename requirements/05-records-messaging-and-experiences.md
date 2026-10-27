@@ -58,7 +58,7 @@ Return to the [Requirements Overview](README.md).
 
 5. **Sending.** The sender adds one row to the recipient's inbox file under [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox).
    Ref follows [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox) and names a closed record.
-   Announcement follows [Environments and Acceptance Section 2.8](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+   Announcement follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Verify the saved row.
    A saved row does not prove recipient reading.
    Exact routing Identities do not authenticate individual Agents.

@@ -93,7 +93,7 @@ Return to the [Requirements Overview](README.md).
 ## 2. Governance resources and dependencies
 
 1. **Google authority.** Google Drive / Docs is the authority for governance, records, indexes and inbox messages.
-   Hybrid local working and Deliverable storage follow [Environments and Acceptance Section 2](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+   Hybrid local working and Deliverable storage follow [Environments and Acceptance Section 2](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
 
    This authority applies across:
 
@@ -136,7 +136,7 @@ Return to the [Requirements Overview](README.md).
    2. Name each Tab with the pattern date — Topic — key, such as 2026-10-27 — Plugin Build — J-0256.
    3. Write each date and time as YYYY-MM-DD HH:MM in 24-hour time with the time-zone abbreviation, such as 2026-10-27 19:45 MYT.
 
-   Local System Rules contents follow [Environments and Acceptance Section 2.2](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+   Local System Rules contents follow [Environments and Acceptance Section 2.2](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
 
    Apply the rules for the actual execution environment.
    A further inbox Type is a customization added through System Rules under [Section 5.5](#5-identity-folder-index-and-inbox).

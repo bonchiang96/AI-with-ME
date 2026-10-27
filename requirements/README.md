@@ -152,7 +152,7 @@ The Requirements consist of this Overview and the files below. Each file links b
 4. [Execution Lifecycle](04-execution-lifecycle.md) — Execution Parent stages from intake to completion, Sub-agents and the Job Record.
 5. [Records, Messaging and Experiences](05-records-messaging-and-experiences.md) — Durable records, indexes, inbox messaging and Experience learning.
 6. [Quality](06-quality.md) — Deliverable verification and independent QA.
-7. [Environments and Acceptance](07-environments-and-deferred-work.md) — Execution environments, hybrid local working, Deliverable storage, result return, governed changes and baseline acceptance.
+7. [Environments and Acceptance](07-environments-and-acceptance.md) — Execution environments, hybrid local working, Deliverable storage, result return, governed changes and baseline acceptance.
 8. [Book Development Workflow](workflows/book-development.md) — The standard Workflow for one Book from foundation to Language Editions.
 9. [Business Document Development Workflow](workflows/business-document-development.md) — The standard Workflow for business documents from brief to Stable version.
 10. [PROFIT + A Framework](workflows/profit-a.md) — The reusable Framework for defining AI tasks and Prompts.

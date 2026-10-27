@@ -87,12 +87,12 @@ Return to the [Requirements Overview](README.md).
    Present eligible Scope and useful combinations for the user's selection.
    Assign substantive execution under [Section 4](#4-execution-parent-and-sub-agents).
 
-9. **Scope transition.** At Scope confirmation, confirm each Deliverable's storage place under [Environments and Acceptance Section 2.7](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+9. **Scope transition.** At Scope confirmation, confirm each Deliverable's storage place under [Environments and Acceptance Section 2.7](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    After Scope confirmation, establish and verify the Working Document. In Google Docs, the Working Document is a new Tab in the Job Records file.
    Name the Tab under the tab name pattern in [Foundation Section 2.4](01-foundation.md#2-governance-resources-and-dependencies). Remove only incorporated portions from the retained future work after successful establishment. Retain partial and unselected remainders.
 
 10. **Working Document.** Use “Working Document” as an environment-neutral term. Its physical form may differ by execution environment. A Job may use a fresh Conversation Context while preserving the durable Execution Identity Context.
-    Apply the authoritative result-return requirements in [Environments and Acceptance Section 1](07-environments-and-deferred-work.md#1-environments-result-return-and-governed-changes).
+    Apply the authoritative result-return requirements in [Environments and Acceptance Section 1](07-environments-and-acceptance.md#1-environments-result-return-and-governed-changes).
 
 ## 2. Proposal and execution
 
@@ -149,7 +149,7 @@ Return to the [Requirements Overview](README.md).
 
 6. **Deliverable recording.** Record each Deliverable in the Job Record as soon as it is accepted and saved.
    Include its exact location, source and originating Identity.
-   Result return and verified Google Locators follow [Environments and Acceptance Section 1.4](07-environments-and-deferred-work.md#1-environments-result-return-and-governed-changes).
+   Result return and verified Google Locators follow [Environments and Acceptance Section 1.4](07-environments-and-acceptance.md#1-environments-result-return-and-governed-changes).
    The originating Meeting Agent registers the Deliverable under [Foundation Section 5.4](01-foundation.md#5-identity-folder-index-and-inbox).
 
 7. **Decision gaps.** A missing substantive decision must return to the Meeting process. Suspend the affected action until authoritative Closed Minutes resolve it. Preserve completed in-scope work. Deliverable organization and permitted implementation methods remain execution judgments.
@@ -163,7 +163,7 @@ Return to the [Requirements Overview](README.md).
    3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
    4. Freeze the completed Job Record.
    5. Add one Jobs row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox). Verify the row.
-      Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+      Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    6. Update Identity Context.
    7. Optionally maintain relevant verified Knowledge Base content within approved authority.
    8. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).

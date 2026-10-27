@@ -112,7 +112,7 @@ Return to the [Requirements Overview](README.md).
 2. **Final Minutes.** Compile self-contained Final Minutes under [Section 5](#5-meeting-artifacts) after completing the approved actions in [Section 4](#4-post-meeting-actions).
    Preserve essential constraints and supported outcomes.
    Include the intended Handoff Plan.
-   Record each Deliverable's storage place under [Environments and Acceptance Section 2.6](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+   Record each Deliverable's storage place under [Environments and Acceptance Section 2.6](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Identify material gaps without speculation.
    Later Execution reads Final Minutes for applicable instructions without requiring access to the internal live Working Record.
 
@@ -138,7 +138,7 @@ Return to the [Requirements Overview](README.md).
    Preserve closed Meeting records and Minutes as immutable records.
 
 4. **Indexed closure.** After the Final Minutes are verified, add one Meetings row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox).
-   Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+   Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Verify the resulting state before claiming closure.
 
 5. **Future Topics.** After verified closure, register confirmed carry-forward topics in the owning Identity Context Future Topics Chapter.
