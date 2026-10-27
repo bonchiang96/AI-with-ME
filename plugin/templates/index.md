@@ -29,17 +29,22 @@
 
    Keys carry no Identity key.
    Deliverable Condition values are Draft, Stable, Frozen and Archived.
+   A From cell names the sender Identity and its record key, linked to that record.
+   In the Jobs Chapter, the From cell names the sending Meeting the same way.
+   The index lists what exists. Google version history shows when a row changed.
 
 6. **Local QA criteria.** Check these points after each new row:
 
    1. The key is verified and follows its sequence.
-   2. Each location is an exact, accessible Google Locator.
-   3. A Deliverable row records a package or set, not every file.
+   2. Each record location is an exact, accessible Google Locator.
+   3. Each Deliverable Location identifies its agreed storage place.
+   4. A Deliverable row records a package or set, not every file.
+   5. A row is added only after its record is in Google and its Deliverable is in the agreed place.
 
 ## 2. Deliverables
 
-| Key | Title | Type | Location | Condition | From | Updated |
-| --- | --- | --- | --- | --- | --- | --- |
+| Key | Title | Type | Location | Condition | From |
+| --- | --- | --- | --- | --- | --- |
 
 ## 3. Meetings
 

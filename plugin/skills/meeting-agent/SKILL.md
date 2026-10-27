@@ -1,7 +1,7 @@
 ---
 name: meeting-agent
 description: The common Meeting Agent Lifecycle of AI with ME. Runs a Meeting from NEW MEETING through Agenda, discussion, CLOSE MEETING, Post-Meeting Actions, Final Minutes, indexing and Handoff. Covers Identity definition and setup by the General Meeting Agent. Use after system-entry when the selected Identity has the Meeting Agent Role.
-compatibility: Requires Google Drive and Google Docs access through a host connector.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # Meeting Agent
@@ -16,6 +16,7 @@ compatibility: Requires Google Drive and Google Docs access through a host conne
 
 Apply the [Global Communication Rules](../../rules/global-communication-rules.md) and the [Global Writing Rules](../../rules/global-writing-rules.md).
 Choose the interaction mode under Global Communication Rules Section 5.
+System Rules take priority over this Skill.
 
 Flow: NEW MEETING → Agenda → Opening → Discussion → CLOSE MEETING → Post-Meeting Actions → Final Minutes → Index → post-closure maintenance → Handoff.
 
@@ -33,10 +34,14 @@ Use this start order:
 
 1. Check the latest Tab of the 03 Working Records file for an active Meeting.
    Prioritize continuing it. Only one Meeting may be active per Meeting Identity.
-2. Read the inbox under the [inbox](../inbox/SKILL.md) skill.
+2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
 3. Review Future Topics in Identity Context.
-4. Search Experiences under the [knowledge-base](../knowledge-base/SKILL.md) skill.
-5. Establish the Agenda.
+4. Establish the Agenda under Section 4.
+5. Search Experiences under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+
+Before you ask the user for information, discover it yourself.
+Read the current Identity Context, the 01 Index and the relevant Knowledge Bases first.
+Ask the user only for what these sources do not hold.
 
 ## 4. Agenda
 
@@ -52,16 +57,18 @@ Use this start order:
 ## 5. Workflow selection
 
 1. The user selects the Workflow when a Task starts.
-2. Discover applicable Workflows in the Plugin and scoped Knowledge Bases to support that selection.
+2. You may propose a Workflow from the Plugin Skills and the Knowledge Bases.
 3. If none is suitable, work normally under the assigned Role Lifecycle using domain knowledge, available tools and judgment.
 4. Absence of a suitable Workflow does not require a mandatory fallback Workflow or special Proposal.
-5. Existing Scope and approval requirements still apply.
+5. Website, Governance and Code Development run as normal work. A Workflow for them may arrive later through a Knowledge Base or a Plugin update.
+6. Existing Scope and approval requirements still apply.
 
 ## 6. Opening
 
 1. Open the Meeting only after the user confirms its Agenda.
 2. Establish the Working Record as a new Tab in the 03 Working Records file.
 3. Use the [Working Records template](../../templates/working-records.md).
+   Name the Tab with the tab name pattern in the Google System Rules.
 4. Verify the new Tab.
 5. Preserve the Identity, Scope, actual Opening Time, confirmed Agenda and authoritative source references.
 6. After the Tab is verified, remove the selected Future Topics from Identity Context.
@@ -78,6 +85,7 @@ Use this start order:
 7. Each material Decision keeps its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
 8. Confirm materially ambiguous rationale with the user. Do not invent an explanation.
 9. At the end of each Agenda item, save and verify all accepted outcomes in the Working Record.
+10. For each Deliverable, agree its storage place with the user, such as Google Drive, GitHub or GitLab.
 
 ## 8. Actions
 
@@ -96,19 +104,21 @@ CLOSE MEETING starts Closing. Complete these steps in order:
    Propose carry-forward by default. Discard a candidate only by the user's explicit decision.
 2. Identify authorized Handoff recipients and authoritative sources.
    Distinguish sources for reading from authorized writing destinations.
-3. Search Experiences near completion under the [knowledge-base](../knowledge-base/SKILL.md) skill.
+3. Search Experiences near completion under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 4. Perform every approved Post-Meeting Action that this Identity owns.
    Record each actual outcome in the Working Record Post-Meeting Action Log.
 5. Compile self-contained Final Minutes as a new Tab in the 04 Minutes file.
    Use the [Minutes template](../../templates/minutes.md).
-   Include the Handoff Plan. Identify material gaps without speculation.
+   Include the Handoff Plan and each agreed Deliverable storage place.
+   Identify material gaps without speculation.
 6. Record the actual Closing Time in the Minutes and the Working Record.
-   Use the user's local date, time and timezone.
+   Use the user's local date, time and time-zone abbreviation in the Google System Rules date and time format.
 7. Verify the latest saved Final Minutes for Content, Writing and Formatting under the [workflow-qa](../workflow-qa/SKILL.md) quality dimensions.
 8. After verification, add one Meetings row to the 01 Index. Verify the row.
 9. Verify the resulting state before claiming closure.
 
 Closed Working Records and Final Minutes are immutable.
+When the Meeting ran locally, return the Working Record and Final Minutes to Google before step 8.
 
 ## 10. After verified closure
 
@@ -116,20 +126,30 @@ Complete these steps in order:
 
 1. Update Identity Context.
    Register confirmed carry-forward topics in Future Topics with a Topic Name, a short Description and a precise source reference.
-2. Consolidate qualifying Knowledge Base content from the Closed Minutes under the [knowledge-base](../knowledge-base/SKILL.md) skill.
-3. Capture Experience once for the full Lifecycle under the [knowledge-base](../knowledge-base/SKILL.md) skill.
-4. Send the authorized Handoff last as an inbox row under the [inbox](../inbox/SKILL.md) skill.
+2. Consolidate qualifying Knowledge Base content from the Closed Minutes under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+3. Capture Experience once for the full Lifecycle under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+4. Send the authorized Handoff last as an inbox row under the [inbox](../inbox/SKILL.md) Skill.
 
 Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
 
 ## 11. Deliverable registration
 
 1. Register a Deliverable package in the 01 Index when its Completion Notice is processed.
+   Register it only after its record is in Google and the Deliverable is in the agreed place.
 2. Register a package when it first appears. Changes inside an indexed package need no index change.
 3. Register packages that this Meeting Agent creates itself.
-4. Judge when an index or Identity Context update is needed.
+4. The From cell names the sender Identity and its record key, linked to that record.
+5. The Location identifies the agreed storage place.
+6. Google version history shows when a row changed.
+7. Judge when an index or Identity Context update is needed.
 
-## 12. User review and revision
+## 12. Document review and revision
+
+Review a document in two passes:
+
+1. Perform your own AI review first. Cover fidelity, the Global Writing Rules and presentation style.
+2. Then give the user separate Agenda space for the user's own review.
+3. Consolidate both reviews.
 
 In Book and Business Document Workflows, apply this rule after user review:
 
@@ -162,8 +182,10 @@ After CLOSE MEETING, perform the approved setup as Post-Meeting Actions:
    - For a Meeting Agent: 04 Minutes from the [Minutes template](../../templates/minutes.md).
    - For an Execution Agent: 03 Job Records from the [Job Records template](../../templates/job-records.md).
 2. Record applicable Knowledge Bases in the Identity Context Knowledge Bases Chapter.
-3. Register the Identity in System Context with Agent Key, Role, Responsibility and Scope, and the identity folder Location.
-4. Preserve and verify setup evidence.
+3. Record the Agent Key, the Role and the identity folder location as Identity Context metadata.
+4. Register the Identity in System Context with Agent Key, Role, Responsibility and Scope, and the identity folder Location.
+   Responsibility and Scope stay only in System Context.
+5. Preserve and verify setup evidence.
 
 Other approved resource establishment remains with its authorized owner.
 Adjust templates with the user. Do not invent new templates.
@@ -180,11 +202,10 @@ The Meeting Identity responsible for a governing Scope refines its adopted:
 - Operating details.
 
 Implementation follows the responsible owner's authority and Scope approvals.
+When an arrangement is undecided, keep it visible to the user as undecided. Do not invent governance.
 
-## 15. Commands
+## 15. Stage words
 
-NEW MEETING and CLOSE MEETING mark Lifecycle stages.
-Command definitions are discoverable through Identity Context operating references.
-Commands do not autonomously trigger work, expand authority or duplicate Lifecycle sequencing.
-Report a missing Command definition or an inaccessible dependency.
-The detailed Command definitions are pending design.
+NEW MEETING and CLOSE MEETING are the user's stage words.
+This Skill holds the full flow of each stage.
+A stage word does not autonomously trigger work or expand authority.

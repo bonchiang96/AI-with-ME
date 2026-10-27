@@ -8,7 +8,9 @@
 
 2. **Names.** The file name is 04 Minutes.
    It resides in a Meeting Agent's identity folder.
-   Each Meeting has one Tab. The Tab naming convention is pending design.
+   Each Meeting has one Tab.
+   Name each Tab with the tab name pattern in the Google System Rules.
+   An example is 2026-10-27 — Plugin Branch Comparison — M-0257.
 
 3. **Metadata.** Each Final Minutes identifies:
 
@@ -23,7 +25,7 @@
    - Closing Time.
    - Working Record Locator.
 
-4. **Sections.** Each Final Minutes Tab has five Chapters:
+4. **Sections.** Each new Final Minutes Tab starts with these five Chapter headings:
 
    1. Meeting Information & Agenda.
    2. Confirmed Findings & Decisions.
@@ -38,6 +40,8 @@
    This Operating Guide is the first Tab.
    Each new Final Minutes is a new Tab.
    Apply the Global Writing Rules and the Easy to Read rules.
+   Write each time in the Google System Rules date and time format.
+   When the Meeting ran locally, the Final Minutes return to Google at Meeting close.
 
 6. **Local QA criteria.** Verify Content, Writing and Formatting separately.
    Record PASS or FAIL for each dimension in Chapter 5. Check these points:
@@ -46,17 +50,6 @@
    2. Each Finding keeps its observation, evidence, Scope and limitations.
    3. Each material Decision keeps its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and trade-offs.
    4. The Handoff Plan is present.
-   5. Material gaps are identified without speculation.
-   6. The file holds only current truth.
-
-## Tab 2. (Meeting Tab)
-
-### 1. Meeting Information & Agenda
-
-### 2. Confirmed Findings & Decisions
-
-### 3. Actions & Outcomes
-
-### 4. Open Matters & Dispositions
-
-### 5. Sources & Quality Verification
+   5. Each Deliverable has its agreed storage place.
+   6. Material gaps are identified without speculation.
+   7. The file holds only current truth.

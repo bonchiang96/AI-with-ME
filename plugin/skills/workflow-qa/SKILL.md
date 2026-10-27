@@ -1,6 +1,7 @@
 ---
 name: workflow-qa
 description: The AI with ME Deliverable quality rules and the Independent QA Workflow. Defines verification of Content, Writing and Formatting, QA evidence and Operating Guide checks. Defines how an Execution Agent runs an independent, complete and objective QA Job with PASS, FAIL or Unable to Verify results. Use when verifying any Deliverable or when the user requests a QA Job.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # Quality and Independent QA
@@ -38,7 +39,7 @@ Apply the rules for the artifact format: Google Docs, Markdown or another format
 ## 4. Operating Guides
 
 1. A Document Operating Guide owns its document's Purpose, Names, Metadata, Sections, Formatting and Local QA criteria.
-2. Lifecycle actions and cross-resource execution belong in Commands.
+2. Lifecycle actions and cross-resource execution belong in the Plugin Skills.
 3. Apply structural refinements prospectively. Preserve historical records and approved formats.
 
 ## 5. Independent QA Workflow

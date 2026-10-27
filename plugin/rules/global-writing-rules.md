@@ -1,7 +1,5 @@
 # Global Writing Rules
 
-Return to the [Requirements Overview](README.md).
-
 ## 1. Scope
 
 1. **Applicable outputs.** These rules apply to every output an Agent creates for the user.

@@ -14,7 +14,7 @@ Return to the [Requirements Overview](README.md).
    - What the Framework is and why it exists.
    - One simple flow picture.
    - Required and optional dependencies.
-   - A short getting-started placeholder.
+   - A short getting-started section.
    - Resource locations.
    - The License.
 
@@ -58,7 +58,8 @@ Return to the [Requirements Overview](README.md).
    - Manually installing it.
    - Manually updating it.
 
-   Packaging and update methods remain subjects for authorized development.
+   The package is the plugin folder with two manifests.
+   An update reinstalls the Plugin from a chosen commit.
 
 7. **AI-led installation.** A user may give an AI the Repository URL.
 
@@ -91,7 +92,8 @@ Return to the [Requirements Overview](README.md).
 
 ## 2. Governance resources and dependencies
 
-1. **Google authority.** Google Drive / Docs must provide the only storage for governance, records, indexes and inbox messages.
+1. **Google authority.** Google Drive / Docs is the authority for governance, records, indexes and inbox messages.
+   Hybrid local working and Deliverable storage follow [Environments and Acceptance Section 2](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
 
    This authority applies across:
 
@@ -128,17 +130,16 @@ Return to the [Requirements Overview](README.md).
    - Locations and storage structure.
    - Resource maintenance.
 
-   Local System Rules must govern:
+   Google System Rules start with these starter rules:
 
-   - Local file formats.
-   - Naming.
-   - Directories and working paths.
-   - Local Record creation.
-   - Local Deliverable creation.
-   - Which outputs synchronize to Google.
+   1. Create documents as Google Docs with native tables.
+   2. Name each Tab with the pattern date — Topic — key, such as 2026-10-27 — Plugin Build — J-0256.
+   3. Write each date and time as YYYY-MM-DD HH:MM in 24-hour time with the time-zone abbreviation, such as 2026-10-27 19:45 MYT.
 
-   Applicable environment System Rules must govern synchronization order and timing.
+   Local System Rules contents follow [Environments and Acceptance Section 2.2](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
+
    Apply the rules for the actual execution environment.
+   A further inbox Type is a customization added through System Rules under [Section 5.5](#5-identity-folder-index-and-inbox).
    Rule priority follows [Section 2.8](#2-governance-resources-and-dependencies).
 
 5. **Resource purposes and destinations.** Governing configuration must define known deliverables and meaningful destinations.
@@ -160,7 +161,7 @@ Return to the [Requirements Overview](README.md).
    - Assigned maintenance responsibilities.
 
    These arrangements may evolve through confirmed decisions and practical work.
-   Preserve Role Lifecycle authority under [System, Identity and Entry Section 2.2](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   Preserve Role Lifecycle authority under [System, Identity and Entry Section 2.2](02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
 7. **Context discovery.** An Identity must open its own Identity Context and index to discover relevant:
 
@@ -171,7 +172,7 @@ Return to the [Requirements Overview](README.md).
 
    System Context supplies the registered identity folder Locator.
 
-8. **Contextual priority.** Applicable System Rules override conflicting Plugin instructions for the environment operations in [Section 2.4](#2-governance-resources-and-dependencies).
+8. **Contextual priority.** System Rules take priority over the Plugin.
 
    Interpret other governing overlap using:
 
@@ -185,7 +186,7 @@ Return to the [Requirements Overview](README.md).
 
 9. **Source loading.** Agents should reuse static instructions available in the effective Conversation Context unless their applicability changes.
    They must read dynamic context and working data when current information is needed.
-   Load applicable Commands selectively at the relevant Lifecycle stage.
+   Load applicable Plugin Skills selectively at the relevant Lifecycle stage.
    Local Agents need not reread Google for each ordinary file operation.
 
 10. **Meaningful resources.** Every maintained resource should serve an identified purpose. Resource creation must follow authorized Responsibility, Scope and actual operating needs.
@@ -215,6 +216,9 @@ Return to the [Requirements Overview](README.md).
     Add fields only when they serve a genuine directory purpose. Keep each directory compact. Identity Context current references follow [Section 3](#3-identity-context).
     Index files, the Knowledge Base folder index and Identity Context lists follow their own templates.
 
+15. **Google Locator.** A Google Locator is the Google Docs link of a file.
+    For a Tab, the Google Locator is the Tab link.
+
 ## 3. Identity Context
 
 1. **Starting context.** Every Identity must maintain one consolidated central Google Identity Context as its starting context for work.
@@ -236,6 +240,7 @@ Return to the [Requirements Overview](README.md).
    The Operating Guide follows [Section 6](#6-templates-and-operating-guides).
    Working Group contains peer Identities and Handoff relationships.
    Knowledge Bases follows [Section 3.9](#3-identity-context).
+   Metadata follows [Section 3.10](#3-identity-context).
 
 3. **Own record locations.** The identity folder holds the Identity's own Minutes, Working Records and Job Records under [Section 5.1](#5-identity-folder-index-and-inbox).
    Identity Context must reference applicable Target Locations for additional Identity-owned records or resources.
@@ -279,6 +284,14 @@ Return to the [Requirements Overview](README.md).
    3. Use of a newly found source.
    4. Discovery of a broken link.
 
+10. **Metadata.** Identity Context metadata holds:
+
+    - The Agent Key.
+    - The Role.
+    - The identity folder location.
+
+    Responsibility and Scope stay only in System Context under [Section 2.14](#2-governance-resources-and-dependencies).
+
 ## 4. Scoped Knowledge Base
 
 1. **Knowledge resources.** A Knowledge Base must store external subject information for a defined Scope.
@@ -291,15 +304,14 @@ Return to the [Requirements Overview](README.md).
    One Scope may contain multiple Knowledge Bases.
    Multiple Identities may use or maintain the same Knowledge Base.
    No Knowledge Base belongs to an Identity.
-   Any Identity may maintain the corresponding Knowledge Base folder index line when it performs either action:
-
-   - Creates the Knowledge Base.
-   - Changes the Knowledge Base's Scope or Topic.
+   Any Identity may add the Knowledge Base folder index line when it creates a Knowledge Base.
+   Any Identity may update the line's Description when the Knowledge Base's Topic changes.
+   The Description changes only then.
 
 2. **Current content.** Include only currently valid content within the Knowledge Base's Scope:
 
    - Confirmed external subject knowledge.
-   - User-created Workflows permitted under [System, Identity and Entry Section 2.19](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   - User-created Workflows permitted under [System, Identity and Entry Section 2.16](02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
    Preserve adopted future directions as future directions rather than completed implementation.
 
@@ -365,6 +377,8 @@ Return to the [Requirements Overview](README.md).
    The folder holds:
 
    - A 00 Index with one line per Knowledge Base.
+     Its three columns are Name, Location and Description.
+     The index tells an Agent or a person which Knowledge Bases exist and what each covers.
    - A general Knowledge Base to which every Identity contributes.
    - Every other Knowledge Base.
 
@@ -374,7 +388,8 @@ Return to the [Requirements Overview](README.md).
     2. The Knowledge Base folder index.
     3. The contents list of each Knowledge Base.
 
-11. **Knowledge Base Operating Guide.** The Knowledge Base Operating Guide requires later authorized design.
+11. **Knowledge Base format.** A Knowledge Base has a free format.
+    Its headings must be numbered.
 
 ## 5. Identity folder, index and inbox
 
@@ -405,10 +420,14 @@ Return to the [Requirements Overview](README.md).
    Keys carry no Identity key.
    Each Chapter uses these template columns:
 
-   - Deliverables: Key, Title, Type, Location, Condition, From, Updated.
+   - Deliverables: Key, Title, Type, Location, Condition, From.
    - Meetings: Key, Date, Topic, Final Minutes location, one-line Outcome.
    - Jobs: Key, Date, Scope, Job Record location, From, one-line Outcome.
 
+   A From cell names the sender Identity and its record key, linked to that record.
+   In the Jobs Chapter, the From cell names the sending Meeting the same way.
+   The index lists what exists. It is not a live tracker.
+   Google version history shows when a row changed.
    Each Identity may amend its columns through Minutes.
 
 4. **Deliverable rows.** A Deliverable row records a package or set rather than every file.
@@ -427,7 +446,8 @@ Return to the [Requirements Overview](README.md).
    4. Ref, which is the key in the sender's index.
    5. Message.
 
-   Current Types are Work Request and Completion Notice. Further Types may be added later.
+   Inbox Types are Work Request and Completion Notice.
+   A further Type is a customization added through System Rules.
    Inbox use follows [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
 
 ## 6. Templates and Operating Guides
@@ -442,3 +462,4 @@ Return to the [Requirements Overview](README.md).
 
 2. **Standard templates.** The Plugin ships standard templates and Operating Guides.
    Agents adjust them with the user rather than inventing them.
+   No template or created file may hold placeholder text.

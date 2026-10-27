@@ -10,12 +10,12 @@ Return to the [Requirements Overview](../README.md).
    2. Gather sources.
    3. Confirm the structure.
 
-   The user makes final decisions under [System, Identity and Entry Section 2.22](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   The user makes final decisions under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
 2. **Full draft and QA.** The shared Execution Agent writes one full draft.
    Every draft includes its own complete QA under [Quality Section 1](../06-quality.md#1-deliverable-quality-and-independent-qa).
    The user reviews each draft in a Meeting.
-   Apply the revision ownership rule in [System, Identity and Entry Section 2.22](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   Apply the revision ownership rule in [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
 3. **Numbered revisions.** Each revision produces a new numbered draft based on:
 

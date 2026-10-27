@@ -1,10 +1,22 @@
 ---
 name: execution-agent
 description: The common Execution Agent Lifecycle of AI with ME. Runs a Job from NEW JOB through Scope confirmation, Job Record, Execution Plan, PROCEED EXECUTION, Sub-agent authoring and review, completion, indexing and Completion Notices. Use after system-entry when the selected Identity has the Execution Agent Role.
-compatibility: Requires Google Drive and Google Docs access through a host connector.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # Execution Agent
+
+A Job moves along one path:
+
+1. NEW JOB reads the inbox and Future Topics and finds candidate work.
+2. The user confirms the Job Scope. You open the Job Record.
+3. You save one Execution Plan for the whole Job.
+4. The user approves it with PROCEED EXECUTION.
+5. A Sub-agent authors each Deliverable where the environment allows. You review and accept it.
+6. You verify, freeze and index the Job Record.
+7. You update Identity Context, capture Experience and send Completion Notices last.
+
+The sections below give the rules for each step.
 
 ## 1. Role
 
@@ -15,8 +27,7 @@ compatibility: Requires Google Drive and Google Docs access through a host conne
 5. An assigned Identity maintains coherent reusable operating resources precisely enough for AI reuse.
 
 Apply the [Global Communication Rules](../../rules/global-communication-rules.md) and the [Global Writing Rules](../../rules/global-writing-rules.md).
-
-Flow: NEW JOB → Scope confirmation and Job Record → Execution Plan → PROCEED EXECUTION → Execution → Completion → Context maintenance, Experience Capture and Completion Notices.
+System Rules take priority over this Skill.
 
 ## 2. NEW JOB and intake
 
@@ -27,7 +38,7 @@ Flow: NEW JOB → Scope confirmation and Job Record → Execution Plan → PROCE
 Use this start order:
 
 1. Check the latest Tab of the 03 Job Records file for an active Job.
-2. Read the inbox under the [inbox](../inbox/SKILL.md) skill.
+2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
 3. Review Future Topics in Identity Context.
 4. Establish the Scope.
 
@@ -52,7 +63,8 @@ Before interpreting a candidate's substantive Scope, read:
 
 ## 4. Scope selection
 
-When a Task starts, apply the Workflow selection section of [meeting-agent](../meeting-agent/SKILL.md).
+When a Task starts, the user selects the Workflow. You may propose one from the Plugin Skills and the Knowledge Bases.
+If none fits, work normally under this Lifecycle.
 
 1. A Job may consolidate several eligible Work Requests from different Identities.
 2. A Job may contain several Deliverables.
@@ -79,12 +91,15 @@ Scope confirmation permits these actions without another approval:
 - Experience search.
 - Proposal preparation.
 
-1. Establish the Working Document as a new Tab in the 03 Job Records file.
-2. Use the [Job Records template](../../templates/job-records.md).
+1. Confirm each Deliverable's storage place, such as Google Drive, GitHub or GitLab.
+   Take it from the Final Minutes. When no place is recorded, ask the user.
+2. Establish the Working Document as a new Tab in the 03 Job Records file.
+   Use the [Job Records template](../../templates/job-records.md).
+   Name the Tab with the tab name pattern in the Google System Rules.
 3. Verify the new Tab and its Formatting under the [workflow-qa](../workflow-qa/SKILL.md) Formatting checkpoints.
 4. Remove only incorporated portions from Future Topics. Retain partial and unselected remainders.
 5. Save and verify the Scope confirmation.
-6. Search Experiences once under the [knowledge-base](../knowledge-base/SKILL.md) skill.
+6. Search Experiences once under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 
 A Job may use a fresh Conversation Context. Identity Context remains durable.
 
@@ -103,10 +118,11 @@ For each confirmed Scope, the Plan identifies:
 - Affected files or resources.
 - Planned impacts and their reasons.
 - Expected Deliverables and Outcomes.
+- Each Deliverable's storage place.
 - Dependencies.
 - Sub-agent assignments and number.
 - Model choice.
-- PROFIT + A definitions under the [profit-a](../profit-a/SKILL.md) skill.
+- PROFIT + A definitions under the [profit-a](../profit-a/SKILL.md) Skill.
 - QA criteria.
 - Completion conditions.
 
@@ -177,10 +193,11 @@ Complete these steps in order:
 3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
 4. Freeze the completed Job Record as Proof of Job.
 5. Add one Jobs row to the 01 Index. Verify the row.
+   The From cell names the sending Meeting and its record key, linked to that record.
 6. Update Identity Context.
 7. Optionally maintain relevant verified Knowledge Base content within approved authority.
-8. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) skill.
-9. Send relevant Completion Notices last under the [inbox](../inbox/SKILL.md) skill.
+8. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+9. Send relevant Completion Notices last under the [inbox](../inbox/SKILL.md) Skill.
 
 Apply System Rules to actual persistence and indexing.
 Preserve each Deliverable's own outcome and verification status across Scopes and Identities.
@@ -196,12 +213,16 @@ Self-verification does not replace an independent QA Workflow.
 
 ## 14. Local and remote environments
 
+Local working is hybrid. Google Drive remains the authority.
+
 1. Preserve authoritative Google decisions, approved Scope, the Plan, Agent boundaries and approvals.
-2. Return Job Record details, status, results, evidence and Deliverable references to Google.
-3. At completion checkpoints, synchronize the outputs that Local System Rules designate.
-4. Index rows use accessible, verified Google Locators after synchronization.
-5. Verify required updates before claiming completion.
-6. Report unavailable access or uncompleted updates accurately. Discuss permitted setup with the user.
+2. Keep System Context, Identity Context, the index and the inbox in Google.
+3. Follow the Local System Rules for the local folder and for when and how work returns to Google.
+4. Return the Job Record to Google at Job completion, before step 5 of Section 12.
+5. Store each Deliverable in its agreed place.
+6. Index or announce nothing until its record is in Google and its Deliverable is in the agreed place.
+7. Verify required updates before claiming completion.
+8. Report unavailable access or uncompleted updates accurately. Discuss permitted setup with the user.
 
 ## 15. System resource changes
 
@@ -210,10 +231,8 @@ Self-verification does not replace an independent QA Workflow.
 3. Preserve active work, records and valid pending requests.
 4. Verify affected resources and outcomes independently.
 
-## 16. Commands
+## 16. Stage words
 
-NEW JOB and PROCEED EXECUTION mark Lifecycle stages.
-Command definitions are discoverable through Identity Context operating references.
-Commands do not autonomously trigger work, expand authority or duplicate Lifecycle sequencing.
-Report a missing Command definition or an inaccessible dependency.
-The detailed Command definitions are pending design.
+NEW JOB and PROCEED EXECUTION are the user's stage words.
+This Skill holds the full flow of each stage.
+A stage word does not autonomously trigger work or expand authority.

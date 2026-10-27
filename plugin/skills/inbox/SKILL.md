@@ -1,7 +1,7 @@
 ---
 name: inbox
 description: Reads, processes and sends AI with ME inbox messages. Covers Work Requests and Completion Notices between registered Identities through each Identity's 02 Inbox Google Docs file. Use when an Agent Lifecycle reads its inbox at NEW MEETING or NEW JOB, or sends a Handoff or Completion Notice.
-compatibility: Requires Google Drive and Google Docs access through a host connector.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # Inbox
@@ -23,6 +23,9 @@ Flow: sender writes one row → sender verifies the row → receiver reads at st
 
 ## 3. Message types
 
+The inbox Types are Work Request and Completion Notice.
+A further Type is a customization added through System Rules.
+
 1. A Work Request identifies its authorized origin, bounded Scope, exact recipient and authoritative sources.
 2. The recipient applies its own Scope selection and execution approvals.
 3. A Completion Notice reports verified completed work, the outcome, the authoritative record, Deliverable references and recipient relevance.
@@ -33,8 +36,11 @@ Flow: sender writes one row → sender verifies the row → receiver reads at st
 
 1. Add one row to the recipient's 02 Inbox.
 2. Fill Sent, From, Type, Ref and Message.
+   Write Sent in the date and time format of the Google System Rules.
 3. Ref is the key of a closed record in the sender's 01 Index.
 4. Write the Message in Strict Mode under the [Global Writing Rules](../../rules/global-writing-rules.md).
+   Reference the record. Never copy a document body into the Message.
+   Send only after the record is in Google and its Deliverable is in the agreed place.
 5. Verify the saved row.
 6. A saved row does not prove that the recipient has read it.
 
@@ -51,4 +57,4 @@ Read the inbox at the start order step of the [meeting-agent](../meeting-agent/S
 5. Present suggested follow-up as a proposal.
 6. Preserve normal responsibility, Scope and approval boundaries.
 
-An unwritable inbox is a failure-handling matter. Use judgment within authorized Scope and report necessary assistance.
+An unwritable inbox is left to your judgment. Act within authorized Scope and report necessary assistance.

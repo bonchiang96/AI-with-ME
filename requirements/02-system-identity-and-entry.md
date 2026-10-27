@@ -10,7 +10,8 @@ Return to the [Requirements Overview](README.md).
    Assess access to applicable System Rules and reuse existing accessible resources.
    Confirm absence before initiating Bootstrap under [Section 1.2](#1-identity-selection-and-governed-setup).
 
-2. **Bootstrap.** When the central folder is confirmed absent, a default provisional Meeting Agent holds a Bootstrap Meeting.
+2. **Bootstrap.** When the central folder is confirmed absent, the General Meeting Agent holds a Bootstrap Meeting.
+   It uses the Agent Key `general-meeting` from the start.
    Use the normal Meeting Lifecycle.
    Explain the proposed:
 
@@ -29,11 +30,12 @@ Return to the [Requirements Overview](README.md).
    2. Create System Context and System Rules.
    3. Create the Knowledge Base folder with its 00 Index and general Knowledge Base under [Foundation Section 4.9](01-foundation.md#4-scoped-knowledge-base).
    4. Establish the approved minimum Identities under [Section 1.11](#1-identity-selection-and-governed-setup).
+      The General Meeting Agent registers itself with the same Agent Key.
    5. Save the Bootstrap Working Record and Final Minutes as the new System's first records.
    6. Join the normal entry path at Identity selection.
 
    Bootstrap records remain in Conversation until the folder exists.
-   The provisional Identity requires no pre-existing Registry entry.
+   The General Meeting Agent requires no pre-existing Registry entry during Bootstrap.
    Inaccessibility alone does not prove absence.
    Resolve access or location uncertainty before creating another Root.
    Restore genuinely missing resources within existing approved authority and applicable System Rules.
@@ -49,11 +51,11 @@ Return to the [Requirements Overview](README.md).
    Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
    The Identity is then ready for NEW MEETING or NEW JOB.
    Load applicable System Rules and Plugin Instructions for the assignment.
-   Continue work through the discovery requirements in [Section 2.17](#2-agent-responsibilities-and-commands).
+   Continue work through the discovery requirements in [Section 2.14](#2-agent-responsibilities-stage-words-and-workflows).
 
 5. **Identity discovery.** Discovery must support a directly supplied Identity Context Locator or a registered Identity resolved through System Context.
    Both paths must reach the Identity's authoritative Context through its identity folder.
-   Detailed cross-environment Locator design remains deferred under [Environments and Deferred Work Section 2](07-environments-and-deferred-work.md#2-baseline-acceptance-and-deferred-development).
+   Locators follow [Foundation Section 2.15](01-foundation.md#2-governance-resources-and-dependencies).
 
 6. **Identity meaning.** Each Identity must identify:
 
@@ -115,7 +117,7 @@ Return to the [Requirements Overview](README.md).
 14. **Local Bootstrap.** Local Bootstrap must establish missing Local System Rules and required working paths only.
     Central Identity and Context authority remain governed by [Foundation Section 2.3](01-foundation.md#2-governance-resources-and-dependencies) and [Foundation Section 3.1](01-foundation.md#3-identity-context).
 
-## 2. Agent responsibilities and Commands
+## 2. Agent responsibilities, stage words and Workflows
 
 1. **Responsibility, Scope, and Output.** Responsibility defines the result or quality obligation an Agent must guarantee.
 
@@ -148,7 +150,7 @@ Return to the [Requirements Overview](README.md).
    - Substantive decisions.
 
    Each Meeting Identity governs only its assigned Scope.
-   A governance assignment may include applicable operating rules and Commands.
+   A governance assignment may include applicable operating rules.
    Approved Post-Meeting Actions follow [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
 4. **Document drafting responsibility.** An Execution Identity drafting a document must completely and readably preserve confirmed decisions.
@@ -202,46 +204,28 @@ Return to the [Requirements Overview](README.md).
 
 10. **Meeting execution responsibility.** A Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables within [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
-11. **Command ownership.** The Agent Lifecycle controls stage order and selects the needed applicable Command.
+11. **Stage words.** NEW MEETING, CLOSE MEETING, NEW JOB and PROCEED EXECUTION are the user's stage words.
+    Each stage flow lives in the Role Skill of the Plugin.
+    A stage word must respect these limits:
 
-    Commands define:
+    1. It does not autonomously trigger work.
+    2. It does not expand authority.
 
-    - Applicable actions.
-    - Outputs.
-    - Customization.
-    - Relevant constraints.
-
-    They must respect these limits:
-
-    1. Do not autonomously trigger work.
-    2. Do not expand authority.
-    3. Do not duplicate Lifecycle sequencing.
-
-12. **Command organization.** Necessary Command definitions must be discoverable through Identity Context operating references.
-    Keep the Command list compact and resolve each needed Command to its definition.
-    A native Google Docs Tab per Command is preferred when using Google Docs.
-    Necessary Command content may be reused within the active Conversation.
-
-13. **Command readiness.** Required Commands and dependencies must be usable for their assigned actions. An Agent must report missing definitions or inaccessible dependencies. It must not claim incomplete actions succeeded. Detailed execution mechanics remain with authorized implementation.
-
-14. **Shared Execution foundation.** Execution Identities must apply shared Global Rules.
-    Assigned Instructions and applicable Commands must reflect each Identity's Responsibility and work type.
-    Apply the common Role Lifecycle under [Section 2.2](#2-agent-responsibilities-and-commands).
-
-15. **Shared Commands.** Identities with the same Role and Responsibility must share applicable Commands.
+12. **Shared Execution foundation.** Execution Identities must apply shared Global Rules.
+    Assigned Instructions must reflect each Identity's Responsibility and work type.
+    Apply the common Role Lifecycle under [Section 2.2](#2-agent-responsibilities-stage-words-and-workflows).
     Separate scoped Identities retain distinct Scopes and own work records.
-    Meeting and Execution Roles may require different Commands.
 
-16. **Dynamic Command resolution.** Shared Meeting, Job and CREATE RECORD Commands must identify the invoking Identity and record category.
+13. **Dynamic resolution.** Shared Meeting and Job flows must identify the invoking Identity and record category.
 
     Resolve the Identity's currently authorized Responsibility and Scope from System Context.
     Resolve the applicable record Target Location through Identity Context and current System Rules.
 
-    A shared Command must not assume a particular Identity or fixed Workspace.
-    Commands must not copy or widen Identity Scope.
+    A shared flow must not assume a particular Identity or fixed Workspace.
+    It must not copy or widen Identity Scope.
     Resolve missing Scope before acting.
 
-17. **Discovery before repeated questions.** All Agents must discover accessible information before requesting it again from the user.
+14. **Discovery before repeated questions.** All Agents must discover accessible information before requesting it again from the user.
 
     Discover relevant:
 
@@ -255,17 +239,19 @@ Return to the [Requirements Overview](README.md).
 
     Continue from the selected Identity and current information without requiring the user to reconstruct prior work.
 
-18. **Supported options.** For discoverable matters, Agents must present supported options and their best available Proposal.
+15. **Supported options.** For discoverable matters, Agents must present supported options and their best available Proposal.
     For the user's own knowledge, Agents listen first under [Global Communication Rules Section 5](global-communication-rules.md#5-interaction-modes).
     The user may provide new inputs, select alternatives or revise the direction.
 
-19. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.
+16. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.
     User-created Workflows may reside in an appropriate Knowledge Base.
     Workflow outcomes and subject knowledge belong in the relevant Knowledge Base.
+    Preserve the standard Book and Business Document outcomes in [Book Development Workflow](workflows/book-development.md) and [Business Document Development Workflow](workflows/business-document-development.md).
+    Refine permitted methods through practical experience without changing confirmed flow requirements.
     Workflow progress belongs in the owning Identity's Identity Context.
 
-20. **Task Workflow selection.** The user selects the Workflow when a Task starts.
-    Discover applicable Workflows in the Plugin and scoped Knowledge Bases to support that selection.
+17. **Task Workflow selection.** The user selects the Workflow when a Task starts.
+    The Agent may propose a Workflow from the Plugin and the Knowledge Bases.
     If none is suitable, work normally under the assigned Role Lifecycle using:
 
     - Domain knowledge.
@@ -273,14 +259,16 @@ Return to the [Requirements Overview](README.md).
     - Judgment.
 
     Absence of a suitable Workflow does not require a mandatory fallback Workflow or special Proposal.
+    Website, Governance and Code Development run as normal work.
+    A Workflow for them may arrive later through a Knowledge Base or a Plugin update.
     Existing Scope and approval requirements still apply.
 
-21. **Workflow progress and customization.** Keep the current stage in the Identity Context of the Agent owning the current step.
+18. **Workflow progress and customization.** Keep the current stage in the Identity Context of the Agent owning the current step.
     Transfer stage ownership only through a normal Handoff.
     Each Identity may customize how a Workflow runs within its approved work.
     The default is one full draft. A large Book may use Chapter-by-Chapter drafting.
 
-22. **User review and revision ownership.** In Book and Business Document Workflows, the user makes final decisions.
+19. **User review and revision ownership.** In Book and Business Document Workflows, the user makes final decisions.
     Leave space for user input. Advise when asked or when direction is unclear.
     After user review, apply this revision rule:
 

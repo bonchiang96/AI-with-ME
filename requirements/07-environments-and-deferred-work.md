@@ -1,4 +1,4 @@
-# Environments and Deferred Work
+# Environments and Acceptance
 
 Return to the [Requirements Overview](README.md).
 
@@ -34,13 +34,14 @@ Return to the [Requirements Overview](README.md).
    - Necessary evidence.
    - Deliverable references.
 
-   At required completion checkpoints, synchronize applicable local outputs to designated Google locations.
-   Local System Rules determine which outputs synchronize.
+   Local work returns to Google under [Section 2](#2-hybrid-local-working-and-deliverable-storage).
    Verify required updates before claiming completion.
-   Index rows follow required synchronization and use accessible, verified Google Locators.
+   Record index rows use accessible, verified Google Locators.
+   Deliverable index rows identify the agreed storage place under [Section 2.6](#2-hybrid-local-working-and-deliverable-storage).
    Full workspace copies and every intermediate asset are not automatically required.
 
-5. **Access limitations.** Report unavailable authoritative access or uncompleted required updates accurately. Discuss permitted setup or assistance with the user. Detailed operational access-restoration behavior remains subject to later practical design.
+5. **Access limitations.** Report unavailable authoritative access or uncompleted required updates accurately. Discuss permitted setup or assistance with the user.
+   Access restoration is left to AI judgment under [Requirements Overview Section 2.4](README.md#2-binding-non-functional-requirements).
 
 6. **Governed implementation.** System and Scope changes must follow:
 
@@ -60,7 +61,52 @@ Return to the [Requirements Overview](README.md).
 
    Verify affected resources and outcomes independently.
 
-## 2. Baseline acceptance and deferred development
+## 2. Hybrid local working and Deliverable storage
+
+1. **Hybrid local working.** Agents may run Meetings, Jobs and development locally.
+   Google Drive remains the authority.
+
+2. **Local System Rules.** Local System Rules reside in the Local System Rules Chapter of Google System Rules.
+   Local System Rules must govern:
+
+   - The local folder and its arrangement.
+   - Local file formats.
+   - Naming.
+   - Directories and working paths.
+   - Local Record creation.
+   - Local Deliverable creation.
+   - When and how work returns to Google.
+
+3. **Local folder arrangement.** The local root holds one folder per Identity, named by its Agent Key.
+   Each Identity folder holds one folder per Meeting or Job.
+   Each Meeting or Job folder is named like its Google Tab under [Foundation Section 2.4](01-foundation.md#2-governance-resources-and-dependencies).
+
+4. **Google-only resources.** These resources always stay in Google:
+
+   - System Context.
+   - Identity Context.
+   - The index.
+   - The inbox.
+
+5. **Record return.** Records return to Google at these points:
+
+   1. The Working Record and Final Minutes return at Meeting close.
+   2. The Job Record returns at Job completion.
+
+6. **Deliverable storage.** A Deliverable is stored where it fits, such as Google Drive, GitHub or GitLab.
+   The index Location identifies that place.
+   The Meeting agrees each Deliverable's storage place with the user.
+   The Meeting records that place in the Final Minutes.
+   The Execution Plan lists it.
+
+7. **Missing storage place.** When no storage place is recorded, the Execution Agent asks the user at Scope confirmation.
+
+8. **Indexing and announcement.** Nothing is indexed or announced until both conditions are met:
+
+   1. Its record is in Google.
+   2. Its Deliverable is in the agreed place.
+
+## 3. Baseline acceptance
 
 1. **Foundation acceptance.** The initial foundation must provide:
 
@@ -85,47 +131,3 @@ Return to the [Requirements Overview](README.md).
    - Formatting.
 
 2. **Subsequent Plugin work.** Actual Plugin development must follow the requirements baseline under a separately authorized development Job. A working Plugin and full Documentation are not mandatory initial foundation outputs.
-
-3. **Remaining resource mechanics.** Additional resource mechanics and unusual ownership exceptions require later authorized design.
-   Preserve the adopted ownership, consolidation and record requirements in these files:
-
-   - [Foundation](01-foundation.md).
-   - [PROFIT + A Framework](workflows/profit-a.md).
-   - [System, Identity and Entry Section 2](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
-   - [Meeting Lifecycle](03-meeting-lifecycle.md).
-   - [Execution Lifecycle](04-execution-lifecycle.md).
-
-4. **Deferred Workflows.** These remain future reusable Workflows:
-
-   - Website Development.
-   - Governance.
-   - Code Development.
-
-   Their detailed stages remain undecided.
-   Preserve the standard Book and Business Document outcomes in [Book Development Workflow](workflows/book-development.md) and [Business Document Development Workflow](workflows/business-document-development.md).
-   Refine permitted methods through practical experience without changing confirmed flow requirements.
-
-5. **Remaining implementation design.** The following require later authorized design:
-
-   - Exact packaging.
-   - Update methods.
-   - Remaining resource schemas and Registry details.
-   - Source-refresh mechanics.
-   - Further environment arrangements.
-   - Google and Local System Rules Templates.
-   - Precise Workflow invocation.
-   - Google and cross-environment Locator schemas.
-   - The Knowledge Base Operating Guide under [Foundation Section 4.11](01-foundation.md#4-scoped-knowledge-base).
-
-   Preserve current confirmed outcomes without inventing missing substantive decisions.
-
-6. **Migration boundary.** Existing Projects Migration remains a separate later workstream after the Plugin is bootstrapped.
-
-   Its future direction includes:
-
-   - Preservation of historical records.
-   - Review of current information.
-   - Recreation of Projects in the new structure.
-   - Import of reviewed context and Archive.
-
-   Historical material does not automatically override current governance. Any transition requires independent authorization and verified preservation.

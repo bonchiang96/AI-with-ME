@@ -58,6 +58,7 @@ Return to the [Requirements Overview](README.md).
 
 5. **Sending.** The sender adds one row to the recipient's inbox file under [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox).
    Ref follows [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox) and names a closed record.
+   Announcement follows [Environments and Acceptance Section 2.8](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
    Verify the saved row.
    A saved row does not prove recipient reading.
    Exact routing Identities do not authenticate individual Agents.
@@ -91,8 +92,8 @@ Return to the [Requirements Overview](README.md).
    - Approvals.
    - Assigned Scope.
 
-2. **Execution checkpoints.** After confirmed Job Scope and successful record establishment, SEARCH EXPERIENCES once before Proposal preparation.
-   Search uses the Knowledge Base discovery levels in [Foundation Section 4.10](01-foundation.md#4-scoped-knowledge-base). After verified Job finalization, CAPTURE EXPERIENCE once for the entire Job before After-Job communication.
+2. **Execution checkpoints.** After confirmed Job Scope and successful record establishment, search Experiences once before Proposal preparation.
+   Search uses the Knowledge Base discovery levels in [Foundation Section 4.10](01-foundation.md#4-scoped-knowledge-base). After verified Job finalization, capture Experience once for the entire Job before After-Job communication.
 
    Search during work only for one or more of:
 
@@ -100,7 +101,11 @@ Return to the [Requirements Overview](README.md).
    - Corrections.
    - Relevant quality problems.
 
-3. **Meeting checkpoints.** Meeting operations retain applicable Experience searches at Protocol Start and near completion.
+3. **Meeting checkpoints.** A Meeting searches Experiences at two points:
+
+   1. The last step of NEW MEETING under [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation).
+   2. Step 3 of CLOSE MEETING under [Meeting Lifecycle Section 3.3](03-meeting-lifecycle.md#3-closing-and-handoff).
+
    Perform one full-lifecycle Capture after post-closure Knowledge Base consolidation and before the final Handoff.
    The closing sequence follows [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff).
 

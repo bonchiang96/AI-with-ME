@@ -20,13 +20,13 @@ Return to the [Requirements Overview](../README.md).
    2. It saves confirmed outcomes to the Book Knowledge Base.
    3. The shared Execution Agent drafts the manuscript with complete QA.
    4. The user reviews the draft in a Meeting.
-   5. Apply revisions under [System, Identity and Entry Section 2.22](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands) and continue until the rough manuscript is complete.
+   5. Apply revisions under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows) and continue until the rough manuscript is complete.
    6. Complete Content Edit and Copy Edit under [Section 3](#3-manuscript-completion-and-review).
-      Apply the revision ownership rule in [System, Identity and Entry Section 2.22](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands) to both edits.
+      Apply the revision ownership rule in [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows) to both edits.
 
    Earlier stages may be revisited when new information materially changes the Book.
    Change the active Book only through explicit user direction.
-   Default drafting and permitted Chapter customization follow [System, Identity and Entry Section 2.21](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   Default drafting and permitted Chapter customization follow [System, Identity and Entry Section 2.18](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
 4. **Purpose.** Before manuscript development, clarify WHY the user wants to write the book and WHY NOW it matters.
 
@@ -264,14 +264,14 @@ Return to the [Requirements Overview](../README.md).
 
    Apply a practical completion boundary rather than endless polishing.
 
-8. **Book State.** Keep Book progress in the owning Identity Context under [System, Identity and Entry Section 2.21](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands):
+8. **Book State.** Keep Book progress in the owning Identity Context under [System, Identity and Entry Section 2.18](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows):
 
    - The active stage.
    - The current Part or Chapter.
    - Open content gaps.
    - The next step.
 
-   Keep confirmed Book decisions in the Book Knowledge Base under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   Keep confirmed Book decisions in the Book Knowledge Base under [System, Identity and Entry Section 2.16](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
 ## 4. Book Deliverables and Language Editions
 

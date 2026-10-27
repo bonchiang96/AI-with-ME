@@ -1,18 +1,18 @@
 ---
 name: workflow-business-document
 description: The standard AI with ME Business Document Development Workflow. Covers proposals, plans, policies, resolutions, letters, emails and other business documents. Takes each document from brief and sources through numbered full drafts with QA and user review to a Stable version. Use when the user selects the Business Document Workflow for a Task.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # Business Document Development Workflow
 
 ## 1. Use
 
-1. The user selects this Workflow when a Task starts.
+1. The user selects this Workflow when a Task starts. The Agent may propose it.
 2. Main document types are proposals, plans, policies, resolutions, letters, emails and other business communication or proposal documents.
 3. Each Identity runs its own steps under its Role Lifecycle.
 4. Keep the current stage in the Identity Context of the Agent that owns the current step.
 5. Transfer stage ownership only through a normal Handoff.
-6. Precise Workflow invocation is pending design.
 
 Flow: brief and structure → full draft with QA → user review in a Meeting → numbered revision → Stable version.
 
@@ -45,7 +45,8 @@ Each revision produces a new numbered draft based on:
 
 1. When the user approves a draft, the Meeting Agent records it as the Stable version in the Minutes.
 2. The Stable version is the baseline for later drafts.
-3. It may be sent to a client or another reader under applicable authorization.
+3. Sending the Stable version to a client or another outside reader still needs applicable authorization.
+   A Stable status alone does not authorize sending.
 
 ## 6. Reference knowledge
 

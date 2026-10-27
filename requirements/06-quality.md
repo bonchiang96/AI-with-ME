@@ -65,7 +65,7 @@ Return to the [Requirements Overview](README.md).
    - Formatting.
    - Local QA criteria.
 
-   Lifecycle actions and cross-resource execution belong in Commands. Apply structural refinements prospectively while preserving historical records and approved formats.
+   Lifecycle actions and cross-resource execution belong in the Plugin Skills. Apply structural refinements prospectively while preserving historical records and approved formats.
    Placement and standard templates follow [Foundation Section 6](01-foundation.md#6-templates-and-operating-guides).
 
 7. **Writing meaning.** Written outputs must preserve meaning under [Global Writing Rules](global-writing-rules.md).

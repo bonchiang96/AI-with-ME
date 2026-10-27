@@ -13,9 +13,9 @@
 
    - Agent Key.
    - Role.
-   - Identity folder Locator.
+   - Identity folder location.
 
-   Responsibility and Scope are authoritative in System Context.
+   Responsibility and Scope stay only in System Context.
 
 4. **Sections.** The file has these six Chapters in this order:
 
@@ -38,8 +38,9 @@
 
    1. The file holds only current truth, maintained by consolidation.
    2. The Context management rules in item 7 are met.
-   3. Every Future Topic entry has its required fields.
-   4. Every Knowledge Bases entry has Name, Location and Relation.
+   3. The metadata holds the Agent Key, the Role and the identity folder location.
+   4. Every Future Topic entry has its required fields.
+   5. Every Knowledge Bases entry has Name, Location and Relation.
 
 7. **Context management.** Apply these rules:
 
@@ -52,31 +53,26 @@
 8. **Operating references.** List here:
 
    - Target Locations for additional Identity-owned records or resources.
-   - Discoverable Command definitions.
    - Workflow references, useful Workflow usage and the current Workflow stage.
    - Related Minutes and meaningful verified accomplishments.
 
+9. **Chapter rules.** Apply these rules to the Chapters:
+
+   1. Future Topics is one readable list. Exclude statuses, counters and removal history.
+   2. A Meeting Agent Future Topic has a Topic Name, a short Description and a precise source reference.
+   3. An Execution Agent Future Topic has the Work Request Ref and From values, an Agent-authored Description, exact sources and relevant prerequisites.
+   4. Working Group holds peer Identities, Handoff relationships, useful Identity pairings and collaboration patterns.
+   5. Knowledge Bases holds one row per Knowledge Base the Identity uses or contributes to. Relation is Uses or Contributes.
+   6. Update Knowledge Bases at these points:
+      - Identity setup.
+      - Knowledge Base creation.
+      - Use of a newly found source.
+      - Discovery of a broken link.
+   7. At Identity setup, add the general Knowledge Base row with Relation Contributes.
+
 ## 2. Future Topics
 
-A Meeting Agent entry has:
-
-- Topic Name.
-- Short Description.
-- Precise source reference.
-
-An Execution Agent entry for pending work has:
-
-- Work Request Ref and From values.
-- Specific Agent-authored Description.
-- Exact sources.
-- Relevant prerequisites.
-
-Keep one readable list. Exclude statuses, counters and removal history.
-
 ## 3. Working Group
-
-Peer Identities and Handoff relationships.
-Useful Identity pairings and collaboration patterns.
 
 ## 4. Important Learning
 
@@ -84,13 +80,5 @@ Useful Identity pairings and collaboration patterns.
 
 ## 6. Knowledge Bases
 
-Update this list at these points:
-
-1. Identity setup.
-2. Knowledge Base creation.
-3. Use of a newly found source.
-4. Discovery of a broken link.
-
 | Name | Location | Relation |
 | --- | --- | --- |
-| General Knowledge Base | (Locator) | Contributes |

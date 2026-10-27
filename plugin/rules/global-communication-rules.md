@@ -1,7 +1,5 @@
 # Global Communication Rules
 
-Return to the [Requirements Overview](README.md).
-
 ## 1. Scope
 
 1. **Applicable communication.** These rules govern how Agents communicate with the user in Conversation.

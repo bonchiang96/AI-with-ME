@@ -18,13 +18,14 @@
 5. **Formatting.** Use a Google Docs file with one native table.
    Each row has five columns:
 
-   1. Sent. Its format is pending design.
+   1. Sent: the send date and time in the Google System Rules format.
    2. From: the sender Identity's exact Agent Key.
-   3. Type: Work Request or Completion Notice.
+   3. Type: Work Request or Completion Notice. A further Type is added through System Rules.
    4. Ref: the key of the closed record in the sender's index.
    5. Message: the message text.
 
    Write messages in Strict Mode under the Global Writing Rules.
+   A message references its record. It never copies a document body.
 
 6. **Local QA criteria.** Check these points:
 

@@ -18,6 +18,7 @@ Return to the [Requirements Overview](README.md).
    2. Read the inbox under [Records, Messaging and Experiences Section 2.6](05-records-messaging-and-experiences.md#2-messaging).
    3. Review Future Topics.
    4. Establish the Agenda under [Section 1.3](#1-initialization-and-preparation).
+   5. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
 
 2. **Active Meeting continuity.** At NEW MEETING, first check the latest Tab of the Working Records file for an active Meeting. Prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
 
@@ -42,7 +43,8 @@ Return to the [Requirements Overview](README.md).
    Unselected new matters enter Future Topics only when the user explicitly chooses future consideration.
    Apply the user-supplied Context rule in [Foundation Section 3.5](01-foundation.md#3-identity-context).
 
-5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Working Record as a new Tab in the Working Records file. Verify that resource.
+5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Working Record as a new Tab in the Working Records file.
+   Name the Tab under the tab name pattern in [Foundation Section 2.4](01-foundation.md#2-governance-resources-and-dependencies). Verify that resource.
 
    Preserve:
 
@@ -110,20 +112,33 @@ Return to the [Requirements Overview](README.md).
 2. **Final Minutes.** Compile self-contained Final Minutes under [Section 5](#5-meeting-artifacts) after completing the approved actions in [Section 4](#4-post-meeting-actions).
    Preserve essential constraints and supported outcomes.
    Include the intended Handoff Plan.
+   Record each Deliverable's storage place under [Environments and Acceptance Section 2.6](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
    Identify material gaps without speculation.
    Later Execution reads Final Minutes for applicable instructions without requiring access to the internal live Working Record.
 
-3. **Closing order.** Complete substantive closing work and required artifact checks before finalizing closure. Record the actual Closing Time consistently in Minutes and the Working Record.
+3. **Closing order.** At CLOSE MEETING, complete these steps in order:
+
+   1. Present matters for disposition under [Section 3.1](#3-closing-and-handoff).
+   2. Identify authorized recipients and authoritative sources under [Section 3.7](#3-closing-and-handoff).
+   3. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
+   4. Complete approved Post-Meeting Actions under [Section 4.3](#4-post-meeting-actions).
+   5. Compile the Final Minutes under [Section 3.2](#3-closing-and-handoff).
+   6. Record the actual Closing Time consistently in Minutes and the Working Record.
+   7. Verify the Final Minutes.
+   8. Add the index row under [Section 3.4](#3-closing-and-handoff).
+
+   Complete substantive closing work and required artifact checks before finalizing closure.
 
    Use the user's applicable local:
 
    - Date.
    - Time.
-   - Timezone.
+   - Time-zone abbreviation.
 
    Preserve closed Meeting records and Minutes as immutable records.
 
 4. **Indexed closure.** After the Final Minutes are verified, add one Meetings row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox).
+   Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-deferred-work.md#2-hybrid-local-working-and-deliverable-storage).
    Verify the resulting state before claiming closure.
 
 5. **Future Topics.** After verified closure, register confirmed carry-forward topics in the owning Identity Context Future Topics Chapter.
@@ -163,7 +178,7 @@ Return to the [Requirements Overview](README.md).
 
 2. **Other Deliverables.** Before editing other Deliverables or files, the Meeting Identity must obtain approval for the relevant Scope.
    Authority depends on Responsibility and approval, regardless of amendment size or file type.
-   Ownership follows [System, Identity and Entry Section 2.10](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
+   Ownership follows [System, Identity and Entry Section 2.10](02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
 
 3. **Closing transition.** CLOSE MEETING initiates Closing and normal approved Post-Meeting Action execution.
    Finish every approved, Meeting-Agent-owned Post-Meeting Action before compiling Final Minutes.

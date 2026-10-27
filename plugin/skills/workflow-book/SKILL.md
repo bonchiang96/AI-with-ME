@@ -1,17 +1,17 @@
 ---
 name: workflow-book
 description: The standard AI with ME Book Development Workflow. Guides one Book from purpose, Book Idea and Ideal Reader through architecture and a rough manuscript. Continues through Author Review, Content Edit and Copy Edit to a finished Base Edition and later Language Editions. Use when the user selects the Book Workflow for a Task.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # Book Development Workflow
 
 ## 1. Use
 
-1. The user selects this Workflow when a Task starts.
+1. The user selects this Workflow when a Task starts. The Agent may propose it.
 2. Approved Scope selects its application.
 3. Governing working arrangements may define outputs, locations and assigned Agents.
 4. Each Identity runs its own steps under its Role Lifecycle.
-5. Precise Workflow invocation is pending design.
 
 Develop the user's fragmented or conversational input while preserving core thinking and intended meaning.
 Contribute new ideas only when explicitly requested.

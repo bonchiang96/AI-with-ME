@@ -1,6 +1,7 @@
 ---
 name: profit-a
 description: The AI with ME PROFIT + A Framework for defining AI tasks and Prompts. PROFIT defines the task through Persona, Result, Objective, Feed, Insight and Template. A defines the readiness Acknowledgement for the selected Feed Mode. Use for every Sub-agent Prompt, every Plugin Development Prompt and any AI task or Prompt the user wants defined.
+compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
 # PROFIT + A Framework

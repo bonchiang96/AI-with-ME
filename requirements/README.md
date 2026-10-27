@@ -89,6 +89,13 @@ These Non-functional Requirements bind relevant design and maintenance of:
 4. **Failure Handling.** AI must use its judgment when execution encounters difficulties. It must act within authorized Scope and record actual outcomes. Report necessary assistance.
 
    Do not predesign Failure Handling methods for the AI.
+   The Framework is AI Management under [Section 2.1](#2-binding-non-functional-requirements).
+   These matters are left to AI judgment:
+
+   - Access restoration.
+   - Source refresh.
+   - Environment issues.
+   - An unwritable inbox.
 
    Normal AI execution must not require:
 
@@ -126,27 +133,26 @@ These Non-functional Requirements bind relevant design and maintenance of:
    - The outcome.
 
    An item belongs in Requirements when two developers could otherwise implement incompatible flows.
-   Implementation design may remain deferred only when the required outcome is stated.
-   Detailed design boundaries follow [Environments and Deferred Work Section 2.5](07-environments-and-deferred-work.md#2-baseline-acceptance-and-deferred-development).
+   When the required outcome is stated, the executing AI selects the implementation method under [Section 2.2](#2-binding-non-functional-requirements).
 
 9. **Requirements inspection.** After all modifications, independently inspect the complete Requirements artifact.
    Cover the three quality dimensions in [Quality Section 1.2](06-quality.md#1-deliverable-quality-and-independent-qa).
 
-9. **Consolidated maintenance.** Maintain every file by consolidation rather than appending.
-   Working Records and Job Records keep their chronological history.
-   Every other file holds only current truth, kept light and accurate.
+10. **Consolidated maintenance.** Maintain every file by consolidation rather than appending.
+    Working Records and Job Records keep their chronological history.
+    Every other file holds only current truth, kept light and accurate.
 
 ## 3. Requirements modules
 
 The Requirements consist of this Overview and the files below. Each file links back to this Overview.
 
 1. [Foundation](01-foundation.md) — Repository, distribution, governance resources, Identity Context, Knowledge Bases, identity folders, templates and Operating Guides.
-2. [System, Identity and Entry](02-system-identity-and-entry.md) — System entry, Bootstrap, Identity setup, Agent responsibilities and Commands.
+2. [System, Identity and Entry](02-system-identity-and-entry.md) — System entry, Bootstrap, Identity setup, Agent responsibilities, stage words and Workflow selection.
 3. [Meeting Lifecycle](03-meeting-lifecycle.md) — Meeting stages from preparation to closing, handoff and Meeting artifacts.
 4. [Execution Lifecycle](04-execution-lifecycle.md) — Execution Parent stages from intake to completion, Sub-agents and the Job Record.
 5. [Records, Messaging and Experiences](05-records-messaging-and-experiences.md) — Durable records, indexes, inbox messaging and Experience learning.
 6. [Quality](06-quality.md) — Deliverable verification and independent QA.
-7. [Environments and Deferred Work](07-environments-and-deferred-work.md) — Execution environments, result return, governed changes and deferred development.
+7. [Environments and Acceptance](07-environments-and-deferred-work.md) — Execution environments, hybrid local working, Deliverable storage, result return, governed changes and baseline acceptance.
 8. [Book Development Workflow](workflows/book-development.md) — The standard Workflow for one Book from foundation to Language Editions.
 9. [Business Document Development Workflow](workflows/business-document-development.md) — The standard Workflow for business documents from brief to Stable version.
 10. [PROFIT + A Framework](workflows/profit-a.md) — The reusable Framework for defining AI tasks and Prompts.
