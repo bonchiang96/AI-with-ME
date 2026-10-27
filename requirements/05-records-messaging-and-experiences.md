@@ -2,7 +2,7 @@
 
 Return to the [Requirements Overview](README.md).
 
-## 1. Records and interface authority
+## 1. Records and indexes
 
 1. **Durable records.** Agents should preserve appropriate durable evidence for:
 
@@ -13,53 +13,17 @@ Return to the [Requirements Overview](README.md).
 
    This does not require a separate document for every small action.
 
-2. **Index meaning.** Database records must index authoritative content rather than duplicate document bodies.
+2. **Index meaning.** Index rows must reference authoritative content rather than duplicate document bodies.
 
-   Record categories distinguish:
+   Index Chapters and ownership follow [Foundation Section 5.2](01-foundation.md#5-identity-folder-index-and-inbox).
 
-   - Meetings.
-   - Jobs.
-   - Actual Documents.
-
-   Agent Role and exact Agent Identity identify responsibility separately from resource type.
-
-3. **Index verification.** Indexed sources must use exact authoritative locators and verified returned identifiers.
-
-   Previous Job lookup must distinguish:
-
-   - Applicable indexed Scope.
-   - Job category.
-   - Exact Agent Identity.
-
-   Preserve historical sources and unresolved identity uncertainty.
-
-4. **Database Contracts.** The Execution Identity assigned Database Engineering must maintain authoritative interface definitions for approved database services. Applicable operating Contracts must expose only needed operations and shared semantics. Commands own when and why interfaces are used.
-
-   Contracts own:
-
-   - Inputs.
-   - Behavior.
-   - Outputs.
-   - Relevant integrity or security constraints.
-
-5. **Engineering verification.** Approved database changes must preserve applicable:
-
-   - Integrity.
-   - Security.
-   - Transaction safety.
-   - Interface compatibility.
-
-   Verify:
-
-   - Actual behavior.
-   - Affected data.
-   - Contract consistency.
-
-   Add complexity only when a real requirement supports it.
+3. **Index verification.** Index rows must use exact authoritative locators and verified keys.
+   Previous Job lookup uses the Jobs Chapter of the exact Identity's index.
+   Preserve historical sources and unresolved Identity uncertainty.
 
 ## 2. Messaging
 
-1. **Identity and routing.** Enabled Agent Messaging must use exact registered sender and recipient identities.
+1. **Identity and routing.** Inbox messages must use exact registered sender and recipient Identities.
 
    Resolve recipients from the central System Context registry using:
 
@@ -90,19 +54,22 @@ Return to the [Requirements Overview](README.md).
 
    Send it only after the full assigned Protocol completes. It must not instruct the recipient or create new execution authority.
 
-4. **Message handling.** Distinguish newly received Messages from historical search results. Preserve sources and essential meaning. Present suggested follow-up as a proposal. Message search must preserve read state according to the applicable Contract.
+4. **Inbox reading.** Inbox reading follows the start order in [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation) and [Execution Lifecycle Section 1.3](04-execution-lifecycle.md#1-stages-and-intake).
 
-5. **Delivery evidence.** The Messaging System maintains delivery evidence.
-   Verify stored Message identifiers and timestamps.
-   Reuse the same request key for an uncertain identical retry when supported.
-   Stored delivery does not prove recipient reading.
-   Exact routing identities do not authenticate individual Agents.
-   A frozen Job Record need not be reopened merely to store later Message IDs.
+5. **Sending.** The sender adds one row to the recipient's inbox file under [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox).
+   Ref follows [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox) and names a closed record.
+   Verify the saved row.
+   A saved row does not prove recipient reading.
+   Exact routing Identities do not authenticate individual Agents.
 
-6. **Manual Handoff.** Without Database Messaging, the sending Agent supplies copy-ready Handoff text.
-   Include relevant authority, source references and actual outcomes.
-   The user pastes it into the receiving Agent's Conversation.
-   The receiving Agent records it in its own Future Topics.
+6. **Processing.** The receiver opens the referenced record. It routes the outcome to every relevant place.
+   Relevant places include:
+
+   - Future Topics for pending Work Requests under [Execution Lifecycle Section 1.5](04-execution-lifecycle.md#1-stages-and-intake).
+   - The index for Deliverables under [Foundation Section 5.4](01-foundation.md#5-identity-folder-index-and-inbox).
+
+   The receiver then deletes the processed row.
+   Preserve sources and essential meaning. Present suggested follow-up as a proposal.
    Preserve normal responsibility, Scope and approval boundaries.
 
 ## 3. Experience learning
@@ -124,7 +91,8 @@ Return to the [Requirements Overview](README.md).
    - Approvals.
    - Assigned Scope.
 
-2. **Execution checkpoints.** After confirmed Job Scope and successful record establishment, SEARCH EXPERIENCES once before Proposal preparation. After verified Job finalisation, CAPTURE EXPERIENCE once for the entire Job before After-Job communication.
+2. **Execution checkpoints.** After confirmed Job Scope and successful record establishment, SEARCH EXPERIENCES once before Proposal preparation.
+   Search uses the Knowledge Base discovery levels in [Foundation Section 4.10](01-foundation.md#4-scoped-knowledge-base). After verified Job finalization, CAPTURE EXPERIENCE once for the entire Job before After-Job communication.
 
    Search during work only for one or more of:
 
@@ -136,7 +104,7 @@ Return to the [Requirements Overview](README.md).
    Perform one full-lifecycle Capture after post-closure Knowledge Base consolidation and before the final Handoff.
    The closing sequence follows [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff).
 
-4. **Capture outcomes.** Compare actual reusable learning with governing sources and existing Posts.
+4. **Capture outcomes.** Compare actual reusable learning with governing sources and existing Knowledge Base content.
 
    Verify:
 
@@ -144,12 +112,18 @@ Return to the [Requirements Overview](README.md).
    - Novelty.
    - Limitations.
 
-   Then publish, replace, react or conclude that no action is needed.
-   Experience Capture publishes only to the Experience Forum for both Meetings and Jobs.
-   No Experience entry is required in frozen Job Records or Minutes.
-   Do not publish merely because a Protocol ended.
+   Then contribute the Experience or conclude that no action is needed.
+   Experience is a kind of Knowledge Base contribution.
+   After each Closed Minutes or closed Job Record, contribute it to one of these destinations:
 
-5. **Experience quality.** Authored Topic names and Post content must follow Strict Mode under [Global Writing Requirements](global-writing-requirements.md).
+   - The general Knowledge Base.
+   - The Knowledge Base of its Scope.
+
+   Consolidate every contribution under [Foundation Section 4.5](01-foundation.md#4-scoped-knowledge-base).
+   No Experience entry is required in frozen Job Records or Minutes.
+   Do not contribute merely because a Protocol ended.
+
+5. **Experience quality.** Experience contributions follow Knowledge Base writing rules under [Foundation Section 4.5](01-foundation.md#4-scoped-knowledge-base).
 
    Preserve:
 
@@ -159,5 +133,3 @@ Return to the [Requirements Overview](README.md).
    - Evidence.
    - Limitations.
    - Future applicability.
-
-   Reactions must reflect actual application. Counts do not establish instruction authority.

@@ -10,8 +10,8 @@ Return to the [Requirements Overview](README.md).
    2. Scope Confirmation and Job Record.
    3. Proposal / Execution Plan.
    4. Execution Approval.
-   5. Execution, with authoring, review, saving and registration of accepted Deliverables.
-   6. Completion, with verification and Job finalisation.
+   5. Execution, with authoring, review, saving and recording of accepted Deliverables.
+   6. Completion, with verification and Job finalization.
    7. Context maintenance, Experience Capture and final communication under [Section 3](#3-completion-and-communication).
 
    Each step preserves its assigned owner and approval boundaries.
@@ -25,7 +25,13 @@ Return to the [Requirements Overview](README.md).
    - Experience search.
    - Proposal preparation.
 
-3. **Intake identity and sources.** Resolve identity during Initialization. Receive enabled Agent Messages. At NEW JOB, separately READ MESSAGES.
+3. **Intake identity and sources.** Resolve identity during Initialization.
+   At NEW JOB, use this start order:
+
+   1. Check the latest Tab of the Job Records file for an active Job.
+   2. Read the inbox under [Records, Messaging and Experiences Section 2.6](05-records-messaging-and-experiences.md#2-messaging).
+   3. Review Future Topics.
+   4. Establish the Scope.
 
    Before interpreting a candidate's substantive Scope, read:
 
@@ -35,7 +41,7 @@ Return to the [Requirements Overview](README.md).
    - The candidate's authoritative Closed Minutes.
 
 4. **Previous checkpoint.** Consult the immediately preceding Job's last processed request or source checkpoint for the same exact Identity.
-   Use the applicable indexed Scope when locating that record. Compare identifiers only within the same sequence. Preserve valid pending or excluded work.
+   Use the Jobs Chapter of the Identity's index when locating that record. Compare identifiers only within the same sequence. Preserve valid pending or excluded work.
 
 5. **Future Execution work.** Automatically retain every valid Work Request not wholly incorporated into a confirmed Job.
    Keep pending work in the Execution Identity's Future Topics Chapter.
@@ -44,7 +50,7 @@ Return to the [Requirements Overview](README.md).
 
 6. **Pending entry content.** Each entry must contain:
 
-   - Its Work Request identifier.
+   - Its Work Request Ref and From values.
    - A specific Agent-authored Description.
    - Exact sources.
    - Relevant prerequisites.
@@ -81,7 +87,7 @@ Return to the [Requirements Overview](README.md).
    Present eligible Scope and useful combinations for the user's selection.
    Assign substantive execution under [Section 4](#4-execution-parent-and-sub-agents).
 
-9. **Scope transition.** After Scope confirmation, establish and verify the Working Document and applicable Job index. Remove only incorporated portions from the retained future work after successful establishment. Retain partial and unselected remainders.
+9. **Scope transition.** After Scope confirmation, establish and verify the Working Document. In Google Docs, the Working Document is a new Tab in the Job Records file. Remove only incorporated portions from the retained future work after successful establishment. Retain partial and unselected remainders.
 
 10. **Working Document.** Use “Working Document” as an environment-neutral term. Its physical form may differ by execution environment. A Job may use a fresh Conversation Context while preserving the durable Execution Identity Context.
     Apply the authoritative result-return requirements in [Environments and Deferred Work Section 1](07-environments-and-deferred-work.md#1-environments-result-return-and-governed-changes).
@@ -91,7 +97,7 @@ Return to the [Requirements Overview](README.md).
 1. **Proposal preparation.** Prepare one comprehensive Execution Plan for the entire Job:
 
    1. Read current target resources.
-   2. Analyse every included Scope and its dependencies.
+   2. Analyze every included Scope and its dependencies.
    3. Prepare the complete Execution Plan.
    4. Save the Plan.
    5. Present the saved Plan for approval.
@@ -136,15 +142,12 @@ Return to the [Requirements Overview](README.md).
    - Authoritative locations.
    - Necessary evidence.
 
-   Maintain corresponding Job index references when Database services are enabled.
    Mandatory persistence checkpoints follow [Section 5.7](#5-job-record).
 
-6. **Deliverable registration.** Register each Deliverable as soon as it is accepted and saved.
-   When Database indexing is enabled, create or update its Document index with exact source and originating Job links.
-   Verify existing indexes to avoid duplication.
+6. **Deliverable recording.** Record each Deliverable in the Job Record as soon as it is accepted and saved.
+   Include its exact location, source and originating Identity.
    Required synchronization and verified Google Locators follow [Environments and Deferred Work Section 1](07-environments-and-deferred-work.md#1-environments-result-return-and-governed-changes).
-   The Database index may be created before the Identity Context Deliverable Index is updated.
-   Update the Context Index immediately or consolidate it at Job close.
+   The originating Meeting Agent registers the Deliverable under [Foundation Section 5.4](01-foundation.md#5-identity-folder-index-and-inbox).
 
 7. **Decision gaps.** A missing substantive decision must return to the Meeting process. Suspend the affected action until authoritative Closed Minutes resolve it. Preserve completed in-scope work. Deliverable organization and permitted implementation methods remain execution judgments.
 
@@ -152,17 +155,17 @@ Return to the [Requirements Overview](README.md).
 
 1. **Completion sequence.** Complete these actions in order:
 
-   1. Verify actual saved Deliverables and their required registration.
-   2. Verify the complete final Job Record and applicable indexes.
+   1. Verify actual saved Deliverables and their Job Record entries.
+   2. Verify the complete final Job Record.
    3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
    4. Freeze the completed Job Record.
-   5. Finalize and verify the existing Job index when enabled.
-   6. Update Identity Context, including any remaining Deliverable Index updates.
+   5. Add one Jobs row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox). Verify the row.
+   6. Update Identity Context.
    7. Optionally maintain relevant verified Knowledge Base content within approved authority.
-   8. Perform full-lifecycle Experience Capture in the Experience Forum.
-   9. Send relevant Completion Notices last.
+   8. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   9. Send relevant Completion Notices last as inbox rows.
 
-   Apply System Rules and Database Atomic Actions to actual persistence and indexing.
+   Apply System Rules to actual persistence and indexing.
    Knowledge Base maintenance remains discretionary for independently discovered knowledge under [Foundation Section 4.7](01-foundation.md#4-scoped-knowledge-base).
 
 2. **Proof of Job.** A completed Working Document must preserve:
@@ -185,16 +188,16 @@ Return to the [Requirements Overview](README.md).
 
 3. **Distinct outcomes.** Work across multiple Scopes or originating Identities must preserve each Deliverable's actual outcome and verification status.
 
-4. **Completion authority.** Each executing Agent must perform its own internal QA under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa). Self-verification does not establish an independent Central QA assignment. Delegated execution also requires the Parent's independent acceptance under [Section 4](#4-execution-parent-and-sub-agents).
+4. **Completion authority.** Each executing Agent must perform its own internal QA under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa). Self-verification does not replace an independent QA Workflow under [Quality Section 1.11](06-quality.md#1-deliverable-quality-and-independent-qa). Delegated execution also requires the Parent's independent acceptance under [Section 4](#4-execution-parent-and-sub-agents).
 
 5. **After-Job recipients.** After verified formal Job closure, send a relevant Completion Notice to each originating Identity.
    Determine notices through each Deliverable's original Scope and Identity.
    Review every incorporated Work Request and its authoritative sources.
    Notify other directly related registered Identities when their current Responsibilities intersect the completed outcome.
 
-   Resolve exact identities and relevance.
+   Resolve exact Identities and relevance.
    Avoid unrelated or duplicate notices.
-   Use Manual Handoff under [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging) when Agent Messaging is unavailable.
+   Inbox use follows [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
 
 ## 4. Execution Parent and Sub-agents
 
@@ -275,7 +278,7 @@ Return to the [Requirements Overview](README.md).
 
    - Complete sources.
    - Requirements.
-   - [Global Writing Requirements](global-writing-requirements.md).
+   - [Global Writing Rules](global-writing-rules.md).
    - Applicable artifact quality rules.
 
 7. **Feedback and retries.** A FAIL requires specific feedback. Allow at most five Child retries after the initial submission. After five unsuccessful retries, report the unpassed outcome for the user's decision. The Parent must not assume the Child's substantive authorship.
@@ -284,7 +287,7 @@ Return to the [Requirements Overview](README.md).
 
    - Authoritative saving.
    - Publication.
-   - Indexing.
+   - Recording in the Job Record.
    - Completed Job status.
 
    Temporary review copies are not accepted Deliverables.

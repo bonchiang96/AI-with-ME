@@ -14,7 +14,7 @@ Return to the [Requirements Overview](README.md).
 
 2. **Connectors.** Every participating environment must have suitable Google Drive / Docs access. Host-specific integrations and System Rules select the actual connector.
    Local integration selections remain environment-specific.
-   Local Agents may use Agent Messaging when available. The AI must assess required setup and permissions according to its actual environment.
+   Local Agents use the inbox under [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging). The AI must assess required setup and permissions according to its actual environment.
 
 3. **Governance continuity.** Local and remote work must preserve:
 
@@ -28,7 +28,7 @@ Return to the [Requirements Overview](README.md).
 
 4. **Result return.** Return the following to the owning Google-authoritative workflow:
 
-   - Required Job or Execution Record details.
+   - Required Job Record details.
    - Actual status.
    - Results.
    - Necessary evidence.
@@ -37,7 +37,7 @@ Return to the [Requirements Overview](README.md).
    At required completion checkpoints, synchronize applicable local outputs to designated Google locations.
    Local System Rules determine which outputs synchronize.
    Verify required updates before claiming completion.
-   Eligible Database Record indexing follows required synchronization and uses accessible, verified Google Locators.
+   Index rows follow required synchronization and use accessible, verified Google Locators.
    Full workspace copies and every intermediate asset are not automatically required.
 
 5. **Access limitations.** Report unavailable authoritative access or uncompleted required updates accurately. Discuss permitted setup or assistance with the user. Detailed operational access-restoration behavior remains subject to later practical design.
@@ -115,7 +115,7 @@ Return to the [Requirements Overview](README.md).
    - Google and Local System Rules Templates.
    - Precise Workflow invocation.
    - Google and cross-environment Locator schemas.
-   - Optional Database configuration and credential details.
+   - The Knowledge Base Operating Guide under [Foundation Section 4.11](01-foundation.md#4-scoped-knowledge-base).
 
    Preserve current confirmed outcomes without inventing missing substantive decisions.
 
@@ -128,4 +128,4 @@ Return to the [Requirements Overview](README.md).
    - Recreation of Projects in the new structure.
    - Import of reviewed context and Archive.
 
-   Historical material does not automatically override current governance. Database redesign and any transition require independent authorization and verified preservation.
+   Historical material does not automatically override current governance. Any transition requires independent authorization and verified preservation.

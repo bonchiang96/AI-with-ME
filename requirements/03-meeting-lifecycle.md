@@ -11,15 +11,21 @@ Return to the [Requirements Overview](README.md).
    - Scope.
    - Exact Agent Key.
 
-   Load applicable governing instructions. When Messaging is enabled, preserve Initialization RECEIVE AGENT MESSAGES and NEW MEETING READ MESSAGES as distinct checkpoints.
+   Load applicable governing instructions.
+   At NEW MEETING, use this start order:
 
-2. **Active Meeting continuity.** At NEW MEETING, first search for an existing active Meeting and prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
+   1. Check for an active Meeting under [Section 1.2](#1-initialization-and-preparation).
+   2. Read the inbox under [Records, Messaging and Experiences Section 2.6](05-records-messaging-and-experiences.md#2-messaging).
+   3. Review Future Topics.
+   4. Establish the Agenda under [Section 1.3](#1-initialization-and-preparation).
 
-3. **Agenda sources.** Collect relevant:
+2. **Active Meeting continuity.** At NEW MEETING, first check the latest Tab of the Working Records file for an active Meeting. Prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
+
+3. **Agenda sources.** After reading the inbox, collect relevant:
 
    - Messages.
    - Work Requests.
-   - Future Meeting Topics.
+   - Future Topics.
    - Carry-forwards.
    - Approved Meeting Plans.
 
@@ -32,11 +38,11 @@ Return to the [Requirements Overview](README.md).
    Propose a bounded Agenda that may combine compatible selected matters.
    Every Meeting Agenda must allow meaningful free user input.
 
-4. **Message selection.** A Message selected for the current Agenda must retain its identifier and source.
+4. **Message selection.** A Message selected for the current Agenda must retain its Ref and From values.
    Unselected new matters enter Future Topics only when the user explicitly chooses future consideration.
    Apply the user-supplied Context rule in [Foundation Section 3.5](01-foundation.md#3-identity-context).
 
-5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Working Record and optional index. Verify those resources.
+5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Working Record as a new Tab in the Working Records file. Verify that resource.
 
    Preserve:
 
@@ -45,7 +51,7 @@ Return to the [Requirements Overview](README.md).
    - The confirmed Agenda.
    - Authoritative source references.
 
-6. **Future Topic transfer.** Remove selected existing Future Topics only after their new Meeting Record is successfully established. Preserve unselected entries.
+6. **Future Topic transfer.** Remove selected existing Future Topics only after their new Working Record is successfully established. Preserve unselected entries.
 
 ## 2. Discussion and outcomes
 
@@ -87,7 +93,6 @@ Return to the [Requirements Overview](README.md).
 
 4. **Persistence checkpoints.** At the end of each Agenda item, save and verify all accepted outcomes in the Working Record.
    Intermediate saving within an Agenda item is discretionary.
-   Ordinary content changes do not require Database index updates.
    The Working Record's persistence and QA boundary follows [Quality Section 1.1](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 5. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Identity's own Responsibility and Scope. Prepare other Agents' work for handoff.
@@ -118,15 +123,10 @@ Return to the [Requirements Overview](README.md).
 
    Preserve closed Meeting records and Minutes as immutable records.
 
-4. **Indexed closure.** When Database indexing is enabled, update these fields of the existing Meeting together:
+4. **Indexed closure.** After the Final Minutes are verified, add one Meetings row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox).
+   Verify the resulting state before claiming closure.
 
-   - Status.
-   - Closing metadata.
-   - Final Minutes source.
-
-   Preserve unrelated metadata and the Working Record reference. Verify the resulting state before claiming closure.
-
-5. **Future Meeting Topics.** After verified closure, register confirmed carry-forward topics in the owning Identity Context Future Topics Chapter.
+5. **Future Topics.** After verified closure, register confirmed carry-forward topics in the owning Identity Context Future Topics Chapter.
 
    Each entry needs:
 
@@ -149,11 +149,10 @@ Return to the [Requirements Overview](README.md).
 
    1. Update Identity Context and Future Topics.
    2. Consolidate qualifying Knowledge Base content under [Foundation Section 4](01-foundation.md#4-scoped-knowledge-base).
-   3. Perform full-lifecycle Experience Capture.
-   4. Send the authorized Handoff last.
+   3. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   4. Send the authorized Handoff last as an inbox row under [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
 
    Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
-   Use Manual Handoff under [Records, Messaging and Experiences Section 2.6](05-records-messaging-and-experiences.md#2-messaging) when Messaging is unavailable.
 
 ## 4. Post-Meeting Actions
 
@@ -164,7 +163,7 @@ Return to the [Requirements Overview](README.md).
 
 2. **Other Deliverables.** Before editing other Deliverables or files, the Meeting Identity must obtain approval for the relevant Scope.
    Authority depends on Responsibility and approval, regardless of amendment size or file type.
-   The Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables.
+   Ownership follows [System, Identity and Entry Section 2.10](02-system-identity-and-entry.md#2-agent-responsibilities-and-commands).
 
 3. **Closing transition.** CLOSE MEETING initiates Closing and normal approved Post-Meeting Action execution.
    Finish every approved, Meeting-Agent-owned Post-Meeting Action before compiling Final Minutes.
@@ -217,7 +216,8 @@ Return to the [Requirements Overview](README.md).
 
    Findings and Decisions share one substantive Chapter.
    Preserve their respective meaning under [Section 2.3](#2-discussion-and-outcomes).
-   Final Minutes must satisfy [Global Writing Requirements](global-writing-requirements.md) and full Content, Writing and Formatting verification under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa).
+   Final Minutes record their Working Record Locator.
+   Final Minutes must satisfy [Global Writing Rules](global-writing-rules.md) and full Content, Writing and Formatting verification under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 5. **Minutes organization.** The Meeting Agent determines the internal subject grouping, heading hierarchy, order and presentation.
    Organize Final Minutes by related subject matter without requiring Agenda chronology.

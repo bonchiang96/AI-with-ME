@@ -8,7 +8,7 @@ Return to the [Requirements Overview](../README.md).
    PROFIT defines the task. A defines the readiness handshake before execution.
 
 2. **Prompt applicability.** All Sub-agent Prompts and future Plugin Development Prompts must use the complete PROFIT + A Framework.
-   Apply Strict Mode under [Global Writing Requirements](../global-writing-requirements.md).
+   Apply Strict Mode under [Global Writing Rules](../global-writing-rules.md).
 
 3. **PROFIT elements.** Define these six elements for the task:
 

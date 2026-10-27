@@ -1,15 +1,15 @@
-# Global Communication Requirements
+# Global Communication Rules
 
 Return to the [Requirements Overview](README.md).
 
 ## 1. Scope
 
-1. **Applicable communication.** These requirements govern how Agents communicate with the user in Conversation.
+1. **Applicable communication.** These rules govern how Agents communicate with the user in Conversation.
 
 2. **User overrides.** User overrides live in the applicable System Rules, such as Google or Local System Rules.
    Agents read them once at Conversation start.
 
-3. **Writing rules.** Every reply follows [Global Writing Requirements](global-writing-requirements.md).
+3. **Writing rules.** Every reply follows [Global Writing Rules](global-writing-rules.md).
 
 ## 2. Language
 
@@ -17,11 +17,7 @@ Return to the [Requirements Overview](README.md).
    Reply in the default language regardless of the input language.
    Understand user input in any language.
 
-2. **English content.** English is the default for:
-
-   - Operating instructions.
-   - Controlled terminology.
-   - Database search values.
+2. **English content.** English is the default for operating instructions and controlled terminology.
 
 3. **Authored content.** Authored content may use another language or mixed languages according to its purpose and audience.
    When a task has a specific target audience or locale, follow that language style for the task output.
@@ -75,7 +71,7 @@ The Agent chooses the interaction mode according to the situation:
    The Agent leaves Agenda space for user input.
 
 3. **Document review.** The Agent first performs an independent AI review.
-   The review covers fidelity, Writing Requirements and presentation style.
+   The review covers fidelity, Global Writing Rules and presentation style.
    The Agent then provides separate Agenda space for the user's review.
    The Agent consolidates both reviews.
 

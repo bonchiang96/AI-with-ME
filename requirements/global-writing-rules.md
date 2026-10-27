@@ -1,10 +1,10 @@
-# Global Writing Requirements
+# Global Writing Rules
 
 Return to the [Requirements Overview](README.md).
 
 ## 1. Scope
 
-1. **Applicable outputs.** These requirements apply to every output an Agent creates for the user.
+1. **Applicable outputs.** These rules apply to every output an Agent creates for the user.
    Outputs include:
 
    - Conversation replies.
@@ -14,11 +14,11 @@ Return to the [Requirements Overview](README.md).
    - Final Minutes.
    - Summaries and analyses.
 
-2. **Final language.** Apply these requirements to the final output in its final language.
+2. **Final language.** Apply these rules to the final output in its final language.
    A rule may depend on English grammar, word form or punctuation.
    In another language, apply the closest equivalent with the same clarity purpose.
 
-3. **Communication rules.** [Global Communication Requirements](global-communication-requirements.md) govern language choice and conversation with the user.
+3. **Communication rules.** [Global Communication Rules](global-communication-rules.md) govern language choice and conversation with the user.
 
 ## 2. Writing Modes
 
@@ -34,16 +34,15 @@ Return to the [Requirements Overview](README.md).
    3. Governing proposals.
    4. Formal submissions, specifications and formal authoritative reports.
    5. Agent Instructions, Lifecycles and Frameworks.
-   6. Database Contracts and Operating Guides.
+   6. Operating Guides.
    7. System Rules, system prompts and operational procedures.
 
    Strict Mode always applies to:
 
    8. The entire Requirements, including retained content, additions, consolidation and future revisions.
-   9. Global Writing Requirements and Global Communication Requirements.
+   9. Global Writing Rules and Global Communication Rules.
    10. Sub-agent Prompts and Plugin Development Prompts.
-   11. Agent Messages.
-   12. Experience Forum content, including Topic names and Post bodies.
+   11. Inbox messages.
 
 4. **Standard Mode artifacts.** Apply Standard Mode to:
 
@@ -145,7 +144,7 @@ Return to the [Requirements Overview](README.md).
 
 ## 7. Strict Mode rules
 
-Strict Mode includes every other Global Writing Requirement and these four rules:
+Strict Mode includes every other Global Writing Rule and these four rules:
 
 1. **Plain verbs.** Use a plain single verb in place of a phrasal verb when the meaning stays the same.
 
@@ -160,8 +159,8 @@ Strict Mode includes every other Global Writing Requirement and these four rules
 ## 8. Final compliance check
 
 1. **Final review.** After writing, rewriting or translation, review the final output in its final language.
-   Check it against these requirements and the applicable Writing Mode.
-   When Global Communication Requirements apply, check it against them as well.
+   Check it against these rules and the applicable Writing Mode.
+   When Global Communication Rules apply, check it against them as well.
 
 2. **Evidence.** An earlier source, draft or pre-translation version is not evidence of compliance.
    The final delivered content must satisfy every applicable rule.

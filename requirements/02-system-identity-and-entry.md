@@ -17,6 +17,7 @@ Return to the [Requirements Overview](README.md).
    - Root.
    - System Context.
    - System Rules.
+   - Knowledge Base folder.
    - Responsibilities.
    - Minimum Identities.
    - Creation actions.
@@ -26,29 +27,27 @@ Return to the [Requirements Overview](README.md).
 
    1. Create the folder.
    2. Create System Context and System Rules.
-   3. Register the approved minimum Identities.
-   4. Save the Bootstrap Working Record and Final Minutes as the new System's first records.
-   5. Join the normal entry path at Identity selection.
+   3. Create the Knowledge Base folder with its 00 Index and general Knowledge Base under [Foundation Section 4.9](01-foundation.md#4-scoped-knowledge-base).
+   4. Establish the approved minimum Identities under [Section 1.11](#1-identity-selection-and-governed-setup).
+   5. Save the Bootstrap Working Record and Final Minutes as the new System's first records.
+   6. Join the normal entry path at Identity selection.
 
    Bootstrap records remain in Conversation until the folder exists.
    The provisional Identity requires no pre-existing Registry entry.
-   Optional Database services may be discussed during Bootstrap.
    Inaccessibility alone does not prove absence.
    Resolve access or location uncertainty before creating another Root.
    Restore genuinely missing resources within existing approved authority and applicable System Rules.
 
-3. **Minimum identities.** A usable System must expose at least the System-wide Meeting Identity and an Execution Identity assigned System administration.
+3. **Minimum Identities.** A usable System must expose at least the System-wide Meeting Identity and one Execution Identity.
 
 4. **Conversation Initiation.** After System entry, the user selects a registered operational Identity from System Context.
    Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
    The Identity is then ready for NEW MEETING or NEW JOB.
    Load applicable System Rules and Plugin Instructions for the assignment.
-   An unselected Identity must not automatically select System administration.
    Continue work through the discovery requirements in [Section 2.17](#2-agent-responsibilities-and-commands).
 
 5. **Identity discovery.** Discovery must support a directly supplied Identity Context Locator or a registered Identity resolved through System Context.
-   Both paths must reach the Identity's authoritative Context.
-   Discovery must work independently of Database services.
+   Both paths must reach the Identity's authoritative Context through its identity folder.
    Detailed cross-environment Locator design remains deferred under [Environments and Deferred Work Section 2](07-environments-and-deferred-work.md#2-baseline-acceptance-and-deferred-development).
 
 6. **Identity meaning.** Each Identity must identify:
@@ -57,16 +56,16 @@ Return to the [Requirements Overview](README.md).
    - Its Role.
    - Its Responsibility.
    - Its Scope.
-   - Its Identity Context Locator.
+   - Its identity folder Locator.
 
    Its Role selects reusable Plugin Instructions and the common Role Lifecycle.
    Identity registration follows [Foundation Section 2.3](01-foundation.md#2-governance-resources-and-dependencies).
 
 7. **Identity isolation.** Distinct operational Identities must retain their own assignments and message inboxes.
    Separate Identities may share the same packaged Role Instruction.
-   System administration responsibilities do not merge other Identities or their inboxes.
+   No Identity's responsibilities merge other Identities or their inboxes.
 
-8. **Stable assignments.** An Agent Key must remain stable across Conversations serving the same assignment. Resolve the user's assignment against registered scope information. Resolve missing or ambiguous identities before scoped Messaging. An unresolved scoped assignment must not default to another Identity.
+8. **Stable assignments.** An Agent Key must remain stable across Conversations serving the same assignment. Resolve the user's assignment against registered Scope information. Resolve missing or ambiguous Identities before scoped Messaging. An unresolved scoped assignment must not default to another Identity.
 
 9. **Identity definition.** The user raises a new Identity in a Meeting with the System-wide Meeting Agent.
    Together they define:
@@ -88,12 +87,12 @@ Return to the [Requirements Overview](README.md).
 
 11. **Authorized Identity setup.** After CLOSE MEETING, the System-wide Meeting Agent performs the approved Identity setup as Post-Meeting Actions:
 
-    1. Create the Identity Context.
-    2. Register the Identity in System Context.
-    3. Preserve and verify setup evidence.
+    1. Create the identity folder and all its files with their Operating Guides under [Foundation Section 5.1](01-foundation.md#5-identity-folder-index-and-inbox).
+    2. Record applicable Knowledge Bases in the Identity Context Knowledge Bases Chapter under [Foundation Section 3.9](01-foundation.md#3-identity-context).
+    3. Register the identity folder Locator in System Context.
+    4. Preserve and verify setup evidence.
 
     Other approved resource establishment remains with its authorized owner.
-    System administration responsibility follows [Section 2.6](#2-agent-responsibilities-and-commands).
 
 12. **Governance refinement.** The Meeting Identity responsible for the governing Scope must refine adopted:
 
@@ -106,7 +105,7 @@ Return to the [Requirements Overview](README.md).
 
     Implementation follows the responsible owner's authority and applicable Scope approvals.
 
-13. **Identity changes.** Inactive or archived identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
+13. **Identity changes.** Inactive or archived Identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
 
 14. **Local Bootstrap.** Local Bootstrap must establish missing Local System Rules and required working paths only.
     Central Identity and Context authority remain governed by [Foundation Section 2.3](01-foundation.md#2-governance-resources-and-dependencies) and [Foundation Section 3.1](01-foundation.md#3-identity-context).
@@ -123,7 +122,7 @@ Return to the [Requirements Overview](README.md).
 
    Output identifies actual deliverables or result evidence. Each confirmed Job Scope must remain within the assigned Agent's authority.
 
-2. **Roles and Lifecycles.** The two principal Roles are Meeting Agent and Execution Agent.
+2. **Roles and Lifecycles.** The two Roles are Meeting Agent and Execution Agent.
    A Role is distinguished by its internal Lifecycle or Protocol.
    Every Identity must use the common Lifecycle of its Role.
 
@@ -147,7 +146,7 @@ Return to the [Requirements Overview](README.md).
    A governance assignment may include applicable operating rules and Commands.
    Approved Post-Meeting Actions follow [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
-4. **Document drafting responsibility.** An Execution Identity assigned document drafting must completely and readably preserve confirmed decisions.
+4. **Document drafting responsibility.** An Execution Identity drafting a document must completely and readably preserve confirmed decisions.
    These independent documents are normally human-facing and high-requirement.
    A typical small document count is not a hard limit.
 
@@ -163,10 +162,7 @@ Return to the [Requirements Overview](README.md).
    Its writing must express rules and relationships precisely enough for AI interpretation and reuse.
    Independent documents and other Deliverables remain with their assigned owners.
 
-6. **System administration responsibility.** An assigned Execution Identity owns authorized:
-
-   - System resource establishment.
-   - Synchronization or updates.
+6. **System resource changes.** An Execution Identity may perform authorized System resource synchronization or updates within an approved Job Scope.
 
    It must preserve each affected working Scope's:
 
@@ -195,31 +191,9 @@ Return to the [Requirements Overview](README.md).
    Identity Context maintenance follows [Foundation Section 3](01-foundation.md#3-identity-context).
    Shared Knowledge Base maintenance follows [Foundation Section 4](01-foundation.md#4-scoped-knowledge-base).
 
-8. **Database Engineer responsibility.** An Execution Identity assigned Database Engineering owns the following within approved database work:
+8. **Shipped Agents.** The Plugin ships only the Meeting Agent and the Execution Agent.
 
-   - Infrastructure.
-   - Implementation.
-   - Integrity.
-   - Operation.
-   - Stability.
-   - Compatible Contracts.
-
-   It must inspect current state. It must verify actual behavior. Routine Agents use applicable interfaces directly within their authority.
-
-9. **Independent QA responsibility.** One dedicated Execution Identity assigned Central QA must provide assessments and reports that are:
-
-   - Independent.
-   - Complete.
-   - Objective.
-
-   Its Jobs and reports remain under System-level authority.
-   It may inspect other working Scopes only within specifically approved Job Scope.
-
-   It must respect these limits:
-
-   1. Do not edit inspected resources.
-   2. Do not authorize remediation.
-   3. Do not independently schedule audits.
+9. **Independent QA responsibility.** Independent QA is a normal Workflow under [Quality Section 1.11](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 10. **Meeting execution responsibility.** A Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables within [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
@@ -239,18 +213,18 @@ Return to the [Requirements Overview](README.md).
     3. Do not duplicate Lifecycle sequencing.
 
 12. **Command organization.** Necessary Command definitions must be discoverable through Identity Context operating references.
-    Keep the Command Index compact and resolve each needed Command to its definition.
+    Keep the Command list compact and resolve each needed Command to its definition.
     A native Google Docs Tab per Command is preferred when using Google Docs.
     Necessary Command content may be reused within the active Conversation.
 
 13. **Command readiness.** Required Commands and dependencies must be usable for their assigned actions. An Agent must report missing definitions or inaccessible dependencies. It must not claim incomplete actions succeeded. Detailed execution mechanics remain with authorized implementation.
 
-14. **Shared Execution foundation.** Execution Identities must apply shared Global Requirements.
+14. **Shared Execution foundation.** Execution Identities must apply shared Global Rules.
     Assigned Instructions and applicable Commands must reflect each Identity's Responsibility and work type.
     Apply the common Role Lifecycle under [Section 2.2](#2-agent-responsibilities-and-commands).
 
 15. **Shared Commands.** Identities with the same Role and Responsibility must share applicable Commands.
-    Separate scoped Identities retain distinct scopes and own work records.
+    Separate scoped Identities retain distinct Scopes and own work records.
     Meeting and Execution Roles may require different Commands.
 
 16. **Dynamic Command resolution.** Shared Meeting, Job and CREATE RECORD Commands must identify the invoking Identity and record category.
@@ -277,7 +251,7 @@ Return to the [Requirements Overview](README.md).
     Continue from the selected Identity and current information without requiring the user to reconstruct prior work.
 
 18. **Supported options.** For discoverable matters, Agents must present supported options and their best available Proposal.
-    For the user's own knowledge, Agents listen first under [Global Communication Requirements Section 5](global-communication-requirements.md#5-interaction-modes).
+    For the user's own knowledge, Agents listen first under [Global Communication Rules Section 5](global-communication-rules.md#5-interaction-modes).
     The user may provide new inputs, select alternatives or revise the direction.
 
 19. **Workflow definitions.** Standard Workflow Definitions must reside in the Plugin.
