@@ -61,6 +61,7 @@ Your settings live in **Google System Rules**, inside the Google Drive folder na
 1. Start a conversation. The system-entry Skill checks Google access and looks for the **AI with me** folder.
 2. If the folder does not exist, a first Meeting builds the System with you. It creates System Context, Google System Rules, a Knowledge Base folder and two starting Identities: `general-meeting` and `general-execution`.
 3. Choose an Identity. Say `NEW MEETING` to a Meeting Agent or `NEW JOB` to an Execution Agent.
+4. Keep one Identity per conversation. To work as another Identity, start a new conversation.
 
 ## What's inside
 

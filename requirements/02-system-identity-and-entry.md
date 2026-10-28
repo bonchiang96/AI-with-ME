@@ -32,7 +32,7 @@ Return to the [Requirements Overview](README.md).
    4. Establish the approved minimum Identities under [Section 1.11](#1-identity-selection-and-governed-setup).
       The General Meeting Agent registers itself with the same Agent Key.
    5. Save the Bootstrap Working Record and Final Minutes as the new System's first records.
-   6. Join the normal entry path at Identity selection.
+   6. Join the normal entry path at Identity selection. Only `general-meeting` continues in the Bootstrap Conversation.
 
    Bootstrap records remain in Conversation until the folder exists.
    The General Meeting Agent requires no pre-existing Registry entry during Bootstrap.
@@ -50,6 +50,8 @@ Return to the [Requirements Overview](README.md).
 4. **Conversation Initiation.** After System entry, the user selects a registered operational Identity from System Context.
    Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
    The Identity is then ready for NEW MEETING or NEW JOB.
+   One Conversation serves one Identity. After selection, the Conversation keeps that Identity until it ends.
+   Work as another Identity starts in a new Conversation.
    Load applicable System Rules and Plugin Instructions for the assignment.
    Continue work through the discovery requirements in [Section 2.14](#2-agent-responsibilities-stage-words-and-workflows).
 

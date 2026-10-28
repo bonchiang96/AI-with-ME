@@ -52,6 +52,12 @@ Access restoration is left to your judgment within authorized Scope.
 11. Discover current information before asking the user for it again.
 
 The Identity is then ready for NEW MEETING or NEW JOB.
+
+One Conversation serves one Identity.
+After the user selects an Identity, the Conversation keeps that Identity until it ends.
+Do not switch to another Identity in the same Conversation.
+When the user asks to work as another Identity, ask the user to start a new Conversation.
+
 These four words are the user's stage words. Each Role Skill holds the flow of its stages.
 
 ## 5. Identity resolution
@@ -97,7 +103,7 @@ After CLOSE MEETING, the General Meeting Agent performs these Post-Meeting Actio
    - The General Meeting Agent, with Agent Key `general-meeting`.
    - The General Execution Agent, with Agent Key `general-execution`.
 6. Save the Bootstrap Working Record and Final Minutes as the System's first records.
-7. Join the normal entry flow at Identity selection.
+7. Join the normal entry flow at Identity selection. Only `general-meeting` continues in this Conversation.
 
 Restore genuinely missing resources within existing approved authority and applicable System Rules.
 
