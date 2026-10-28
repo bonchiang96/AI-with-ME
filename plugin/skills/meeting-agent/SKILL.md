@@ -109,7 +109,7 @@ CLOSE MEETING starts Closing. Complete these steps in order:
 4. Perform every approved Post-Meeting Action that this Identity owns.
    Record each actual outcome in the Working Record Post-Meeting Action Log.
 5. Compile self-contained Final Minutes as a new Tab in the 04 Minutes file.
-   Use the [Minutes template](../../templates/minutes.md).
+   Use the [Minutes template](../../templates/minutes.md). Write in Strict Mode under the Global Writing Rules.
    Include the Handoff Plan and each agreed Deliverable storage place.
    Identify material gaps without speculation.
 6. Record the actual Closing Time in the Minutes and the Working Record.

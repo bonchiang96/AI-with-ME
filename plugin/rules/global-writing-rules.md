@@ -41,6 +41,7 @@
    9. Global Writing Rules and Global Communication Rules.
    10. Sub-agent Prompts and Plugin Development Prompts.
    11. Inbox messages.
+   12. Final Minutes.
 
 4. **Standard Mode artifacts.** Apply Standard Mode to:
 
@@ -48,6 +49,7 @@
    2. Identity Context.
    3. Knowledge Base content.
    4. The root README.
+   5. Working Records and Job Records.
 
 5. **Mode selection.** The intended artifact type determines the mode.
    A draft of a Strict Mode artifact uses Strict Mode.

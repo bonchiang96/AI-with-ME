@@ -39,7 +39,7 @@
 5. **Formatting.** Use a Google Docs file.
    This Operating Guide is the first Tab.
    Each new Final Minutes is a new Tab.
-   Apply the Global Writing Rules and the Easy to Read rules.
+   Use Strict Mode under the Global Writing Rules.
    Write each time in the Google System Rules date and time format.
    When the Meeting ran locally, the Final Minutes return to Google at Meeting close.
 

@@ -48,13 +48,7 @@ Plugins added there sync to Claude Code under the same account.
 /plugin install ai-with-me@ai-with-me
 ```
 
-**ChatGPT:**
-
-```text
-codex plugin marketplace add bonchiang96/AI-with-ME
-```
-
-Then open Plugins in the ChatGPT desktop app and install the ai-with-me plugin.
+**ChatGPT:** give ChatGPT the repository URL and ask it to create a private plugin with Plugin Creator from every file in the `plugin/` folder. The Codex CLI installs into that environment, not your account.
 
 Missing Google access never blocks installation. [INSTALL.md](INSTALL.md) has the full guide.
 

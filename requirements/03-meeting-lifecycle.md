@@ -232,7 +232,8 @@ Return to the [Requirements Overview](README.md).
    Findings and Decisions share one substantive Chapter.
    Preserve their respective meaning under [Section 2.3](#2-discussion-and-outcomes).
    Final Minutes record their Working Record Locator.
-   Final Minutes must satisfy [Global Writing Rules](global-writing-rules.md) and full Content, Writing and Formatting verification under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa).
+   Final Minutes use Strict Mode under [Global Writing Rules](global-writing-rules.md).
+   They must pass full Content, Writing and Formatting verification under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 5. **Minutes organization.** The Meeting Agent determines the internal subject grouping, heading hierarchy, order and presentation.
    Organize Final Minutes by related subject matter without requiring Agenda chronology.

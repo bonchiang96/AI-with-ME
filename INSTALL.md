@@ -21,7 +21,7 @@ Both manifests describe the same Skills. The Skills share the rules and template
 The Repository root also holds two marketplace files:
 
 1. [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json): the Claude marketplace.
-2. [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json): the ChatGPT marketplace.
+2. [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json): the Codex marketplace.
 
 Both marketplace files point to the plugin folder.
 
@@ -51,8 +51,7 @@ The nine Skills are:
 
 ## 3. Install on each host
 
-The root `.claude-plugin/marketplace.json` serves Claude, and `.agents/plugins/marketplace.json` serves ChatGPT.
-Both point to the plugin folder.
+The root `.claude-plugin/marketplace.json` serves Claude.
 
 Claude on the web, the desktop app or Cowork:
 
@@ -70,9 +69,12 @@ Claude Code CLI:
 
 ChatGPT:
 
-1. Run `codex plugin marketplace add bonchiang96/AI-with-ME`.
-2. Open Plugins in the ChatGPT desktop app.
-3. Install the ai-with-me plugin.
+1. Give ChatGPT the Repository URL.
+2. Ask ChatGPT to create a private plugin with Plugin Creator.
+3. Ask it to include every file in the plugin folder, keeping the folder structure.
+4. Verify that the private plugin lists all nine Skills.
+
+Do not install with the Codex CLI for ChatGPT. It installs the Plugin in that environment, not in your account.
 
 ## 4. Dependencies
 
