@@ -36,7 +36,7 @@ Return to the [Requirements Overview](README.md).
    Before interpreting a candidate's substantive Scope, read:
 
    - Relevant Identity Context.
-   - Relevant scoped Knowledge Bases.
+   - Relevant Knowledge Bases, on demand under [Foundation Section 4.10](01-foundation.md#4-scoped-knowledge-base).
    - Work Requests.
    - The candidate's authoritative Closed Minutes.
 

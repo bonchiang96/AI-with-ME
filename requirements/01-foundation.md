@@ -388,6 +388,9 @@ Return to the [Requirements Overview](README.md).
     2. The Knowledge Base folder index.
     3. The contents list of each Knowledge Base.
 
+    Agents read Knowledge Bases on demand. A relevant topic, a circumstance or a user request decides when.
+    Agents reuse content already loaded in the Conversation. They read it again only when it is not enough or the user asks.
+
 11. **Knowledge Base format.** A Knowledge Base has a free format.
     Its headings must be numbered.
 

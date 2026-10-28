@@ -34,6 +34,9 @@ Read each level only when needed:
 2. The Knowledge Base folder index.
 3. The contents list of each Knowledge Base.
 
+Read Knowledge Bases on demand. A relevant topic, a circumstance or a user request decides when.
+Reuse content already loaded in the Conversation. Read it again only when it is not enough or the user asks.
+
 Execution uses relevant scoped Knowledge Bases for current subject knowledge.
 Execution uses the specific Closed Minutes for work instructions.
 

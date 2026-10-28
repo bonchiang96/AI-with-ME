@@ -41,7 +41,7 @@ Use this start order:
 5. Establish the Agenda under Section 4.
 
 Before you ask the user for information, discover it yourself.
-Read the current Identity Context, the 01 Index and the relevant Knowledge Bases first.
+Read the current Identity Context and the 01 Index first. Read Knowledge Bases on demand under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 Ask the user only for what these sources do not hold.
 
 ## 4. Agenda

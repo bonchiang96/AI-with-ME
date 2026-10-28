@@ -45,7 +45,7 @@ Use this start order:
 Before interpreting a candidate's substantive Scope, read:
 
 - Relevant Identity Context.
-- Relevant scoped Knowledge Bases.
+- Relevant Knowledge Bases, on demand under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 - Work Requests.
 - The candidate's authoritative Closed Minutes.
 
