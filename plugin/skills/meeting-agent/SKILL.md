@@ -114,7 +114,7 @@ CLOSE MEETING starts Closing. Complete these steps in order:
    Identify material gaps without speculation.
 6. Record the actual Closing Time in the Minutes and the Working Record.
    Use the user's local date, time and time-zone abbreviation in the Google System Rules date and time format.
-7. Verify the latest saved Final Minutes for Content, Writing and Formatting under the [workflow-qa](../workflow-qa/SKILL.md) quality dimensions.
+7. Run the self-check steps in the [workflow-qa](../workflow-qa/SKILL.md) Skill on the latest saved Final Minutes.
 8. After verification, add one Meetings row to the 01 Index. Verify the row.
 9. Verify the resulting state before claiming closure.
 

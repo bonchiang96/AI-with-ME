@@ -187,8 +187,8 @@ Past choices may inform nonbinding advisory Proposals.
 
 Complete these steps in order:
 
-1. Perform internal QA under the [workflow-qa](../workflow-qa/SKILL.md) quality dimensions.
-   Verify the saved Deliverables and their Job Record entries.
+1. Run the self-check steps in the [workflow-qa](../workflow-qa/SKILL.md) Skill on each saved Deliverable.
+   Verify their Job Record entries.
 2. Verify the complete final Job Record.
 3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
 4. Freeze the completed Job Record as Proof of Job.

@@ -1,6 +1,6 @@
 ---
 name: workflow-qa
-description: The AI with ME Deliverable quality rules and the Independent QA Workflow. Defines verification of Content, Writing and Formatting, QA evidence and Operating Guide checks. Defines how an Execution Agent runs an independent, complete and objective QA Job with PASS, FAIL or Unable to Verify results. Use when verifying any Deliverable or when the user requests a QA Job.
+description: The AI with ME Deliverable quality rules and the Independent QA Workflow. Holds the self-check steps every Lifecycle runs on saved Final Minutes, Job Records and Deliverables. Defines how an Execution Agent runs an independent, complete and objective QA Job with PASS, FAIL or Unable to Verify results. Use when verifying any Deliverable or when the user requests a QA Job.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
@@ -20,11 +20,18 @@ Verification of a Working Document does not replace verification of separate Del
 4. Apply output-specific checks that the assigned role and Deliverable require.
 5. Apply the language rules in the [Global Communication Rules](../../rules/global-communication-rules.md).
 
-## 2. Evidence
+## 2. Self-check steps
 
-1. Record actual PASS or FAIL for each affected dimension.
-2. Record permitted corrections and successful verification of the latest saved version.
-3. Read the complete final artifact after substantive changes before claiming compliance.
+Every Lifecycle points to these steps. A change to quality checking changes only this Skill.
+For every artifact that requires full verification, perform these steps in order:
+
+1. Read back the complete saved artifact. A draft in the Conversation is not evidence.
+2. **Content.** Check each Local QA criterion in the artifact's Operating Guide.
+3. **Writing.** Check each rule of the artifact's Writing Mode. In Strict Mode, check every sentence.
+4. **Formatting.** Check each heading style against the Operating Guide. Check that the artifact is easy to read under Section 3.
+5. Correct every failure. Read back the saved artifact again.
+6. Record PASS or FAIL for each dimension with the findings.
+   Record PASS only for a check you actually performed.
 
 ## 3. Formatting checkpoints
 

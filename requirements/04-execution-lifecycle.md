@@ -192,7 +192,7 @@ Return to the [Requirements Overview](README.md).
 
 3. **Distinct outcomes.** Work across multiple Scopes or originating Identities must preserve each Deliverable's actual outcome and verification status.
 
-4. **Completion authority.** Each executing Agent must perform its own internal QA under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa). Self-verification does not replace an independent QA Workflow under [Quality Section 1.11](06-quality.md#1-deliverable-quality-and-independent-qa). Delegated execution also requires the Parent's independent acceptance under [Section 4](#4-execution-parent-and-sub-agents).
+4. **Completion authority.** Each executing Agent must perform its own internal QA with the self-check steps in [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa). Self-verification does not replace an independent QA Workflow under [Quality Section 1.11](06-quality.md#1-deliverable-quality-and-independent-qa). Delegated execution also requires the Parent's independent acceptance under [Section 4](#4-execution-parent-and-sub-agents).
 
 5. **After-Job recipients.** After verified formal Job closure, send a relevant Completion Notice to each originating Identity.
    Determine notices through each Deliverable's original Scope and Identity.

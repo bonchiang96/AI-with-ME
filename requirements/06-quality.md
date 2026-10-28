@@ -26,9 +26,16 @@ Return to the [Requirements Overview](README.md).
 
    Writing follows active [Global Writing Rules](global-writing-rules.md) and the correct Writing Mode. Formatting follows the artifact format and applicable Operating Guide. Apply output-specific checks required by the assigned role and deliverable.
 
-3. **Evidence.** For every artifact subject to full QA, record actual PASS or FAIL for each affected dimension.
-   Record permitted corrections and successful verification of the latest saved version.
-   Read the complete final artifact after substantive changes before claiming compliance.
+3. **Self-check steps.** For every artifact subject to full QA, the Agent performs these steps in order:
+
+   1. Read back the complete saved artifact. A draft in the Conversation is not evidence.
+   2. Content: check each Local QA criterion in the artifact's Operating Guide.
+   3. Writing: check each rule of the artifact's Writing Mode. In Strict Mode, check every sentence.
+   4. Formatting: check each heading style against the Operating Guide. Check the Easy to Read rule in Section 1.5.
+   5. Correct every failure. Read back the saved artifact again.
+   6. Record PASS or FAIL for each dimension with the findings. Record PASS only for a check actually performed.
+
+   Every Lifecycle points to these steps. A change to quality checking changes only this Section and the workflow-qa Skill.
 
    Requirements inspection follows [Requirements Overview Section 2.9](README.md#2-binding-non-functional-requirements).
 
