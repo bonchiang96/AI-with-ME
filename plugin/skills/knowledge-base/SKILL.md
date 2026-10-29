@@ -48,6 +48,9 @@ Include only currently valid content within the Scope:
 - User-created Workflows.
 
 Preserve adopted future directions as future directions.
+
+When the source records Rationale or Design Intent, keep it with the knowledge it explains.
+Keep only the reasons for the current truth. Do not record why older content was replaced.
 Exclude exploratory ideas, unresolved choices, superseded content, future Jobs and Deliverable progress.
 
 ## 6. Maintenance triggers
@@ -81,7 +84,7 @@ This consolidation is routine post-closure maintenance, not a Post-Meeting Actio
 3. Consolidate throughout the complete resource. Do not append. Keep every heading numbered.
 4. Retain all valid knowledge.
 5. Integrate newly confirmed subject matter.
-6. Replace only genuinely superseded content.
+6. Replace only genuinely superseded content. Replace its Rationale and Design Intent with those of the new truth.
 7. Apply Standard Mode under the [Global Writing Rules](../../rules/global-writing-rules.md).
 8. Include useful paragraph-level source references where helpful.
 9. After the last change, read the complete saved Knowledge Base and verify it.

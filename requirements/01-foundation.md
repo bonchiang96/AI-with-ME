@@ -315,6 +315,9 @@ Return to the [Requirements Overview](README.md).
 
    Preserve adopted future directions as future directions rather than completed implementation.
 
+   When the source records Rationale or Design Intent, keep it with the knowledge it explains.
+   Keep only the reasons for the current truth. Do not record why older content was replaced.
+
    Exclude:
 
    - Exploratory ideas.
@@ -355,6 +358,7 @@ Return to the [Requirements Overview](README.md).
    1. Retain all valid knowledge.
    2. Integrate newly confirmed subject matter.
    3. Replace only genuinely superseded content.
+      Replace its Rationale and Design Intent with those of the new truth.
    4. Apply [Global Writing Rules](global-writing-rules.md) Standard Mode.
    5. Useful paragraph-level source references may be included.
 
