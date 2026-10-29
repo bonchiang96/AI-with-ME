@@ -39,7 +39,7 @@ When the AI cannot install the Plugin itself, it explains the limitation and gui
 
 The nine Skills are:
 
-1. system-entry.
+1. ai-with-me, the System entry.
 2. meeting-agent.
 3. execution-agent.
 4. inbox.
@@ -51,30 +51,20 @@ The nine Skills are:
 
 ## 3. Install on each host
 
-The root `.claude-plugin/marketplace.json` serves Claude.
+This guide covers the command-line hosts.
+For Claude chat, the Claude desktop app, Cowork and ChatGPT, follow the [README](README.md#installation).
 
-Claude on the web, the desktop app or Cowork:
-
-1. Open Customize → Plugins.
-2. Select Add → Add marketplace → Add from a repository.
-3. Enter `bonchiang96/AI-with-ME`.
-4. Add the ai-with-me plugin.
-
-Plugins added there sync to Claude Code under the same account.
-
-Claude Code CLI:
+Claude Code CLI uses the root `.claude-plugin/marketplace.json`:
 
 1. Run `/plugin marketplace add bonchiang96/AI-with-ME`.
 2. Run `/plugin install ai-with-me@ai-with-me`.
 
-ChatGPT:
+Codex CLI uses the root `.agents/plugins/marketplace.json`:
 
-1. Give ChatGPT the Repository URL.
-2. Ask ChatGPT to create a private plugin with Plugin Creator.
-3. Ask it to include every file in the plugin folder, keeping the folder structure.
-4. Verify that the private plugin lists all nine Skills.
+1. Run `codex plugin marketplace add bonchiang96/AI-with-ME`.
+2. Install the ai-with-me plugin from the added marketplace.
 
-Do not install with the Codex CLI for ChatGPT. It installs the Plugin in that environment, not in your account.
+The Codex CLI installs the Plugin in that environment, not in a ChatGPT account.
 
 ## 4. Dependencies
 
@@ -83,12 +73,12 @@ The Plugin does not ship these connectors. Your host's integrations select the c
 Each Skill declares this need in its compatibility line.
 
 Missing Google access never blocks installation.
-At each Conversation start, the system-entry Skill checks actual access.
+At each Conversation start, the ai-with-me Skill checks actual access.
 It explains any missing connector, capability or permission and discusses the next authorized step.
 
 ## 5. After installation
 
-Start a Conversation and enter the System through the system-entry Skill.
+Start a Conversation and enter the System through the ai-with-me Skill. In Claude, type `/ai-with-me`.
 It locates the Google Drive folder named “AI with me”.
 When that folder is confirmed absent, it starts Bootstrap.
 

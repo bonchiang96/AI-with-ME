@@ -32,25 +32,30 @@ You start and steer each stage with four words: `NEW MEETING`, `CLOSE MEETING`, 
 
 ## Installation
 
-**Claude** on the web, the desktop app or Cowork:
+The steps differ between Claude and ChatGPT.
 
-1. Open Customize → Plugins.
-2. Select Add → Add marketplace → Add from a repository.
-3. Enter `bonchiang96/AI-with-ME`.
-4. Add the ai-with-me plugin.
+### Claude (chat, desktop app or Cowork)
 
-Plugins added there sync to Claude Code under the same account.
+1. Open **Customize** → **Plugins**.
+2. Select **Add** → **Add custom marketplace**.
+3. Enter the GitHub URL: `https://github.com/bonchiang96/AI-with-ME`.
+4. Claude shows the available plugin. Select **ai-with-me** to add it.
 
-**Claude Code CLI:**
+The plugin is ready to use. It also syncs to Claude Code under the same account.
 
-```text
-/plugin marketplace add bonchiang96/AI-with-ME
-/plugin install ai-with-me@ai-with-me
-```
+### ChatGPT (chat or work)
 
-**ChatGPT:** give ChatGPT the repository URL and ask it to create a private plugin with Plugin Creator from every file in the `plugin/` folder. The Codex CLI installs into that environment, not your account.
+1. Give ChatGPT the repository URL: `https://github.com/bonchiang96/AI-with-ME`.
+2. Ask it to create a private plugin with **Plugin Creator** from every file in the `plugin/` folder, keeping the folder structure.
+3. Check that the private plugin lists all nine Skills.
 
-Missing Google access never blocks installation. [INSTALL.md](INSTALL.md) has the full guide.
+Do not use the Codex CLI for this. It installs into that environment, not your account.
+
+### Claude Code or Codex
+
+Follow [INSTALL.md](INSTALL.md).
+
+Missing Google access never blocks installation.
 
 ## Configuration
 
@@ -58,7 +63,7 @@ Your settings live in **Google System Rules**, inside the Google Drive folder na
 
 ## Quick start
 
-1. Start a conversation. The system-entry Skill checks Google access and looks for the **AI with me** folder.
+1. Start a conversation with the `ai-with-me` Skill. In Claude, type `/ai-with-me`. In ChatGPT, select the plugin with `@` and ask to enter AI with ME. The Skill checks Google access and looks for the **AI with me** folder.
 2. If the folder does not exist, a first Meeting builds the System with you. It creates System Context, Google System Rules, a Knowledge Base folder and two starting Identities: `general-meeting` and `general-execution`.
 3. Choose an Identity. Say `NEW MEETING` to a Meeting Agent or `NEW JOB` to an Execution Agent.
 4. Keep one Identity per conversation. To work as another Identity, start a new conversation.
@@ -67,7 +72,7 @@ Your settings live in **Google System Rules**, inside the Google Drive folder na
 
 | Part | Skills |
 | --- | --- |
-| Entry | `system-entry` |
+| Entry | `ai-with-me` |
 | Roles | `meeting-agent`, `execution-agent` |
 | Records and knowledge | `inbox`, `knowledge-base` |
 | Workflows | `workflow-book`, `workflow-business-document`, `workflow-qa`, `profit-a` |

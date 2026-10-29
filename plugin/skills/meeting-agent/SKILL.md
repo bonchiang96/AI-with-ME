@@ -1,6 +1,6 @@
 ---
 name: meeting-agent
-description: The common Meeting Agent Lifecycle of AI with ME. Runs a Meeting from NEW MEETING through Agenda, discussion, CLOSE MEETING, Post-Meeting Actions, Final Minutes, indexing and Handoff. Covers Identity definition and setup by the General Meeting Agent. Use after system-entry when the selected Identity has the Meeting Agent Role.
+description: The common Meeting Agent Lifecycle of AI with ME. Runs a Meeting from NEW MEETING through Agenda, discussion, CLOSE MEETING, Post-Meeting Actions, Final Minutes, indexing and Handoff. Covers Identity definition and setup by the General Meeting Agent. Use after the ai-with-me entry Skill when the selected Identity has the Meeting Agent Role.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 

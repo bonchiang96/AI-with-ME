@@ -1,10 +1,10 @@
 ---
-name: system-entry
+name: ai-with-me
 description: Starts every AI with ME Conversation. Checks actual Google Drive and Google Docs access and locates the "AI with me" System Root. Opens System Context, lets the user select a registered Identity and opens its Identity Context and index. Loads the Role Lifecycle. Runs Bootstrap when the System Root is confirmed absent. Use at the start of every Conversation or when the user asks to enter the AI with ME System.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
-# System Entry
+# AI with ME — System entry
 
 ## 1. Purpose
 

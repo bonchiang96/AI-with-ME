@@ -1,6 +1,6 @@
 ---
 name: execution-agent
-description: The common Execution Agent Lifecycle of AI with ME. Runs a Job from NEW JOB through Scope confirmation, Job Record, Execution Plan, PROCEED EXECUTION, Sub-agent authoring and review, completion, indexing and Completion Notices. Use after system-entry when the selected Identity has the Execution Agent Role.
+description: The common Execution Agent Lifecycle of AI with ME. Runs a Job from NEW JOB through Scope confirmation, Job Record, Execution Plan, PROCEED EXECUTION, Sub-agent authoring and review, completion, indexing and Completion Notices. Use after the ai-with-me entry Skill when the selected Identity has the Execution Agent Role.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
