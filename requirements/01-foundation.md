@@ -450,10 +450,10 @@ Return to the [Requirements Overview](README.md).
    1. Sent.
    2. From, which names the sender Identity.
    3. Type.
-   4. Ref, which is the key in the sender's index.
+   4. Ref, which is the key in the sender's index. An Information row may leave Ref empty.
    5. Message.
 
-   Inbox Types are Work Request and Completion Notice.
+   Inbox Types are Work Request, Completion Notice and Information.
    A further Type is a customization added through System Rules.
    Inbox use follows [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
 

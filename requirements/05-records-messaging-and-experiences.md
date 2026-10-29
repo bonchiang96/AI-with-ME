@@ -57,7 +57,7 @@ Return to the [Requirements Overview](README.md).
 4. **Inbox reading.** Inbox reading follows the start order in [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation) and [Execution Lifecycle Section 1.3](04-execution-lifecycle.md#1-stages-and-intake).
 
 5. **Sending.** The sender adds one row to the recipient's inbox file under [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox).
-   Ref follows [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox) and names a closed record.
+   Ref follows [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox) and names a closed record. An Information row may leave Ref empty.
    Announcement follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Verify the saved row.
    A saved row does not prove recipient reading.
@@ -72,6 +72,18 @@ Return to the [Requirements Overview](README.md).
    The receiver then deletes the processed row.
    Preserve sources and essential meaning. Present suggested follow-up as a proposal.
    Preserve normal responsibility, Scope and approval boundaries.
+
+7. **Information.** Information is a light message that only informs the recipient.
+   Use it for any matter the recipient should know, for example:
+
+   - The sender used the recipient's work or resources.
+   - Something the recipient owns may need a change.
+   - A Knowledge Base change or a broken link affects the recipient.
+
+   Information does not request work or report a completed Job.
+   When a related record exists, Ref names it. Otherwise the Message gives the source link.
+   The recipient reads it and updates its own context when relevant. It then deletes the row.
+   Information creates no execution authority. Any resulting work follows the recipient's own Lifecycle.
 
 ## 3. Experience learning
 

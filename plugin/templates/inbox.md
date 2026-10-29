@@ -2,7 +2,7 @@
 
 ## 1. Operating Guide
 
-1. **Purpose.** The inbox receives Work Requests and Completion Notices for this Identity.
+1. **Purpose.** The inbox receives Work Requests, Completion Notices and Information for this Identity.
    Other Identities write rows here. This Identity reads and processes them.
 
 2. **Names.** The file name is 02 Inbox.
@@ -20,8 +20,8 @@
 
    1. Sent: the send date and time in the Google System Rules format.
    2. From: the sender Identity's exact Agent Key.
-   3. Type: Work Request or Completion Notice. A further Type is added through System Rules.
-   4. Ref: the key of the closed record in the sender's index.
+   3. Type: Work Request, Completion Notice or Information. A further Type is added through System Rules.
+   4. Ref: the key of the closed record in the sender's index. Information may leave it empty.
    5. Message: the message text.
 
    Write messages in Strict Mode under the Global Writing Rules.
