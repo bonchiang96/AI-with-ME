@@ -42,7 +42,7 @@ Access restoration is left to your judgment within authorized Scope.
 3. Assess access to the applicable System Rules.
 4. Read the user overrides in the applicable System Rules once.
 5. Reuse existing accessible resources.
-6. Present the active registered Identities from System Context.
+6. Present the registered Identities with Status Active from System Context.
 7. The user selects one Identity.
 8. Open the Identity's 00 Identity Context and 01 Index through its registered identity folder.
 9. Load the Skill for that Identity's Role:
@@ -70,6 +70,7 @@ These four words are the user's stage words. Each Role Skill holds the flow of i
 6. Do not default an unresolved scoped assignment to another Identity.
 7. Inactive or archived Identities are excluded from normal active choices.
 8. An inactive or archived Identity may be reactivated when appropriate.
+9. The user changes a Status in a Meeting with the General Meeting Agent. Its records stay unchanged.
 
 ## 6. Bootstrap
 

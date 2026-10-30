@@ -184,9 +184,12 @@ After CLOSE MEETING, perform the approved setup as Post-Meeting Actions:
    - For an Execution Agent: 03 Job Records from the [Job Records template](../../templates/job-records.md).
 2. Record applicable Knowledge Bases in the Identity Context Knowledge Bases Chapter.
 3. Record the Agent Key, the Role and the identity folder location as Identity Context metadata.
-4. Register the Identity in System Context with Agent Key, Role, Responsibility and Scope, and the identity folder Location.
+4. Register the Identity in System Context with Agent Key, Role, Responsibility and Scope, the identity folder Location and Status Active.
    Responsibility and Scope stay only in System Context.
 5. Preserve and verify setup evidence.
+
+To retire or reactivate an Identity, the user decides its new Status in a Meeting with the General Meeting Agent.
+Update the Status field in System Context as a Post-Meeting Action. Keep the identity folder and its records unchanged.
 
 Other approved resource establishment remains with its authorized owner.
 Adjust templates with the user. Do not invent new templates.

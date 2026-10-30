@@ -114,7 +114,10 @@ Return to the [Requirements Overview](README.md).
 
     Implementation follows the responsible owner's authority and applicable Scope approvals.
 
-13. **Identity changes.** Inactive or archived Identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
+13. **Identity changes.** The Status field in System Context records each Identity's state: Active, Inactive or Archived.
+    The user decides a Status change in a Meeting with the General Meeting Agent. That Agent updates the field as a Post-Meeting Action.
+    Inactive or archived Identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
+    Their identity folders and records stay unchanged.
 
 14. **Local Bootstrap.** Local Bootstrap must establish missing Local System Rules and required working paths only.
     Central Identity and Context authority remain governed by [Foundation Section 2.3](01-foundation.md#2-governance-resources-and-dependencies) and [Foundation Section 3.1](01-foundation.md#3-identity-context).

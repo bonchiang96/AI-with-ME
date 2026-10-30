@@ -212,6 +212,7 @@ Return to the [Requirements Overview](README.md).
     - Role.
     - Responsibility and Scope, in one line or a few sentences.
     - Location of the identity folder.
+    - Status: Active, Inactive or Archived.
 
     Add fields only when they serve a genuine directory purpose. Keep each directory compact. Identity Context current references follow [Section 3](#3-identity-context).
     Index files, the Knowledge Base folder index and Identity Context lists follow their own templates.

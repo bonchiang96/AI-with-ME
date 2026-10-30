@@ -19,16 +19,18 @@
    3. Knowledge Base Folder.
 
 5. **Formatting.** Use a Google Docs file.
-   Use a native table for the Identity Registry. Each Identity has one row with four fields:
+   Use a native table for the Identity Registry. Each Identity has one row with five fields:
 
    1. Agent Key: the exact Agent Key.
    2. Role: Meeting Agent or Execution Agent.
    3. Responsibility and Scope: one line or a few sentences.
    4. Location: the Google Locator of the identity folder.
+   5. Status: Active, Inactive or Archived.
 
    Keep the directory compact.
    Add a field only when it serves a genuine directory purpose.
    Inactive or archived Identities remain registered but leave normal active choices.
+   A Status change keeps the identity folder and its records unchanged.
    Chapter 3 holds the Google Locators of the Knowledge Base folder and its 00 Index.
    Bootstrap fills the Registry and Chapter 3.
 
@@ -42,7 +44,7 @@
 
 ## 2. Identity Registry
 
-| Agent Key | Role | Responsibility and Scope | Location |
-| --- | --- | --- | --- |
+| Agent Key | Role | Responsibility and Scope | Location | Status |
+| --- | --- | --- | --- | --- |
 
 ## 3. Knowledge Base Folder
