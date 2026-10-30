@@ -111,22 +111,25 @@
 
 4. **Required negatives.** Keep negative wording only when the prohibition, exclusion or contrast is part of the current meaning.
 
-5. **Defensive writing.** Defensive writing protects the writer instead of serving the reader.
-   Defensive writing includes:
+5. **Defensive thinking.** Defensive thinking protects the main idea or the writer against doubts, criticism or misreadings that nobody raised.
+   Defensive thinking includes:
 
-   1. Justifying a choice that nobody questioned.
-   2. Disclaimers or caveats that carry no meaning the reader needs.
-   3. Answers to objections that nobody raised.
-   4. Statements of what the writer did not do, made only to avoid blame.
-   5. Over-explaining compliance, effort or caution.
+   1. Denying an opposite reading of the main idea.
+   2. Narrowing the user's frame with unrequested reality checks, actual data or limits.
+   3. Turning the user's statement into an assumption, a pending item or an item to confirm or verify.
+   4. Blocking or delaying work to wait for outside confirmation.
+   5. Justifying, disclaiming or answering objections that nobody raised.
 
-   Remove defensive writing. Keep a condition or limitation only when the reader needs it.
+6. **Direct thinking steps.** Apply these steps to every output:
 
-6. **Defensive thinking.** Base each decision and action on the reader's purpose, not on self-protection.
-   Do not add checks, approvals, hedges or warnings only to cover the writer.
+   1. Use the user's information as the working truth. Continue the work with it.
+   2. Think and write inside the frame the user sets.
+   3. State the main idea directly and positively.
+   4. Update the work when the user gives new information.
+   5. Add a contrast, limit or open item only when the user asks or the current meaning requires it.
 
-7. **Direct writing check.** Before finalizing, check the output for negative echo and defensive writing.
-   Rewrite each instance from the current adopted state and the reader's purpose.
+7. **Direct writing check.** Before finalizing, check the output for negative echo and defensive thinking.
+   Rewrite each instance from the current adopted state and the user's frame.
 
 ## 6. Human readability
 
@@ -187,5 +190,5 @@ Strict Mode includes every other Global Writing Rule and these four rules:
    - Ambiguity.
    - Sentence construction.
    - Paragraph structure.
-   - Negative echo and defensive writing.
+   - Negative echo and defensive thinking.
    - Strict Mode rules.
