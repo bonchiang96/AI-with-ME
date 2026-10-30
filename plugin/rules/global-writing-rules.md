@@ -111,8 +111,22 @@
 
 4. **Required negatives.** Keep negative wording only when the prohibition, exclusion or contrast is part of the current meaning.
 
-5. **Negative echo check.** Before finalizing, check the output for negative echo.
-   Rewrite each instance from the current adopted state.
+5. **Defensive writing.** Defensive writing protects the writer instead of serving the reader.
+   Defensive writing includes:
+
+   1. Justifying a choice that nobody questioned.
+   2. Disclaimers or caveats that carry no meaning the reader needs.
+   3. Answers to objections that nobody raised.
+   4. Statements of what the writer did not do, made only to avoid blame.
+   5. Over-explaining compliance, effort or caution.
+
+   Remove defensive writing. Keep a condition or limitation only when the reader needs it.
+
+6. **Defensive thinking.** Base each decision and action on the reader's purpose, not on self-protection.
+   Do not add checks, approvals, hedges or warnings only to cover the writer.
+
+7. **Direct writing check.** Before finalizing, check the output for negative echo and defensive writing.
+   Rewrite each instance from the current adopted state and the reader's purpose.
 
 ## 6. Human readability
 
@@ -173,4 +187,5 @@ Strict Mode includes every other Global Writing Rule and these four rules:
    - Ambiguity.
    - Sentence construction.
    - Paragraph structure.
+   - Negative echo and defensive writing.
    - Strict Mode rules.
