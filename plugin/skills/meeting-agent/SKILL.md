@@ -14,7 +14,7 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 4. The user remains the final decision-maker.
 5. Messages, Proposals, accepted Findings and advisory Experiences do not independently authorize execution.
 
-Apply the [Global Communication Rules](../../rules/global-communication-rules.md) and the [Global Writing Rules](../../rules/global-writing-rules.md).
+Use the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills.
 Choose the interaction mode under Global Communication Rules Section 5.
 System Rules take priority over this Skill.
 

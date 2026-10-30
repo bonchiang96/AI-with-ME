@@ -1,3 +1,8 @@
+---
+name: global-communication-rules
+description: The AI with ME Global Communication Rules. Covers language choice, reply structure, interaction modes and flow review in Conversation with the user. Use for every reply to the user and when reviewing how an Agent communicates.
+---
+
 # Global Communication Rules
 
 ## 1. Scope
@@ -7,7 +12,7 @@
 2. **User overrides.** User overrides live in the applicable System Rules, such as Google or Local System Rules.
    Agents read them once at Conversation start.
 
-3. **Writing rules.** Every reply follows [Global Writing Rules](global-writing-rules.md).
+3. **Writing rules.** Every reply follows [Global Writing Rules](../global-writing-rules/SKILL.md).
 
 ## 2. Language
 

@@ -11,12 +11,11 @@ The folder contains:
 
 1. [plugin.json](plugin/plugin.json): the Agent Plugins manifest.
 2. [.claude-plugin/plugin.json](plugin/.claude-plugin/plugin.json): the Claude plugin manifest.
-3. [skills](plugin/skills/): the nine Agent Skills.
-4. [rules](plugin/rules/): the Global Writing Rules and the Global Communication Rules.
-5. [templates](plugin/templates/): the standard file templates with their Operating Guides.
-6. [LICENSE](plugin/LICENSE): the MIT License.
+3. [skills](plugin/skills/): the eleven Agent Skills, including the Global Writing Rules and Global Communication Rules Skills.
+4. [templates](plugin/templates/): the standard file templates with their Operating Guides.
+5. [LICENSE](plugin/LICENSE): the MIT License.
 
-Both manifests describe the same Skills. The Skills share the rules and templates folders.
+Both manifests describe the same Skills. The Skills share the templates folder.
 
 The Repository root also holds two marketplace files:
 
@@ -33,11 +32,11 @@ Give your AI the Repository URL and the commit you choose. The AI completes thes
 2. Locate the plugin folder and this guide.
 3. Assess dependencies in its actual environment.
 4. Install the whole plugin folder through the host's own Private Plugin mechanism, within granted permissions.
-5. Verify that the host lists all nine Skills.
+5. Verify that the host lists all eleven Skills.
 
 When the AI cannot install the Plugin itself, it explains the limitation and guides the permitted next step.
 
-The nine Skills are:
+The eleven Skills are:
 
 1. ai-with-me, the System entry.
 2. meeting-agent.
@@ -48,6 +47,8 @@ The nine Skills are:
 7. workflow-business-document.
 8. workflow-qa.
 9. profit-a.
+10. global-writing-rules.
+11. global-communication-rules.
 
 ## 3. Install on each host
 
@@ -70,7 +71,7 @@ The Codex CLI installs the Plugin in that environment, not in a ChatGPT account.
 
 The Plugin needs Google Drive and Google Docs access at run time.
 The Plugin does not ship these connectors. Your host's integrations select the connector.
-Each Skill declares this need in its compatibility line.
+Each Skill that uses Google declares this need in its compatibility line.
 
 Missing Google access never blocks installation.
 At each Conversation start, the ai-with-me Skill checks actual access.
@@ -85,6 +86,6 @@ When that folder is confirmed absent, it starts Bootstrap.
 ## 6. Updates
 
 An update reinstalls the whole plugin folder from a chosen commit of this Repository.
-Verify again that the host lists all nine Skills.
+Verify again that the host lists all eleven Skills.
 Installation and updates never change your Google records or governance resources.
 The installed Plugin runs normal work without routine GitHub reads.

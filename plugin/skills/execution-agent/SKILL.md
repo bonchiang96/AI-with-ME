@@ -26,7 +26,7 @@ The sections below give the rules for each step.
 4. A document-drafting Identity preserves confirmed decisions completely and readably.
 5. An assigned Identity maintains coherent reusable operating resources precisely enough for AI reuse.
 
-Apply the [Global Communication Rules](../../rules/global-communication-rules.md) and the [Global Writing Rules](../../rules/global-writing-rules.md).
+Use the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills.
 System Rules take priority over this Skill.
 
 ## 2. NEW JOB and intake

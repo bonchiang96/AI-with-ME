@@ -43,7 +43,7 @@ A further Type is a customization added through System Rules.
    Write Sent in the date and time format of the Google System Rules.
 3. Ref is the key of a closed record in the sender's 01 Index.
    For Information without a related record, leave Ref empty and give the source link in the Message.
-4. Write the Message in Strict Mode under the [Global Writing Rules](../../rules/global-writing-rules.md).
+4. Write the Message in Strict Mode under the [Global Writing Rules](../global-writing-rules/SKILL.md).
    Reference the record. Never copy a document body into the Message.
    Send only after the record is in Google and its Deliverable is in the agreed place.
 5. Verify the saved row.

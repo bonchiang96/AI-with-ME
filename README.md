@@ -25,7 +25,7 @@ You start and steer each stage with four words: `NEW MEETING`, `CLOSE MEETING`, 
 
 | Dependency | Need | Purpose |
 | --- | --- | --- |
-| Claude or ChatGPT with plugin support | Required | Runs the Plugin and its nine Skills. |
+| Claude or ChatGPT with plugin support | Required | Runs the Plugin and its eleven Skills. |
 | Google Drive and Google Docs connectors | Required | Hold the System, each Identity's context and every record. The Plugin does not ship them. |
 | A local environment | Optional | Lets Agents work locally. Records still return to Google. |
 | GitHub, GitLab or another store | Optional | Holds a Deliverable when Google Drive does not fit it. |
@@ -47,7 +47,7 @@ The plugin is ready to use. It also syncs to Claude Code under the same account.
 
 1. Give ChatGPT the repository URL: `https://github.com/bonchiang96/AI-with-ME`.
 2. Ask it to create a private plugin with **Plugin Creator** from every file in the `plugin/` folder, keeping the folder structure.
-3. Check that the private plugin lists all nine Skills.
+3. Check that the private plugin lists all eleven Skills.
 
 Do not use the Codex CLI for this. It installs into that environment, not your account.
 
@@ -76,8 +76,9 @@ Your settings live in **Google System Rules**, inside the Google Drive folder na
 | Roles | `meeting-agent`, `execution-agent` |
 | Records and knowledge | `inbox`, `knowledge-base` |
 | Workflows | `workflow-book`, `workflow-business-document`, `workflow-qa`, `profit-a` |
+| Rules | `global-writing-rules`, `global-communication-rules` |
 
-The Plugin also ships the Global Writing Rules, the Global Communication Rules and ten Google Docs templates.
+The Plugin also ships ten Google Docs templates.
 
 ## Resources
 

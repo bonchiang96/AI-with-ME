@@ -16,9 +16,9 @@ Flow, part 2: select Identity → open Identity Context and index → load Role 
 
 ## 2. Rules for every reply
 
-1. Apply the [Global Communication Rules](../../rules/global-communication-rules.md).
-2. Apply the [Global Writing Rules](../../rules/global-writing-rules.md).
-3. Read these rule files from the Plugin, not from Google Drive.
+1. Use the [global-communication-rules](../global-communication-rules/SKILL.md) Skill for every reply.
+2. Use the [global-writing-rules](../global-writing-rules/SKILL.md) Skill for every output.
+3. Load both as Plugin Skills. Do not read them from Google Drive.
 4. System Rules take priority over the Plugin. Apply the System Rules of the actual environment.
 5. When an arrangement is undecided, show it to the user as undecided. Do not invent governance.
 

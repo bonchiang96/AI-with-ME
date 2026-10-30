@@ -168,6 +168,6 @@ The Requirements consist of this Overview and the files below. Each file links b
 11. [Global Writing Rules](global-writing-rules.md) — Writing rules and Writing Modes for every output.
 12. [Global Communication Rules](global-communication-rules.md) — Language and conversation rules for communication with the user.
 
-The Plugin packages both rule files. Agents read them without Google Drive reads.
+The Plugin packages both rule files as Skills: global-writing-rules and global-communication-rules. Agents load them without Google Drive reads.
 
 Language defaults and user overrides follow [Global Communication Rules](global-communication-rules.md).

@@ -85,7 +85,7 @@ This consolidation is routine post-closure maintenance, not a Post-Meeting Actio
 4. Retain all valid knowledge.
 5. Integrate newly confirmed subject matter.
 6. Replace only genuinely superseded content. Replace its Rationale and Design Intent with those of the new truth.
-7. Apply Standard Mode under the [Global Writing Rules](../../rules/global-writing-rules.md).
+7. Apply Standard Mode under the [Global Writing Rules](../global-writing-rules/SKILL.md).
 8. Include useful paragraph-level source references where helpful.
 9. After the last change, read the complete saved Knowledge Base and verify it.
 10. Verify its line in the 00 Index.

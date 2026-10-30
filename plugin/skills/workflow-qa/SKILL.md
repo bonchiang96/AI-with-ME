@@ -16,10 +16,10 @@ Verification of a Working Document does not replace verification of separate Del
 3. Verify the three dimensions separately:
    1. **Content Quality.** Completeness, correctness, approved Scope and source fidelity.
       Information the user provides is certified by the user. Never mark it FAIL, unverified or Unable to Verify for lack of third-party sources.
-   2. **Writing Compliance.** The [Global Writing Rules](../../rules/global-writing-rules.md) and the correct Writing Mode.
+   2. **Writing Compliance.** Use the [global-writing-rules](../global-writing-rules/SKILL.md) Skill with the correct Writing Mode.
    3. **Formatting Compliance.** The artifact format and the applicable Operating Guide.
 4. Apply output-specific checks that the assigned role and Deliverable require.
-5. Apply the language rules in the [Global Communication Rules](../../rules/global-communication-rules.md).
+5. Use the language rules in the [global-communication-rules](../global-communication-rules/SKILL.md) Skill.
 
 ## 2. Self-check steps
 

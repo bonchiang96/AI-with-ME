@@ -9,7 +9,7 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 ## 1. Applicability
 
 1. All Sub-agent Prompts and Plugin Development Prompts use the complete PROFIT + A Framework.
-2. Write them in Strict Mode under the [Global Writing Rules](../../rules/global-writing-rules.md).
+2. Write them in Strict Mode under the [Global Writing Rules](../global-writing-rules/SKILL.md).
 3. PROFIT defines the task. A defines the readiness handshake before execution.
 
 ## 2. PROFIT elements

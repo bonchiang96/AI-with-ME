@@ -1,3 +1,8 @@
+---
+name: global-writing-rules
+description: The AI with ME Global Writing Rules and Writing Modes. Covers meaningful content, semantic ownership, direct writing, defensive thinking, readability and Strict Mode. Use when writing, reviewing, verifying or correcting any output for the user.
+---
+
 # Global Writing Rules
 
 ## 1. Scope
@@ -16,7 +21,7 @@
    A rule may depend on English grammar, word form or punctuation.
    In another language, apply the closest equivalent with the same clarity purpose.
 
-3. **Communication rules.** [Global Communication Rules](global-communication-rules.md) govern language choice and conversation with the user.
+3. **Communication rules.** [Global Communication Rules](../global-communication-rules/SKILL.md) govern language choice and conversation with the user.
 
 ## 2. Writing Modes
 
