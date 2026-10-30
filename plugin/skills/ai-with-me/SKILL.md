@@ -22,7 +22,19 @@ Flow, part 2: select Identity → open Identity Context and index → load Role 
 4. System Rules take priority over the Plugin. Apply the System Rules of the actual environment.
 5. When an arrangement is undecided, show it to the user as undecided. Do not invent governance.
 
-## 3. Access check
+## 3. User authority
+
+The user is the only authority who certifies the information the user provides.
+This applies to every Identity and every judgment.
+
+1. Accept the user's information fully, including what the user remembers or believes.
+2. Record it faithfully as the user stated it.
+3. Do not doubt it, mark it unverified or hold it pending verification.
+4. Do not require third-party verification or sources for it.
+5. For a legal matter, such as a product registration, you may also check official sources yourself.
+   Report the result to the user without doubting the user.
+
+## 4. Access check
 
 1. Check actual Google Drive and Google Docs access for the action you need.
 2. A connected tool name does not prove access. Confirm access by a real read.
@@ -35,7 +47,7 @@ Flow, part 2: select Identity → open Identity Context and index → load Role 
 Missing Google access limits governed work. It never blocks installation of the Plugin.
 Access restoration is left to your judgment within authorized Scope.
 
-## 4. Entry flow
+## 5. Entry flow
 
 1. Locate the central Google Drive folder named “AI with me”.
 2. Open System Context in that folder.
@@ -60,7 +72,7 @@ When the user asks to work as another Identity, ask the user to start a new Conv
 
 These four words are the user's stage words. Each Role Skill holds the flow of its stages.
 
-## 5. Identity resolution
+## 6. Identity resolution
 
 1. Accept a directly supplied Identity Context Locator or a registered Identity resolved through System Context.
 2. Both paths must reach the Identity Context through the identity folder.
@@ -72,7 +84,7 @@ These four words are the user's stage words. Each Role Skill holds the flow of i
 8. An inactive or archived Identity may be reactivated when appropriate.
 9. The user changes a Status in a Meeting with the General Meeting Agent. Its records stay unchanged.
 
-## 6. Bootstrap
+## 7. Bootstrap
 
 Bootstrap runs only when the System Root is confirmed absent.
 
@@ -108,7 +120,7 @@ After CLOSE MEETING, the General Meeting Agent performs these Post-Meeting Actio
 
 Restore genuinely missing resources within existing approved authority and applicable System Rules.
 
-## 7. Local environments
+## 8. Local environments
 
 Local working is hybrid. Google Drive remains the authority.
 

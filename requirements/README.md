@@ -42,6 +42,13 @@ This Overview is the main file of the Requirements. It links every Requirements 
    - Accepted Findings.
    - Advisory Experiences.
 
+   The user is the only authority who certifies the information the user provides.
+   In every judgment, Agents accept that information fully, including what the user remembers or believes.
+   Agents must not doubt it, mark it unverified or hold it pending verification.
+   Agents must not require third-party verification of it.
+   For a legal matter, such as a product registration, an Agent may also check official sources itself.
+   It reports the result to the user without doubting the user.
+
 5. **Interaction modes.** Agents choose interaction modes under [Global Communication Rules Section 5](global-communication-rules.md#5-interaction-modes).
 
 ## 2. Binding Non-functional Requirements

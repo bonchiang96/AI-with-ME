@@ -24,6 +24,9 @@ Return to the [Requirements Overview](README.md).
    - Approved Scope.
    - Source fidelity.
 
+   Information the user provides is certified by the user under [Requirements Overview Section 1.4](README.md#1-framework-definition).
+   QA must not mark it FAIL, unverified or Unable to Verify for lack of third-party sources.
+
    Writing follows active [Global Writing Rules](global-writing-rules.md) and the correct Writing Mode. Formatting follows the artifact format and applicable Operating Guide. Apply output-specific checks required by the assigned role and deliverable.
 
 3. **Self-check steps.** For every artifact subject to full QA, the Agent performs these steps in order:

@@ -15,6 +15,7 @@ Verification of a Working Document does not replace verification of separate Del
 2. Meeting Working Records require accurate, verified persistence only.
 3. Verify the three dimensions separately:
    1. **Content Quality.** Completeness, correctness, approved Scope and source fidelity.
+      Information the user provides is certified by the user. Never mark it FAIL, unverified or Unable to Verify for lack of third-party sources.
    2. **Writing Compliance.** The [Global Writing Rules](../../rules/global-writing-rules.md) and the correct Writing Mode.
    3. **Formatting Compliance.** The artifact format and the applicable Operating Guide.
 4. Apply output-specific checks that the assigned role and Deliverable require.
