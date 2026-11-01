@@ -2,7 +2,8 @@
 
 ## 1. Operating Guide
 
-1. **Purpose.** The general Knowledge Base stores confirmed external subject knowledge and Experience that every Identity contributes.
+1. **Purpose.** The general Knowledge Base stores cross-Identity Experiences that improve the System.
+   Every Identity contributes. External subject knowledge belongs in scoped Knowledge Bases.
 
 2. **Names.** The file name is General Knowledge Base.
    It resides in the Knowledge Base folder under the System Root.

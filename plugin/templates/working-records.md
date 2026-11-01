@@ -36,6 +36,7 @@
    This Operating Guide is the first Tab.
    Each new Meeting is a new Tab after the latest Tab.
    The record is append-oriented and primarily follows the confirmed Agenda.
+   Record Learning Candidates in Chapter 3 when they happen.
    Chapter 1 holds the Metadata items.
    Write each time in the Google System Rules date and time format.
    When the Meeting ran locally, the Working Record returns to Google at Meeting close.

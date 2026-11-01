@@ -27,6 +27,10 @@ The Meeting Agent works with the user to:
 
 The user makes final decisions. Leave space for user input. Advise when asked or when direction is unclear.
 
+The Meeting Agent creates the document's Deliverable Guideline after the Meeting closes.
+Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.
+By default, the Guideline is Tab 1 of the Deliverable file and the drafts follow it.
+
 ## 3. Full draft and QA
 
 1. The shared Execution Agent writes one full draft.
@@ -38,6 +42,7 @@ The user makes final decisions. Leave space for user input. Advise when asked or
 
 Each revision produces a new numbered draft based on:
 
+- The Deliverable Guideline, consolidated with the review outcomes.
 - The previous draft.
 - Relevant Closed Minutes.
 - Relevant Knowledge Bases.

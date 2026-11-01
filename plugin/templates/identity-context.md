@@ -62,13 +62,19 @@
    2. A Meeting Agent Future Topic has a Topic Name, a short Description and a precise source reference.
    3. An Execution Agent Future Topic has the Work Request Ref and From values. It also has an Agent-authored Description, exact sources and relevant prerequisites.
    4. Working Group holds peer Identities, Handoff relationships, useful Identity pairings and collaboration patterns.
-   5. Knowledge Bases holds one row per Knowledge Base the Identity uses or contributes to. Relation is Uses or Contributes.
-   6. Update Knowledge Bases at these points:
+   5. Important Learning holds Identity-level Experience: what helps this Identity work better.
+      Examples are what failed, what worked better, useful techniques, knowledge and external links.
+   6. Important Things or High-Priority Items holds what is important within the Scope.
+      Examples are the core idea of the Scope or a part of it, important parts of a module or Deliverable, and what the user stresses as important and must not go wrong.
+   7. One subject may appear in several Chapters. Each Chapter holds only its own meaning.
+   8. Update every Chapter in one step after Experience capture, as each Role Lifecycle states.
+   9. Knowledge Bases holds one row per Knowledge Base the Identity uses or contributes to. Relation is Uses or Contributes.
+   10. Update Knowledge Bases at these points:
       - Identity setup.
       - Knowledge Base creation.
       - Use of a newly found source.
       - Discovery of a broken link.
-   7. At Identity setup, add the general Knowledge Base row with Relation Contributes.
+   11. At Identity setup, add the general Knowledge Base row with Relation Contributes.
 
 ## 2. Future Topics
 

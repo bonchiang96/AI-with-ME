@@ -14,7 +14,7 @@ A Job moves along one path:
 4. The user approves it with PROCEED EXECUTION.
 5. A Sub-agent authors each Deliverable where the environment allows. You review and accept it.
 6. You verify, freeze and index the Job Record.
-7. You update Identity Context, capture Experience and send Completion Notices last.
+7. You capture Experience, update Identity Context and send Completion Notices last.
 
 The sections below give the rules for each step.
 
@@ -48,6 +48,7 @@ Before interpreting a candidate's substantive Scope, read:
 - Relevant Knowledge Bases, on demand under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 - Work Requests.
 - The candidate's authoritative Closed Minutes.
+- The Deliverable Guideline named in the Work Request.
 
 ## 3. Checkpoint and dependencies
 
@@ -93,6 +94,7 @@ Scope confirmation permits these actions without another approval:
 
 1. Confirm each Deliverable's storage place, such as Google Drive, GitHub or GitLab.
    Take it from the Final Minutes. When no place is recorded, ask the user.
+   Confirm the Deliverable Guideline location from the Handoff.
 2. Establish the Working Document as a new Tab in the 03 Job Records file.
    Use the [Job Records template](../../templates/job-records.md).
    Name the Tab with the tab name pattern in the Google System Rules.
@@ -145,7 +147,9 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 2. Perform only authorized work.
 3. Preserve unrelated content, applicable Governance and Child responsibility boundaries.
 4. Search Experiences during work only for genuine difficulties, corrections or relevant quality problems.
-5. A missing substantive decision returns to the Meeting process.
+5. Record each user correction or stated success as a Learning Candidate in the Job Record when it happens.
+   Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.2.
+6. A missing substantive decision returns to the Meeting process.
    Suspend the affected action until authoritative Closed Minutes resolve it.
    Preserve completed in-scope work.
 
@@ -154,11 +158,11 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 1. Check the actual Sub-agent creation and supervision capabilities.
 2. When genuine Sub-agents are available, assign each Deliverable to a distinct genuine Sub-agent.
 3. Write each Sub-agent Prompt with the complete [PROFIT + A Framework](../profit-a/SKILL.md) in Strict Mode.
-4. Supply complete scoped subject knowledge, instruction-bearing Closed Minutes, constraints and supporting sources.
+4. Supply the Deliverable Guideline, complete scoped subject knowledge, instruction-bearing Closed Minutes, constraints and supporting sources.
 5. The Child determines substantive revisions, wording, organization and permitted methods.
 6. The Child authors the Deliverable, performs its own QA and returns the complete candidate.
 7. Sub-agents do not modify the Job Record.
-8. Review the entire candidate at every submission against sources, Requirements, the Global Writing Rules and artifact quality rules.
+8. Review the entire candidate at every submission against the Deliverable Guideline, sources, Requirements, the Global Writing Rules and artifact quality rules.
 9. A FAIL requires specific feedback.
 10. Allow at most five Child retries after the initial submission.
 11. After five failed retries, report the unpassed outcome for the user's decision.
@@ -194,9 +198,12 @@ Complete these steps in order:
 4. Freeze the completed Job Record as Proof of Job.
 5. Add one Jobs row to the 01 Index. Verify the row.
    The From cell names the sending Meeting and its record key, linked to that record.
-6. Update Identity Context.
-7. Optionally maintain relevant verified Knowledge Base content within approved authority.
-8. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+6. Optionally maintain relevant verified Knowledge Base content within approved authority.
+7. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.
+   Consolidate general Knowledge Base contributions in this step.
+   Record each routing result in the Job Record, including items not captured and their reasons.
+8. Update Identity Context in one step covering every Chapter that has content.
+   Include Important Learning from Identity-level Experiences routed in step 7.
 9. Send relevant Completion Notices last under the [inbox](../inbox/SKILL.md) Skill.
 
 Apply System Rules to actual persistence and indexing.

@@ -35,6 +35,7 @@
    Each new Job is a new Tab after the latest Tab.
    The record is append-oriented.
    Chapter 4 is chronological.
+   Record Learning Candidates in Chapter 4 when they happen.
    Write each time in the Google System Rules date and time format.
    When the Job ran locally, the Job Record returns to Google at Job completion.
 

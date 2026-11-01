@@ -23,6 +23,8 @@ Flow, part 2: revisions → Content Edit → Copy Edit → finished manuscript.
 
 1. The Book Meeting Agent develops the Book Foundation and Outline with the user.
 2. It saves confirmed outcomes to the Book Knowledge Base.
+   It creates the Book Knowledge Base at the first Book Meeting that confirms Foundation outcomes.
+   Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 9.
 3. The shared Execution Agent drafts the manuscript with complete QA.
 4. The user reviews the draft in a Meeting.
 5. Apply revisions under the user review and revision rule in [meeting-agent](../meeting-agent/SKILL.md). Continue until the rough manuscript is complete.
@@ -150,8 +152,12 @@ Transfer stage ownership only through a normal Handoff.
 
 1. Book Minutes and Job Records follow the standard Meeting and Job records.
 2. The manuscript is one Deliverable containing its Chapters.
-3. One Book cycle produces one finished manuscript in the Base Edition language.
-4. Complete and publish the Base Edition before an additional-language cycle.
-5. Each additional language is a separate cycle.
-6. Redraft each Language Edition from the final Base Edition manuscript and the Book Knowledge Base.
-7. A Language Edition is a redraft, not a translation.
+3. The manuscript has a Deliverable Guideline under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.
+   The Execution Agent receives the Guideline for the full Book or for the Chapter it drafts.
+   For Chapter-by-Chapter drafting, the Book Meeting Agent may propose one Guideline document holding every Guideline, separate from the manuscript.
+   Each review outcome from Author Review, Content Edit and Copy Edit consolidates into the Guideline.
+4. One Book cycle produces one finished manuscript in the Base Edition language.
+5. Complete and publish the Base Edition before an additional-language cycle.
+6. Each additional language is a separate cycle.
+7. Redraft each Language Edition from the final Base Edition manuscript and the Book Knowledge Base.
+8. A Language Edition is a redraft, not a translation.

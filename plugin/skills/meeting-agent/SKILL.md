@@ -19,7 +19,7 @@ Choose the interaction mode under Global Communication Rules Section 5.
 System Rules take priority over this Skill.
 
 Flow, part 1: NEW MEETING → Agenda → Opening → Discussion → CLOSE MEETING.
-Flow, part 2: Post-Meeting Actions → Final Minutes → Index → post-closure maintenance → Handoff.
+Flow, part 2: Post-Meeting Actions → Final Minutes → Index → post-closure consolidation → Experience capture → Identity Context update → Handoff.
 
 ## 2. Initialization
 
@@ -86,7 +86,12 @@ Ask the user only for what these sources do not hold.
 7. Each material Decision keeps its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
 8. Confirm materially ambiguous rationale with the user. Do not invent an explanation.
 9. At the end of each Agenda item, save and verify all accepted outcomes in the Working Record.
-10. For each Deliverable, agree its storage place with the user, such as Google Drive, GitHub or GitLab.
+10. Record each user correction or stated success as a Learning Candidate in the Working Record when it happens.
+    Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.2.
+11. For each Deliverable, agree its storage place with the user, such as Google Drive, GitHub or GitLab.
+    Ask the user for the path or location.
+12. For each Deliverable, propose the Deliverable Guideline arrangement. The user confirms it.
+    Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.4.
 
 ## 8. Actions
 
@@ -123,14 +128,24 @@ When the Meeting ran locally, return the Working Record and Final Minutes to Goo
 
 ## 10. After verified closure
 
+Flow: verified Closed Minutes → scoped Knowledge Base and Guideline consolidation → Experience capture → Identity Context update → Handoff.
+
 Complete these steps in order:
 
-1. Update Identity Context.
-   Register confirmed carry-forward topics in Future Topics with a Topic Name, a short Description and a precise source reference.
-2. Consolidate qualifying Knowledge Base content from the Closed Minutes under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
-3. Capture Experience once for the full Lifecycle under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
+1. Consolidate qualifying scoped Knowledge Base content from the Closed Minutes.
+   Consolidate each affected Deliverable Guideline in the same step.
+   Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Sections 7 and 12.
+2. Capture Experience once for the full Lifecycle under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.
+   Consolidate general Knowledge Base contributions in this step.
+3. Update Identity Context in one step covering every Chapter that has content:
+   1. Future Topics: confirmed carry-forward topics, each with a Topic Name, a short Description and a precise source reference.
+   2. Working Group: peer Identities, Handoff pairings and collaboration patterns from this Meeting.
+   3. Important Learning: Identity-level Experiences routed in step 2.
+   4. Important Things or High-Priority Items: what the Closed Minutes confirm as important within the Scope.
 4. Send the authorized Handoff last as an inbox row under the [inbox](../inbox/SKILL.md) Skill.
+   A Handoff for Deliverable work names the Deliverable Guideline link and the latest Closed Minutes.
 
+Record each routing result in the Working Record, including items not captured and their reasons.
 Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
 
 ## 11. Deliverable registration
@@ -141,6 +156,7 @@ Each recipient applies its own Role Lifecycle, Scope selection and approval gate
 3. Register packages that this Meeting Agent creates itself.
 4. The From cell names the sender Identity and its record key, linked to that record.
 5. The Location identifies the agreed storage place.
+   The Deliverable Guideline needs no separate row.
 6. Google version history shows when a row changed.
 7. Judge when an index or Identity Context update is needed.
 
@@ -159,7 +175,8 @@ In Book and Business Document Workflows, apply this rule after user review:
    State the impacted range. Show the exact current and amended text.
 3. With the user's approval, make the edit as an approved Post-Meeting Action.
 4. Without that approval, or for a large change, record the feedback in the Minutes.
-5. The Execution Agent revises from those Minutes.
+5. After closure, consolidate the review outcomes into the Deliverable Guideline under Section 10.
+6. The Execution Agent revises from the Guideline and those Minutes.
 
 Assessment alone does not authorize an edit.
 
