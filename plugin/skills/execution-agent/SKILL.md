@@ -201,7 +201,6 @@ Complete these steps in order:
 6. Optionally maintain relevant verified Knowledge Base content within approved authority.
 7. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.
    Consolidate general Knowledge Base contributions in this step.
-   Record each routing result in the Job Record, including items not captured and their reasons.
 8. Update Identity Context in one step covering every Chapter that has content.
    Include Important Learning from Identity-level Experiences routed in step 7.
 9. Send relevant Completion Notices last under the [inbox](../inbox/SKILL.md) Skill.

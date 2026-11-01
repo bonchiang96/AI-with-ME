@@ -65,7 +65,8 @@
    5. Important Learning holds Identity-level Experience: what helps this Identity work better.
       Examples are what failed, what worked better, useful techniques, knowledge and external links.
    6. Important Things or High-Priority Items holds what is important within the Scope.
-      Examples are the core idea of the Scope or a part of it, important parts of a module or Deliverable, and what the user stresses as important and must not go wrong.
+      Examples are the core idea of the Scope or a part of it and important parts of a module or Deliverable.
+      It also holds what the user stresses as important and must not go wrong.
    7. One subject may appear in several Chapters. Each Chapter holds only its own meaning.
    8. Update every Chapter in one step after Experience capture, as each Role Lifecycle states.
    9. Knowledge Bases holds one row per Knowledge Base the Identity uses or contributes to. Relation is Uses or Contributes.

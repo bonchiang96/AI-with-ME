@@ -154,6 +154,13 @@ Return to the [Requirements Overview](README.md).
 
 7. **Decision gaps.** A missing substantive decision must return to the Meeting process. Suspend the affected action until authoritative Closed Minutes resolve it. Preserve completed in-scope work. Deliverable organization and permitted implementation methods remain execution judgments.
 
+8. **Deliverable Guideline.** Execution must read the Deliverable Guideline named in the Handoff.
+   Supply it to each Sub-agent with the other required sources.
+   Review each candidate against it under [Foundation Section 4.12](01-foundation.md#4-scoped-knowledge-base).
+
+9. **Learning Candidates.** Record each user correction or stated success as a Learning Candidate in the Job Record when it happens.
+   Learning Candidates follow [Records, Messaging and Experiences Section 3.6](05-records-messaging-and-experiences.md#3-experience-learning).
+
 ## 3. Completion and communication
 
 1. **Completion sequence.** Complete these actions in order:
@@ -164,9 +171,9 @@ Return to the [Requirements Overview](README.md).
    4. Freeze the completed Job Record.
    5. Add one Jobs row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox). Verify the row.
       Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
-   6. Update Identity Context.
-   7. Optionally maintain relevant verified Knowledge Base content within approved authority.
-   8. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   6. Optionally maintain relevant verified Knowledge Base content within approved authority.
+   7. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   8. Update Identity Context in one step under [Foundation Section 3.14](01-foundation.md#3-identity-context).
    9. Send relevant Completion Notices last as inbox rows.
 
    Apply System Rules to actual persistence and indexing.

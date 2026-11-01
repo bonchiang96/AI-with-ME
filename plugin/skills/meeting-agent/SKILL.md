@@ -145,7 +145,6 @@ Complete these steps in order:
 4. Send the authorized Handoff last as an inbox row under the [inbox](../inbox/SKILL.md) Skill.
    A Handoff for Deliverable work names the Deliverable Guideline link and the latest Closed Minutes.
 
-Record each routing result in the Working Record, including items not captured and their reasons.
 Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
 
 ## 11. Deliverable registration

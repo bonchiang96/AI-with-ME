@@ -240,6 +240,8 @@ Return to the [Requirements Overview](README.md).
 
    The Operating Guide follows [Section 6](#6-templates-and-operating-guides).
    Working Group contains peer Identities and Handoff relationships.
+   Important Learning follows [Section 3.11](#3-identity-context).
+   Important Things or High-Priority Items follows [Section 3.12](#3-identity-context).
    Knowledge Bases follows [Section 3.9](#3-identity-context).
    Metadata follows [Section 3.10](#3-identity-context).
 
@@ -293,16 +295,41 @@ Return to the [Requirements Overview](README.md).
 
     Responsibility and Scope stay only in System Context under [Section 2.14](#2-governance-resources-and-dependencies).
 
+11. **Important Learning.** Important Learning holds Identity-level Experience.
+    It records what helps this Identity work better.
+    Examples include what failed, what worked better, useful techniques, knowledge and external links.
+    Its content comes from Experience capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+
+12. **Important Things or High-Priority Items.** This Chapter holds what is important within the Identity's Scope.
+    Examples include:
+
+    - The core idea of the Scope or a part of it.
+    - Important parts of a module or Deliverable.
+    - What the user stresses as important and must not go wrong.
+
+    Its content comes from verified Closed Minutes under [Section 3.5](#3-identity-context).
+
+13. **Chapter meaning.** One subject may appear in several Chapters.
+    Each Chapter holds only its own meaning.
+    Example: a core module goes to Important Things or High-Priority Items.
+    The technique for building it goes to Important Learning.
+
+14. **Update timing.** Update every Chapter that has content in one step.
+    The step runs after Experience capture and before the Handoff or Completion Notices.
+    The Role Lifecycles define the order under [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff) and [Execution Lifecycle Section 3.1](04-execution-lifecycle.md#3-completion-and-communication).
+
 ## 4. Scoped Knowledge Base
 
-1. **Knowledge resources.** A Knowledge Base must store external subject information for a defined Scope.
+1. **Knowledge resources.** A scoped Knowledge Base must store external subject information for a defined Scope.
    Examples include:
 
    - A company.
    - A Brand.
+   - A Book.
    - A specialist domain.
 
    One Scope may contain multiple Knowledge Bases.
+   The general Knowledge Base stores Experience only under [Section 4.9](#4-scoped-knowledge-base).
    Multiple Identities may use or maintain the same Knowledge Base.
    No Knowledge Base belongs to an Identity.
    Any Identity may add the Knowledge Base folder index line when it creates a Knowledge Base.
@@ -342,9 +369,12 @@ Return to the [Requirements Overview](README.md).
 4. **Semantic routing.** Route confirmed meaning according to its owner:
 
    1. External subject knowledge belongs in an applicable scoped Knowledge Base.
-   2. Identity operating information belongs in Identity Context under [Section 3](#3-identity-context).
-   3. Governance belongs in its applicable authoritative resources.
-   4. Job-specific instructions remain in relevant Closed Minutes and Job authority.
+   2. Guidance for a Deliverable belongs in its Deliverable Guideline under [Section 4.12](#4-scoped-knowledge-base).
+   3. Future Topics and High-Priority Items belong in Identity Context under [Section 3](#3-identity-context).
+   4. Governance belongs in its applicable authoritative resources.
+   5. Job-specific instructions remain in relevant Closed Minutes and Job authority.
+
+   Experience follows [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
 
    Mentioning a working Scope does not itself make an instruction subject knowledge.
 
@@ -363,7 +393,10 @@ Return to the [Requirements Overview](README.md).
    4. Apply [Global Writing Rules](global-writing-rules.md) Standard Mode.
    5. Useful paragraph-level source references may be included.
 
-6. **Execution sources.** Execution must use relevant scoped Knowledge Bases for current subject knowledge. It must also use the specific authoritative Closed Minutes for work instructions. Execution completion alone does not trigger Knowledge Base maintenance.
+6. **Execution sources.** Execution must use relevant scoped Knowledge Bases for current subject knowledge.
+   It must use the Deliverable Guideline for current Deliverable guidance.
+   It must also use the specific authoritative Closed Minutes for work instructions.
+   Execution completion alone does not trigger scoped Knowledge Base maintenance.
 
 7. **Maintenance triggers.** Apply these two distinct triggers within the Knowledge Base's Scope:
 
@@ -371,6 +404,7 @@ Return to the [Requirements Overview](README.md).
       This maintenance is discretionary.
    2. Qualifying user-confirmed Topic or Scope knowledge must be consolidated from verified Closed Minutes after the Meeting closes.
       This maintenance is mandatory when qualifying content exists.
+      When no applicable scoped Knowledge Base exists, create one under [Section 4.9](#4-scoped-knowledge-base).
 
    Experience contribution follows [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
 
@@ -385,7 +419,9 @@ Return to the [Requirements Overview](README.md).
      Its three columns are Name, Location and Description.
      The index tells an Agent or a person which Knowledge Bases exist and what each covers.
    - A general Knowledge Base to which every Identity contributes.
-   - Every other Knowledge Base.
+     It holds cross-Identity Experiences that improve the System.
+     Each Experience must help the user and other Identities, not one project only.
+   - Every scoped Knowledge Base.
 
 10. **Knowledge Base discovery.** Discovery uses three levels. Read each level only when needed:
 
@@ -398,6 +434,40 @@ Return to the [Requirements Overview](README.md).
 
 11. **Knowledge Base format.** A Knowledge Base has a free format.
     Its headings must be numbered.
+
+12. **Deliverable Guideline.** Every Deliverable must have a Deliverable Guideline, whatever its Workflow.
+    It holds the complete current guidance for that Deliverable.
+    It tells the Execution Agent what to produce and why each guidance point exists.
+
+    Apply these rules:
+
+    1. Every Knowledge Base rule in this Section applies to the Guideline. It has no separate rule set.
+    2. It holds current truth only. Exclude historical and superseded content.
+    3. Keep Rationale and Design Intent with each guidance point.
+    4. It uses the Knowledge Base format under [Section 4.11](#4-scoped-knowledge-base).
+    5. Its content depends on the Deliverable. No Workflow fixes a Guideline content template.
+
+    Ownership and timing:
+
+    1. The Meeting Agent that governs the Deliverable creates and maintains the Guideline.
+    2. It creates the Guideline at the Meeting that decides the Deliverable.
+    3. It consolidates the Guideline after every review Meeting, from the verified Closed Minutes.
+    4. Guideline consolidation runs beside scoped Knowledge Base consolidation.
+
+    Arrangement and location are guidance, not a hard rule.
+    The Meeting Agent proposes the arrangement for each Deliverable. The user confirms it.
+
+    1. By default, one Deliverable has one Guideline.
+       In a Google Docs Deliverable, Tab 1 is the Guideline and the following Tabs hold the drafts.
+       In another storage place, such as local, the Guideline is a file beside the Deliverable.
+    2. A Deliverable may need many Guidelines, such as a Book drafted Chapter by Chapter.
+       One Guideline document may then hold them all. The Deliverable is a separate file.
+    3. The Guideline resides in the Deliverable's agreed storage place.
+    4. The index registers the Deliverable only. The Guideline needs no separate index entry.
+
+    The Handoff to the Execution Agent names the Guideline link and the latest Closed Minutes.
+    In Google, the link is the Guideline Tab link.
+    The Execution Agent produces the Deliverable from the Guideline and the relevant Knowledge Bases.
 
 ## 5. Identity folder, index and inbox
 

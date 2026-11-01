@@ -11,6 +11,8 @@ Return to the [Requirements Overview](../README.md).
    3. Confirm the structure.
 
    The user makes final decisions under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
+   After the Meeting closes, the Meeting Agent creates the document's Deliverable Guideline under [Foundation Section 4.12](../01-foundation.md#4-scoped-knowledge-base).
+   By default, the Guideline is Tab 1 of the Deliverable file and the drafts follow it.
 
 2. **Full draft and QA.** The shared Execution Agent writes one full draft.
    Every draft includes its own complete QA under [Quality Section 1](../06-quality.md#1-deliverable-quality-and-independent-qa).
@@ -19,6 +21,7 @@ Return to the [Requirements Overview](../README.md).
 
 3. **Numbered revisions.** Each revision produces a new numbered draft based on:
 
+   - The Deliverable Guideline, consolidated with the review outcomes.
    - The previous draft.
    - Relevant Closed Minutes.
    - Relevant Knowledge Bases.

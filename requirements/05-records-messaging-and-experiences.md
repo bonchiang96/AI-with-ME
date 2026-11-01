@@ -118,7 +118,7 @@ Return to the [Requirements Overview](README.md).
    1. Step 4 of NEW MEETING, before the Agenda, under [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation).
    2. Step 3 of CLOSE MEETING under [Meeting Lifecycle Section 3.3](03-meeting-lifecycle.md#3-closing-and-handoff).
 
-   Perform one full-lifecycle Capture after post-closure Knowledge Base consolidation and before the final Handoff.
+   Perform one full-lifecycle Capture after post-closure Knowledge Base consolidation and before the Identity Context update.
    The closing sequence follows [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff).
 
 4. **Capture outcomes.** Compare actual reusable learning with governing sources and existing Knowledge Base content.
@@ -129,16 +129,11 @@ Return to the [Requirements Overview](README.md).
    - Novelty.
    - Limitations.
 
-   Then contribute the Experience or conclude that no action is needed.
-   Experience is a kind of Knowledge Base contribution.
-   After each Closed Minutes or closed Job Record, contribute it to one of these destinations:
-
-   - The general Knowledge Base.
-   - The Knowledge Base of its Scope.
-
-   Consolidate every contribution under [Foundation Section 4.5](01-foundation.md#4-scoped-knowledge-base).
+   Review every Learning Candidate and the whole Meeting or Job.
+   Route each Experience under [Section 3.8](#3-experience-learning).
+   Apply each Experience directly to its target. No record stores the routing.
+   Consolidate every general Knowledge Base contribution under [Foundation Section 4.5](01-foundation.md#4-scoped-knowledge-base).
    No Experience entry is required in frozen Job Records or Minutes.
-   Do not contribute merely because a Protocol ended.
 
 5. **Experience quality.** Experience contributions follow Knowledge Base writing rules under [Foundation Section 4.5](01-foundation.md#4-scoped-knowledge-base).
 
@@ -150,3 +145,25 @@ Return to the [Requirements Overview](README.md).
    - Evidence.
    - Limitations.
    - Future applicability.
+
+6. **Learning Candidates.** Record each failure or success as a Learning Candidate when it happens.
+   A Meeting records it in the Working Record. A Job records it in the Job Record.
+   Each Learning Candidate states what happened, the user's words or intent, and the lesson or pattern.
+   A Learning Candidate is a working note. It is routed only at capture.
+
+7. **Kinds of Experience.** An Experience is one of two kinds:
+
+   1. A failure Experience arises when the user asks for a change or correction, or states that the Agent got something wrong.
+   2. A success Experience arises when the user states that something was good.
+      Identify the pattern behind the success, such as the planning, the thinking or the method.
+      State the pattern so it can apply widely.
+
+8. **Routing test.** Route each Experience by whom it helps:
+
+   1. Experience that helps this Identity work better goes to the Important Learning Chapter of its Identity Context.
+   2. Experience that helps the user and other Identities work better goes to the general Knowledge Base.
+   3. External subject knowledge found during the work goes to a scoped Knowledge Base under [Foundation Section 4.4](01-foundation.md#4-scoped-knowledge-base).
+
+9. **Capture timing.** A Meeting captures once after scoped Knowledge Base and Deliverable Guideline consolidation.
+   A Job captures once after verified Job finalization.
+   In both, capture runs before the Identity Context update.

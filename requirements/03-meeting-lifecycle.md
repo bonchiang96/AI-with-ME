@@ -97,7 +97,14 @@ Return to the [Requirements Overview](README.md).
    Intermediate saving within an Agenda item is discretionary.
    The Working Record's persistence and QA boundary follows [Quality Section 1.1](06-quality.md#1-deliverable-quality-and-independent-qa).
 
-5. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Identity's own Responsibility and Scope. Prepare other Agents' work for handoff.
+5. **Learning Candidates.** Record each user correction or stated success as a Learning Candidate in the Working Record when it happens.
+   Learning Candidates follow [Records, Messaging and Experiences Section 3.6](05-records-messaging-and-experiences.md#3-experience-learning).
+
+6. **Deliverable arrangement.** For each Deliverable, agree its storage place with the user and ask for the path or location.
+   Propose the Deliverable Guideline arrangement under [Foundation Section 4.12](01-foundation.md#4-scoped-knowledge-base).
+   The user confirms it.
+
+7. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Identity's own Responsibility and Scope. Prepare other Agents' work for handoff.
 
 ## 3. Closing and handoff
 
@@ -160,12 +167,15 @@ Return to the [Requirements Overview](README.md).
 7. **Final Handoff.** Identify authorized recipients and authoritative sources before closure.
    Distinguish sources for reading from authorized writing destinations.
 
-   Complete the following after verified Meeting closure:
+   Complete the following in order after verified Meeting closure:
 
-   1. Update Identity Context and Future Topics.
-   2. Consolidate qualifying Knowledge Base content under [Foundation Section 4](01-foundation.md#4-scoped-knowledge-base).
-   3. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   1. Consolidate qualifying scoped Knowledge Base content under [Foundation Section 4](01-foundation.md#4-scoped-knowledge-base).
+      Consolidate each affected Deliverable Guideline in the same step under [Foundation Section 4.12](01-foundation.md#4-scoped-knowledge-base).
+   2. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   3. Update Identity Context in one step under [Foundation Section 3.14](01-foundation.md#3-identity-context).
+      Include Future Topics, Working Group, Important Learning and Important Things or High-Priority Items.
    4. Send the authorized Handoff last as an inbox row under [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
+      A Handoff for Deliverable work names the Deliverable Guideline link and the latest Closed Minutes.
 
    Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
 

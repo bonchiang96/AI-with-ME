@@ -18,6 +18,7 @@ Return to the [Requirements Overview](../README.md).
 
    1. The Book Meeting Agent develops Book Foundation and Outline with the user.
    2. It saves confirmed outcomes to the Book Knowledge Base.
+      It creates the Book Knowledge Base at the first Book Meeting that confirms Foundation outcomes.
    3. The shared Execution Agent drafts the manuscript with complete QA.
    4. The user reviews the draft in a Meeting.
    5. Apply revisions under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows) and continue until the rough manuscript is complete.
@@ -279,9 +280,15 @@ Return to the [Requirements Overview](../README.md).
    Book Meeting Minutes and Job Records follow the standard records in [Meeting Lifecycle](../03-meeting-lifecycle.md) and [Execution Lifecycle](../04-execution-lifecycle.md).
    The manuscript is one Deliverable containing its Chapters.
 
-2. **Base Edition.** One Book cycle produces one finished manuscript in the Base Edition language.
+2. **Manuscript Guideline.** The manuscript has a Deliverable Guideline under [Foundation Section 4.12](../01-foundation.md#4-scoped-knowledge-base).
+   The Execution Agent receives the Guideline for the full Book or for the Chapter it drafts.
+   For Chapter-by-Chapter drafting, the Book Meeting Agent may propose one Guideline document holding every Guideline.
+   The manuscript is then a separate file.
+   Each review outcome from Author Review, Content Edit and Copy Edit consolidates into the Guideline.
+
+3. **Base Edition.** One Book cycle produces one finished manuscript in the Base Edition language.
    Complete and publish the Base Edition before beginning an additional-language cycle.
 
-3. **Language Editions.** Each additional language is a separate cycle.
+4. **Language Editions.** Each additional language is a separate cycle.
    Redraft each Language Edition from the final Base Edition manuscript and Book Knowledge Base.
    A Language Edition is a redraft, not a translation.

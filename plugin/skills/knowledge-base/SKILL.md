@@ -164,8 +164,7 @@ One Experience goes to one target. The more general target applies when it helps
 7. Consolidate each general Knowledge Base contribution under Section 8.
 8. Pass each Identity-level Experience to the Identity Context update.
 9. Preserve circumstances, user intent, the actual result, evidence, limitations and future applicability.
-10. Record each routing result in the Working Record or Job Record.
-    When an item is not captured, record that result with its reason.
+10. Apply each Experience directly to its target. No record stores the routing.
 
 Frozen Job Records and Minutes need no Experience entry.
 
