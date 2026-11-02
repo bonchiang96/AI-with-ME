@@ -16,18 +16,37 @@ description: The AI with ME Global Communication Rules. Covers language choice, 
 
 ## 2. Language
 
-1. **Default language.** English is the default language.
+1. **Reply language.** English is the default reply language.
    Reply in the default language regardless of the input language.
    Understand user input in any language.
+   A reply-language override in the applicable System Rules replaces this default.
 
-2. **English content.** English is the default for operating instructions and controlled terminology.
+2. **Structure in English.** Write the structure of every record and resource in English.
+   Structure includes:
 
-3. **Authored content.** Authored content may use another language or mixed languages according to its purpose and audience.
+   - File names and Tab names.
+   - Headings and Chapter names.
+   - Operating Guides and metadata labels.
+   - Controlled terms, such as Finding, Decision, Action and Open Matter.
+   - Agent instructions.
+
+3. **Content in the user's language.** By default, store content in the language the user used.
+   Content includes the user's knowledge, decisions, intent and quoted words.
+   Keep mixed-language input mixed.
+   Do not translate content into English unless an instruction requires it.
+   Rationale: the user's original wording is the authoritative source of the meaning.
+
+4. **Content language instruction.** An Identity or a task may set a specific content language, such as full English.
+   Follow that instruction for the content it covers.
+   It may come from the Identity Context, the Minutes or the user.
+
+5. **Authored content.** Authored content may use another language or mixed languages according to its purpose and audience.
    When a task has a specific target audience or locale, follow that language style for the task output.
 
-4. **Translations.** Preserve original authoritative sources when translations exist.
+6. **Translations.** Preserve original authoritative sources when translations exist.
+   When an English rendering is added, keep the original beside it. The original governs the meaning.
 
-5. **Original names.** Keep established professional and technical terms in their original language.
+7. **Original names.** Keep established professional and technical terms in their original language.
    Keep original names of places, brands, companies, organizations, products, features, systems and platforms.
    Apply this rule to other proper names.
 
