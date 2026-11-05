@@ -41,7 +41,7 @@
    Each new Final Minutes is a new Tab.
    Use Strict Mode under the Global Writing Rules.
    Write each time in the Google System Rules date and time format.
-   When the Meeting ran locally, the Final Minutes return to Google at Meeting close.
+   With an Agent workspace, the Final Minutes are drafted there and sync to Google at Meeting close.
 
 6. **Local QA criteria.** Verify Content, Writing and Formatting separately.
    Record PASS or FAIL for each dimension in Chapter 5. Check these points:

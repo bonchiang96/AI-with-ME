@@ -122,15 +122,62 @@ After CLOSE MEETING, the General Meeting Agent performs these Post-Meeting Actio
 
 Restore genuinely missing resources within existing approved authority and applicable System Rules.
 
-## 8. Local environments
+## 8. Agent workspace
 
-Local working is hybrid. Google Drive remains the authority.
+An Agent workspace is a file system the Agent can write to, in the cloud or on the user's device.
+Google Drive remains the authority.
 
-1. Local environments use the central System Root, System Context and Identity Context.
-2. System Context, Identity Context, the index and the inbox always stay in Google.
-3. Local Bootstrap establishes only missing Local System Rules and required working paths.
-4. Local System Rules define the local folder, its arrangement, and when and how work returns to Google.
+### 8.1 Workspace check
+
+1. At entry, the Agent judges by itself whether it has a workspace.
+2. It may confirm by writing a file.
+3. Without a workspace, the Agent works in the Google style. It writes every record directly to Google.
+
+### 8.2 Workspace content
+
+1. Only working records go into the workspace:
+   - The Working Record of a Meeting Agent.
+   - The Job Record of an Execution Agent.
+   - The Final Minutes draft of a Meeting Agent.
+2. Every other resource stays in Google.
+   Examples are System Context, Identity Context, the 01 Index, the inbox and Knowledge Bases.
+3. Rationale: working records take the most writes.
+   Keeping them in the workspace removes most Google writes and the Google output from the Conversation.
+
+### 8.3 Entry record
+
+1. At Opening or record establishment, create the entry record in Google first.
+2. The entry record is the record's Tab with only the Meeting Information or the Job metadata.
+3. Then create the working file in the workspace.
+4. Write every further change in the workspace until a sync.
+
+### 8.4 Sync
+
+1. **Hard rule.** Sync at Meeting close and at Job completion.
+2. **Agent judgment.** Between them, the Agent judges by itself when to sync.
+   Reasons include long content, the container lifetime and a risk of disposal.
+   No fixed trigger applies, such as each Agenda item.
+3. **User command.** SYNC ME is the user's signal for a manual sync. The bare word sync is not a command.
+4. **Performer.** When the Agent can use a Sub-agent, a Sub-agent performs the sync.
+   The Sub-agent uses the cheapest model available. Otherwise the Agent performs the sync itself.
+5. **Check.** Every sync checks the result in Google in this order:
+   1. The content is complete and correct.
+   2. The heading styles are correct.
+6. **Failure.** The Agent handles a sync failure itself.
+
+### 8.5 Active record from another Conversation
+
+1. An active record follows the normal continuation flow.
+2. When the active record holds only its entry record, ask the user softly whether the work runs in another Conversation.
+   - No: continue here.
+   - Yes: the user continues in that Conversation.
+   - That Conversation cannot continue: the user chooses to restart or to continue from what Google holds.
+3. This step is a user choice, not failure handling.
+
+### 8.6 Local device workspace
+
+1. Local System Rules define the local folder and its arrangement.
    They reside in Chapter 4 of [Google System Rules](../../templates/system-rules.md#4-local-system-rules).
-5. The local root holds one folder per Identity, named by its Agent Key.
-6. Each Identity folder holds one folder per Meeting or Job, named like its Google Tab.
-7. Local files do not establish independent governance authority.
+2. The local root holds one folder per Identity, named by its Agent Key.
+3. Each Identity folder holds one folder per Meeting or Job, named like its Google Tab.
+4. Workspace files do not establish independent governance authority.

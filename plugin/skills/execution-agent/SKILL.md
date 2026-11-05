@@ -38,6 +38,7 @@ System Rules take priority over this Skill.
 Use this start order:
 
 1. Check the latest Tab of the 03 Job Records file for an active Job.
+   When it holds only its entry record, follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.5.
 2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
 3. Review Future Topics in Identity Context.
 4. Establish the Scope.
@@ -98,6 +99,8 @@ Scope confirmation permits these actions without another approval:
 2. Establish the Working Document as a new Tab in the 03 Job Records file.
    Use the [Job Records template](../../templates/job-records.md).
    Name the Tab with the tab name pattern in the Google System Rules.
+   With an Agent workspace, the new Tab is the entry record.
+   Write the Job Record in the workspace under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.
 3. Verify the new Tab and its Formatting under the [workflow-qa](../workflow-qa/SKILL.md) Formatting checkpoints.
 4. Remove only incorporated portions from Future Topics. Retain partial and unselected remainders.
 5. Save and verify the Scope confirmation.
@@ -129,6 +132,24 @@ For each confirmed Scope, the Plan identifies:
 - Completion conditions.
 
 Include ordered execution steps for the entire Job.
+
+Present the Plan to the user in the Conversation, item by item:
+
+1. State how many items the Job Scope holds.
+2. For each item, show at least these five elements:
+   - The Deliverable.
+   - Its storage location.
+   - The final outcome.
+   - The sources.
+   - The model.
+3. Add other elements when useful. Omit none of the five.
+4. The final outcome states in a few sentences the most important thing this round must show.
+   A first draft states the idea of the whole document.
+   A later draft states what must improve or appear, based on the feedback.
+   It is not a Condition value such as Draft or Stable.
+5. An item may come from one Work Request or another arrangement. You decide how to group items.
+
+This is the expected content, not a fixed template.
 The Execution List identifies target files, documents and folders.
 It does not prescribe the Child's Chapters, Sections, content plan or Deliverable structure.
 A structure expressly prescribed in authoritative Minutes remains binding.
@@ -136,6 +157,9 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 ## 8. PROCEED EXECUTION
 
 1. PROCEED EXECUTION approves the complete current saved Plan once for the entire Job.
+   Before approval, the user may adjust the details of each item.
+   Examples are the sources, the final outcome, the storage location and the model.
+   The user never approves part of a Job.
 2. Save and verify the approval.
 3. Ordinary refinements may remain within approved requirements.
 4. A material Scope change requires a new Scope decision.
@@ -217,14 +241,15 @@ Self-verification does not replace an independent QA Workflow.
 4. Notify other registered Identities whose current Responsibilities intersect the outcome.
 5. Avoid unrelated or duplicate notices.
 
-## 14. Local and remote environments
+## 14. Agent workspace and remote environments
 
-Local working is hybrid. Google Drive remains the authority.
+Work with an Agent workspace follows the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.
+Google Drive remains the authority.
 
 1. Preserve authoritative Google decisions, approved Scope, the Plan, Agent boundaries and approvals.
 2. Keep System Context, Identity Context, the index and the inbox in Google.
-3. Follow the Local System Rules for the local folder and for when and how work returns to Google.
-4. Return the Job Record to Google at Job completion, before step 5 of Section 12.
+3. Follow the Local System Rules for a local device folder.
+4. Sync the Job Record to Google at Job completion, before step 5 of Section 12.
 5. Store each Deliverable in its agreed place.
 6. Index or announce nothing until its record is in Google and its Deliverable is in the agreed place.
 7. Verify required updates before claiming completion.

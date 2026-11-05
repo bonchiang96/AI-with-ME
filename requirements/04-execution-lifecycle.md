@@ -124,7 +124,19 @@ Return to the [Requirements Overview](README.md).
    Include ordered execution steps covering the entire Job.
    Preserve the authorship boundary in [Section 4.3](#4-execution-parent-and-sub-agents).
 
+   Present the Plan in the Conversation, item by item.
+   State how many items the Job Scope holds.
+   Each item shows at least the Deliverable, its storage location, the final outcome, the sources and the model.
+   Other elements may be added. None of the five may be omitted.
+   The final outcome states in a few sentences the most important thing this round must show.
+   A first draft states the idea of the whole document.
+   A later draft states what must improve or appear, based on the feedback.
+   The Execution Agent decides how to group items.
+   This is the expected content, not a fixed template.
+
 3. **Plan approval.** PROCEED EXECUTION approves the complete current saved Execution Plan once for the entire Job.
+   Before approval, the user may adjust each item's sources, final outcome, storage location and model.
+   The user never approves part of a Job.
    Ordinary refinements may remain within approved requirements.
    Material Scope changes require a new Scope decision.
    Material changes to approved implementation require renewed Plan approval.

@@ -37,7 +37,7 @@
    Chapter 4 is chronological.
    Record Learning Candidates in Chapter 4 when they happen.
    Write each time in the Google System Rules date and time format.
-   When the Job ran locally, the Job Record returns to Google at Job completion.
+   With an Agent workspace, this Tab starts as the entry record. The Job Record syncs to Google at Job completion.
 
 6. **Local QA criteria.** Verify Content, Writing and Formatting separately. Check these points:
 

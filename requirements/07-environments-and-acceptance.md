@@ -106,6 +106,40 @@ Return to the [Requirements Overview](README.md).
    1. Its record is in Google.
    2. Its Deliverable is in the agreed place.
 
+9. **Agent workspace.** An Agent workspace is a file system the Agent can write to, in the cloud or on the user's device.
+   At entry, the Agent judges by itself whether it has one. It may confirm by writing a file.
+   Without a workspace, the Agent writes every record directly to Google.
+
+10. **Workspace content.** Only these working records go into the workspace:
+
+    - The Working Record.
+    - The Job Record.
+    - The Final Minutes draft.
+
+    Every other resource stays in Google.
+    Rationale: working records take the most writes, so the workspace removes most Google writes from the Conversation.
+
+11. **Entry record.** At Opening or record establishment, create the record's Tab in Google first.
+    It holds only the Meeting Information or the Job metadata.
+    The working file is then created in the workspace.
+
+12. **Sync timing.** A sync is required at Meeting close and at Job completion.
+    Between them, the Agent judges by itself when to sync.
+    Reasons include long content, the container lifetime and a risk of disposal.
+    No fixed trigger applies, such as each Agenda item.
+    Rationale: a fixed trigger would sync every time and remove the value of the workspace.
+
+13. **Manual sync.** SYNC ME is the user's signal for a manual sync. The bare word sync is not a command.
+
+14. **Sync performer and check.** When the Agent can use a Sub-agent, a Sub-agent performs the sync with the cheapest model available.
+    Otherwise the Agent performs the sync itself.
+    Every sync checks the content first, then the heading styles.
+    The Agent handles a sync failure itself.
+
+15. **Active record from another Conversation.** When an active record holds only its entry record, the Agent asks the user softly whether the work runs in another Conversation.
+    The user continues here, returns to that Conversation, or chooses to restart or continue from what Google holds.
+    This step is a user choice, not failure handling.
+
 ## 3. Baseline acceptance
 
 1. **Foundation acceptance.** The initial foundation must provide:

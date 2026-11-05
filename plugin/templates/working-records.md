@@ -39,7 +39,7 @@
    Record Learning Candidates in Chapter 3 when they happen.
    Chapter 1 holds the Metadata items.
    Write each time in the Google System Rules date and time format.
-   When the Meeting ran locally, the Working Record returns to Google at Meeting close.
+   With an Agent workspace, this Tab starts as the entry record. The Working Record syncs to Google at Meeting close.
 
 6. **Local QA criteria.** Check these points:
 

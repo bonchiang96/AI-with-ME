@@ -35,6 +35,7 @@ Use this start order:
 
 1. Check the latest Tab of the 03 Working Records file for an active Meeting.
    Prioritize continuing it. Only one Meeting may be active per Meeting Identity.
+   When it holds only its entry record, follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.5.
 2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
 3. Review Future Topics in Identity Context.
 4. Search Experiences under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
@@ -70,10 +71,12 @@ Ask the user only for what these sources do not hold.
 2. Establish the Working Record as a new Tab in the 03 Working Records file.
 3. Use the [Working Records template](../../templates/working-records.md).
    Name the Tab with the tab name pattern in the Google System Rules.
-4. Verify the new Tab.
-5. Preserve the Identity, Scope, actual Opening Time, confirmed Agenda and authoritative source references.
-6. After the Tab is verified, remove the selected Future Topics from Identity Context.
-7. Preserve unselected Future Topics.
+4. With an Agent workspace, the new Tab is the entry record.
+   Write the Working Record in the workspace under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.
+5. Verify the new Tab.
+6. Preserve the Identity, Scope, actual Opening Time, confirmed Agenda and authoritative source references.
+7. After the Tab is verified, remove the selected Future Topics from Identity Context.
+8. Preserve unselected Future Topics.
 
 ## 7. Discussion
 
@@ -114,6 +117,7 @@ CLOSE MEETING starts Closing. Complete these steps in order:
 4. Perform every approved Post-Meeting Action that this Identity owns.
    Record each actual outcome in the Working Record Post-Meeting Action Log.
 5. Compile self-contained Final Minutes as a new Tab in the 04 Minutes file.
+   With an Agent workspace, draft them in the workspace first.
    Use the [Minutes template](../../templates/minutes.md). Write in Strict Mode under the Global Writing Rules.
    Include the Handoff Plan and each agreed Deliverable storage place.
    Identify material gaps without speculation.
@@ -124,7 +128,8 @@ CLOSE MEETING starts Closing. Complete these steps in order:
 9. Verify the resulting state before claiming closure.
 
 Closed Working Records and Final Minutes are immutable.
-When the Meeting ran locally, return the Working Record and Final Minutes to Google before step 8.
+With an Agent workspace, sync the Working Record and Final Minutes to Google before step 7.
+Follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.4.
 
 ## 10. After verified closure
 
