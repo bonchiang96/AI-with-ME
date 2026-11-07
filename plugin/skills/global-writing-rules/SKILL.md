@@ -1,6 +1,6 @@
 ---
 name: global-writing-rules
-description: The AI with ME Global Writing Rules and Writing Modes. Covers meaningful content, semantic ownership, direct writing, defensive thinking, readability and Strict Mode. Use when writing, reviewing, verifying or correcting any output for the user.
+description: The AI with ME Global Writing Rules and Writing Modes. Covers meaningful content, semantic ownership, direct writing, defensive thinking, readability, Strict Mode and checking. Load at the start of every AI with ME Conversation. Use before writing or checking any reply, document, record, Minutes, Knowledge Base content, inbox message, Prompt or Deliverable.
 ---
 
 # Global Writing Rules
@@ -178,16 +178,26 @@ Strict Mode includes every other Global Writing Rule and these four rules:
 
 4. **Controlled terms.** Use each repeated controlled term in one consistent part of speech throughout the output.
 
-## 8. Final compliance check
+## 8. Follow and checking
 
-1. **Final review.** After writing, rewriting or translation, review the final output in its final language.
-   Check it against these rules and the applicable Writing Mode.
-   When Global Communication Rules apply, check it against them as well.
+1. **Follow.** Apply these rules while writing every output.
 
-2. **Evidence.** An earlier source, draft or pre-translation version is not evidence of compliance.
+2. **Writing checking.** Writing checking means checking and enhancing the text.
+   Check the complete final version against these rules and its Writing Mode. Then correct and improve it.
+   Check the output in its final language.
+   When Global Communication Rules apply, check against them as well.
+   Writing checking applies to Final Minutes, Knowledge Bases and text Deliverables.
+   The [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2 holds the checking procedure.
+
+3. **Mechanical scan.** When the Agent can run a script, writing checking includes a mechanical scan:
+
+   - Strict Mode: every semicolon and every sentence over its length limit.
+   - Standard Mode: every paragraph over six sentences.
+
+4. **Evidence.** An earlier source, draft or pre-translation version is not evidence of compliance.
    The final delivered content must satisfy every applicable rule.
 
-3. **Correction.** Correct every non-compliant item before finalizing:
+5. **Correction.** Correct every found item:
 
    - Wording.
    - Structure.
@@ -197,3 +207,5 @@ Strict Mode includes every other Global Writing Rule and these four rules:
    - Paragraph structure.
    - Negative echo and defensive thinking.
    - Strict Mode rules.
+
+   A writing checking result is PASS only after every found item is corrected.

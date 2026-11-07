@@ -75,3 +75,11 @@ Return to the [Requirements Overview](../README.md).
 
    During Framework review or drafting, describe definitions naturally.
    Do not force I / You wording before composing the final Prompt.
+
+8. **Global Writing Rules for Sub-agents.** A Sub-agent that writes a Deliverable needs the Global Writing Rules.
+   A Sub-agent that checks or reviews written content needs them as well.
+   A Sub-agent that only copies text to Google does not.
+   The Insight tells such a Sub-agent to load the Global Writing Rules Skill.
+   It tells the Sub-agent to write or check under the Global Writing Rules.
+   The Insight also names the Writing Mode.
+   When the Sub-agent cannot read Plugin Skills, the Parent copies the full Global Writing Rules into the Feed.

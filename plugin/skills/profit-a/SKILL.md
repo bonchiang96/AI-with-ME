@@ -52,3 +52,13 @@ It defines what the user needs to prepare or provide to use the Prompt.
 2. In the final Prompt, “I” refers to the user and “You” refers to the AI.
 3. During Framework review or drafting, describe definitions naturally.
 4. Apply I / You wording only when composing the final Prompt.
+
+## 7. Global Writing Rules for Sub-agents
+
+1. A Sub-agent that writes a Deliverable needs the Global Writing Rules.
+   A Sub-agent that checks or reviews written content needs them as well.
+   A Sub-agent that only copies text to Google does not.
+2. The Insight tells such a Sub-agent to load the [global-writing-rules](../global-writing-rules/SKILL.md) Skill.
+   It tells the Sub-agent to write or check under the Global Writing Rules.
+   The Insight also names the Writing Mode.
+3. When the Sub-agent cannot read Plugin Skills, the Parent copies the full Global Writing Rules into the Feed.

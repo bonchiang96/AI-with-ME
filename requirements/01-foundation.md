@@ -392,6 +392,7 @@ Return to the [Requirements Overview](README.md).
       Replace its Rationale and Design Intent with those of the new truth.
    4. Apply [Global Writing Rules](global-writing-rules.md) Standard Mode.
    5. Useful paragraph-level source references may be included.
+   6. Run writing checking before saving, under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 6. **Execution sources.** Execution must use relevant scoped Knowledge Bases for current subject knowledge.
    It must use the Deliverable Guideline for current Deliverable guidance.
@@ -456,6 +457,7 @@ Return to the [Requirements Overview](README.md).
     Apply these rules:
 
     1. Every Knowledge Base rule in this Section applies to the Guideline. It has no separate rule set.
+       The one exception is writing checking. The Guideline follows the Global Writing Rules without writing checking.
     2. It holds current truth only. Exclude historical and superseded content.
     3. Keep Rationale and Design Intent with each guidance point.
     4. It uses the Knowledge Base format under [Section 4.11](#4-scoped-knowledge-base).

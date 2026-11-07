@@ -117,18 +117,23 @@ Return to the [Requirements Overview](README.md).
 13. **Identity changes.** The Status field in System Context records each Identity's state: Active, Inactive or Archived.
     The user decides a Status change in a Meeting with the General Meeting Agent. That Agent updates the field as a Post-Meeting Action.
 
-13. **General Meeting Agent.** The General Meeting Agent is the Identity named in the System Context Governance Chapter.
+14. **General Meeting Agent.** The General Meeting Agent is the Identity named in the System Context Governance Chapter.
     It owns System Governance, Identity definition and registration, and Handoff coordination.
     At Bootstrap it is `general-meeting`.
     The user may name another Identity in a Meeting with the current General Meeting Agent.
     Bootstrap rules stay in the Plugin. System Context records only the current name.
 
-14. **Working mode at entry.** Before loading the Role Skill, the Agent checks its workspace. It states the working mode to the user.
+15. **Working mode at entry.** Before loading the Role Skill, the Agent checks its workspace. It states the working mode to the user.
     With a workspace, the Agent must use it for its working records under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
     Inactive or archived Identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
     Their identity folders and records stay unchanged.
 
-14. **Local Bootstrap.** Local Bootstrap must establish missing Local System Rules and required working paths only.
+16. **Rules at entry.** The Agent loads the Global Communication Rules and the Global Writing Rules as Plugin Skills.
+    It loads them after the working-mode step and before the Role Skill.
+    Before writing an output that the Global Writing Rules govern, the Agent loads that Skill. When the Skill is already loaded, the Agent applies its rules.
+    Rationale: the rules shape the Agent's thinking, so they load before any work.
+
+17. **Local Bootstrap.** Local Bootstrap must establish missing Local System Rules and required working paths only.
     Central Identity and Context authority remain governed by [Foundation Section 2.3](01-foundation.md#2-governance-resources-and-dependencies) and [Foundation Section 3.1](01-foundation.md#3-identity-context).
 
 ## 2. Agent responsibilities, stage words and Workflows

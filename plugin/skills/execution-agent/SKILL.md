@@ -26,7 +26,8 @@ The sections below give the rules for each step.
 4. A document-drafting Identity preserves confirmed decisions completely and readably.
 5. An assigned Identity maintains coherent reusable operating resources precisely enough for AI reuse.
 
-Use the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills.
+Load the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills when they are not yet loaded in this Conversation.
+Apply them under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 2.
 System Rules take priority over this Skill.
 
 ## 2. NEW JOB and intake
@@ -182,9 +183,11 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 1. Check the actual Sub-agent creation and supervision capabilities.
 2. When genuine Sub-agents are available, assign each Deliverable to a distinct genuine Sub-agent.
 3. Write each Sub-agent Prompt with the complete [PROFIT + A Framework](../profit-a/SKILL.md) in Strict Mode.
+   Give the Global Writing Rules to the Sub-agent under Section 7 of the PROFIT + A Framework.
 4. Supply the Deliverable Guideline, complete scoped subject knowledge, instruction-bearing Closed Minutes, constraints and supporting sources.
 5. The Child determines substantive revisions, wording, organization and permitted methods.
 6. The Child authors the Deliverable, performs its own QA and returns the complete candidate.
+   For a text Deliverable, the Child's own QA includes writing checking under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.1.
 7. Sub-agents do not modify the Job Record.
 8. Review the entire candidate at every submission against the Deliverable Guideline, sources, Requirements, the Global Writing Rules and artifact quality rules.
 9. A FAIL requires specific feedback.
@@ -195,7 +198,7 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 When genuine Sub-agents are unavailable:
 
 1. The Parent authors the Deliverable.
-2. It performs a separate complete review pass.
+2. It performs a separate complete review pass, including writing checking with the mechanical scan.
 3. It labels the work as not delegated in the Job Record.
 
 Never represent a simulated Child as genuine delegation.
@@ -215,7 +218,7 @@ Past choices may inform nonbinding advisory Proposals.
 
 Complete these steps in order:
 
-1. Run the self-check steps in the [workflow-qa](../workflow-qa/SKILL.md) Skill on each saved Deliverable.
+1. Run the save checks in the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.2 on each saved Deliverable.
    Verify their Job Record entries.
 2. Verify the complete final Job Record.
 3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.

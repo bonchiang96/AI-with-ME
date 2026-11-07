@@ -111,13 +111,14 @@ Experience is handled separately under Section 11.
 4. Retain all valid knowledge.
 5. Integrate newly confirmed subject matter.
 6. Replace only genuinely superseded content. Replace its Rationale and Design Intent with those of the new truth.
-7. Apply Standard Mode under the [global-writing-rules](../global-writing-rules/SKILL.md) Skill.
+7. Write in Standard Mode under the [global-writing-rules](../global-writing-rules/SKILL.md) Skill.
 8. Include useful paragraph-level source references where helpful.
    Place each reference inside its paragraph. Never continue a block with new content after its source line.
 9. Scan for duplicates. Each fact appears in one place. Other places use a short cross-reference.
-10. After the last change, read the complete saved Knowledge Base and verify it.
+10. Before saving, run writing checking on the complete consolidated text under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.1.
+11. After the last change, read the complete saved Knowledge Base and verify it.
     Check the Operating Guide against the template, the heading styles and the contents list.
-11. Verify its line in the 00 Index.
+12. Verify its line in the 00 Index.
 
 Ordinary updates do not require the full Historical Minutes collection.
 
@@ -201,6 +202,7 @@ Every Deliverable has a Guideline, whatever its Workflow, including work done wi
 ### 12.2 Rules
 
 1. Every rule in this Skill for Knowledge Bases applies to the Guideline. It has no separate rule set.
+   The one exception is writing checking under Section 8 item 10 of this Skill. The Guideline follows the Global Writing Rules without writing checking.
 2. It holds current truth only. Exclude historical and superseded content.
 3. Keep Rationale and Design Intent with each guidance point.
 4. Use the Knowledge Base format in Section 3.

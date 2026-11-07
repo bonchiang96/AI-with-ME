@@ -16,9 +16,13 @@ Flow, part 2: select Identity → open Identity Context and index → load Role 
 
 ## 2. Rules for every reply
 
-1. Use the [global-communication-rules](../global-communication-rules/SKILL.md) Skill for every reply.
-2. Use the [global-writing-rules](../global-writing-rules/SKILL.md) Skill for every output.
-3. Load both as Plugin Skills. Do not read them from Google Drive.
+1. Load the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills at entry step 10.
+   Load them as Plugin Skills through the host, such as the Skill tool. Do not read them from Google Drive.
+   Rationale: the rules shape the Agent's thinking, so they load before any work.
+2. Apply global-communication-rules to every reply.
+3. Apply global-writing-rules to every output.
+   Before writing an output that the rules govern, load the global-writing-rules Skill.
+   When the Skill is already loaded in this Conversation, apply its rules.
 4. System Rules take priority over the Plugin. Apply the System Rules of the actual environment.
 5. When an arrangement is undecided, show it to the user as undecided. Do not invent governance.
 
@@ -60,11 +64,12 @@ Access restoration is left to your judgment within authorized Scope.
 7. The user selects one Identity.
 8. Open the Identity's 00 Identity Context and 01 Index through its registered identity folder.
 9. Check the Agent workspace under Section 8.1. State the working mode to the user.
-10. Load the Skill for that Identity's Role:
+10. Load the global-communication-rules and global-writing-rules Skills under Section 2.
+11. Load the Skill for that Identity's Role:
    - Meeting Agent: [meeting-agent](../meeting-agent/SKILL.md).
    - Execution Agent: [execution-agent](../execution-agent/SKILL.md).
-11. Load applicable System Rules and Plugin Skills for the assignment.
-12. Discover current information before asking the user for it again.
+12. Load applicable System Rules and Plugin Skills for the assignment.
+13. Discover current information before asking the user for it again.
 
 The Identity is then ready for NEW MEETING or NEW JOB.
 

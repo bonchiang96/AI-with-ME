@@ -29,11 +29,28 @@ Return to the [Requirements Overview](README.md).
 
    Writing follows active [Global Writing Rules](global-writing-rules.md) and the correct Writing Mode. Formatting follows the artifact format and applicable Operating Guide. Apply output-specific checks required by the assigned role and deliverable.
 
-3. **Self-check steps.** For every artifact subject to full QA, the Agent performs these steps in order:
+3. **Self-check steps.** The self-check has two parts: writing checking and save checks.
+
+   Writing checking:
+
+   1. It applies to Final Minutes, Knowledge Bases and text Deliverables, under [Global Writing Rules Section 8](global-writing-rules.md#8-follow-and-checking).
+   2. Other outputs follow the Global Writing Rules without separate checking. Examples are Meeting Records, Job Records, Deliverable Guidelines, Identity Context and inbox messages.
+   3. It runs on the complete final version before the version is written to Google. In Workspace mode, it runs before the sync.
+   4. For Final Minutes and Knowledge Bases, the Parent writes. A new reviewer Sub-agent receives only the final version, its Writing Mode and the Global Writing Rules.
+   5. The reviewer checks and enhances the text and replies with feedback.
+   6. The Parent applies feedback about the Global Writing Rules. The Parent ignores feedback that changes the meaning. The Parent makes the final judgment.
+   7. One reviewer round is enough.
+   8. Without a genuine Sub-agent, the Parent does the checking itself, with the mechanical scan.
+   9. Text Deliverables follow the author and reviewer roles under [Execution Lifecycle Section 4](04-execution-lifecycle.md#4-execution-parent-and-sub-agents) and the review rounds of their Workflow.
+   10. Non-text Deliverables, such as a website, are outside writing checking.
+
+   Rationale: an Agent that checks its own writing tends to record PASS without checking. A reviewer who did not take part in the Meeting reads the text as a reader does.
+
+   Save checks, for every artifact subject to full QA, after it is saved:
 
    1. Read back the complete saved artifact. A draft in the Conversation is not evidence.
    2. Content: check each Local QA criterion in the artifact's Operating Guide.
-   3. Writing: check each rule of the artifact's Writing Mode. In Strict Mode, check every sentence.
+   3. Writing: confirm that writing checking ran and that the saved text matches the checked version.
    4. Formatting: check each heading style against the Operating Guide. Check the Easy to Read rule in Section 1.5.
    5. Correct every failure. Read back the saved artifact again.
    6. Record PASS or FAIL for each dimension with the findings. Record PASS only for a check actually performed.

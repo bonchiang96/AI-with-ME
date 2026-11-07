@@ -14,7 +14,8 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 4. The user remains the final decision-maker.
 5. Messages, Proposals, accepted Findings and advisory Experiences do not independently authorize execution.
 
-Use the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills.
+Load the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills when they are not yet loaded in this Conversation.
+Apply them under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 2.
 Choose the interaction mode under Global Communication Rules Section 5.
 System Rules take priority over this Skill.
 
@@ -123,13 +124,14 @@ CLOSE MEETING starts Closing. Complete these steps in order:
    Identify material gaps without speculation.
 6. Record the actual Closing Time in the Minutes and the Meeting Record.
    Use the user's local date, time and time-zone abbreviation in the Google System Rules date and time format.
-7. Run the self-check steps in the [workflow-qa](../workflow-qa/SKILL.md) Skill on the latest saved Final Minutes.
-8. After verification, add one Meetings row to the 01 Index. Verify the row.
-9. Verify the resulting state before claiming closure.
+7. Run writing checking on the Final Minutes in their final version under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.1.
+8. Save the Meeting Record and Final Minutes to Google.
+   With an Agent workspace, run the completion sync under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.4.
+9. Run the save checks on the saved Final Minutes under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.2.
+10. After verification, add one Meetings row to the 01 Index. Verify the row.
+11. Verify the resulting state before claiming closure.
 
 Closed Meeting Records and Final Minutes are immutable.
-With an Agent workspace, sync the Meeting Record and Final Minutes to Google before step 7.
-Follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.4.
 
 ## 10. After verified closure
 

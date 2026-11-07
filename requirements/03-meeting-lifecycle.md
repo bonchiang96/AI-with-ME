@@ -133,8 +133,10 @@ Return to the [Requirements Overview](README.md).
    4. Complete approved Post-Meeting Actions under [Section 4.3](#4-post-meeting-actions).
    5. Compile the Final Minutes under [Section 3.2](#3-closing-and-handoff).
    6. Record the actual Closing Time consistently in Minutes and the Meeting Record.
-   7. Verify the Final Minutes with the self-check steps in [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
-   8. Add the index row under [Section 3.4](#3-closing-and-handoff).
+   7. Run writing checking on the Final Minutes in their final version under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
+   8. Save the Meeting Record and Final Minutes to Google. With an Agent workspace, run the completion sync.
+   9. Run the save checks on the saved Final Minutes under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
+   10. Add the index row under [Section 3.4](#3-closing-and-handoff).
 
    Complete substantive closing work and required artifact checks before finalizing closure.
 

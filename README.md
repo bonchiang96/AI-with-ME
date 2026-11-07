@@ -1,8 +1,17 @@
-# Turn your knowledge into work that people and AI can use
+# AI with ME
 
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-AI with ME - Operating Framework helps you put your knowledge into words that other people and AI Agents can understand. You decide, and AI Agents carry your meaning from discussion to finished work, such as a book, a business document or a plan. Every decision and record stays in your own Google Drive, so work continues across conversations.
+AI with ME - Operating Framework lets you work with a team of AI Agents the way you work with a team of people. You organise AI Agents into Identities, each responsible for one area, like the departments of a company. You discuss and decide in Meetings. Execution Agents turn those decisions into finished work, such as a book, a business document, a website or a plan. Every decision and record stays in your own Google Drive, so the work continues across conversations and AI platforms.
+
+## Core ideas
+
+- **Identity.** Each AI Agent works as an Identity: a named assignment with its own Scope. Identities work side by side and hand work to each other.
+- **Meetings and Jobs.** Meeting Agents explore ideas with you and record confirmed decisions in Final Minutes. Execution Agents turn those Minutes into the agreed work, with quality checks.
+- **Records you own.** System Context, each Identity's context, the records, the indexes and the inboxes live in your Google Drive.
+- **Knowledge Transfer.** What you know becomes clear written knowledge that people and AI can read, keep and use. Knowledge Bases hold it by subject.
+- **Experience.** The System learns from your corrections and from what works. Every Identity can use those lessons.
+- **Writing Rules.** Every Agent writes under shared Global Writing Rules. Final Minutes, Knowledge Bases and text Deliverables are checked against them before they are saved.
 
 ## How it works
 
@@ -14,11 +23,6 @@ flowchart TD
     D -->|"Refine or begin the next task"| B
 ```
 
-Each AI works as an **Identity**, a named assignment with its own scope. Two roles share the work:
-
-- **Meeting Agents** explore ideas with you and record confirmed decisions in Final Minutes.
-- **Execution Agents** turn those Minutes into the agreed work, with quality checks.
-
 You start and steer each stage with four words: `NEW MEETING`, `CLOSE MEETING`, `NEW JOB` and `PROCEED EXECUTION`. The [Requirements](requirements/README.md) define the complete flow, responsibilities and approvals.
 
 ## Requirements
@@ -27,7 +31,7 @@ You start and steer each stage with four words: `NEW MEETING`, `CLOSE MEETING`, 
 | --- | --- | --- |
 | Claude or ChatGPT with plugin support | Required | Runs the Plugin and its eleven Skills. |
 | Google Drive and Google Docs connectors | Required | Hold the System, each Identity's context and every record. The Plugin does not ship them. |
-| A local environment | Optional | Lets Agents work locally. Records still return to Google. |
+| An Agent workspace | Optional | A writable folder, in the cloud or on your device, where Agents keep working records before they sync to Google. |
 | GitHub, GitLab or another store | Optional | Holds a Deliverable when Google Drive does not fit it. |
 
 ## Installation
