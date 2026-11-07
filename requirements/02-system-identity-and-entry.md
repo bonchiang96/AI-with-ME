@@ -197,7 +197,7 @@ Return to the [Requirements Overview](README.md).
    Meeting-owned Bootstrap and Identity setup follow [Section 1](#1-identity-selection-and-governed-setup).
    Respect the owning Scope's Governance authority.
 
-7. **Resource ownership.** Each Meeting Identity maintains its own Meeting Meeting Records and Final Minutes.
+7. **Resource ownership.** Each Meeting Identity maintains its own Meeting Records and Final Minutes.
    These remain separate resources under [Meeting Lifecycle Section 5](03-meeting-lifecycle.md#5-meeting-artifacts).
    Each Execution Identity remains responsible for its approved Deliverables.
    Parent ownership of Job Records follows [Execution Lifecycle Section 4.2](04-execution-lifecycle.md#4-execution-parent-and-sub-agents).

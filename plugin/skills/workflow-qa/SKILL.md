@@ -12,7 +12,7 @@ Every Agent verifies the latest saved version of each Deliverable it creates or 
 Verification of a Working Document does not replace verification of separate Deliverables.
 
 1. Final Minutes and other Deliverables require full Content, Writing and Formatting verification.
-2. Meeting Meeting Records require accurate, verified persistence only.
+2. Meeting Records require accurate, verified persistence only.
 3. Verify the three dimensions separately:
    1. **Content Quality.** Completeness, correctness, approved Scope and source fidelity.
       Information the user provides is certified by the user. Never mark it FAIL, unverified or Unable to Verify for lack of third-party sources.

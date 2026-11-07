@@ -8,7 +8,7 @@ Return to the [Requirements Overview](README.md).
    Verification of a Working Document does not replace verification of separate Deliverables.
 
    Final Minutes and other Deliverables require full Content, Writing and Formatting verification.
-   Meeting Meeting Records require accurate, verified persistence under [Meeting Lifecycle Section 2.4](03-meeting-lifecycle.md#2-discussion-and-outcomes).
+   Meeting Records require accurate, verified persistence under [Meeting Lifecycle Section 2.4](03-meeting-lifecycle.md#2-discussion-and-outcomes).
    They require neither mandatory [Global Writing Rules](global-writing-rules.md) document QA nor a Quality Checklist.
 
 2. **Three dimensions.** Verify these dimensions separately:
@@ -45,7 +45,7 @@ Return to the [Requirements Overview](README.md).
 4. **Formatting checkpoints.** Verify Formatting after creating and saving Job Records and Final Minutes.
    Verify final Formatting again at Protocol completion.
    Routine edits need not each trigger a full Formatting check.
-   Meeting Meeting Records follow [Section 1.1](#1-deliverable-quality-and-independent-qa).
+   Meeting Records follow [Section 1.1](#1-deliverable-quality-and-independent-qa).
 
 5. **Easy to Read.** Formatting must provide:
 

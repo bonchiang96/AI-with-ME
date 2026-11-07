@@ -2,7 +2,7 @@
 
 ## Tab 1. Operating Guide
 
-1. **Purpose.** Each Meeting Meeting Record supports durable Agent continuity.
+1. **Purpose.** Each Meeting Record supports durable Agent continuity.
    It preserves accepted outcomes, not a conversation transcript.
    It is internal to the Meeting Agent.
 
