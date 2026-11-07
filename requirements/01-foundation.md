@@ -436,7 +436,16 @@ Return to the [Requirements Overview](README.md).
     Its headings must be numbered and use Heading styles.
     Its Operating Guide keeps the six template items. Scope and authority statements sit inside Purpose.
 
-    A Knowledge Base never holds Deliverable copy, Deliverable production guidance, task assignments, Job or Meeting status, Agent instructions, history or correction wording, or a chapter of Minutes links.
+    A Knowledge Base never holds these items:
+
+    - Deliverable copy.
+    - Deliverable production guidance.
+    - Task assignments.
+    - Job or Meeting status.
+    - Agent instructions.
+    - History or correction wording.
+    - A chapter of Minutes links.
+
     Each fact appears in one place. Each source reference sits inside its paragraph.
     A general Knowledge Base Experience states a project-neutral lesson. The project name stays in its Source reference.
 

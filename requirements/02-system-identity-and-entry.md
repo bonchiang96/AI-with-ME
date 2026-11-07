@@ -123,7 +123,7 @@ Return to the [Requirements Overview](README.md).
     The user may name another Identity in a Meeting with the current General Meeting Agent.
     Bootstrap rules stay in the Plugin. System Context records only the current name.
 
-14. **Working mode at entry.** Before loading the Role Skill, the Agent checks its workspace and states the working mode to the user.
+14. **Working mode at entry.** Before loading the Role Skill, the Agent checks its workspace. It states the working mode to the user.
     With a workspace, the Agent must use it for its working records under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
     Inactive or archived Identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
     Their identity folders and records stay unchanged.

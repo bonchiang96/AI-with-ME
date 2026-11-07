@@ -44,7 +44,7 @@ Return to the [Requirements Overview](README.md).
    Apply the user-supplied Context rule in [Foundation Section 3.5](01-foundation.md#3-identity-context).
 
 5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Meeting Record as a new Tab in the Meeting Records file.
-   With an Agent workspace, the Tab is the entry record and the Meeting Record continues in the workspace under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
+   With an Agent workspace, the Tab is the entry record. The Meeting Record continues in the workspace under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    The Final Minutes are drafted there and sync to Google at Meeting close.
    Name the Tab under the tab name pattern in [Foundation Section 2.4](01-foundation.md#2-governance-resources-and-dependencies). Verify that resource.
 

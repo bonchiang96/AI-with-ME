@@ -139,10 +139,11 @@ Return to the [Requirements Overview](README.md).
 
 14. **Sync performer and check.** When the Agent can use a Sub-agent, a Sub-agent performs the sync with the cheapest model available.
     Otherwise the Agent performs the sync itself.
-    The performer of every sync reads back the content first, then the heading styles.
-    At the completion sync, after Meeting close or Job completion, the Agent also reads back the result itself and confirms it.
+    The performer of every sync does a readback in Google. The readback checks the content first, then the heading styles.
+    The completion sync runs at Meeting close and at Job completion.
+    After the Sub-agent's readback, the Agent does its own readback and confirms the result.
     An interim sync needs only the Sub-agent's readback.
-    Rationale: only the completion sync makes the Google record final; a second readback in between costs time and tokens.
+    Rationale: only the completion sync makes the Google record final. A second readback in between costs time and tokens.
     The Agent handles a sync failure itself.
 
 15. **Active record from another Conversation.** When an active record holds only its entry record, the Agent asks the user softly whether the work runs in another Conversation.
