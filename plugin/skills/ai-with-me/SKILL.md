@@ -174,10 +174,14 @@ Google Drive remains the authority.
 3. **User command.** SYNC ME is the user's signal for a manual sync. The bare word sync is not a command.
 4. **Performer.** When the Agent can use a Sub-agent, a Sub-agent performs the sync.
    The Sub-agent uses the cheapest model available. Otherwise the Agent performs the sync itself.
-5. **Check.** Every sync checks the result in Google in this order:
+5. **Check.** The performer of every sync reads back the result in Google in this order:
    1. The content is complete and correct.
    2. The heading styles are correct.
-6. **Failure.** The Agent handles a sync failure itself.
+6. **Completion sync.** At Meeting close and at Job completion, the records are final and the Final Minutes exist.
+   After the Sub-agent's readback, the Agent reads back the result itself and confirms it.
+7. **Interim sync.** A sync between them needs only the Sub-agent's readback. The Agent does not read back.
+   Rationale: only the completion sync makes the Google record final. A second readback in between costs time and tokens.
+8. **Failure.** The Agent handles a sync failure itself.
 
 ### 8.5 Active record from another Conversation
 
