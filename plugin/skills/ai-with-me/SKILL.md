@@ -141,6 +141,11 @@ Google Drive remains the authority.
 5. The Agent states the working mode to the user in one line:
    - Workspace mode, with the workspace path.
    - Google mode.
+6. The workspace root is `~/ai-with-me/`. Each Identity has one folder there, named by its Agent Key.
+   Each Meeting or Job has one folder inside it, named like its Google Tab.
+7. When `~/ai-with-me/` is not writable, choose another persistent path and state it to the user.
+8. Never use a temporary folder as the workspace, such as `/tmp` or a session scratch folder.
+   Rationale: the host may delete a temporary folder at any time, and the working records with it.
 
 ### 8.2 Workspace content
 

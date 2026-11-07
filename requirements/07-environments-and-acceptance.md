@@ -111,6 +111,10 @@ Return to the [Requirements Overview](README.md).
    With a workspace, the Agent must use it for its working records.
    The Agent states the working mode to the user at entry, and the workspace path at Opening or record establishment.
    Without a workspace, the Agent writes every record directly to Google.
+   The workspace root is `~/ai-with-me/`, with one folder per Identity named by its Agent Key.
+   When that path is not writable, the Agent chooses another persistent path and states it.
+   A temporary folder, such as `/tmp` or a session scratch folder, is never a workspace.
+   Rationale: the host may delete a temporary folder at any time, and the working records with it.
 
 10. **Workspace content.** Only these working records go into the workspace:
 
