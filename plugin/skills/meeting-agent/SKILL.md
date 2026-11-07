@@ -33,7 +33,7 @@ Flow, part 2: Post-Meeting Actions → Final Minutes → Index → post-closure 
 
 Use this start order:
 
-1. Check the latest Tab of the 03 Working Records file for an active Meeting.
+1. Check the latest Tab of the 03 Meeting Records file for an active Meeting.
    Prioritize continuing it. Only one Meeting may be active per Meeting Identity.
    When it holds only its entry record, follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.5.
 2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
@@ -68,11 +68,11 @@ Ask the user only for what these sources do not hold.
 ## 6. Opening
 
 1. Open the Meeting only after the user confirms its Agenda.
-2. Establish the Working Record as a new Tab in the 03 Working Records file.
-3. Use the [Working Records template](../../templates/working-records.md).
+2. Establish the Meeting Record as a new Tab in the 03 Meeting Records file.
+3. Use the [Meeting Records template](../../templates/meeting-records.md).
    Name the Tab with the tab name pattern in the Google System Rules.
 4. With an Agent workspace, the new Tab is the entry record.
-   Write the Working Record in the workspace under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.
+   Write the Meeting Record in the workspace under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.
 5. Verify the new Tab.
 6. Preserve the Identity, Scope, actual Opening Time, confirmed Agenda and authoritative source references.
 7. After the Tab is verified, remove the selected Future Topics from Identity Context.
@@ -88,8 +88,8 @@ Ask the user only for what these sources do not hold.
 6. Each Finding keeps its confirmed observation, evidence, Scope and limitations.
 7. Each material Decision keeps its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
 8. Confirm materially ambiguous rationale with the user. Do not invent an explanation.
-9. At the end of each Agenda item, save and verify all accepted outcomes in the Working Record.
-10. Record each user correction or stated success as a Learning Candidate in the Working Record when it happens.
+9. At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
+10. Record each user correction or stated success as a Learning Candidate in the Meeting Record when it happens.
     Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.2.
 11. For each Deliverable, agree its storage place with the user, such as Google Drive, GitHub or GitLab.
     Ask the user for the path or location.
@@ -115,20 +115,20 @@ CLOSE MEETING starts Closing. Complete these steps in order:
    Distinguish sources for reading from authorized writing destinations.
 3. Search Experiences near completion under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 4. Perform every approved Post-Meeting Action that this Identity owns.
-   Record each actual outcome in the Working Record Post-Meeting Action Log.
+   Record each actual outcome in the Meeting Record Post-Meeting Action Log.
 5. Compile self-contained Final Minutes as a new Tab in the 04 Minutes file.
    With an Agent workspace, draft them in the workspace first.
    Use the [Minutes template](../../templates/minutes.md). Write in Strict Mode under the Global Writing Rules.
    Include the Handoff Plan and each agreed Deliverable storage place.
    Identify material gaps without speculation.
-6. Record the actual Closing Time in the Minutes and the Working Record.
+6. Record the actual Closing Time in the Minutes and the Meeting Record.
    Use the user's local date, time and time-zone abbreviation in the Google System Rules date and time format.
 7. Run the self-check steps in the [workflow-qa](../workflow-qa/SKILL.md) Skill on the latest saved Final Minutes.
 8. After verification, add one Meetings row to the 01 Index. Verify the row.
 9. Verify the resulting state before claiming closure.
 
-Closed Working Records and Final Minutes are immutable.
-With an Agent workspace, sync the Working Record and Final Minutes to Google before step 7.
+Closed Meeting Records and Final Minutes are immutable.
+With an Agent workspace, sync the Meeting Record and Final Minutes to Google before step 7.
 Follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.4.
 
 ## 10. After verified closure
@@ -200,7 +200,7 @@ After CLOSE MEETING, perform the approved setup as Post-Meeting Actions:
    - 00 Identity Context from the [Identity Context template](../../templates/identity-context.md).
    - 01 Index from the [Index template](../../templates/index.md).
    - 02 Inbox from the [Inbox template](../../templates/inbox.md).
-   - For a Meeting Agent: 03 Working Records from the [Working Records template](../../templates/working-records.md).
+   - For a Meeting Agent: 03 Meeting Records from the [Meeting Records template](../../templates/meeting-records.md).
    - For a Meeting Agent: 04 Minutes from the [Minutes template](../../templates/minutes.md).
    - For an Execution Agent: 03 Job Records from the [Job Records template](../../templates/job-records.md).
 2. Record applicable Knowledge Bases in the Identity Context Knowledge Bases Chapter.

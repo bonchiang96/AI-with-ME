@@ -51,7 +51,7 @@ Return to the [Requirements Overview](README.md).
    2. Identity Context.
    3. Knowledge Base content.
    4. The root README.
-   5. Working Records and Job Records.
+   5. Meeting Records and Job Records.
 
 5. **Mode selection.** The intended artifact type determines the mode.
    A draft of a Strict Mode artifact uses Strict Mode.

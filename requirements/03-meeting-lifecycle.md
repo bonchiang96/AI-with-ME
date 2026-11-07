@@ -20,7 +20,7 @@ Return to the [Requirements Overview](README.md).
    4. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
    5. Establish the Agenda under [Section 1.3](#1-initialization-and-preparation).
 
-2. **Active Meeting continuity.** At NEW MEETING, first check the latest Tab of the Working Records file for an active Meeting. Prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
+2. **Active Meeting continuity.** At NEW MEETING, first check the latest Tab of the Meeting Records file for an active Meeting. Prioritize continuing it. Each Meeting Identity may have only one active Meeting at a time.
 
 3. **Agenda sources.** After reading the inbox, collect relevant:
 
@@ -43,8 +43,8 @@ Return to the [Requirements Overview](README.md).
    Unselected new matters enter Future Topics only when the user explicitly chooses future consideration.
    Apply the user-supplied Context rule in [Foundation Section 3.5](01-foundation.md#3-identity-context).
 
-5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Working Record as a new Tab in the Working Records file.
-   With an Agent workspace, the Tab is the entry record and the Working Record continues in the workspace under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
+5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Meeting Record as a new Tab in the Meeting Records file.
+   With an Agent workspace, the Tab is the entry record and the Meeting Record continues in the workspace under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    The Final Minutes are drafted there and sync to Google at Meeting close.
    Name the Tab under the tab name pattern in [Foundation Section 2.4](01-foundation.md#2-governance-resources-and-dependencies). Verify that resource.
 
@@ -55,7 +55,7 @@ Return to the [Requirements Overview](README.md).
    - The confirmed Agenda.
    - Authoritative source references.
 
-6. **Future Topic transfer.** Remove selected existing Future Topics only after their new Working Record is successfully established. Preserve unselected entries.
+6. **Future Topic transfer.** Remove selected existing Future Topics only after their new Meeting Record is successfully established. Preserve unselected entries.
 
 ## 2. Discussion and outcomes
 
@@ -95,11 +95,11 @@ Return to the [Requirements Overview](README.md).
 
    Confirm materially ambiguous rationale rather than inventing an explanation.
 
-4. **Persistence checkpoints.** At the end of each Agenda item, save and verify all accepted outcomes in the Working Record.
+4. **Persistence checkpoints.** At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
    Intermediate saving within an Agenda item is discretionary.
-   The Working Record's persistence and QA boundary follows [Quality Section 1.1](06-quality.md#1-deliverable-quality-and-independent-qa).
+   The Meeting Record's persistence and QA boundary follows [Quality Section 1.1](06-quality.md#1-deliverable-quality-and-independent-qa).
 
-5. **Learning Candidates.** Record each user correction or stated success as a Learning Candidate in the Working Record when it happens.
+5. **Learning Candidates.** Record each user correction or stated success as a Learning Candidate in the Meeting Record when it happens.
    Learning Candidates follow [Records, Messaging and Experiences Section 3.6](05-records-messaging-and-experiences.md#3-experience-learning).
 
 6. **Deliverable arrangement.** For each Deliverable, agree its storage place with the user and ask for the path or location.
@@ -123,7 +123,7 @@ Return to the [Requirements Overview](README.md).
    Include the intended Handoff Plan.
    Record each Deliverable's storage place under [Environments and Acceptance Section 2.6](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Identify material gaps without speculation.
-   Later Execution reads Final Minutes for applicable instructions without requiring access to the internal live Working Record.
+   Later Execution reads Final Minutes for applicable instructions without requiring access to the internal live Meeting Record.
 
 3. **Closing order.** At CLOSE MEETING, complete these steps in order:
 
@@ -132,7 +132,7 @@ Return to the [Requirements Overview](README.md).
    3. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
    4. Complete approved Post-Meeting Actions under [Section 4.3](#4-post-meeting-actions).
    5. Compile the Final Minutes under [Section 3.2](#3-closing-and-handoff).
-   6. Record the actual Closing Time consistently in Minutes and the Working Record.
+   6. Record the actual Closing Time consistently in Minutes and the Meeting Record.
    7. Verify the Final Minutes with the self-check steps in [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
    8. Add the index row under [Section 3.4](#3-closing-and-handoff).
 
@@ -183,7 +183,7 @@ Return to the [Requirements Overview](README.md).
 
 ## 4. Post-Meeting Actions
 
-1. **Own operating resources.** Meeting Identities maintain their own Context and current Working Records within governing rules.
+1. **Own operating resources.** Meeting Identities maintain their own Context and current Meeting Records within governing rules.
    They may maintain applicable shared Knowledge Bases within their Responsibility and Scope.
    Identity Context maintenance follows [Foundation Section 3](01-foundation.md#3-identity-context).
    Knowledge Base maintenance follows [Foundation Section 4](01-foundation.md#4-scoped-knowledge-base).
@@ -194,7 +194,7 @@ Return to the [Requirements Overview](README.md).
 
 3. **Closing transition.** CLOSE MEETING initiates Closing and normal approved Post-Meeting Action execution.
    Finish every approved, Meeting-Agent-owned Post-Meeting Action before compiling Final Minutes.
-   Preserve each action's actual outcome in the Working Record.
+   Preserve each action's actual outcome in the Meeting Record.
    Other Identities' work remains a separate authorized Handoff.
    Post-closure Knowledge Base consolidation follows [Foundation Section 4.8](01-foundation.md#4-scoped-knowledge-base).
    Apply the finalized record requirements in [Section 3.3](#3-closing-and-handoff).
@@ -205,8 +205,8 @@ Return to the [Requirements Overview](README.md).
 
 ## 5. Meeting artifacts
 
-1. **Separate purposes.** Every Meeting must have an internal Working Record and separate user-facing Final Minutes.
-   The Working Record supports durable Agent continuity.
+1. **Separate purposes.** Every Meeting must have an internal Meeting Record and separate user-facing Final Minutes.
+   The Meeting Record supports durable Agent continuity.
    Final Minutes provide a consolidated, independently readable account.
 
 2. **Shared metadata.** Both artifacts must identify:
@@ -221,7 +221,7 @@ Return to the [Requirements Overview](README.md).
    - Opening Time.
    - Closing Time.
 
-3. **Working Record.** The append-oriented Working Record must primarily follow the confirmed Agenda.
+3. **Meeting Record.** The append-oriented Meeting Record must primarily follow the confirmed Agenda.
    It must have five functional Chapters:
 
    1. Meeting Information.
@@ -243,7 +243,7 @@ Return to the [Requirements Overview](README.md).
 
    Findings and Decisions share one substantive Chapter.
    Preserve their respective meaning under [Section 2.3](#2-discussion-and-outcomes).
-   Final Minutes record their Working Record Locator.
+   Final Minutes record their Meeting Record Locator.
    Final Minutes use Strict Mode under [Global Writing Rules](global-writing-rules.md).
    They must pass full Content, Writing and Formatting verification under [Quality Section 1](06-quality.md#1-deliverable-quality-and-independent-qa).
 

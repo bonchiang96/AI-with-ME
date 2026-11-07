@@ -59,11 +59,12 @@ Access restoration is left to your judgment within authorized Scope.
 6. Present the registered Identities with Status Active from System Context.
 7. The user selects one Identity.
 8. Open the Identity's 00 Identity Context and 01 Index through its registered identity folder.
-9. Load the Skill for that Identity's Role:
+9. Check the Agent workspace under Section 8.1. State the working mode to the user.
+10. Load the Skill for that Identity's Role:
    - Meeting Agent: [meeting-agent](../meeting-agent/SKILL.md).
    - Execution Agent: [execution-agent](../execution-agent/SKILL.md).
-10. Load applicable System Rules and Plugin Skills for the assignment.
-11. Discover current information before asking the user for it again.
+11. Load applicable System Rules and Plugin Skills for the assignment.
+12. Discover current information before asking the user for it again.
 
 The Identity is then ready for NEW MEETING or NEW JOB.
 
@@ -85,6 +86,9 @@ These four words are the user's stage words. Each Role Skill holds the flow of i
 7. Inactive or archived Identities are excluded from normal active choices.
 8. An inactive or archived Identity may be reactivated when appropriate.
 9. The user changes a Status in a Meeting with the General Meeting Agent. Its records stay unchanged.
+10. The General Meeting Agent is the Identity named in the System Context Governance Chapter.
+    It owns System Governance, Identity definition and registration, and Handoff coordination.
+    At Bootstrap it is `general-meeting`. The user may name another Identity in a Meeting with the current General Meeting Agent.
 
 ## 7. Bootstrap
 
@@ -112,12 +116,13 @@ After CLOSE MEETING, the General Meeting Agent performs these Post-Meeting Actio
 
 1. Create the folder.
 2. Create System Context from the [System Context](../../templates/system-context.md) template.
+   Name `general-meeting` in its Governance Chapter.
 3. Create Google System Rules from the [Google System Rules](../../templates/system-rules.md) template, with its starter rules.
 4. Create the Knowledge Base folder with its [00 Index](../../templates/knowledge-base-index.md) and [general Knowledge Base](../../templates/general-knowledge-base.md).
 5. Establish the two minimum Identities under the Identity setup in [meeting-agent](../meeting-agent/SKILL.md):
    - The General Meeting Agent, with Agent Key `general-meeting`.
    - The General Execution Agent, with Agent Key `general-execution`.
-6. Save the Bootstrap Working Record and Final Minutes as the System's first records.
+6. Save the Bootstrap Meeting Record and Final Minutes as the System's first records.
 7. Join the normal entry flow at Identity selection. Only `general-meeting` continues in this Conversation.
 
 Restore genuinely missing resources within existing approved authority and applicable System Rules.
@@ -129,14 +134,18 @@ Google Drive remains the authority.
 
 ### 8.1 Workspace check
 
-1. At entry, the Agent judges by itself whether it has a workspace.
+1. At entry step 9, the Agent judges by itself whether it has a workspace.
 2. It may confirm by writing a file.
-3. Without a workspace, the Agent works in the Google style. It writes every record directly to Google.
+3. With a workspace, the Agent must use it for the working records in Section 8.2.
+4. Without a workspace, the Agent works in the Google style. It writes every record directly to Google.
+5. The Agent states the working mode to the user in one line:
+   - Workspace mode, with the workspace path.
+   - Google mode.
 
 ### 8.2 Workspace content
 
 1. Only working records go into the workspace:
-   - The Working Record of a Meeting Agent.
+   - The Meeting Record of a Meeting Agent.
    - The Job Record of an Execution Agent.
    - The Final Minutes draft of a Meeting Agent.
 2. Every other resource stays in Google.
@@ -148,7 +157,7 @@ Google Drive remains the authority.
 
 1. At Opening or record establishment, create the entry record in Google first.
 2. The entry record is the record's Tab with only the Meeting Information or the Job metadata.
-3. Then create the working file in the workspace.
+3. Then create the working file in the workspace. State its path to the user.
 4. Write every further change in the workspace until a sync.
 
 ### 8.4 Sync

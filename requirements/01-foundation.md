@@ -245,7 +245,7 @@ Return to the [Requirements Overview](README.md).
    Knowledge Bases follows [Section 3.9](#3-identity-context).
    Metadata follows [Section 3.10](#3-identity-context).
 
-3. **Own record locations.** The identity folder holds the Identity's own Minutes, Working Records and Job Records under [Section 5.1](#5-identity-folder-index-and-inbox).
+3. **Own record locations.** The identity folder holds the Identity's own Minutes, Meeting Records and Job Records under [Section 5.1](#5-identity-folder-index-and-inbox).
    Identity Context must reference applicable Target Locations for additional Identity-owned records or resources.
 
    Distinguish sources for reading from authorized record-writing destinations.
@@ -433,7 +433,12 @@ Return to the [Requirements Overview](README.md).
     Agents reuse content already loaded in the Conversation. They read it again only when it is not enough or the user asks.
 
 11. **Knowledge Base format.** A Knowledge Base has a free format.
-    Its headings must be numbered.
+    Its headings must be numbered and use Heading styles.
+    Its Operating Guide keeps the six template items. Scope and authority statements sit inside Purpose.
+
+    A Knowledge Base never holds Deliverable copy, Deliverable production guidance, task assignments, Job or Meeting status, Agent instructions, history or correction wording, or a chapter of Minutes links.
+    Each fact appears in one place. Each source reference sits inside its paragraph.
+    A general Knowledge Base Experience states a project-neutral lesson. The project name stays in its Source reference.
 
 12. **Deliverable Guideline.** Every Deliverable must have a Deliverable Guideline, whatever its Workflow.
     It holds the complete current guidance for that Deliverable.
@@ -477,7 +482,7 @@ Return to the [Requirements Overview](README.md).
    2. 01 Index under [Section 5.2](#5-identity-folder-index-and-inbox).
    3. 02 Inbox under [Section 5.5](#5-identity-folder-index-and-inbox).
 
-   A Meeting Agent folder also holds 03 Working Records and 04 Minutes.
+   A Meeting Agent folder also holds 03 Meeting Records and 04 Minutes.
    An Execution Agent folder also holds 03 Job Records.
    Index and inbox files are Google Docs with native tables.
    Identity setup creates every file with its Operating Guide under [System, Identity and Entry Section 1.11](02-system-identity-and-entry.md#1-identity-selection-and-governed-setup).
@@ -533,7 +538,7 @@ Return to the [Requirements Overview](README.md).
 1. **Operating Guide placement.** Every file has an Operating Guide. Place it as follows:
 
    - The first Chapter of System Context, System Rules, Identity Context, index and inbox files.
-   - The first Tab of Working Record, Final Minutes and Job Record files.
+   - The first Tab of Meeting Record, Final Minutes and Job Record files.
    - A 00 Operating Guide file in the folder for any other file.
 
    Operating Guide content follows [Quality Section 1.6](06-quality.md#1-deliverable-quality-and-independent-qa).

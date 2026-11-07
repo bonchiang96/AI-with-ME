@@ -29,8 +29,10 @@ Several Identities may use or maintain the same Knowledge Base. No Knowledge Bas
 
 ## 3. Format
 
-A Knowledge Base has a free format. Its headings must be numbered.
+A Knowledge Base has a free format. Its headings must be numbered. Use Heading styles, not bold text.
 Create a new Knowledge Base from the [general Knowledge Base](../../templates/general-knowledge-base.md) layout.
+The Operating Guide always keeps the six template items: Purpose, Names, Metadata, Sections, Formatting and Local QA criteria.
+Put Scope and authority statements inside Purpose. Never replace the Operating Guide with another structure.
 
 ## 4. Discovery
 
@@ -61,6 +63,18 @@ Preserve adopted future directions as future directions.
 When the source records Rationale or Design Intent, keep it with the knowledge it explains.
 Keep only the reasons for the current truth. Do not record why older content was replaced.
 Exclude exploratory ideas, unresolved choices, superseded content, future Jobs and Deliverable progress.
+
+These never belong in a Knowledge Base:
+
+- Deliverable copy or drafts, such as website text. These belong in the Deliverable.
+- Guidance on how to produce a Deliverable. This belongs in its Deliverable Guideline.
+- Task assignments, such as who is responsible for an action.
+- Job or Meeting status, and statements that a Meeting will decide something.
+- Agent instructions and Lifecycle rules. These belong in the Plugin or System Rules.
+- History and correction wording, such as "previously", "corrected", "legacy", "此前", "最新纠正" or "旧".
+- Lists of Minutes links used as a source chapter.
+
+Routing check: when content tells the reader what to do for a Deliverable, it goes to the Deliverable Guideline.
 
 ## 6. Maintenance triggers
 
@@ -99,8 +113,11 @@ Experience is handled separately under Section 11.
 6. Replace only genuinely superseded content. Replace its Rationale and Design Intent with those of the new truth.
 7. Apply Standard Mode under the [global-writing-rules](../global-writing-rules/SKILL.md) Skill.
 8. Include useful paragraph-level source references where helpful.
-9. After the last change, read the complete saved Knowledge Base and verify it.
-10. Verify its line in the 00 Index.
+   Place each reference inside its paragraph. Never continue a block with new content after its source line.
+9. Scan for duplicates. Each fact appears in one place. Other places use a short cross-reference.
+10. After the last change, read the complete saved Knowledge Base and verify it.
+    Check the Operating Guide against the template, the heading styles and the contents list.
+11. Verify its line in the 00 Index.
 
 Ordinary updates do not require the full Historical Minutes collection.
 
@@ -139,7 +156,7 @@ Ordinary updates do not require the full Historical Minutes collection.
 ### 11.2 Learning Candidates
 
 1. Record each failure or success as a Learning Candidate when it happens.
-2. Record it in the Working Record of the Meeting or the Job Record of the Job.
+2. Record it in the Meeting Record of the Meeting or the Job Record of the Job.
 3. Each Learning Candidate states what happened, the user's words or intent, and the lesson or pattern.
 4. A Learning Candidate is a working note. It is routed only at capture.
 
@@ -152,6 +169,11 @@ Route each Experience by whom it helps:
 3. **External subject knowledge** found during the work goes to a scoped Knowledge Base under Section 7.
 
 One Experience goes to one target. The more general target applies when it helps other Identities.
+
+A general Knowledge Base Experience states a project-neutral lesson.
+Keep the project name in its Source reference.
+Keep a short example only when it helps the reader understand, in one sentence.
+Merge Experiences that share one lesson.
 
 ### 11.4 Capture
 

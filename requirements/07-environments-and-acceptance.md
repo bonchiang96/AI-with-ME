@@ -90,7 +90,7 @@ Return to the [Requirements Overview](README.md).
 
 5. **Record return.** Records return to Google at these points:
 
-   1. The Working Record and Final Minutes return at Meeting close.
+   1. The Meeting Record and Final Minutes return at Meeting close.
    2. The Job Record returns at Job completion.
 
 6. **Deliverable storage.** A Deliverable is stored where it fits, such as Google Drive, GitHub or GitLab.
@@ -108,11 +108,13 @@ Return to the [Requirements Overview](README.md).
 
 9. **Agent workspace.** An Agent workspace is a file system the Agent can write to, in the cloud or on the user's device.
    At entry, the Agent judges by itself whether it has one. It may confirm by writing a file.
+   With a workspace, the Agent must use it for its working records.
+   The Agent states the working mode to the user at entry, and the workspace path at Opening or record establishment.
    Without a workspace, the Agent writes every record directly to Google.
 
 10. **Workspace content.** Only these working records go into the workspace:
 
-    - The Working Record.
+    - The Meeting Record.
     - The Job Record.
     - The Final Minutes draft.
 

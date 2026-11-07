@@ -50,7 +50,7 @@
    Each Identity folder holds one folder per Meeting or Job.
    Name each Meeting or Job folder like its Google Tab.
 2. **Google-only resources.** Keep System Context, Identity Context, the index and the inbox in Google.
-3. **Record return.** Return the Working Record and Final Minutes to Google at Meeting close.
+3. **Record return.** Return the Meeting Record and Final Minutes to Google at Meeting close.
    Return the Job Record to Google at Job completion.
 4. **Indexing and announcement.** Index or announce work only after its record is in Google.
    Its Deliverable must also be in the agreed storage place.

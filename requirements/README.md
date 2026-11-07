@@ -148,7 +148,7 @@ These Non-functional Requirements bind relevant design and maintenance of:
    Cover the three quality dimensions in [Quality Section 1.2](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 10. **Consolidated maintenance.** Maintain every file by consolidation rather than appending.
-    Working Records and Job Records keep their chronological history.
+    Meeting Records and Job Records keep their chronological history.
     Every other file holds only current truth, kept light and accurate.
 
 ## 3. Requirements modules

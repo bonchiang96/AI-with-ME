@@ -147,7 +147,7 @@ Return to the [Requirements Overview](README.md).
    - Future applicability.
 
 6. **Learning Candidates.** Record each failure or success as a Learning Candidate when it happens.
-   A Meeting records it in the Working Record. A Job records it in the Job Record.
+   A Meeting records it in the Meeting Record. A Job records it in the Job Record.
    Each Learning Candidate states what happened, the user's words or intent, and the lesson or pattern.
    A Learning Candidate is a working note. It is routed only at capture.
 

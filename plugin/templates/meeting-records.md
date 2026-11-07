@@ -1,18 +1,18 @@
-# 03 Working Records
+# 03 Meeting Records
 
 ## Tab 1. Operating Guide
 
-1. **Purpose.** Each Meeting Working Record supports durable Agent continuity.
+1. **Purpose.** Each Meeting Meeting Record supports durable Agent continuity.
    It preserves accepted outcomes, not a conversation transcript.
    It is internal to the Meeting Agent.
 
-2. **Names.** The file name is 03 Working Records.
+2. **Names.** The file name is 03 Meeting Records.
    It resides in a Meeting Agent's identity folder.
    Each Meeting has one Tab.
    Name each Tab with the tab name pattern in the Google System Rules.
    An example is 2026-10-27 — Plugin Branch Comparison — M-0257.
 
-3. **Metadata.** Each Working Record identifies:
+3. **Metadata.** Each Meeting Record identifies:
 
    - Meeting ID.
    - Identity.
@@ -39,7 +39,7 @@
    Record Learning Candidates in Chapter 3 when they happen.
    Chapter 1 holds the Metadata items.
    Write each time in the Google System Rules date and time format.
-   With an Agent workspace, this Tab starts as the entry record. The Working Record syncs to Google at Meeting close.
+   With an Agent workspace, this Tab starts as the entry record. The Meeting Record syncs to Google at Meeting close.
 
 6. **Local QA criteria.** Check these points:
 
@@ -48,4 +48,4 @@
    3. Each Post-Meeting Action records its actual outcome.
    4. Closing Time matches the Final Minutes.
 
-   Working Records need no Global Writing Rules document QA and no Quality Checklist.
+   Meeting Records need no Global Writing Rules document QA and no Quality Checklist.

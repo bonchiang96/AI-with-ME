@@ -17,6 +17,7 @@
    1. Operating Guide.
    2. Identity Registry.
    3. Knowledge Base Folder.
+   4. Governance.
 
 5. **Formatting.** Use a Google Docs file.
    Use a native table for the Identity Registry. Each Identity has one row with five fields:
@@ -32,7 +33,8 @@
    Inactive or archived Identities remain registered but leave normal active choices.
    A Status change keeps the identity folder and its records unchanged.
    Chapter 3 holds the Google Locators of the Knowledge Base folder and its 00 Index.
-   Bootstrap fills the Registry and Chapter 3.
+   Chapter 4 names the General Meeting Agent: the Identity that owns System Governance.
+   Bootstrap fills the Registry, Chapter 3 and Chapter 4.
 
 6. **Local QA criteria.** Check these points after each change:
 
@@ -40,7 +42,8 @@
    2. Each registration has every Registry field.
    3. Each Location opens the registered identity folder.
    4. The Knowledge Base Folder Chapter opens the folder and its index.
-   5. The file holds only current truth.
+   5. Chapter 4 names exactly one registered Identity with Status Active.
+   6. The file holds only current truth.
 
 ## 2. Identity Registry
 
@@ -48,3 +51,7 @@
 | --- | --- | --- | --- | --- |
 
 ## 3. Knowledge Base Folder
+
+## 4. Governance
+
+General Meeting Agent: 

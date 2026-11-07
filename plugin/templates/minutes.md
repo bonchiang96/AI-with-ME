@@ -3,7 +3,7 @@
 ## Tab 1. Operating Guide
 
 1. **Purpose.** Final Minutes give a consolidated, independently readable account of one Meeting.
-   Later Execution reads them for applicable instructions without the Working Record.
+   Later Execution reads them for applicable instructions without the Meeting Record.
    Closed Final Minutes are immutable.
 
 2. **Names.** The file name is 04 Minutes.
@@ -23,7 +23,7 @@
    - Status.
    - Opening Time.
    - Closing Time.
-   - Working Record Locator.
+   - Meeting Record Locator.
 
 4. **Sections.** Each new Final Minutes Tab starts with these five Chapter headings:
 

@@ -31,7 +31,7 @@ Return to the [Requirements Overview](README.md).
    3. Create the Knowledge Base folder with its 00 Index and general Knowledge Base under [Foundation Section 4.9](01-foundation.md#4-scoped-knowledge-base).
    4. Establish the approved minimum Identities under [Section 1.11](#1-identity-selection-and-governed-setup).
       The General Meeting Agent registers itself with the same Agent Key.
-   5. Save the Bootstrap Working Record and Final Minutes as the new System's first records.
+   5. Save the Bootstrap Meeting Record and Final Minutes as the new System's first records.
    6. Join the normal entry path at Identity selection. Only `general-meeting` continues in the Bootstrap Conversation.
 
    Bootstrap records remain in Conversation until the folder exists.
@@ -116,6 +116,15 @@ Return to the [Requirements Overview](README.md).
 
 13. **Identity changes.** The Status field in System Context records each Identity's state: Active, Inactive or Archived.
     The user decides a Status change in a Meeting with the General Meeting Agent. That Agent updates the field as a Post-Meeting Action.
+
+13. **General Meeting Agent.** The General Meeting Agent is the Identity named in the System Context Governance Chapter.
+    It owns System Governance, Identity definition and registration, and Handoff coordination.
+    At Bootstrap it is `general-meeting`.
+    The user may name another Identity in a Meeting with the current General Meeting Agent.
+    Bootstrap rules stay in the Plugin. System Context records only the current name.
+
+14. **Working mode at entry.** Before loading the Role Skill, the Agent checks its workspace and states the working mode to the user.
+    With a workspace, the Agent must use it for its working records under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
     Inactive or archived Identities must remain preserved but disappear from normal active choices. They may be reactivated when appropriate.
     Their identity folders and records stay unchanged.
 
@@ -188,7 +197,7 @@ Return to the [Requirements Overview](README.md).
    Meeting-owned Bootstrap and Identity setup follow [Section 1](#1-identity-selection-and-governed-setup).
    Respect the owning Scope's Governance authority.
 
-7. **Resource ownership.** Each Meeting Identity maintains its own Meeting Working Records and Final Minutes.
+7. **Resource ownership.** Each Meeting Identity maintains its own Meeting Meeting Records and Final Minutes.
    These remain separate resources under [Meeting Lifecycle Section 5](03-meeting-lifecycle.md#5-meeting-artifacts).
    Each Execution Identity remains responsible for its approved Deliverables.
    Parent ownership of Job Records follows [Execution Lifecycle Section 4.2](04-execution-lifecycle.md#4-execution-parent-and-sub-agents).
