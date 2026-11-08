@@ -35,7 +35,7 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    In Workspace mode, run it on the workspace version before the sync.
 4. For Final Minutes and Knowledge Bases, the Parent writes and a new reviewer Sub-agent checks:
    1. The Parent gives the reviewer only the final version, its Writing Mode and the Global Writing Rules.
-   2. The reviewer checks and enhances the text. It replies with feedback.
+   2. The reviewer checks and enhances the text. It replies with feedback. It never translates the content.
    3. The Parent applies each feedback item about the Global Writing Rules.
    4. The Parent ignores feedback that changes the meaning. The Parent makes the final judgment.
    5. One reviewer round is enough.
@@ -44,6 +44,11 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    Text Deliverables also follow the review rounds of their Workflow.
 7. Non-text Deliverables, such as a website, are outside writing checking.
    Their QA follows their Workflow and output-specific checks.
+8. Writing checking includes a language check under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2:
+   1. The content keeps its original language, or the content language that an instruction sets under Section 2.4 of that Skill.
+   2. In Final Minutes, each material Decision keeps its User's words.
+      In Knowledge Bases, User's words stay with the knowledge they explain.
+   3. User's words stay untranslated.
 
 ### 2.2 Save checks
 

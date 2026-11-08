@@ -17,6 +17,7 @@ Return to the [Requirements Overview](README.md).
 2. **Final language.** Apply these rules to the final output in its final language.
    A rule may depend on English grammar, word form or punctuation.
    In another language, apply the closest equivalent with the same clarity purpose.
+   Section 7.2 holds the Strict Mode rules for Chinese and mixed Chinese-English.
 
 3. **Communication rules.** [Global Communication Rules](global-communication-rules.md) govern language choice and conversation with the user.
 
@@ -56,6 +57,9 @@ Return to the [Requirements Overview](README.md).
 5. **Mode selection.** The intended artifact type determines the mode.
    A draft of a Strict Mode artifact uses Strict Mode.
    The user may require or override the mode for a specific output.
+
+6. **Content language.** A Writing Mode never changes the content language.
+   Global Communication Rules Section 2 decides the content language.
 
 ## 3. Meaningful content
 
@@ -163,7 +167,10 @@ Return to the [Requirements Overview](README.md).
 
 ## 7. Strict Mode rules
 
-Strict Mode includes every other Global Writing Rule and these four rules:
+Strict Mode includes every other Global Writing Rule and the rules for the language of each sentence.
+A sentence that contains Chinese follows Section 7.2. Every other sentence follows Section 7.1.
+
+### 7.1 English
 
 1. **Plain verbs.** Use a plain single verb in place of a phrasal verb when the meaning stays the same.
 
@@ -175,6 +182,24 @@ Strict Mode includes every other Global Writing Rule and these four rules:
 
 4. **Controlled terms.** Use each repeated controlled term in one consistent part of speech throughout the output.
 
+### 7.2 Chinese and mixed Chinese-English
+
+1. **Formal written Chinese.** Write formal written Chinese. Keep each sentence simple, direct and grammatically correct.
+   Use no regional sentence patterns or slang. Words shared across regions stay allowed.
+   Rationale: many words are shared across regions. An Agent can misjudge a shared word as regional.
+
+2. **Sentence length.** Limit each instruction or procedure sentence to 35 units.
+   Limit each description sentence to 45 units.
+   One Chinese character is one unit. One English word is one unit.
+   Exceed a limit only when precision requires it.
+
+3. **One instruction per sentence.** Split a sentence that carries several instructions.
+
+4. **Semicolons.** Use separate sentences in place of "；" and ";".
+
+5. **Controlled terms.** Keep each controlled term in English under Global Communication Rules Section 2.2.
+   Use it with one meaning throughout the output.
+
 ## 8. Follow and checking
 
 1. **Follow.** Apply these rules while writing every output.
@@ -183,12 +208,14 @@ Strict Mode includes every other Global Writing Rule and these four rules:
    Check the complete final version against these rules and its Writing Mode. Then correct and improve it.
    Check the output in its final language.
    When Global Communication Rules apply, check against them as well.
+   Check the content language and User's words under Global Communication Rules Section 2.
    Writing checking applies to Final Minutes, Knowledge Bases and text Deliverables.
    [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa) holds the checking procedure.
 
 3. **Mechanical scan.** When the Agent can run a script, writing checking includes a mechanical scan:
 
-   - Strict Mode: every semicolon and every sentence over its length limit.
+   - Strict Mode: every semicolon, including "；", and every sentence over its length limit.
+     Count words in English sentences. Count units in Chinese and mixed Chinese-English sentences.
    - Standard Mode: every paragraph over six sentences.
 
 4. **Evidence.** An earlier source, draft or pre-translation version is not evidence of compliance.
@@ -204,5 +231,6 @@ Strict Mode includes every other Global Writing Rule and these four rules:
    - Paragraph structure.
    - Negative echo and defensive thinking.
    - Strict Mode rules.
+   - Content language and User's words.
 
    A writing checking result is PASS only after every found item is corrected.

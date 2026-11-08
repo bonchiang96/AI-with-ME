@@ -17,6 +17,8 @@
 
 5. **Formatting.** Use a Google Docs file.
    Use Standard Mode under the Global Writing Rules.
+   Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
+   Keep User's words with the knowledge they explain.
    Consolidate every contribution into the existing content. Do not append.
    Useful paragraph-level source references may be included.
 

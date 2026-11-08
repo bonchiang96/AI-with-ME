@@ -344,6 +344,7 @@ Return to the [Requirements Overview](README.md).
    Preserve adopted future directions as future directions rather than completed implementation.
 
    When the source records Rationale or Design Intent, keep it with the knowledge it explains.
+   When the source keeps User's words, keep them with the knowledge they explain.
    Keep only the reasons for the current truth. Do not record why older content was replaced.
 
    Exclude:

@@ -87,10 +87,11 @@ Ask the user only for what these sources do not hold.
 4. Keep exploratory research, exploratory analysis and unapproved proposals in the Conversation.
 5. An accepted Finding does not approve an option.
 6. Each Finding keeps its confirmed observation, evidence, Scope and limitations.
-7. Each material Decision keeps its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
+7. Each material Decision keeps its User's words and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
 8. Confirm materially ambiguous rationale with the user. Do not invent an explanation.
 9. At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
 10. Record each user correction or stated success as a Learning Candidate in the Meeting Record when it happens.
+    Keep User's words under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.8.
     Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.2.
 11. For each Deliverable, agree its storage place with the user, such as Google Drive, GitHub or GitLab.
     Ask the user for the path or location.

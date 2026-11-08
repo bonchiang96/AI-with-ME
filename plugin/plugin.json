@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-with-me",
-  "version": "0.24.0",
+  "version": "0.25.0",
   "description": "AI with ME - Operating Framework. Meeting and Execution Agents, Workflows, rules and templates for knowledge transfer. Requires Google Drive and Google Docs access.",
   "author": {
     "name": "Rocher Lee"

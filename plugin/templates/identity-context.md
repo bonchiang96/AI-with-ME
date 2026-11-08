@@ -14,6 +14,7 @@
    - Agent Key.
    - Role.
    - Identity folder location.
+   - Content language, when the Identity sets one.
 
    Responsibility and Scope stay only in System Context.
 
@@ -31,6 +32,7 @@
 
 5. **Formatting.** Use a Google Docs file.
    Use Standard Mode under the Global Writing Rules.
+   Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
    Use one readable list for Future Topics.
    Use a native table for Knowledge Bases.
 

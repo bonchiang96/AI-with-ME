@@ -148,7 +148,8 @@ Return to the [Requirements Overview](README.md).
 
 6. **Learning Candidates.** Record each failure or success as a Learning Candidate when it happens.
    A Meeting records it in the Meeting Record. A Job records it in the Job Record.
-   Each Learning Candidate states what happened, the user's words or intent, and the lesson or pattern.
+   Each Learning Candidate states what happened, the User's words and the lesson or pattern.
+   User's words follow [Global Communication Rules Section 2.8](global-communication-rules.md#2-language).
    A Learning Candidate is a working note. It is routed only at capture.
 
 7. **Kinds of Experience.** An Experience is one of two kinds:

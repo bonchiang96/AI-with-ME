@@ -37,12 +37,13 @@ Return to the [Requirements Overview](README.md).
    2. Other outputs follow the Global Writing Rules without separate checking. Examples are Meeting Records, Job Records, Deliverable Guidelines, Identity Context and inbox messages.
    3. It runs on the complete final version before the version is written to Google. In Workspace mode, it runs before the sync.
    4. For Final Minutes and Knowledge Bases, the Parent writes. A new reviewer Sub-agent receives only the final version, its Writing Mode and the Global Writing Rules.
-   5. The reviewer checks and enhances the text and replies with feedback.
+   5. The reviewer checks and enhances the text and replies with feedback. It never translates the content.
    6. The Parent applies feedback about the Global Writing Rules. The Parent ignores feedback that changes the meaning. The Parent makes the final judgment.
    7. One reviewer round is enough.
    8. Without a genuine Sub-agent, the Parent does the checking itself, with the mechanical scan.
    9. Text Deliverables follow the author and reviewer roles under [Execution Lifecycle Section 4](04-execution-lifecycle.md#4-execution-parent-and-sub-agents) and the review rounds of their Workflow.
    10. Non-text Deliverables, such as a website, are outside writing checking.
+   11. It includes a language check under [Global Communication Rules Section 2](global-communication-rules.md#2-language). The content keeps its original language, or the content language that an instruction sets under Section 2.4 of those rules. In Final Minutes, each material Decision keeps its User's words. In Knowledge Bases, User's words stay with the knowledge they explain. User's words stay untranslated.
 
    Rationale: an Agent that checks its own writing tends to record PASS without checking. A reviewer who did not take part in the Meeting reads the text as a reader does.
 

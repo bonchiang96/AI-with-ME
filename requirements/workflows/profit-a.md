@@ -83,3 +83,8 @@ Return to the [Requirements Overview](../README.md).
    It tells the Sub-agent to write or check under the Global Writing Rules.
    The Insight also names the Writing Mode.
    When the Sub-agent cannot read Plugin Skills, the Parent copies the full Global Writing Rules into the Feed.
+
+9. **Content language for Sub-agents.** The instructions in a Sub-agent Prompt may use English.
+   Content in the Feed and the Insight keeps its original language and is not translated.
+   A Sub-agent that reads a source by path reads the original.
+   The Sub-agent keeps the content language of its output under [Global Communication Rules Section 2](../global-communication-rules.md#2-language).

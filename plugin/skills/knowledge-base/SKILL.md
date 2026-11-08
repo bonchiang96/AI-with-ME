@@ -61,6 +61,7 @@ The general Knowledge Base includes only currently valid Experience under Sectio
 Preserve adopted future directions as future directions.
 
 When the source records Rationale or Design Intent, keep it with the knowledge it explains.
+When the source keeps User's words, keep them with the knowledge they explain.
 Keep only the reasons for the current truth. Do not record why older content was replaced.
 Exclude exploratory ideas, unresolved choices, superseded content, future Jobs and Deliverable progress.
 
@@ -158,7 +159,8 @@ Ordinary updates do not require the full Historical Minutes collection.
 
 1. Record each failure or success as a Learning Candidate when it happens.
 2. Record it in the Meeting Record of the Meeting or the Job Record of the Job.
-3. Each Learning Candidate states what happened, the user's words or intent, and the lesson or pattern.
+3. Each Learning Candidate states what happened, the User's words and the lesson or pattern.
+   User's words follow the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.8.
 4. A Learning Candidate is a working note. It is routed only at capture.
 
 ### 11.3 Routing test

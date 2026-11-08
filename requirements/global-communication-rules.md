@@ -5,6 +5,8 @@ Return to the [Requirements Overview](README.md).
 ## 1. Scope
 
 1. **Applicable communication.** These rules govern how Agents communicate with the user in Conversation.
+   Section 2 also governs the language of every record and resource.
+   Section 7 governs how Agents understand every user input.
 
 2. **User overrides.** User overrides live in the applicable System Rules, such as Google or Local System Rules.
    Agents read them once at Conversation start.
@@ -27,15 +29,20 @@ Return to the [Requirements Overview](README.md).
    - Controlled terms, such as Finding, Decision, Action and Open Matter.
    - Agent instructions.
 
-3. **Content in the user's language.** By default, store content in the language the user used.
+   Rationale: English structure keeps every record and resource consistent.
+
+3. **Content in its original language.** By default, keep content in the language the user used.
+   Without a content language instruction under item 4, do not force a translation or a content language.
    Content includes the user's knowledge, decisions, intent and quoted words.
    Keep mixed-language input mixed.
-   Do not translate content into English unless an instruction requires it.
-   Rationale: the user's original wording is the authoritative source of the meaning.
+   Content that the Agent organizes may use any language, such as a Decision sentence in English.
+   Prefer the language the user used.
+   Rationale: an Agent thinks in the language it writes. A translation can change the meaning.
+   After a translation, only the original Conversation holds the intended meaning.
 
-4. **Content language instruction.** An Identity or a task may set a specific content language, such as full English.
-   Follow that instruction for the content it covers.
-   It may come from the Identity Context, the Minutes or the user.
+4. **Content language instruction.** An Identity may set its content language in its Identity Context, such as full English.
+   A task may set a content language through the Minutes or the user.
+   Follow that instruction for the content it covers. User's words keep their original language.
 
 5. **Authored content.** Authored content may use another language or mixed languages according to its purpose and audience.
    When a task has a specific target audience or locale, follow that language style for the task output.
@@ -46,6 +53,11 @@ Return to the [Requirements Overview](README.md).
 7. **Original names.** Keep established professional and technical terms in their original language.
    Keep original names of places, brands, companies, organizations, products, features, systems and platforms.
    Apply this rule to other proper names.
+
+8. **User's words.** User's words are the passages in which the user expressed a Decision, or the correction or success that a Learning Candidate records.
+   Keep User's words in their original language. Correct only voice-input errors under Section 7.
+   Do not translate or rewrite User's words.
+   Rationale: User's words let a later reader recover the user's intended meaning.
 
 ## 3. Simple language
 
@@ -103,3 +115,17 @@ Accurate confirmation must preserve the user's intended knowledge.
 
 2. **Section numbers.** Section numbers alone do not convey a flow.
    Present the flow itself and add Section references as support.
+
+## 7. Voice input
+
+1. **Input source.** The user's input may come from dictation or transcription.
+   It may contain wrong words, near-sound words, misheard terms and English words transcribed in another script, such as Chinese characters.
+
+2. **Understanding.** Infer each intended word from the Conversation context and the established terminology.
+   Work with the corrected meaning. Do not ask the user to confirm each word.
+
+3. **Recording.** When recording or restating user input, write the corrected wording.
+   Keep the original meaning and the original language.
+
+4. **Material ambiguity.** When two readings lead to materially different outcomes, restate the Agent's understanding.
+   The user confirms or corrects it under Section 5 item 2.

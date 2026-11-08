@@ -62,3 +62,10 @@ It defines what the user needs to prepare or provide to use the Prompt.
    It tells the Sub-agent to write or check under the Global Writing Rules.
    The Insight also names the Writing Mode.
 3. When the Sub-agent cannot read Plugin Skills, the Parent copies the full Global Writing Rules into the Feed.
+
+## 8. Content language for Sub-agents
+
+1. The instructions in a Sub-agent Prompt may use English.
+2. Content in the Feed and the Insight keeps its original language. Do not translate it.
+3. A Sub-agent that reads a source by path reads the original.
+4. The Sub-agent keeps the content language of its output under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.

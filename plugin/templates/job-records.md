@@ -36,6 +36,8 @@
    The record is append-oriented.
    Chapter 4 is chronological.
    Record Learning Candidates in Chapter 4 when they happen.
+   Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
+   Keep User's words in each Learning Candidate.
    Write each time in the Google System Rules date and time format.
    With an Agent workspace, this Tab starts as the entry record. The Job Record syncs to Google at Job completion.
 

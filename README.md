@@ -8,7 +8,7 @@ AI with ME - Operating Framework lets you work with a team of AI Agents the way 
 
 - **Identity.** Each AI Agent works as an Identity: a named assignment with its own Scope. Identities work side by side and hand work to each other.
 - **Meetings and Jobs.** Meeting Agents explore ideas with you and record confirmed decisions in Final Minutes. Execution Agents turn those Minutes into the agreed work, with quality checks.
-- **Records you own.** System Context, each Identity's context, the records, the indexes and the inboxes live in your Google Drive.
+- **Records you own.** System Context, each Identity's context, the records, the indexes and the inboxes live in your Google Drive. Their structure is in English. Their content keeps the language you used, and your own words stay untranslated.
 - **Knowledge Transfer.** What you know becomes clear written knowledge that people and AI can read, keep and use. Knowledge Bases hold it by subject.
 - **Experience.** The System learns from your corrections and from what works. Every Identity can use those lessons.
 - **Writing Rules.** Every Agent writes under shared Global Writing Rules. Final Minutes, Knowledge Bases and text Deliverables are checked against them before they are saved.
