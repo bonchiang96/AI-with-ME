@@ -13,6 +13,7 @@ A Job moves along one path:
 3. You save one Execution Plan for the whole Job.
 4. The user approves it with PROCEED EXECUTION.
 5. A Sub-agent authors each Deliverable where the environment allows. You review and accept it.
+   An item with User Review Yes then goes to Execution user review.
 6. You verify, freeze and index the Job Record.
 7. You capture Experience, update Identity Context and send Completion Notices last.
 
@@ -128,6 +129,7 @@ For each confirmed Scope, the Plan identifies:
 - Dependencies.
 - Sub-agent assignments and number.
 - Model choice.
+- User Review value.
 - PROFIT + A definitions under the [profit-a](../profit-a/SKILL.md) Skill.
 - QA criteria.
 - Completion conditions.
@@ -137,18 +139,21 @@ Include ordered execution steps for the entire Job.
 Present the Plan to the user in the Conversation, item by item:
 
 1. State how many items the Job Scope holds.
-2. For each item, show at least these five elements:
+2. For each item, show at least these six elements:
    - The Deliverable.
    - Its storage location.
    - The final outcome.
    - The sources.
    - The model.
-3. Add other elements when useful. Omit none of the five.
+   - User Review: Yes or No.
+3. Add other elements when useful. Omit none of the six.
 4. The final outcome states in a few sentences the most important thing this round must show.
    A first draft states the idea of the whole document.
    A later draft states what must improve or appear, based on the feedback.
    It is not a Condition value such as Draft or Stable.
 5. An item may come from one Work Request or another arrangement. You decide how to group items.
+6. Propose each item's User Review value. Judge from past Jobs which items need User Review Yes.
+   User Review belongs to the item, not to the whole Job.
 
 This is the expected content, not a fixed template.
 The Execution List identifies target files, documents and folders.
@@ -159,7 +164,7 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 
 1. PROCEED EXECUTION approves the complete current saved Plan once for the entire Job.
    Before approval, the user may adjust the details of each item.
-   Examples are the sources, the final outcome, the storage location and the model.
+   Examples are the sources, the final outcome, the storage location, the model and the User Review value.
    The user never approves part of a Job.
 2. Save and verify the approval.
 3. Ordinary refinements may remain within approved requirements.
@@ -213,6 +218,24 @@ Past choices may inform nonbinding advisory Proposals.
 4. Include its exact location, source and originating Identity.
 5. Preserve actual changes, outcomes, Deliverable types, locations and evidence.
 6. Save and verify accepted results and relevant evidence.
+7. An item is complete when its completion condition is met:
+   - User Review No: its candidate is accepted and saved.
+   - User Review Yes: the user ends Execution user review under Section 11.1.
+
+### 11.1 Execution user review
+
+1. The Parent presents the saved Deliverable to the user.
+2. The Parent makes each change that the user asks for directly. Sub-agents do not work on Execution user review.
+3. Changes start from the Decisions in the Closed Minutes.
+   An earlier decision is a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
+   The user may decide a change that differs from an earlier decision.
+4. A round is one user instruction and the Parent's resulting change.
+   Record each round as an edit record in the Job Record.
+   An edit record holds the item, the time, the User's words and the change.
+5. Add a remark to the edit record when its change differs from an earlier decision.
+6. The item is complete when the user says that it is OK.
+7. An edit record is not a Learning Candidate. Do not capture edit records as Experience.
+   Rationale: a change can suit one Deliverable only. The governing Meeting Agent decides with the user where to consolidate it.
 
 ## 12. Completion
 
@@ -220,7 +243,7 @@ Complete these steps in order:
 
 1. Run the save checks in the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.2 on each saved Deliverable.
    Verify their Job Record entries.
-2. Verify the complete final Job Record.
+2. Verify that every item is complete under Section 11. Verify the complete final Job Record.
 3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
 4. Freeze the completed Job Record as Proof of Job.
 5. Add one Jobs row to the 01 Index. Verify the row.
@@ -243,6 +266,7 @@ Self-verification does not replace an independent QA Workflow.
 3. Review every incorporated Work Request and its sources.
 4. Notify other registered Identities whose current Responsibilities intersect the outcome.
 5. Avoid unrelated or duplicate notices.
+6. Each Completion Notice links the Job Record. The receiving Meeting Agent reads its edit records and their remarks.
 
 ## 14. Agent workspace and remote environments
 

@@ -117,6 +117,7 @@ Return to the [Requirements Overview](README.md).
    - Dependencies.
    - Sub-agent assignments and number.
    - Model choice.
+   - User Review value.
    - PROFIT + A definitions.
    - QA criteria.
    - Completion conditions.
@@ -126,8 +127,10 @@ Return to the [Requirements Overview](README.md).
 
    Present the Plan in the Conversation, item by item.
    State how many items the Job Scope holds.
-   Each item shows at least the Deliverable, its storage location, the final outcome, the sources and the model.
-   Other elements may be added. None of the five may be omitted.
+   Each item shows at least six elements.
+   They are the Deliverable, its storage location, the final outcome, the sources, the model and User Review.
+   Other elements may be added. None of the six may be omitted.
+   The Execution Agent proposes each item's User Review value from past Jobs. User Review belongs to the item, not to the whole Job.
    The final outcome states in a few sentences the most important thing this round must show.
    A first draft states the idea of the whole document.
    A later draft states what must improve or appear, based on the feedback.
@@ -135,7 +138,7 @@ Return to the [Requirements Overview](README.md).
    This is the expected content, not a fixed template.
 
 3. **Plan approval.** PROCEED EXECUTION approves the complete current saved Execution Plan once for the entire Job.
-   Before approval, the user may adjust each item's sources, final outcome, storage location and model.
+   Before approval, the user may adjust each item's sources, final outcome, storage location, model and User Review value.
    The user never approves part of a Job.
    Ordinary refinements may remain within approved requirements.
    Material Scope changes require a new Scope decision.
@@ -170,7 +173,18 @@ Return to the [Requirements Overview](README.md).
    Supply it to each Sub-agent with the other required sources.
    Review each candidate against it under [Foundation Section 4.12](01-foundation.md#4-scoped-knowledge-base).
 
-9. **Learning Candidates.** Record each user correction or stated success as a Learning Candidate in the Job Record when it happens.
+9. **Execution user review.** An item with User Review No is complete when its candidate is accepted and saved.
+   An item with User Review Yes goes to Execution user review after acceptance. It is complete when the user says that it is OK.
+   During Execution user review, the Parent makes each change directly, without Sub-agents.
+   Changes start from the Decisions in the Closed Minutes. An earlier decision is a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
+   The user may decide a change that differs from an earlier decision.
+   A round is one user instruction and the Parent's resulting change.
+   Each round is an edit record in the Job Record. An edit record holds the item, the time, the User's words and the change.
+   A remark is added to the edit record when its change differs from an earlier decision.
+   An edit record is not a Learning Candidate. The Execution Agent does not capture it as Experience.
+   Rationale: a change can suit one Deliverable only. The governing Meeting Agent decides with the user where to consolidate it.
+
+10. **Learning Candidates.** Record each user correction or stated success as a Learning Candidate in the Job Record when it happens.
    Learning Candidates follow [Records, Messaging and Experiences Section 3.6](05-records-messaging-and-experiences.md#3-experience-learning).
 
 ## 3. Completion and communication
@@ -178,7 +192,7 @@ Return to the [Requirements Overview](README.md).
 1. **Completion sequence.** Complete these actions in order:
 
    1. Verify actual saved Deliverables and their Job Record entries.
-   2. Verify the complete final Job Record.
+   2. Verify that every item is complete. Verify the complete final Job Record.
    3. Finalize the Job Record with the Completion Report, QA evidence and actual Job Done Time.
    4. Freeze the completed Job Record.
    5. Add one Jobs row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox). Verify the row.
@@ -218,6 +232,7 @@ Return to the [Requirements Overview](README.md).
    Review every incorporated Work Request and its authoritative sources.
    Notify other directly related registered Identities when their current Responsibilities intersect the completed outcome.
 
+   Each Completion Notice links the Job Record. The Meeting Agent reads its edit records and their remarks.
    Resolve exact Identities and relevance.
    Avoid unrelated or duplicate notices.
    Inbox use follows [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).

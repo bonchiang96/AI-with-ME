@@ -38,6 +38,10 @@
    Record Learning Candidates in Chapter 4 when they happen.
    Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
    Keep User's words in each Learning Candidate.
+   Record each Execution user review round as an edit record in Chapter 4.
+   An edit record holds the item, the time, the User's words and the change.
+   Add a remark when its change differs from an earlier decision.
+   An earlier decision is a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
    Write each time in the Google System Rules date and time format.
    With an Agent workspace, this Tab starts as the entry record. The Job Record syncs to Google at Job completion.
 
@@ -49,3 +53,4 @@
    4. Work done without genuine Sub-agents is labeled as not delegated.
    5. Chapter 5 reports each Deliverable, its Scope and actual Activity.
    6. The five mandatory persistence checkpoints are saved and verified.
+   7. Each item with User Review Yes keeps an edit record for every round.

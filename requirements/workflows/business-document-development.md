@@ -18,6 +18,9 @@ Return to the [Requirements Overview](../README.md).
    Every draft includes its own complete QA under [Quality Section 1](../06-quality.md#1-deliverable-quality-and-independent-qa).
    The user reviews each draft in a Meeting.
    Apply the revision ownership rule in [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
+   For a decision-maker reader, show the WHY and the business value at the start.
+   Use short paragraphs, specific benefits and clear headings.
+   Rationale: dense narration hides the value even when the content is present.
 
 3. **Numbered revisions.** Each revision produces a new numbered draft based on:
 

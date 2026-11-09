@@ -37,6 +37,9 @@ By default, the Guideline is Tab 1 of the Deliverable file and the drafts follow
 2. Every draft includes its own complete QA under the [workflow-qa](../workflow-qa/SKILL.md) quality dimensions.
 3. The user reviews each draft in a Meeting.
 4. Apply the user review and revision rule in [meeting-agent](../meeting-agent/SKILL.md).
+5. For a decision-maker reader, show the WHY and the business value at the start.
+   Use short paragraphs, specific benefits and clear headings.
+   Rationale: dense narration hides the value even when the content is present.
 
 ## 4. Numbered revisions
 

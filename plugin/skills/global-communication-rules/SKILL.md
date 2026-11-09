@@ -119,6 +119,15 @@ Accurate confirmation must preserve the user's intended knowledge.
 2. **Section numbers.** Section numbers alone do not convey a flow.
    Present the flow itself and add Section references as support.
 
+3. **Before a Decision.** Restate the user's intent as a flow before saving a Decision.
+   Draw the general base flow first. Show special cases as conditional branches.
+   Rationale: the user often corrects details only after seeing the flow.
+
+4. **Loose thinking.** Loose thinking is the user's ideas or observations that are not yet structured.
+   When the user asks for help with it, state it as reasons inside the flow under item 3.
+   The user accepts, rejects or reframes each reason.
+   Build each reason on what the user actually observed.
+
 ## 7. Voice input
 
 1. **Input source.** The user's input may come from dictation or transcription.

@@ -300,3 +300,8 @@ Return to the [Requirements Overview](README.md).
 
     Assessment alone does not authorize an edit.
     Preserve the approved Scope and normal approval gates.
+
+20. **Execution user review.** When a Completion Notice links a Job Record, the Meeting Agent reads its edit records and their remarks.
+    A remark marks a change that differs from a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
+    The Meeting Agent proposes an Agenda item to confirm with the user where each change belongs.
+    The Meeting Agent consolidates each change after verified closure under [Meeting Lifecycle Section 3](03-meeting-lifecycle.md#3-closing-and-handoff).

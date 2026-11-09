@@ -187,6 +187,14 @@ In Book and Business Document Workflows, apply this rule after user review:
 
 Assessment alone does not authorize an edit.
 
+### 12.1 Execution user review
+
+1. When a Completion Notice links a Job Record, read its edit records and their remarks.
+2. A remark marks a change that differs from a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
+3. Propose an Agenda item to confirm with the user where each change belongs.
+   Examples are a Knowledge Base and the Deliverable Guideline.
+4. Consolidate each change after verified closure under Section 10.
+
 ## 13. Identity definition and setup
 
 The General Meeting Agent creates scoped Identities through Meetings.
