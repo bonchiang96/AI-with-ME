@@ -7,7 +7,7 @@ AI with ME - Operating Framework lets you work with a team of AI Agents the way 
 ## Core ideas
 
 - **Identity.** Each AI Agent works as an Identity: a named assignment with its own Scope. Identities work side by side and hand work to each other.
-- **Meetings and Jobs.** Meeting Agents explore ideas with you and record confirmed decisions in Final Minutes. Execution Agents turn those Minutes into the agreed work, with quality checks.
+- **Meetings and Jobs.** Meeting Agents explore ideas with you and record confirmed decisions in Final Minutes, Knowledge Bases and Deliverable Guidelines. Execution Agents produce the agreed work from them, with quality checks.
 - **Records you own.** System Context, each Identity's context, the records, the indexes and the inboxes live in your Google Drive. Their structure is in English. Their content keeps the language you used, and your own words stay untranslated.
 - **Knowledge Transfer.** What you know becomes clear written knowledge that people and AI can read, keep and use. Knowledge Bases hold it by subject.
 - **Experience.** The System learns from your corrections and from what works. Every Identity can use those lessons.
@@ -43,19 +43,19 @@ flowchart TD
     D --> E["CLOSE MEETING"]
     E --> F["Final Minutes: every confirmed Decision, with your own words"]
     F --> G["Knowledge Bases and Deliverable Guidelines are updated"]
-    G --> H["Work Request to an Execution Agent"]
+    G --> H["Work Request to an Execution Agent,<br/>naming the Deliverable Guideline and the latest Final Minutes"]
 ```
 
 ### Execution Agent
 
-An Execution Agent turns Final Minutes into finished Deliverables. It plans the whole Job, waits for your approval, and uses Sub-agents to write and review the work.
+An Execution Agent produces finished Deliverables. Its sources are the Deliverable Guideline, which holds the complete current guidance for the Deliverable, the relevant Knowledge Bases and the latest Final Minutes. It plans the whole Job, waits for your approval, and uses Sub-agents to write and review the work.
 
 ```mermaid
 flowchart TD
     A["NEW JOB"] --> B["The Agent reads its inbox and you confirm the Job Scope"]
     B --> C["Execution Plan: each item names the Deliverable, where it is stored,<br/>the expected outcome, the sources, the model and User Review Yes or No"]
     C --> D["PROCEED EXECUTION"]
-    D --> E["An author Sub-agent writes. A reviewer Sub-agent checks against the Workflow"]
+    D --> E["An author Sub-agent writes from the Deliverable Guideline,<br/>the Knowledge Bases and the latest Final Minutes.<br/>A reviewer Sub-agent checks against the Workflow"]
     E --> F{"User Review?"}
     F -->|No| G["Item complete"]
     F -->|Yes| H["You review with the Agent and request changes until you say OK.<br/>Each round is recorded in the Job Record"]
