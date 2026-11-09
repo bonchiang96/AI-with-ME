@@ -25,6 +25,46 @@ flowchart TD
 
 You start and steer each stage with four words: `NEW MEETING`, `CLOSE MEETING`, `NEW JOB` and `PROCEED EXECUTION`. The [Requirements](requirements/README.md) define the complete flow, responsibilities and approvals.
 
+## Working with the two Agent Roles
+
+Every Identity has one of two Roles. A Meeting Agent helps you think and decide. An Execution Agent produces the work you decided on.
+
+**Focus on the Meeting Agent.** It is where your own knowledge enters the System. You talk freely, and the Meeting Agent turns what you know, want and decide into clear written records. Execution can only be as good as those records. The time you spend in Meetings is the time that makes every later Job better.
+
+### Meeting Agent
+
+A Meeting Agent organises discussion, research, planning and decisions for its Scope. It records only what you confirm, keeps your own words, and hands the agreed work to an Execution Agent.
+
+```mermaid
+flowchart TD
+    A["NEW MEETING"] --> B["The Agent reads its inbox, Future Topics and Knowledge Bases"]
+    B --> C["You agree on the Agenda"]
+    C --> D["Discussion: you share what you know.<br/>The Agent restates it, often as a flow, and you confirm or correct it"]
+    D --> E["CLOSE MEETING"]
+    E --> F["Final Minutes: every confirmed Decision, with your own words"]
+    F --> G["Knowledge Bases and Deliverable Guidelines are updated"]
+    G --> H["Work Request to an Execution Agent"]
+```
+
+### Execution Agent
+
+An Execution Agent turns Final Minutes into finished Deliverables. It plans the whole Job, waits for your approval, and uses Sub-agents to write and review the work.
+
+```mermaid
+flowchart TD
+    A["NEW JOB"] --> B["The Agent reads its inbox and you confirm the Job Scope"]
+    B --> C["Execution Plan: each item names the Deliverable, where it is stored,<br/>the expected outcome, the sources, the model and User Review Yes or No"]
+    C --> D["PROCEED EXECUTION"]
+    D --> E["An author Sub-agent writes. A reviewer Sub-agent checks against the Workflow"]
+    E --> F{"User Review?"}
+    F -->|No| G["Item complete"]
+    F -->|Yes| H["You review with the Agent and request changes until you say OK.<br/>Each round is recorded in the Job Record"]
+    H --> G
+    G --> I["Completion Notice back to the Meeting Agent"]
+```
+
+When your review changes something that a Meeting decided, the Job Record marks it. The Meeting Agent reads the Job Record and asks you where the change belongs, so the chain runs both ways.
+
 ## Requirements
 
 | Dependency | Need | Purpose |
