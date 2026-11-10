@@ -49,6 +49,8 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    2. In Final Minutes, each material Decision keeps its User's words.
       In Knowledge Bases, User's words stay with the knowledge they explain.
    3. User's words stay untranslated.
+   4. Writing checking does not check the wording of User's words.
+9. In Final Minutes, writing checking confirms that no user example, imagined situation or thinking aloud is recorded as a Decision.
 
 ### 2.2 Save checks
 

@@ -55,9 +55,17 @@ Return to the [Requirements Overview](README.md).
    Apply this rule to other proper names.
 
 8. **User's words.** User's words are the passages in which the user expressed a Decision, or the correction or success that a Learning Candidate records.
-   Keep User's words in their original language. Correct only voice-input errors under Section 7.
-   Do not translate or rewrite User's words.
+   Select only the passages that carry the key point of that Decision or Learning Candidate. Do not copy the whole user input.
+   Keep the user's meaning, wording and original language. Correct voice-input errors under Section 7.
+   Do not translate User's words.
+   User's words are the only record content that keeps the user's own expression.
+   Writing checking and QA do not check the wording of User's words. The Global Writing Rules do not apply to them.
    Rationale: User's words let a later reader recover the user's intended meaning.
+
+9. **Record content.** Records exist for knowledge transfer.
+   Another AI must understand a record, use it and see why each Decision was made, as a basis for its own judgment.
+   Refine all record content other than User's words under the Global Writing Rules. Do not paste the user's input into a record.
+   Rationale: A record that holds every word of the user's input adds nothing over a transcript.
 
 ## 3. Simple language
 
@@ -89,6 +97,9 @@ Return to the [Requirements Overview](README.md).
 4. **Direct response.** When a request is clear, answer or act directly without unnecessary confirmation.
 
 5. **Terminology.** Use the terminology already established for the Conversation, Scope or document.
+
+6. **Questions.** Ask one or two questions in a reply.
+   Many questions at once make it harder for the user to give focused answers.
 
 ## 5. Interaction modes
 
@@ -133,8 +144,9 @@ Accurate confirmation must preserve the user's intended knowledge.
 2. **Understanding.** Infer each intended word from the Conversation context and the established terminology.
    Work with the corrected meaning. Do not ask the user to confirm each word.
 
-3. **Recording.** When recording or restating user input, write the corrected wording.
+3. **Restating.** When restating user input, write the corrected wording.
    Keep the original meaning and the original language.
+   When recording user input, follow Section 2 items 8 and 9.
 
 4. **Material ambiguity.** When two readings lead to materially different outcomes, restate the Agent's understanding.
    The user confirms or corrects it under Section 5 item 2.

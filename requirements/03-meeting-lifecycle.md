@@ -74,6 +74,12 @@ Return to the [Requirements Overview](README.md).
    - Exploratory analysis.
    - Unapproved proposals.
 
+   Record in two steps. First record the user's answer to each question the Agent asked.
+   Then judge whether other content is worth recording within the Topic and Scope.
+   Record it as a Finding, a Decision or a Rationale only when it is. Leave out the rest.
+   A user's example, imagined situation or thinking aloud is not a Decision.
+   When the Agent cannot tell whether a statement is a Decision, ask the user.
+
    An accepted Finding does not automatically approve an option.
 
 3. **Preserved meaning.** Accepted Findings must retain relevant:
@@ -94,7 +100,8 @@ Return to the [Requirements Overview](README.md).
    - Qualifications.
    - Material trade-offs.
 
-   Confirm materially ambiguous rationale rather than inventing an explanation.
+   A Rationale may hold the Agent's own reasoning.
+   When the Agent is unsure whether a Rationale or a point matches the user's meaning, ask the user.
 
 4. **Persistence checkpoints.** At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
    Intermediate saving within an Agenda item is discretionary.

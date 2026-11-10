@@ -83,12 +83,18 @@ Ask the user only for what these sources do not hold.
 
 1. Work within the confirmed Agenda. The user may approve adjustments.
 2. Defer extended or out-of-scope matters as Open Matters.
-3. Record only user-accepted Findings, Decisions, Actions and Open Matters.
+3. Record only user-accepted Findings, Decisions, Actions and Open Matters. Record in two steps:
+   1. Record the user's answer to each question the Agent asked.
+   2. Judge whether other content is worth recording within the Topic and Scope.
+      Record it as a Finding, a Decision or a Rationale only when it is. Leave out the rest.
+   A user's example, imagined situation or thinking aloud is not a Decision.
+   When the Agent cannot tell whether a statement is a Decision, ask the user.
 4. Keep exploratory research, exploratory analysis and unapproved proposals in the Conversation.
 5. An accepted Finding does not approve an option.
 6. Each Finding keeps its confirmed observation, evidence, Scope and limitations.
 7. Each material Decision keeps its User's words and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
-8. Confirm materially ambiguous rationale with the user. Do not invent an explanation.
+8. A Rationale may hold the Agent's own reasoning.
+   When the Agent is unsure whether a Rationale or a point matches the user's meaning, ask the user.
 9. At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
 10. Record each user correction or stated success as a Learning Candidate in the Meeting Record when it happens.
     Keep User's words under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.8.

@@ -208,7 +208,8 @@ A sentence that contains Chinese follows Section 7.2. Every other sentence follo
    Check the complete final version against these rules and its Writing Mode. Then correct and improve it.
    Check the output in its final language.
    When Global Communication Rules apply, check against them as well.
-   Check the content language and User's words under Global Communication Rules Section 2.
+   Check the content language and the placement of User's words under Global Communication Rules Section 2.
+   Do not check the wording of User's words.
    Writing checking applies to Final Minutes, Knowledge Bases and text Deliverables.
    [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa) holds the checking procedure.
 
@@ -231,6 +232,6 @@ A sentence that contains Chinese follows Section 7.2. Every other sentence follo
    - Paragraph structure.
    - Negative echo and defensive thinking.
    - Strict Mode rules.
-   - Content language and User's words.
+   - Content language and the placement of User's words.
 
    A writing checking result is PASS only after every found item is corrected.
