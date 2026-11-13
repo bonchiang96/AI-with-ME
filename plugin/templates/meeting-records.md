@@ -38,7 +38,7 @@
    The record is append-oriented and primarily follows the confirmed Agenda.
    Record Learning Candidates in Chapter 3 when they happen.
    Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
-   Keep User's words with each material Decision and each Learning Candidate.
+   Keep User's words with each material Decision the user expressed and each Learning Candidate.
    Chapter 1 holds the Metadata items.
    Write each time in the Google System Rules date and time format.
    With an Agent workspace, this Tab starts as the entry record. The Meeting Record syncs to Google at Meeting close.
@@ -49,6 +49,6 @@
    2. Findings, Decisions, Actions and Open Matters stay distinct.
    3. Each Post-Meeting Action records its actual outcome.
    4. Closing Time matches the Final Minutes.
-   5. Each material Decision and each Learning Candidate keeps its User's words.
+   5. Each material Decision the user expressed and each Learning Candidate keeps its User's words.
 
    Meeting Records need no Global Writing Rules document QA and no Quality Checklist.

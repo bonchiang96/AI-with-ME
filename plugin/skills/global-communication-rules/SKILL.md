@@ -59,6 +59,11 @@ description: The AI with ME Global Communication Rules. Covers the language of r
 
 8. **User's words.** User's words are the passages in which the user expressed a Decision, or the correction or success that a Learning Candidate records.
    Select only the passages that carry the key point of that Decision or Learning Candidate. Do not copy the whole user input.
+   Record User's words by the source of the Decision:
+   1. The user expressed the Decision: User's words hold the key point of what the user said.
+   2. The Agent proposed the Decision and the user approved it: keep no User's words and no approval time.
+   3. The user added to an approval: User's words hold only the addition.
+   Every material Decision keeps its Rationale. A Rationale may hold the Agent's reasoning or the user's reasoning.
    Keep the user's meaning, wording and original language. Correct voice-input errors under Section 7.
    Do not translate User's words.
    User's words are the only record content that keeps the user's own expression.

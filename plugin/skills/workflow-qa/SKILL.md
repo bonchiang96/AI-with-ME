@@ -46,7 +46,8 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    Their QA follows their Workflow and output-specific checks.
 8. Writing checking includes a language check under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2:
    1. The content keeps its original language, or the content language that an instruction sets under Section 2.4 of that Skill.
-   2. In Final Minutes, each material Decision keeps its User's words.
+   2. In Final Minutes, each material Decision keeps its User's words under Global Communication Rules Section 2.8.
+      A Decision the Agent proposed and the user approved keeps no User's words.
       In Knowledge Bases, User's words stay with the knowledge they explain.
    3. User's words stay untranslated.
    4. Writing checking does not check the wording of User's words.

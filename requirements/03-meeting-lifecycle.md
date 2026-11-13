@@ -90,7 +90,7 @@ Return to the [Requirements Overview](README.md).
    - Limitations.
 
    Findings do not require mandatory Rationale or Design Intent.
-   Material Decisions must preserve their User's words under [Global Communication Rules Section 2.8](global-communication-rules.md#2-language).
+   Material Decisions keep their User's words by the source of the Decision under [Global Communication Rules Section 2.8](global-communication-rules.md#2-language).
    Material Decisions must also preserve supported:
 
    - Rationale.

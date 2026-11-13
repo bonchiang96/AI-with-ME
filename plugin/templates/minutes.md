@@ -41,7 +41,7 @@
    Each new Final Minutes is a new Tab.
    Use Strict Mode under the Global Writing Rules.
    Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
-   Keep User's words with each material Decision.
+   Keep User's words with each material Decision the user expressed.
    Write each time in the Google System Rules date and time format.
    With an Agent workspace, the Final Minutes are drafted there and sync to Google at Meeting close.
 
@@ -50,7 +50,7 @@
 
    1. Every Metadata item is present.
    2. Each Finding keeps its observation, evidence, Scope and limitations.
-   3. Each material Decision keeps its User's words and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and trade-offs.
+   3. Each material Decision keeps its User's words under Global Communication Rules Section 2.8, and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and trade-offs.
    4. The Handoff Plan is present.
    5. Each Deliverable has its agreed storage place.
    6. Material gaps are identified without speculation.

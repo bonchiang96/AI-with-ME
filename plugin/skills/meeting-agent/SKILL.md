@@ -92,7 +92,7 @@ Ask the user only for what these sources do not hold.
 4. Keep exploratory research, exploratory analysis and unapproved proposals in the Conversation.
 5. An accepted Finding does not approve an option.
 6. Each Finding keeps its confirmed observation, evidence, Scope and limitations.
-7. Each material Decision keeps its User's words and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
+7. Each material Decision keeps its User's words under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.8, and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
 8. A Rationale may hold the Agent's own reasoning.
    When the Agent is unsure whether a Rationale or a point matches the user's meaning, ask the user.
 9. At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
