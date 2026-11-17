@@ -16,6 +16,7 @@
 
    - A Meeting Agent index holds Deliverables first, then Meetings.
    - An Execution Agent index holds Jobs only.
+   - A Service Agent index is a run log. It uses the [Service Index template](service-index.md).
 
    Delete the Chapters that the Role does not use.
    Each Identity may amend its columns through Minutes.

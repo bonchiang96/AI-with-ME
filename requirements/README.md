@@ -162,11 +162,12 @@ The Requirements consist of this Overview and the files below. Each file links b
 5. [Records, Messaging and Experiences](05-records-messaging-and-experiences.md) — Durable records, indexes, inbox messaging and Experience learning.
 6. [Quality](06-quality.md) — Deliverable verification and independent QA.
 7. [Environments and Acceptance](07-environments-and-acceptance.md) — Execution environments, hybrid local working, Deliverable storage, result return, governed changes and baseline acceptance.
-8. [Book Development Workflow](workflows/book-development.md) — The standard Workflow for one Book from foundation to Language Editions.
-9. [Business Document Development Workflow](workflows/business-document-development.md) — The standard Workflow for business documents from brief to Stable version.
-10. [PROFIT + A Framework](workflows/profit-a.md) — The reusable Framework for defining AI tasks and Prompts.
-11. [Global Writing Rules](global-writing-rules.md) — Writing rules and Writing Modes for every output.
-12. [Global Communication Rules](global-communication-rules.md) — Language and conversation rules for communication with the user.
+8. [Service Lifecycle](08-service-lifecycle.md) — Service Agent setup, the run from intake to recording, the run log and the Job Record.
+9. [Book Development Workflow](workflows/book-development.md) — The standard Workflow for one Book from foundation to Language Editions.
+10. [Business Document Development Workflow](workflows/business-document-development.md) — The standard Workflow for business documents from brief to Stable version.
+11. [PROFIT + A Framework](workflows/profit-a.md) — The reusable Framework for defining AI tasks and Prompts.
+12. [Global Writing Rules](global-writing-rules.md) — Writing rules and Writing Modes for every output.
+13. [Global Communication Rules](global-communication-rules.md) — Language and conversation rules for communication with the user.
 
 The Plugin packages both rule files as Skills: global-writing-rules and global-communication-rules. Agents load them without Google Drive reads.
 

@@ -25,9 +25,9 @@ flowchart TD
 
 You start and steer each stage with four words: `NEW MEETING`, `CLOSE MEETING`, `NEW JOB` and `PROCEED EXECUTION`. The [Requirements](requirements/README.md) define the complete flow, responsibilities and approvals.
 
-## Working with the two Agent Roles
+## Working with the Agent Roles
 
-Every Identity has one of two Roles. A Meeting Agent helps you think and decide. An Execution Agent produces the work you decided on.
+Every Identity has one of three Roles. A Meeting Agent helps you think and decide. An Execution Agent produces the work you decided on. A Service Agent runs scheduled work for a Meeting Agent without you.
 
 **Focus on the Meeting Agent.** It is where your own knowledge enters the System. You talk freely, and the Meeting Agent turns what you know, want and decide into clear written records. Execution can only be as good as those records. The time you spend in Meetings is the time that makes every later Job better.
 
@@ -65,11 +65,31 @@ flowchart TD
 
 When your review changes something that a Meeting decided, the Job Record marks it. The Meeting Agent reads the Job Record and asks you where the change belongs, so the chain runs both ways.
 
+### Service Agent
+
+A Service Agent runs work that starts from a schedule or an event, such as incoming customer messages. No person approves each run. A Meeting Agent sets it up for its own Scope and writes every rule into the Service Guideline: how to read the data, what to check, which plan fits which item and what to do when nothing fits.
+
+```mermaid
+flowchart TD
+    A["A schedule triggers the run"] --> B["The Agent reads its Service Guideline and retrieves the data"]
+    B --> C{"Intake"}
+    C -->|"idle: nothing to process"| D["One row in the run log"]
+    C -->|"blocked: a requirement is not met"| D
+    C -->|"executed"| E["Execution Plan for each item, saved in the Job Record"]
+    E --> F["Sub-agents do the work. No person approves the Plan"]
+    F --> G{"Problem, or no plan fits?"}
+    G -->|Yes| H["Fallback: hand back to the Meeting Agent"]
+    G -->|No| I["Complete Job Record, each item with its own status"]
+    H --> I
+```
+
+A Service Agent sends no notice for a normal run. When you ask, its Meeting Agent reads the run log and the Job Records and tells you what happened.
+
 ## Requirements
 
 | Dependency | Need | Purpose |
 | --- | --- | --- |
-| Claude or ChatGPT with plugin support | Required | Runs the Plugin and its eleven Skills. |
+| Claude or ChatGPT with plugin support | Required | Runs the Plugin and its twelve Skills. |
 | Google Drive and Google Docs connectors | Required | Hold the System, each Identity's context and every record. The Plugin does not ship them. |
 | An Agent workspace | Optional | A writable folder, in the cloud or on your device, where Agents keep working records before they sync to Google. |
 | GitHub, GitLab or another store | Optional | Holds a Deliverable when Google Drive does not fit it. |
@@ -91,7 +111,7 @@ The plugin is ready to use. It also syncs to Claude Code under the same account.
 
 1. Give ChatGPT the repository URL: `https://github.com/bonchiang96/AI-with-ME`.
 2. Ask it to create a private plugin with **Plugin Creator** from every file in the `plugin/` folder, keeping the folder structure.
-3. Check that the private plugin lists all eleven Skills.
+3. Check that the private plugin lists all twelve Skills.
 
 Do not use the Codex CLI for this. It installs into that environment, not your account.
 

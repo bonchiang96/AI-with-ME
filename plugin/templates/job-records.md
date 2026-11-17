@@ -54,3 +54,19 @@
    5. Chapter 5 reports each Deliverable, its Scope and actual Activity.
    6. The five mandatory persistence checkpoints are saved and verified.
    7. Each item with User Review Yes keeps an edit record for every round.
+
+7. **Service Agent.** A Service Agent uses this file with these differences:
+
+   1. The file name is 02 Job Records.
+   2. Each Service Job has one Tab. Name it with the date, the time and the Job key, without a status.
+      An example is 2026-11-17 0900 — S-0001.
+   3. Each new Tab starts with these five Chapter headings:
+      1. Job Information.
+      2. Intake.
+      3. Execution Plan.
+      4. Items & Execution Log.
+      5. Completion.
+   4. Chapter 4 holds each item with its own status and result.
+   5. Chapter 5 holds what the Service Guideline requires at the end of a Job, each fallback and its Handoff.
+   6. No person approves the Plan. The record holds no Scope Confirmation or Plan Approval time.
+   7. The governing Meeting Agent owns cleaning. The Service Agent removes nothing.

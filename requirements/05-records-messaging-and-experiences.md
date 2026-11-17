@@ -34,6 +34,7 @@ Return to the [Requirements Overview](README.md).
    - Relevance.
 
    Hold ambiguous recipients pending.
+   A Service Agent Identity has no inbox under [Service Lifecycle Section 1.1](08-service-lifecycle.md#1-role-and-setup). No Identity sends a message to it.
 
 2. **Work Requests.** A Work Request must identify:
 

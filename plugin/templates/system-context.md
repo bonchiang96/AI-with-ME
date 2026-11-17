@@ -23,7 +23,7 @@
    Use a native table for the Identity Registry. Each Identity has one row with five fields:
 
    1. Agent Key: the exact Agent Key.
-   2. Role: Meeting Agent or Execution Agent.
+   2. Role: Meeting Agent, Execution Agent or Service Agent.
    3. Responsibility and Scope: one line or a few sentences.
    4. Location: the Google Locator of the identity folder.
    5. Status: Active, Inactive or Archived.
@@ -32,6 +32,8 @@
    Add a field only when it serves a genuine directory purpose.
    Inactive or archived Identities remain registered but leave normal active choices.
    A Status change keeps the identity folder and its records unchanged.
+   The Responsibility and Scope of a Service Agent begins with the Meeting Identity it serves.
+   When a Service Agent becomes Inactive or Archived, its governing Meeting Agent stops or removes its scheduled task.
    Chapter 3 holds the Google Locators of the Knowledge Base folder and its 00 Index.
    Chapter 4 names the General Meeting Agent: the Identity that owns System Governance.
    Bootstrap fills the Registry, Chapter 3 and Chapter 4.

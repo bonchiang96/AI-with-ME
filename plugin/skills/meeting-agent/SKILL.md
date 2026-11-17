@@ -204,6 +204,7 @@ Assessment alone does not authorize an edit.
 ## 13. Identity definition and setup
 
 The General Meeting Agent creates scoped Identities through Meetings.
+A Service Agent Identity is the exception under Section 13.1.
 
 1. The user raises a new Identity in a Meeting with the General Meeting Agent.
 2. Together they define its Name, Role, Responsibility, Scope, Workflows and Deliverables.
@@ -231,6 +232,57 @@ Update the Status field in System Context as a Post-Meeting Action. Keep the ide
 
 Other approved resource establishment remains with its authorized owner.
 Adjust templates with the user. Do not invent new templates.
+
+### 13.1 Service Agent setup
+
+A Service Agent runs schedule-triggered or event-triggered work without a person under the [service-agent](../service-agent/SKILL.md) Skill.
+Any Meeting Agent may set up a Service Agent Identity for its own Scope. It is then the governing Meeting Agent.
+
+1. Define the Service Guideline with the user in a Meeting. It states:
+   - The Scope and the trigger.
+   - How to retrieve the data before intake.
+   - How to analyze and judge the data, and the intake requirements.
+   - The Execution Plans and how to choose one for each item. You decide how to group them.
+   - The fallback plan. A fallback plan is always required.
+   - How to assign Sub-agents.
+   - What to record at the end of a Job.
+   - Whether to notify the user, and through which channel.
+2. Understand the three run outcomes before setup:
+   - idle: nothing needed processing. This outcome is normal.
+   - blocked: work existed, but an intake requirement was not met.
+   - executed: intake passed and a Job ran. Each item's status is in the Job Record.
+3. After CLOSE MEETING, perform the approved setup as Post-Meeting Actions:
+   1. Create the identity folder with three files, each with its Operating Guide:
+      - 00 Identity Context from the [Service Identity Context template](../../templates/service-identity-context.md).
+      - 01 Index from the [Service Index template](../../templates/service-index.md).
+      - 02 Job Records from the [Job Records template](../../templates/job-records.md).
+      A Service Agent has no inbox.
+   2. Write the Service Guideline in the 00 Identity Context.
+   3. State the run log Tab arrangement in the 01 Index Operating Guide, such as one Tab for each day or one Tab for all runs.
+   4. Register the Identity in System Context yourself. The Role is Service Agent.
+      Begin its Responsibility and Scope with the Meeting Identity it serves.
+      This authority covers only a Service Agent for your own Scope.
+   5. Create the scheduled task that triggers each run.
+      Write its prompt as a complete standalone instruction: enter through the ai-with-me Skill as the named Agent Key.
+      When you cannot create it, arrange the step with the user.
+   6. Record the Service Agent in your Working Group.
+   7. Preserve and verify setup evidence.
+4. For work with many parallel requests, use batch processing.
+   Separate code receives and stores the requests. The Service Agent processes them on a schedule, so one Job holds many items.
+   You may draft a small application that receives the requests, or hand it to an Execution Agent.
+   Give the Service Agent an MCP server or a command line tool to read them.
+5. Change the Service Guideline through a Meeting. The change applies from the next run.
+6. To test, trigger a run yourself. The user does not enter a Service Agent Identity by hand.
+7. When the Status becomes Inactive or Archived, stop or remove the scheduled task.
+
+### 13.2 Service Agent review and cleaning
+
+1. A Service Agent sends no Completion Notice. When the user asks, read its run log and Job Records directly.
+   Read the blocked rows first. They show what needs attention.
+2. A fallback arrives as Information in your inbox. Read the Job Record and propose an Agenda item.
+3. You own cleaning of the run log and the Job Records. The Service Agent removes nothing.
+4. Decide how long to keep the run log Tabs. Keep all Job Records for now.
+   One option is to conclude a period into a report first, and then clean the records of that period.
 
 ## 14. Governance refinement
 

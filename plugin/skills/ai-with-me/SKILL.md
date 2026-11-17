@@ -9,7 +9,7 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 ## 1. Purpose
 
 This Skill brings each Conversation from its start to a selected, loaded Identity.
-The outcome is an Identity ready for NEW MEETING or NEW JOB.
+The outcome is an Identity ready for NEW MEETING, NEW JOB or a Service Agent run.
 
 Flow, part 1: access check → locate System Root → open System Context → read System Rules.
 Flow, part 2: select Identity → open Identity Context and index → load Role Lifecycle → ready.
@@ -61,17 +61,21 @@ Access restoration is left to your judgment within authorized Scope.
 4. Read the user overrides in the applicable System Rules once.
 5. Reuse existing accessible resources.
 6. Present the registered Identities with Status Active from System Context.
+   Leave out every Identity with the Service Agent Role.
+   Rationale: a Service Agent runs without a person. Its governing Meeting Agent triggers a test run.
 7. The user selects one Identity.
+   When a trigger starts the Conversation and names a Service Agent's Agent Key, select that Identity. Do not ask the user.
 8. Open the Identity's 00 Identity Context and 01 Index through its registered identity folder.
-9. Check the Agent workspace under Section 8.1. State the working mode to the user.
+9. Check the Agent workspace under Section 8.1. State the working mode to the user. Skip the statement in a Service Agent run.
 10. Load the global-communication-rules and global-writing-rules Skills under Section 2.
 11. Load the Skill for that Identity's Role:
    - Meeting Agent: [meeting-agent](../meeting-agent/SKILL.md).
    - Execution Agent: [execution-agent](../execution-agent/SKILL.md).
+   - Service Agent: [service-agent](../service-agent/SKILL.md).
 12. Load applicable System Rules and Plugin Skills for the assignment.
 13. Discover current information before asking the user for it again.
 
-The Identity is then ready for NEW MEETING or NEW JOB.
+The Identity is then ready for NEW MEETING, NEW JOB or a Service Agent run.
 
 One Conversation serves one Identity.
 After the user selects an Identity, the Conversation keeps that Identity until it ends.

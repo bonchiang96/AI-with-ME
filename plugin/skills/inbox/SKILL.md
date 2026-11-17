@@ -10,6 +10,7 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 
 Agents exchange Work Requests, Completion Notices and Information through inbox files.
 Each Identity has its own 02 Inbox. No Identity merges another Identity's inbox.
+A Service Agent Identity is the exception. It has no inbox and reads no inbox. No Identity sends a message to it.
 The file follows the [Inbox template](../../templates/inbox.md).
 
 Flow, part 1: sender writes one row → sender verifies the row.
@@ -35,6 +36,8 @@ A further Type is a customization added through System Rules.
 6. Information only informs the recipient. Use it for any matter the recipient should know.
    Examples: you used the recipient's work, or something the recipient owns may need a change.
 7. Information does not request work or report a completed Job. It creates no execution authority.
+8. A Service Agent hands a fallback back to its governing Meeting Agent as Information under the [service-agent](../service-agent/SKILL.md) Skill Section 7.
+   Ref is the Service Job key. The Message links the Job Record Tab.
 
 ## 4. Sending
 
@@ -58,6 +61,7 @@ Read the inbox at the start order step of the [meeting-agent](../meeting-agent/S
    - Route pending Work Requests to Future Topics under the execution-agent Lifecycle.
    - Route Deliverables to the 01 Index under the meeting-agent Lifecycle.
    - For Information, update your own context when relevant. Any resulting work follows your own Lifecycle.
+   - For a Service Agent fallback, read the Job Record and propose an Agenda item under the meeting-agent Lifecycle.
 3. Delete the processed row.
 4. Preserve sources and essential meaning.
 5. Present suggested follow-up as a proposal.

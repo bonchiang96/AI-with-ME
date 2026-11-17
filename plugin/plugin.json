@@ -1,12 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-with-me",
-  "version": "0.28.0",
-  "description": "AI with ME - Operating Framework. Meeting and Execution Agents, Workflows, rules and templates for knowledge transfer. Requires Google Drive and Google Docs access.",
+  "version": "0.29.0",
+  "description": "AI with ME - Operating Framework. Meeting, Execution and Service Agents, Workflows, rules and templates for knowledge transfer. Requires Google Drive and Google Docs access.",
   "author": {
     "name": "Rocher Lee"
   },
   "repository": "https://github.com/bonchiang96/AI-with-ME",
   "license": "MIT",
-  "keywords": ["knowledge-transfer", "meeting-agent", "execution-agent", "google-drive", "google-docs"]
+  "keywords": ["knowledge-transfer", "meeting-agent", "execution-agent", "service-agent", "google-drive", "google-docs"]
 }

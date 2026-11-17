@@ -496,6 +496,7 @@ Return to the [Requirements Overview](README.md).
 
    A Meeting Agent folder also holds 03 Meeting Records and 04 Minutes.
    An Execution Agent folder also holds 03 Job Records.
+   A Service Agent folder is the exception. It holds 00 Identity Context, 01 Index and 02 Job Records under [Service Lifecycle Section 1.2](08-service-lifecycle.md#1-role-and-setup).
    Index and inbox files are Google Docs with native tables.
    Identity setup creates every file with its Operating Guide under [System, Identity and Entry Section 1.11](02-system-identity-and-entry.md#1-identity-selection-and-governed-setup).
 

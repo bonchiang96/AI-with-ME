@@ -46,10 +46,11 @@ Return to the [Requirements Overview](README.md).
    - The General Execution Agent, with Agent Key `general-execution`.
 
    The General Meeting Agent creates scoped Identities through Meetings.
+   A Service Agent Identity is the exception. Its governing Meeting Agent creates it under [Service Lifecycle Section 1.2](08-service-lifecycle.md#1-role-and-setup).
 
 4. **Conversation Initiation.** After System entry, the user selects a registered operational Identity from System Context.
    Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
-   The Identity is then ready for NEW MEETING or NEW JOB.
+   The Identity is then ready for NEW MEETING, NEW JOB or a Service Agent run.
    One Conversation serves one Identity. After selection, the Conversation keeps that Identity until it ends.
    Work as another Identity starts in a new Conversation.
    Load applicable System Rules and Plugin Instructions for the assignment.
@@ -148,7 +149,8 @@ Return to the [Requirements Overview](README.md).
 
    Output identifies actual deliverables or result evidence. Each confirmed Job Scope must remain within the assigned Agent's authority.
 
-2. **Roles and Lifecycles.** The two Roles are Meeting Agent and Execution Agent.
+2. **Roles and Lifecycles.** The three Roles are Meeting Agent, Execution Agent and Service Agent.
+   A Service Agent follows the [Service Lifecycle](08-service-lifecycle.md).
    A Role is distinguished by its internal Lifecycle or Protocol.
    Every Identity must use the common Lifecycle of its Role.
 
