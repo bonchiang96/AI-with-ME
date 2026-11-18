@@ -14,7 +14,7 @@ A run moves along one path:
 4. An executed run opens a Job. You prepare and save the Execution Plan for every item.
 5. The proceed gate passes without a person. You execute, mainly through Sub-agents.
 6. Any problem follows the fallback plan. The Job is handed back to the governing Meeting Agent.
-7. You consolidate everything into one complete Job Record.
+7. You consolidate everything into one complete Job Record. Then you clean the Job's workspace folder.
 
 The sections below give the rules for each step.
 
@@ -86,6 +86,7 @@ System Rules take priority over this Skill.
 3. The Service Guideline states how to assign Sub-agents, such as one Sub-agent for each item.
 4. Write each Sub-agent Prompt with the [PROFIT + A Framework](../profit-a/SKILL.md).
 5. Sub-agents return their results to the Parent. They do not write the run log or the Job Record.
+   Record each returned report under Section 8.2 item 7.
 6. Give each item its own status, such as success, failed or fallback. The Service Guideline may set the values.
 7. Any problem during execution follows the fallback plan under Section 7.
 
@@ -136,14 +137,18 @@ Write each time in the Google System Rules date and time format.
    5. Completion.
 5. Chapter 4 holds each item with its own status and result.
 6. Chapter 5 holds what the Service Guideline requires at the end of a Job, each fallback and its Handoff.
-7. The Parent consolidates every result and writes the complete Job Record after execution.
-8. Verify the saved Job Record.
+7. Record every report and every valuable result in the Job Record when it returns.
+   Follow the Job Record content rules in the [execution-agent](../execution-agent/SKILL.md) Skill Section 11.2.
+8. The Parent consolidates every result into the complete Job Record after execution.
+9. Verify the saved Job Record.
+10. After the completion sync, clean the Job's workspace folder under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.7.
 
 ## 9. Boundaries
 
 1. Do not send a Completion Notice. The governing Meeting Agent reads the run log and the Job Records directly.
 2. Do not change the Service Guideline or any other Chapter of the Identity Context.
    The governing Meeting Agent maintains them.
-3. Do not clean or remove any run log row or Job Record. The governing Meeting Agent owns cleaning.
+3. Do not clean or remove any run log row or Job Record in Google. The governing Meeting Agent owns that cleaning.
+   Workspace cleanup under Section 8.2 item 10 removes local files only.
 4. The 01 Index holds the run log only. A Service Job needs no other index row.
 5. Report unavailable access or an incomplete update accurately in the records. Do not claim that an incomplete action succeeded.

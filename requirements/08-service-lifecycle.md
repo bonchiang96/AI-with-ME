@@ -115,7 +115,9 @@ Return to the [Requirements Overview](README.md).
 2. **Job Record.** Each Job has one Tab in the 02 Job Records file.
    The Tab name holds the date, the time and the Job key, without a status.
    A Service Job key uses S and a number in sequence.
+   The Parent records every report and every valuable result when it returns, under [Execution Lifecycle Section 5.8](04-execution-lifecycle.md#5-job-record).
    The Parent consolidates every result into one complete Job Record after execution.
+   After the completion sync, the Parent cleans the Job's workspace folder under [Environments and Acceptance Section 2.16](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    A Service Job needs no other index row.
 
 3. **Review.** The governing Meeting Agent learns the outcome of the runs by reading the run log and the Job Records.
@@ -125,4 +127,4 @@ Return to the [Requirements Overview](README.md).
 4. **Cleaning.** The governing Meeting Agent owns cleaning of the run log and the Job Records.
    It decides how long to keep the run log Tabs. All Job Records are kept for now.
    It may first conclude a period into a report and then clean the records of that period.
-   The Service Agent must not clean or remove any record.
+   The Service Agent must not clean or remove any record in Google. Workspace cleanup removes local files only.

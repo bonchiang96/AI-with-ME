@@ -158,13 +158,17 @@ Google Drive remains the authority.
 
 ### 8.2 Workspace content
 
-1. Only working records go into the workspace:
+1. The workspace holds these working records:
    - The Meeting Record of a Meeting Agent.
-   - The Job Record of an Execution Agent.
+   - The Job Record of an Execution Agent or a Service Agent.
    - The Final Minutes draft of a Meeting Agent.
-2. Every other resource stays in Google.
+2. A Job folder may also hold working files.
+   Examples are research, Sub-agent reports, Feed copies, renders and repository working copies.
+   Working files are temporary. Their valuable content returns through the Job Record.
+   The [execution-agent](../execution-agent/SKILL.md) Skill Section 11.2 holds the Job Record content rules.
+3. Every other resource stays in Google.
    Examples are System Context, Identity Context, the 01 Index, the inbox and Knowledge Bases.
-3. Rationale: working records take the most writes.
+4. Rationale: working records take the most writes.
    Keeping them in the workspace removes most Google writes and the Google output from the Conversation.
 
 ### 8.3 Entry record
@@ -208,3 +212,19 @@ Google Drive remains the authority.
 2. The local root holds one folder per Identity, named by its Agent Key.
 3. Each Identity folder holds one folder per Meeting or Job, named like its Google Tab.
 4. Workspace files do not establish independent governance authority.
+
+### 8.7 Cleanup
+
+1. Clean the workspace folder of a Meeting or a Job after its completion sync.
+2. Clean only when both conditions hold:
+   1. The Agent's own readback confirms that the Google record is complete and correct.
+   2. Each Deliverable is in its agreed place.
+3. Delete the whole Meeting or Job folder, including the working record file.
+   Delete renders, repository working copies, Feed copies, reports and every other working file.
+4. Before deleting renders or other candidates shown to the user, ask the user which to keep.
+   Store each kept item as a Deliverable in its agreed place.
+5. A Service Agent run has no user. It keeps only the Deliverables that its Service Guideline names.
+6. Cleanup removes local files only. Every Google record stays unchanged.
+7. When the host blocks deletion, report the remaining folder to the user.
+8. Rationale: after the sync, the valuable content is in Google and each Deliverable is in its agreed place.
+   Nobody reads or reuses the local working files.

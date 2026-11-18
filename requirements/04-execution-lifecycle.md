@@ -197,10 +197,11 @@ Return to the [Requirements Overview](README.md).
    4. Freeze the completed Job Record.
    5. Add one Jobs row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox). Verify the row.
       Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
-   6. Optionally maintain relevant verified Knowledge Base content within approved authority.
-   7. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
-   8. Update Identity Context in one step under [Foundation Section 3.14](01-foundation.md#3-identity-context).
-   9. Send relevant Completion Notices last as inbox rows.
+   6. Clean the Job's workspace folder under [Environments and Acceptance Section 2.16](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
+   7. Optionally maintain relevant verified Knowledge Base content within approved authority.
+   8. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
+   9. Update Identity Context in one step under [Foundation Section 3.14](01-foundation.md#3-identity-context).
+   10. Send relevant Completion Notices last as inbox rows.
 
    Apply System Rules to actual persistence and indexing.
    Knowledge Base maintenance remains discretionary for independently discovered knowledge under [Foundation Section 4.7](01-foundation.md#4-scoped-knowledge-base).
@@ -380,6 +381,7 @@ Return to the [Requirements Overview](README.md).
    - Progress.
 
    Each accepted Deliverable must retain relevant execution and QA evidence.
+   Reports and other valuable content follow [Section 5.8](#5-job-record).
    Full review and retry requirements follow [Section 4](#4-execution-parent-and-sub-agents).
 
 6. **Completion & Handoff.** Chapter 5 must report completed work through each Deliverable, its corresponding Scope and actual Activity.
@@ -393,3 +395,15 @@ Return to the [Requirements Overview](README.md).
    3. Plan approval.
    4. Accepted Deliverable results and relevant evidence.
    5. Final Job Completion.
+
+8. **Job Record content.** The Job Record must carry all content of lasting value. It sets no limit on the kind of content.
+   The Parent judges which content has value and records it in the Job Record:
+
+   - Every report that a Sub-agent returns, such as research, review, QA and test reports.
+   - The Parent's own research and reports that later work can use.
+   - Valuable information from discussion with the user.
+
+   The Job Record holds the content itself. A local path or a short summary alone does not preserve it.
+   The Parent records each report when it arrives. It records discussion with the user as it happens, as far as practical.
+   Rationale: a workspace can sit on another machine or in a closed container, and every Agent can read Google.
+   The Meeting Agent learns from the Job Record what the Job did and what happened.

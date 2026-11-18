@@ -39,6 +39,7 @@ Return to the [Requirements Overview](README.md).
    Record index rows use accessible, verified Google Locators.
    Deliverable index rows identify the agreed storage place under [Section 2.6](#2-hybrid-local-working-and-deliverable-storage).
    Full workspace copies and every intermediate asset are not automatically required.
+   Their valuable content returns through the Job Record under [Execution Lifecycle Section 5.8](04-execution-lifecycle.md#5-job-record).
 
 5. **Access limitations.** Report unavailable authoritative access or uncompleted required updates accurately. Discuss permitted setup or assistance with the user.
    Access restoration is left to AI judgment under [Requirements Overview Section 2.4](README.md#2-binding-non-functional-requirements).
@@ -116,12 +117,14 @@ Return to the [Requirements Overview](README.md).
    A temporary folder, such as `/tmp` or a session scratch folder, is never a workspace.
    Rationale: the host may delete a temporary folder at any time, and the working records with it.
 
-10. **Workspace content.** Only these working records go into the workspace:
+10. **Workspace content.** The workspace holds these working records:
 
     - The Meeting Record.
     - The Job Record.
     - The Final Minutes draft.
 
+    A Job folder may also hold temporary working files, such as research, Sub-agent reports, Feed copies, renders and repository working copies.
+    Their valuable content returns through the Job Record under [Execution Lifecycle Section 5.8](04-execution-lifecycle.md#5-job-record).
     Every other resource stays in Google.
     Rationale: working records take the most writes, so the workspace removes most Google writes from the Conversation.
 
@@ -149,6 +152,19 @@ Return to the [Requirements Overview](README.md).
 15. **Active record from another Conversation.** When an active record holds only its entry record, the Agent asks the user softly whether the work runs in another Conversation.
     The user continues here, returns to that Conversation, or chooses to restart or continue from what Google holds.
     This step is a user choice, not failure handling.
+
+16. **Cleanup.** The Agent cleans the workspace folder of a Meeting or a Job after its completion sync.
+    Cleanup runs only when both conditions hold:
+
+    1. The Agent's own readback confirms that the Google record is complete and correct.
+    2. Each Deliverable is in its agreed place.
+
+    Cleanup deletes the whole Meeting or Job folder, including the working record file, renders, repository working copies and every other working file.
+    Before deleting renders or other candidates shown to the user, the Agent asks the user which to keep. Each kept item is stored as a Deliverable in its agreed place.
+    A Service Agent run keeps only the Deliverables that its Service Guideline names.
+    Cleanup removes local files only. Every Google record stays unchanged.
+    When the host blocks deletion, the Agent reports the remaining folder to the user.
+    Rationale: after the sync, the valuable content is in Google and each Deliverable is in its agreed place. Nobody reads or reuses the local working files.
 
 ## 3. Baseline acceptance
 

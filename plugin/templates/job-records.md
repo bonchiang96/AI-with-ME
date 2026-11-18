@@ -36,6 +36,8 @@
    The record is append-oriented.
    Chapter 4 is chronological.
    Record Learning Candidates in Chapter 4 when they happen.
+   Record each Sub-agent report and the Parent's useful research in Chapter 4 as content, when it arrives.
+   Record valuable information from discussion with the user in Chapter 4.
    Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
    Keep User's words in each Learning Candidate.
    Record each Execution user review round as an edit record in Chapter 4.
@@ -54,6 +56,7 @@
    5. Chapter 5 reports each Deliverable, its Scope and actual Activity.
    6. The five mandatory persistence checkpoints are saved and verified.
    7. Each item with User Review Yes keeps an edit record for every round.
+   8. Every report and all other valuable content are in the record itself, beyond a local path.
 
 7. **Service Agent.** A Service Agent uses this file with these differences:
 
@@ -66,7 +69,7 @@
       3. Execution Plan.
       4. Items & Execution Log.
       5. Completion.
-   4. Chapter 4 holds each item with its own status and result.
+   4. Chapter 4 holds each item with its own status, result and reports.
    5. Chapter 5 holds what the Service Guideline requires at the end of a Job, each fallback and its Handoff.
    6. No person approves the Plan. The record holds no Scope Confirmation or Plan Approval time.
    7. The governing Meeting Agent owns cleaning. The Service Agent removes nothing.

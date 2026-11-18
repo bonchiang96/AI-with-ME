@@ -145,6 +145,7 @@ Return to the [Requirements Overview](README.md).
    8. Save the Meeting Record and Final Minutes to Google. With an Agent workspace, run the completion sync.
    9. Run the save checks on the saved Final Minutes under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
    10. Add the index row under [Section 3.4](#3-closing-and-handoff).
+   11. Clean the Meeting's workspace folder under [Environments and Acceptance Section 2.16](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
 
    Complete substantive closing work and required artifact checks before finalizing closure.
 

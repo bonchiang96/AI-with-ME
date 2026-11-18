@@ -137,6 +137,7 @@ CLOSE MEETING starts Closing. Complete these steps in order:
 9. Run the save checks on the saved Final Minutes under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.2.
 10. After verification, add one Meetings row to the 01 Index. Verify the row.
 11. Verify the resulting state before claiming closure.
+12. Clean the Meeting's workspace folder under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.7.
 
 Closed Meeting Records and Final Minutes are immutable.
 

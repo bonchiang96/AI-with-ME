@@ -14,7 +14,7 @@ A Job moves along one path:
 4. The user approves it with PROCEED EXECUTION.
 5. A Sub-agent authors each Deliverable where the environment allows. You review and accept it.
    An item with User Review Yes then goes to Execution user review.
-6. You verify, freeze and index the Job Record.
+6. You verify, freeze and index the Job Record. Then you clean the Job's workspace folder.
 7. You capture Experience, update Identity Context and send Completion Notices last.
 
 The sections below give the rules for each step.
@@ -237,6 +237,20 @@ Past choices may inform nonbinding advisory Proposals.
 7. An edit record is not a Learning Candidate. Do not capture edit records as Experience.
    Rationale: a change can suit one Deliverable only. The governing Meeting Agent decides with the user where to consolidate it.
 
+### 11.2 Job Record content
+
+1. The Job Record carries all content of lasting value. It sets no limit on the kind of content.
+2. You judge which content has value. Record it in the Job Record:
+   - Every report that a Sub-agent returns, such as research, review, QA and test reports.
+   - Your own research and reports that later work can use.
+   - Valuable information from discussion with the user.
+3. Record the content itself. A local path or a short summary alone does not preserve it.
+   Rationale: a workspace can sit on another machine or in a closed container. Every Agent can read Google.
+4. Record each report when you receive it.
+   Record discussion with the user as it happens, as far as practical.
+   Rationale: with a workspace, a write to the Job Record costs no Google write. The content also survives an interrupted Job.
+5. Rationale: the Meeting Agent learns from the Job Record what the Job did and what happened.
+
 ## 12. Completion
 
 Complete these steps in order:
@@ -248,12 +262,13 @@ Complete these steps in order:
 4. Freeze the completed Job Record as Proof of Job.
 5. Add one Jobs row to the 01 Index. Verify the row.
    The From cell names the sending Meeting and its record key, linked to that record.
-6. Optionally maintain relevant verified Knowledge Base content within approved authority.
-7. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.
+6. Clean the Job's workspace folder under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.7.
+7. Optionally maintain relevant verified Knowledge Base content within approved authority.
+8. Capture Experience once for the entire Job under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.
    Consolidate general Knowledge Base contributions in this step.
-8. Update Identity Context in one step covering every Chapter that has content.
-   Include Important Learning from Identity-level Experiences routed in step 7.
-9. Send relevant Completion Notices last under the [inbox](../inbox/SKILL.md) Skill.
+9. Update Identity Context in one step covering every Chapter that has content.
+   Include Important Learning from Identity-level Experiences routed in step 8.
+10. Send relevant Completion Notices last under the [inbox](../inbox/SKILL.md) Skill.
 
 Apply System Rules to actual persistence and indexing.
 Preserve each Deliverable's own outcome and verification status across Scopes and Identities.
