@@ -10,11 +10,12 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 
 Agents exchange Work Requests, Completion Notices and Information through inbox files.
 Each Identity has its own 02 Inbox. No Identity merges another Identity's inbox.
+
 A Service Agent Identity is the exception. It has no inbox and reads no inbox. No Identity sends a message to it.
 The file follows the [Inbox template](../../templates/inbox.md).
 
 Flow, part 1: sender writes one row → sender verifies the row.
-Flow, part 2: receiver reads at start → receiver routes the outcome → receiver deletes the row.
+Flow, part 2: receiver reads at start → the row's matter gets its place → receiver deletes the row.
 
 ## 2. Routing
 
@@ -57,12 +58,19 @@ A further Type is a customization added through System Rules.
 Read the inbox at the start order step of the [meeting-agent](../meeting-agent/SKILL.md) or [execution-agent](../execution-agent/SKILL.md) Lifecycle.
 
 1. Open the record that each row references.
-2. Route the outcome to every relevant place:
+2. A Meeting Agent processes every Type in one way, under the meeting-agent Skill Section 4 item 9:
+   1. Give the row's matter its place: the Agenda, Future Topics, or no place.
+      No place applies when the user says the matter is not needed.
+   2. Delete the row only after its matter has that place, under the meeting-agent Skill Sections 6 and 10.
+   3. Do the matter's work inside its Agenda item.
+      From a Completion Notice, only the originating Meeting Agent registers the Deliverables in the 01 Index.
+      For Information, update your own context when relevant.
+      For a Service Agent fallback, read the Job Record.
+3. An Execution Agent routes the outcome to every relevant place:
    - Route pending Work Requests to Future Topics under the execution-agent Lifecycle.
-   - Route Deliverables to the 01 Index under the meeting-agent Lifecycle.
    - For Information, update your own context when relevant. Any resulting work follows your own Lifecycle.
-   - For a Service Agent fallback, read the Job Record and propose an Agenda item under the meeting-agent Lifecycle.
-3. Delete the processed row.
+
+   Then it deletes the processed row.
 4. Preserve sources and essential meaning.
 5. Present suggested follow-up as a proposal.
 6. Preserve normal responsibility, Scope and approval boundaries.

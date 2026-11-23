@@ -38,6 +38,7 @@ description: The AI with ME Global Communication Rules. Covers the language of r
    Without a content language instruction under item 4, do not force a translation or a content language.
    Content includes the user's knowledge, decisions, intent and quoted words.
    Keep mixed-language input mixed.
+
    Content that the Agent organizes may use any language, such as a Decision sentence in English.
    Prefer the language the user used.
    Rationale: an Agent thinks in the language it writes. A translation can change the meaning.
@@ -66,6 +67,7 @@ description: The AI with ME Global Communication Rules. Covers the language of r
    Every material Decision keeps its Rationale. A Rationale may hold the Agent's reasoning or the user's reasoning.
    Keep the user's meaning, wording and original language. Correct voice-input errors under Section 7.
    Do not translate User's words.
+
    User's words are the only record content that keeps the user's own expression.
    Writing checking and QA do not check the wording of User's words. The Global Writing Rules do not apply to them.
    Rationale: User's words let a later reader recover the user's intended meaning.
@@ -121,6 +123,7 @@ The Agent chooses the interaction mode according to the situation:
    The Agent leaves Agenda space for user input.
 
 3. **Document review.** The Agent first performs an independent AI review.
+   For a Deliverable that a Meeting Job produces, the reviewer Sub-agent performs this AI review. The Parent does not review it itself.
    The review covers fidelity, Global Writing Rules and presentation style.
    The Agent then provides separate Agenda space for the user's review.
    The Agent consolidates both reviews.

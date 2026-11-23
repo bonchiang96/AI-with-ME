@@ -25,13 +25,17 @@
    Each key uses a letter and a number, such as M-0003:
 
    - D for Deliverable.
-   - M for Meeting.
+   - M for a discussion Meeting.
+   - MJ for an execution Meeting, which holds a Meeting Job. MJ keys have their own sequence, from MJ-0001.
    - J for Job.
 
    Keys carry no Identity key.
+   The Meetings Chapter lists M and MJ rows.
    Deliverable Condition values are Draft, Stable, Frozen and Archived.
+
    A From cell names the sender Identity and its record key, linked to that record.
    In the Jobs Chapter, the From cell names the sending Meeting the same way.
+   For a Meeting Job package, the From cell names this Identity and the MJ key, linked to the Final Minutes.
    The index lists what exists. Google version history shows when a row changed.
 
 6. **Local QA criteria.** Check these points after each new row:

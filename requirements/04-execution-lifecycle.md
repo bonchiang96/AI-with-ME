@@ -15,6 +15,8 @@ Return to the [Requirements Overview](README.md).
    7. Context maintenance, Experience Capture and final communication under [Section 3](#3-completion-and-communication).
 
    Each step preserves its assigned owner and approval boundaries.
+   A Meeting Agent reuses the Plan, PROCEED EXECUTION and the Sub-agent method in a Meeting Job without a Job Record.
+   [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job) holds its differences.
 
 2. **Two approvals.** Obtain explicit confirmation of the selected Job Scope. Obtain separate PROCEED EXECUTION approval for the latest saved Execution Plan.
 
@@ -26,6 +28,7 @@ Return to the [Requirements Overview](README.md).
    - Proposal preparation.
 
 3. **Intake identity and sources.** Resolve identity during Initialization.
+   An active Job is a Job whose Job Record is not yet complete. A Job with a complete Job Record is closed.
    At NEW JOB, use this start order:
 
    1. Check the latest Tab of the Job Records file for an active Job.
@@ -130,10 +133,12 @@ Return to the [Requirements Overview](README.md).
    Each item shows at least six elements.
    They are the Deliverable, its storage location, the final outcome, the sources, the model and User Review.
    Other elements may be added. None of the six may be omitted.
+
    The Execution Agent proposes each item's User Review value from past Jobs. User Review belongs to the item, not to the whole Job.
    The final outcome states in a few sentences the most important thing this round must show.
    A first draft states the idea of the whole document.
    A later draft states what must improve or appear, based on the feedback.
+
    The Execution Agent decides how to group items.
    This is the expected content, not a fixed template.
 
@@ -176,11 +181,15 @@ Return to the [Requirements Overview](README.md).
 9. **Execution user review.** An item with User Review No is complete when its candidate is accepted and saved.
    An item with User Review Yes goes to Execution user review after acceptance. It is complete when the user says that it is OK.
    During Execution user review, the Parent makes each change directly, without Sub-agents.
+
    Changes start from the Decisions in the Closed Minutes. An earlier decision is a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
    The user may decide a change that differs from an earlier decision.
+
    A round is one user instruction and the Parent's resulting change.
    Each round is an edit record in the Job Record. An edit record holds the item, the time, the User's words and the change.
    A remark is added to the edit record when its change differs from an earlier decision.
+
+   After the user's OK, no further writing checking runs unless the user asks.
    An edit record is not a Learning Candidate. The Execution Agent does not capture it as Experience.
    Rationale: a change can suit one Deliverable only. The governing Meeting Agent decides with the user where to consolidate it.
 
@@ -311,7 +320,8 @@ Return to the [Requirements Overview](README.md).
    2. Perform its own QA. For a text Deliverable, this includes writing checking under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
    3. Return the complete candidate.
 
-   The Parent gives each writing or reviewing Sub-agent the Global Writing Rules under [PROFIT + A](workflows/profit-a.md).
+   Each Sub-agent Prompt uses [PROFIT + A](workflows/profit-a.md). The A is optional.
+   The Parent gives each writing or reviewing Sub-agent the Global Writing Rules under PROFIT + A.
 
 6. **Independent review.** The Parent independently reviews the entire candidate at every submission and revision.
 

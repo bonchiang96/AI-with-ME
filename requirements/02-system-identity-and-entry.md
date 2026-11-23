@@ -51,6 +51,7 @@ Return to the [Requirements Overview](README.md).
 4. **Conversation Initiation.** After System entry, the user selects a registered operational Identity from System Context.
    Load that Identity's shared Role Lifecycle and its authoritative Identity Context.
    The Identity is then ready for NEW MEETING, NEW JOB or a Service Agent run.
+
    One Conversation serves one Identity. After selection, the Conversation keeps that Identity until it ends.
    Work as another Identity starts in a new Conversation.
    Load applicable System Rules and Plugin Instructions for the assignment.
@@ -170,6 +171,15 @@ Return to the [Requirements Overview](README.md).
    - Planning.
    - Substantive decisions.
 
+   A Meeting Agent's Scope holds two kinds of work:
+
+   1. Discussion and decisions.
+   2. Execution work through its own Sub-agents, as a Meeting Job under [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job).
+
+   An Execution Identity executes each Deliverable that the user assigns to it.
+   The user chooses which Identity executes each Deliverable.
+   A discussion Meeting has an M key. An execution Meeting holds at least one Job item and has an MJ key.
+
    Each Meeting Identity governs only its assigned Scope.
    A governance assignment may include applicable operating rules.
    Approved Post-Meeting Actions follow [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
@@ -219,13 +229,15 @@ Return to the [Requirements Overview](README.md).
    Identity Context maintenance follows [Foundation Section 3](01-foundation.md#3-identity-context).
    Shared Knowledge Base maintenance follows [Foundation Section 4](01-foundation.md#4-scoped-knowledge-base).
 
-8. **Shipped Agents.** The Plugin ships only the Meeting Agent and the Execution Agent.
+8. **Shipped Agents.** The Plugin ships three Agents: the Meeting Agent, the Execution Agent and the Service Agent.
 
 9. **Independent QA responsibility.** Independent QA is a normal Workflow under [Quality Section 1.11](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 10. **Meeting execution responsibility.** A Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables within [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
 11. **Stage words.** NEW MEETING, CLOSE MEETING, NEW JOB and PROCEED EXECUTION are the user's stage words.
+    PROCEED EXECUTION also approves the Plan of a Meeting Job in its Job item.
+    A Meeting Job needs no NEW JOB.
     Each stage flow lives in the Role Skill of the Plugin.
     A stage word must respect these limits:
 
@@ -289,7 +301,10 @@ Return to the [Requirements Overview](README.md).
     Each Identity may customize how a Workflow runs within its approved work.
     The default is one full draft. A large Book may use Chapter-by-Chapter drafting.
 
-19. **User review and revision ownership.** In Book and Business Document Workflows, the user makes final decisions.
+19. **User review and revision ownership.** A Deliverable that a Meeting Job produces is reviewed in its review item under [Meeting Lifecycle Section 6.4](03-meeting-lifecycle.md#6-meeting-job).
+    This rule applies in every Workflow and in work without a Workflow.
+
+    In Book and Business Document Workflows, the user makes final decisions.
     Leave space for user input. Advise when asked or when direction is unclear.
     After user review, apply this revision rule:
 
@@ -298,7 +313,7 @@ Return to the [Requirements Overview](README.md).
     3. The Proposal states the impacted range and shows the exact current and amended text.
     4. With the user's approval, the Meeting Agent makes the edit as an approved Post-Meeting Action.
     5. Without that approval, or for a large change, record the feedback in the Minutes.
-    6. The Execution Agent revises from those authoritative Minutes.
+    6. The Execution Agent revises from the Deliverable Guideline and those authoritative Minutes.
 
     Assessment alone does not authorize an edit.
     Preserve the approved Scope and normal approval gates.

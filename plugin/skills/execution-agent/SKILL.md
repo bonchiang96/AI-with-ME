@@ -37,6 +37,9 @@ System Rules take priority over this Skill.
 2. Resolve the currently authorized Responsibility and Scope from System Context.
 3. Resolve record Target Locations through Identity Context and current System Rules.
 
+An active Job is a Job whose Job Record is not yet complete.
+A Job with a complete Job Record is closed.
+
 Use this start order:
 
 1. Check the latest Tab of the 03 Job Records file for an active Job.
@@ -187,14 +190,15 @@ A structure expressly prescribed in authoritative Minutes remains binding.
 
 1. Check the actual Sub-agent creation and supervision capabilities.
 2. When genuine Sub-agents are available, assign each Deliverable to a distinct genuine Sub-agent.
-3. Write each Sub-agent Prompt with the complete [PROFIT + A Framework](../profit-a/SKILL.md) in Strict Mode.
+3. Write each Sub-agent Prompt with the [PROFIT + A Framework](../profit-a/SKILL.md) in Strict Mode. The A is optional.
    Give the Global Writing Rules to the Sub-agent under Section 7 of the PROFIT + A Framework.
 4. Supply the Deliverable Guideline, complete scoped subject knowledge, instruction-bearing Closed Minutes, constraints and supporting sources.
 5. The Child determines substantive revisions, wording, organization and permitted methods.
 6. The Child authors the Deliverable, performs its own QA and returns the complete candidate.
    For a text Deliverable, the Child's own QA includes writing checking under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.1.
 7. Sub-agents do not modify the Job Record.
-8. Review the entire candidate at every submission against the Deliverable Guideline, sources, Requirements, the Global Writing Rules and artifact quality rules.
+8. Review the entire candidate at every submission.
+   Review it against the Deliverable Guideline, sources, Requirements, the Global Writing Rules and artifact quality rules.
 9. A FAIL requires specific feedback.
 10. Allow at most five Child retries after the initial submission.
 11. After five failed retries, report the unpassed outcome for the user's decision.
@@ -234,6 +238,7 @@ Past choices may inform nonbinding advisory Proposals.
    An edit record holds the item, the time, the User's words and the change.
 5. Add a remark to the edit record when its change differs from an earlier decision.
 6. The item is complete when the user says that it is OK.
+   After the user's OK, run no further writing checking unless the user asks.
 7. An edit record is not a Learning Candidate. Do not capture edit records as Experience.
    Rationale: a change can suit one Deliverable only. The governing Meeting Agent decides with the user where to consolidate it.
 

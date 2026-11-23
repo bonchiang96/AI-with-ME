@@ -54,23 +54,29 @@ Return to the [Requirements Overview](README.md).
    - Recipient relevance.
 
    Send it only after the full assigned Protocol completes. It must not instruct the recipient or create new execution authority.
+   A Meeting Job sends no Completion Notice under [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff).
 
 4. **Inbox reading.** Inbox reading follows the start order in [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation) and [Execution Lifecycle Section 1.3](04-execution-lifecycle.md#1-stages-and-intake).
 
 5. **Sending.** The sender adds one row to the recipient's inbox file under [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox).
    Ref follows [Foundation Section 5.5](01-foundation.md#5-identity-folder-index-and-inbox) and names a closed record. An Information row may leave Ref empty.
    Announcement follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
+
    Verify the saved row.
    A saved row does not prove recipient reading.
    Exact routing Identities do not authenticate individual Agents.
 
-6. **Processing.** The receiver opens the referenced record. It routes the outcome to every relevant place.
-   Relevant places include:
+6. **Processing.** The receiver opens the referenced record.
+   A Meeting Agent processes every Type in one way under [Meeting Lifecycle Section 1.4](03-meeting-lifecycle.md#1-initialization-and-preparation):
 
-   - Future Topics for pending Work Requests under [Execution Lifecycle Section 1.5](04-execution-lifecycle.md#1-stages-and-intake).
-   - The index for Deliverables under [Foundation Section 5.4](01-foundation.md#5-identity-folder-index-and-inbox).
+   1. The row's matter gets its place: the Agenda, Future Topics, or no place.
+      No place applies when the user says the matter is not needed.
+   2. The row is deleted only after its matter has that place.
+   3. The matter's work runs inside its Agenda item.
+      From a Completion Notice, only the originating Meeting Agent registers Deliverables under [Foundation Section 5.4](01-foundation.md#5-identity-folder-index-and-inbox).
 
-   The receiver then deletes the processed row.
+   An Execution Agent routes pending Work Requests to Future Topics under [Execution Lifecycle Section 1.5](04-execution-lifecycle.md#1-stages-and-intake).
+   It then deletes the processed row.
    Preserve sources and essential meaning. Present suggested follow-up as a proposal.
    Preserve normal responsibility, Scope and approval boundaries.
 
@@ -83,7 +89,8 @@ Return to the [Requirements Overview](README.md).
 
    Information does not request work or report a completed Job.
    When a related record exists, Ref names it. Otherwise the Message gives the source link.
-   The recipient reads it and updates its own context when relevant. It then deletes the row.
+
+   The recipient reads it and updates its own context when relevant. It then deletes the row under [Section 2.6](#2-messaging).
    Information creates no execution authority. Any resulting work follows the recipient's own Lifecycle.
 
 ## 3. Experience learning
@@ -149,6 +156,7 @@ Return to the [Requirements Overview](README.md).
 
 6. **Learning Candidates.** Record each failure or success as a Learning Candidate when it happens.
    A Meeting records it in the Meeting Record. A Job records it in the Job Record.
+
    Each Learning Candidate states what happened, the User's words and the lesson or pattern.
    User's words follow [Global Communication Rules Section 2.8](global-communication-rules.md#2-language).
    A Learning Candidate is a working note. It is routed only at capture.

@@ -45,6 +45,7 @@ This Overview is the main file of the Requirements. It links every Requirements 
    The user is the only authority who certifies the information the user provides.
    In every judgment, Agents accept that information fully, including what the user remembers or believes.
    Agents use it as the working truth and continue the work with it.
+
    Agents must not doubt it, mark it unverified, label it an assumption or hold it pending verification.
    Agents must not block or delay work to wait for outside confirmation.
    Agents must not require third-party verification of it.
@@ -157,7 +158,7 @@ The Requirements consist of this Overview and the files below. Each file links b
 
 1. [Foundation](01-foundation.md) — Repository, distribution, governance resources, Identity Context, Knowledge Bases, identity folders, templates and Operating Guides.
 2. [System, Identity and Entry](02-system-identity-and-entry.md) — System entry, Bootstrap, Identity setup, Agent responsibilities, stage words and Workflow selection.
-3. [Meeting Lifecycle](03-meeting-lifecycle.md) — Meeting stages from preparation to closing, handoff and Meeting artifacts.
+3. [Meeting Lifecycle](03-meeting-lifecycle.md) — Meeting stages from preparation to closing, handoff, Meeting artifacts and the Meeting Job.
 4. [Execution Lifecycle](04-execution-lifecycle.md) — Execution Parent stages from intake to completion, Sub-agents and the Job Record.
 5. [Records, Messaging and Experiences](05-records-messaging-and-experiences.md) — Durable records, indexes, inbox messaging and Experience learning.
 6. [Quality](06-quality.md) — Deliverable verification and independent QA.

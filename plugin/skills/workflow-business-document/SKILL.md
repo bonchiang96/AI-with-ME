@@ -27,13 +27,15 @@ The Meeting Agent works with the user to:
 
 The user makes final decisions. Leave space for user input. Advise when asked or when direction is unclear.
 
+The Meeting Agent discusses the Guideline content in the Meeting that decides the document.
 The Meeting Agent creates the document's Deliverable Guideline after the Meeting closes.
 Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.
 By default, the Guideline is Tab 1 of the Deliverable file and the drafts follow it.
 
 ## 3. Full draft and QA
 
-1. The shared Execution Agent writes one full draft.
+1. The executing Agent writes one full draft.
+   It is the shared Execution Agent or the Meeting Agent in a Meeting Job.
 2. Every draft includes its own complete QA under the [workflow-qa](../workflow-qa/SKILL.md) quality dimensions.
 3. The user reviews each draft in a Meeting.
 4. Apply the user review and revision rule in [meeting-agent](../meeting-agent/SKILL.md).
@@ -49,6 +51,8 @@ Each revision produces a new numbered draft based on:
 - The previous draft.
 - Relevant Closed Minutes.
 - Relevant Knowledge Bases.
+
+In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 
 ## 5. Stable version
 

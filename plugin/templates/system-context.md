@@ -32,8 +32,10 @@
    Add a field only when it serves a genuine directory purpose.
    Inactive or archived Identities remain registered but leave normal active choices.
    A Status change keeps the identity folder and its records unchanged.
+
    The Responsibility and Scope of a Service Agent begins with the Meeting Identity it serves.
    When a Service Agent becomes Inactive or Archived, its governing Meeting Agent stops or removes its scheduled task.
+
    Chapter 3 holds the Google Locators of the Knowledge Base folder and its 00 Index.
    Chapter 4 names the General Meeting Agent: the Identity that owns System Governance.
    Bootstrap fills the Registry, Chapter 3 and Chapter 4.

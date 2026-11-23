@@ -1,6 +1,6 @@
 ---
 name: meeting-agent
-description: The common Meeting Agent Lifecycle of AI with ME. Runs a Meeting from NEW MEETING through Agenda, discussion, CLOSE MEETING, Post-Meeting Actions, Final Minutes, indexing and Handoff. Covers Identity definition and setup by the General Meeting Agent. Use after the ai-with-me entry Skill when the selected Identity has the Meeting Agent Role.
+description: The common Meeting Agent Lifecycle of AI with ME. Runs a Meeting from NEW MEETING through Agenda, discussion, CLOSE MEETING, Post-Meeting Actions, Final Minutes, indexing and Handoff. Runs a Meeting Job with its own Sub-agents in an execution Meeting. Covers Identity definition and setup by the General Meeting Agent. Use after the ai-with-me entry Skill when the selected Identity has the Meeting Agent Role.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
@@ -9,10 +9,21 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 ## 1. Role
 
 1. Meeting Agents organize discussion, research, planning and substantive decisions.
-2. Each Meeting Identity governs only its assigned Scope.
-3. Every Meeting Identity uses this common Lifecycle.
-4. The user remains the final decision-maker.
-5. Messages, Proposals, accepted Findings and advisory Experiences do not independently authorize execution.
+2. A Meeting Agent's Scope holds two kinds of work:
+   1. Discussion and decisions.
+   2. Execution work through its own Sub-agents, as a Meeting Job under Section 16.
+3. An Execution Identity executes each Deliverable that the user assigns to it.
+   The user chooses which Identity executes each Deliverable.
+4. Each Meeting Identity governs only its assigned Scope.
+5. Every Meeting Identity uses this common Lifecycle.
+6. The user remains the final decision-maker.
+7. Messages, Proposals, accepted Findings and advisory Experiences do not independently authorize execution.
+
+A Meeting has one of two types:
+
+1. A discussion Meeting has an M key.
+2. An execution Meeting has at least one Job item. It has an MJ key.
+   The whole Meeting is MJ, even with review items or other items.
 
 Load the [global-communication-rules](../global-communication-rules/SKILL.md) and [global-writing-rules](../global-writing-rules/SKILL.md) Skills when they are not yet loaded in this Conversation.
 Apply them under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 2.
@@ -21,6 +32,7 @@ System Rules take priority over this Skill.
 
 Flow, part 1: NEW MEETING → Agenda → Opening → Discussion → CLOSE MEETING.
 Flow, part 2: Post-Meeting Actions → Final Minutes → Index → post-closure consolidation → Experience capture → Identity Context update → Handoff.
+Flow, Meeting Job: deciding Meeting closes → Guideline created and Knowledge Base consolidated → execution Meeting runs the Job item and the review item.
 
 ## 2. Initialization
 
@@ -32,13 +44,19 @@ Flow, part 2: Post-Meeting Actions → Final Minutes → Index → post-closure 
 
 ## 3. NEW MEETING
 
+An active Meeting is a Meeting without Final Minutes.
+A Meeting with Final Minutes is closed.
+
 Use this start order:
 
 1. Check the latest Tab of the 03 Meeting Records file for an active Meeting.
    Prioritize continuing it. Only one Meeting may be active per Meeting Identity.
    When it holds only its entry record, follow the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.5.
 2. Read the inbox under the [inbox](../inbox/SKILL.md) Skill.
+   Keep every row until its matter has a place under Section 4 item 9.
 3. Review Future Topics in Identity Context.
+   A Future Topic named "Meeting Job: <Deliverable>" is the Handoff of a Meeting Job under Section 16.
+   Take the Meeting Job from that Future Topic.
 4. Search Experiences under the [knowledge-base](../knowledge-base/SKILL.md) Skill.
 5. Establish the Agenda under Section 4.
 
@@ -56,6 +74,22 @@ Ask the user only for what these sources do not hold.
 6. An unselected new matter enters Future Topics only when the user explicitly chooses future consideration.
 7. A Meeting Plan remains provisional until the user adopts it.
 8. Plans and carry-forwards do not open Meetings or authorize Jobs.
+9. Give each inbox row's matter one place:
+   - The Agenda.
+   - Future Topics, when the user chooses future consideration.
+   - No place, when the user says it is not needed.
+
+   Every inbox Type follows this rule.
+   Registration and context updates are work inside the matter's Agenda item.
+10. Each Meeting Job is one Job item. A Meeting may hold several Job items.
+    For each Job item, show its Job Scope in the proposed Agenda:
+    - The Deliverable and its storage place.
+    - The Deliverable Guideline link.
+    - The Closed Minutes of the deciding Meeting.
+    - The relevant Knowledge Bases.
+
+    The user's Agenda confirmation confirms each Job Scope.
+11. Add a review item right after each Job item. Every Job item has its review item.
 
 ## 5. Workflow selection
 
@@ -70,13 +104,26 @@ Ask the user only for what these sources do not hold.
 
 1. Open the Meeting only after the user confirms its Agenda.
 2. Establish the Meeting Record as a new Tab in the 03 Meeting Records file.
+   Use the next M key for a discussion Meeting.
+   Use the next MJ key for an execution Meeting. MJ keys have their own sequence, from MJ-0001.
+   Take the next key from the Meetings Chapter of the 01 Index.
 3. Use the [Meeting Records template](../../templates/meeting-records.md).
    Name the Tab with the tab name pattern in the Google System Rules.
 4. With an Agent workspace, the new Tab is the entry record.
    Write the Meeting Record in the workspace under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.
 5. Verify the new Tab.
 6. Preserve the Identity, Scope, actual Opening Time, confirmed Agenda and authoritative source references.
-7. After the Tab is verified, remove the selected Future Topics from Identity Context.
+   For each Meeting Job, copy its sources from the Future Topic into Authoritative Sources:
+   - The Closed Minutes link of the deciding Meeting.
+   - The Deliverable Guideline link.
+   - The Deliverable storage place.
+7. After the Tab is verified, complete these steps:
+   1. Remove the selected Future Topics from Identity Context.
+   2. Record each matter chosen for Future Topics in Confirmed Agenda, with its Ref and From values.
+   3. Delete each inbox row whose matter is in the Agenda.
+   4. Delete each inbox row whose matter the user said is not needed.
+
+   Delete a row whose matter goes to Future Topics at Section 10 step 3.
 8. Preserve unselected Future Topics.
 
 ## 7. Discussion
@@ -87,12 +134,15 @@ Ask the user only for what these sources do not hold.
    1. Record the user's answer to each question the Agent asked.
    2. Judge whether other content is worth recording within the Topic and Scope.
       Record it as a Finding, a Decision or a Rationale only when it is. Leave out the rest.
+
    A user's example, imagined situation or thinking aloud is not a Decision.
    When the Agent cannot tell whether a statement is a Decision, ask the user.
+   This rule covers the user's own Findings and Decisions. Sub-agent reports follow Section 16.2.
 4. Keep exploratory research, exploratory analysis and unapproved proposals in the Conversation.
 5. An accepted Finding does not approve an option.
 6. Each Finding keeps its confirmed observation, evidence, Scope and limitations.
-7. Each material Decision keeps its User's words under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.8, and its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
+7. Each material Decision keeps its User's words under the [global-communication-rules](../global-communication-rules/SKILL.md) Skill Section 2.8.
+   It also keeps its supported Rationale, Design Intent, Assumptions, Conditions, Qualifications and material trade-offs.
 8. A Rationale may hold the Agent's own reasoning.
    When the Agent is unsure whether a Rationale or a point matches the user's meaning, ask the user.
 9. At the end of each Agenda item, save and verify all accepted outcomes in the Meeting Record.
@@ -101,8 +151,21 @@ Ask the user only for what these sources do not hold.
     Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.2.
 11. For each Deliverable, agree its storage place with the user, such as Google Drive, GitHub or GitLab.
     Ask the user for the path or location.
-12. For each Deliverable, propose the Deliverable Guideline arrangement. The user confirms it.
-    Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.4.
+12. When the Meeting decides a Deliverable, discuss its Deliverable Guideline content in this Meeting.
+    The Meeting Record then holds everything the Guideline needs.
+    Propose the Guideline arrangement under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.4. The user confirms it.
+13. Agree with the user who executes each Deliverable: an Execution Identity or this Meeting Agent.
+14. When this Meeting Agent executes, discuss the Execution arrangement as part of the Guideline content:
+    - The Sub-agent roles and their number, such as worker and reviewer.
+      The arrangement always holds a reviewer Sub-agent.
+    - When the reviewer steps in.
+    - Who acts on the reviewer's findings.
+    - The reviewer's second check after its findings are applied. By default, the reviewer checks again.
+    - Where Sub-agents continue and where they stop for the user. Each stop is a pause point.
+
+    The Job item follows this arrangement.
+15. The Meeting that decides a Meeting Job does not run it.
+    The Job runs in the next Meeting, after the Guideline and the Knowledge Base are consolidated.
 
 ## 8. Actions
 
@@ -112,6 +175,7 @@ Ask the user only for what these sources do not hold.
 4. Execute only Actions within this Identity's own Responsibility and Scope.
 5. Prepare other Agents' work for Handoff.
 6. Obtain approval for the relevant Scope before editing other Deliverables or files.
+7. A Meeting Job is not an Action. It runs as a Job item under Section 16.
 
 ## 9. CLOSE MEETING
 
@@ -127,7 +191,14 @@ CLOSE MEETING starts Closing. Complete these steps in order:
 5. Compile self-contained Final Minutes as a new Tab in the 04 Minutes file.
    With an Agent workspace, draft them in the workspace first.
    Use the [Minutes template](../../templates/minutes.md). Write in Strict Mode under the Global Writing Rules.
-   Include the Handoff Plan and each agreed Deliverable storage place.
+   Include these items:
+   - The Handoff Plan.
+   - Each agreed Deliverable storage place.
+   - The full Guideline content for each Deliverable this Meeting decided.
+   - For a Meeting Job decided here: the executor and the Execution arrangement.
+   - For a Meeting Job run here: the approved Plan, each accepted Deliverable, each review Decision and the Stable Decision.
+
+   For a Meeting Job decided here, the Handoff Plan names its Future Topic as the Handoff to the next Meeting.
    Identify material gaps without speculation.
 6. Record the actual Closing Time in the Minutes and the Meeting Record.
    Use the user's local date, time and time-zone abbreviation in the Google System Rules date and time format.
@@ -135,7 +206,8 @@ CLOSE MEETING starts Closing. Complete these steps in order:
 8. Save the Meeting Record and Final Minutes to Google.
    With an Agent workspace, run the completion sync under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.4.
 9. Run the save checks on the saved Final Minutes under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.2.
-10. After verification, add one Meetings row to the 01 Index. Verify the row.
+10. After verification, add one Meetings row to the 01 Index with the M or MJ key. Verify the row.
+    In an execution Meeting, then register or update each Meeting Job package under Section 11. Verify each row.
 11. Verify the resulting state before claiming closure.
 12. Clean the Meeting's workspace folder under the [ai-with-me](../ai-with-me/SKILL.md) Skill Section 8.7.
 
@@ -143,40 +215,62 @@ Closed Meeting Records and Final Minutes are immutable.
 
 ## 10. After verified closure
 
-Flow: verified Closed Minutes → scoped Knowledge Base and Guideline consolidation → Experience capture → Identity Context update → Handoff.
+Flow: verified Closed Minutes → scoped Knowledge Base and Guideline work → Experience capture → Identity Context update → Handoff.
 
 Complete these steps in order:
 
 1. Consolidate qualifying scoped Knowledge Base content from the Closed Minutes.
-   Consolidate each affected Deliverable Guideline in the same step.
    Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Sections 7 and 12.
+
+   In the same step, create the Deliverable Guideline for each Deliverable this Meeting decided.
+   Write it from the Closed Minutes in its agreed place under the knowledge-base Skill Section 12.4.
+
+   Consolidate each other affected Deliverable Guideline in the same step.
+   Review Decisions of a Meeting Job reach the Guideline in this step.
 2. Capture Experience once for the full Lifecycle under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 11.
    Consolidate general Knowledge Base contributions in this step.
 3. Update Identity Context in one step covering every Chapter that has content:
    1. Future Topics: confirmed carry-forward topics, each with a Topic Name, a short Description and a precise source reference.
+      Include each matter recorded for Future Topics at Section 6 item 7.
+      Name a Meeting Job decided here "Meeting Job: <Deliverable>".
+      Its source references are the Closed Minutes, the Deliverable Guideline link and the storage place.
+      This Future Topic completes the Handoff of the Meeting Job to the next Meeting.
+      After the Future Topics are saved, delete each inbox row whose matter they now hold.
    2. Working Group: peer Identities, Handoff pairings and collaboration patterns from this Meeting.
    3. Important Learning: Identity-level Experiences routed in step 2.
    4. Important Things or High-Priority Items: what the Closed Minutes confirm as important within the Scope.
 4. Send the authorized Handoff last as an inbox row under the [inbox](../inbox/SKILL.md) Skill.
    A Handoff for Deliverable work names the Deliverable Guideline link and the latest Closed Minutes.
+   The Handoff of a Meeting Job is its Future Topic under step 3. It needs no inbox row.
+   The Meeting Job's results return to the Parent without a Completion Notice.
 
 Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
 
 ## 11. Deliverable registration
 
-1. Register a Deliverable package in the 01 Index when its Completion Notice is processed.
+1. As the originating Meeting Agent, register a Deliverable package from a Completion Notice.
+   Register it in the Agenda item that holds the notice.
    Register it only after its record is in Google and the Deliverable is in the agreed place.
 2. Register a package when it first appears. Changes inside an indexed package need no index change.
-3. Register packages that this Meeting Agent creates itself.
+3. Register packages that this Meeting Agent creates itself, including Meeting Job packages.
+   Register a Meeting Job package at Section 9 step 10.
+   Rationale: the Meeting Record and the Final Minutes reach Google at Meeting close.
 4. The From cell names the sender Identity and its record key, linked to that record.
+   For a Meeting Job package, the From cell names this Identity and the MJ key, linked to the Final Minutes.
 5. The Location identifies the agreed storage place.
    The Deliverable Guideline needs no separate row.
 6. Google version history shows when a row changed.
 7. Judge when an index or Identity Context update is needed.
+8. A Meeting Job package's Condition is Stable when the user decided Stable in the review item.
+   Otherwise it is Draft.
+   When the package already has a row, update its Condition at Section 9 step 10.
 
 ## 12. Document review and revision
 
-Review a document in two passes:
+A Deliverable that a Meeting Job produces is reviewed in its review item under Section 17.
+This rule applies in every Workflow and in work without a Workflow.
+
+Review every other document in two passes:
 
 1. Perform your own AI review first. Cover fidelity, the Global Writing Rules and presentation style.
 2. Then give the user separate Agenda space for the user's own review.
@@ -259,7 +353,8 @@ Any Meeting Agent may set up a Service Agent Identity for its own Scope. It is t
       - 02 Job Records from the [Job Records template](../../templates/job-records.md).
       A Service Agent has no inbox.
    2. Write the Service Guideline in the 00 Identity Context.
-   3. State the run log Tab arrangement in the 01 Index Operating Guide, such as one Tab for each day or one Tab for all runs.
+   3. State the run log Tab arrangement in the 01 Index Operating Guide.
+      Examples are one Tab for each day or one Tab for all runs.
    4. Register the Identity in System Context yourself. The Role is Service Agent.
       Begin its Responsibility and Scope with the Meeting Identity it serves.
       This authority covers only a Service Agent for your own Scope.
@@ -301,6 +396,118 @@ When an arrangement is undecided, keep it visible to the user as undecided. Do n
 
 ## 15. Stage words
 
-NEW MEETING and CLOSE MEETING are the user's stage words.
-This Skill holds the full flow of each stage.
-A stage word does not autonomously trigger work or expand authority.
+1. NEW MEETING and CLOSE MEETING are the user's stage words.
+2. PROCEED EXECUTION is the user's stage word in a Job item.
+3. A Meeting Job starts at its Job item. It needs no NEW JOB.
+4. This Skill holds the full flow of each stage.
+5. A stage word does not autonomously trigger work or expand authority.
+
+## 16. Meeting Job
+
+### 16.1 Purpose
+
+1. A Meeting Job is a Job that this Meeting Agent runs with its own Sub-agents.
+2. It runs as one Job item of an execution Meeting.
+3. The Parent is this Meeting Agent. The Parent coordinates.
+4. Sub-agents prepare the Execution Plan and do the execution.
+5. The Sub-agents share this Identity's Identity Context.
+6. The Job starts and completes inside its Job item.
+7. The Plan, PROCEED EXECUTION and the Sub-agent method follow the [execution-agent](../execution-agent/SKILL.md) Skill.
+   This Section states only the differences.
+
+### 16.2 Record
+
+1. A Meeting Job has no Job Record. The Meeting Record of this Meeting is its record.
+2. The Parent records every Sub-agent report and result in the Meeting Record.
+   Record each as a Finding, a Decision or an Action, inside the Job item.
+   Record them without user acceptance. Section 7 item 3 covers the user's own Findings and Decisions.
+3. Record the report content itself. A local path or a short summary alone does not preserve it.
+4. Sub-agents do not modify the Meeting Record.
+5. Record Learning Candidates in the Meeting Record.
+6. With an Agent workspace, the Sub-agents' working files stay in this Meeting's workspace folder.
+
+### 16.3 Job item
+
+The user's Agenda confirmation has confirmed the Job Scope.
+The Experience search at NEW MEETING serves the Job item.
+Complete these steps in order:
+
+1. Read the Job Scope from Authoritative Sources in the Meeting Record.
+2. Assign a planner Sub-agent. It prepares the Execution Plan under the execution-agent Skill Section 7.
+   Its Feed holds the Guideline, the Closed Minutes, the Knowledge Base content and the current target resources.
+   The Plan follows the Execution arrangement in the Guideline.
+   Each item's User Review element lists its pause points from the Guideline.
+3. Save and verify the Plan in the Job item of the Meeting Record.
+4. Check that the Plan follows the Execution arrangement.
+5. Present the Plan item by item under the execution-agent Skill Section 7.
+6. Pass each user adjustment to the planner Sub-agent. Save and present the revised Plan.
+7. The user approves the Plan with PROCEED EXECUTION under the execution-agent Skill Section 8.
+   Record the approval and its time as a Decision.
+8. Assign new Sub-agents for execution under the Execution arrangement. The planner does not execute.
+9. Run the Sub-agents under the execution-agent Skill Section 10 items 1 to 6, with these rules:
+   1. The reviewer Sub-agent reviews each candidate where the Guideline says.
+   2. The Agent that the Guideline names acts on the reviewer's findings.
+   3. After the findings are applied, the reviewer checks again under the Execution arrangement.
+10. At each pause point, complete these steps:
+    1. Show the Sub-agent's work to the user. Do no acceptance review first.
+    2. Record the user's input as a Decision in the Meeting Record.
+    3. Pass the Decision to the same Sub-agent. It continues.
+11. A missing substantive decision is discussed in this Meeting.
+    Record the Decision in the Meeting Record. Pass it to the Sub-agent.
+12. Accept each candidate on the reviewer's last report. The Parent does not review the candidate itself.
+    Rationale: the Parent's context holds the whole Meeting. A reviewer Sub-agent reviews with a clean context.
+13. Save each accepted Deliverable in its agreed place under the execution-agent Skill Section 11 items 1 to 5.
+14. Run the save checks on each saved Deliverable under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.2.
+15. Record each accepted Deliverable as an Action with its exact location and outcome.
+16. Execution user review under the execution-agent Skill Section 11.1 does not apply.
+    Pause points and the review item take its place.
+17. An item is complete when its candidate is accepted and saved and its pause points have passed.
+18. The Job item ends when every Plan item is complete.
+    Save and verify the Job item outcomes in the Meeting Record.
+
+## 17. Review item for a Meeting Job
+
+The review item follows its completed Job item.
+It judges the Deliverable as a Meeting Agent, not as an Execution Agent.
+Its Decisions may change earlier Decisions.
+
+A reviewer Sub-agent does the AI review. The Parent consolidates the reviewer's result and the user's review.
+Rationale: the Parent's context holds the whole Meeting. A reviewer Sub-agent reviews with a clean context.
+
+### 17.1 Review
+
+1. Assign a reviewer Sub-agent to review the saved Deliverable.
+   It covers fidelity, the Global Writing Rules and presentation style.
+   Its Feed holds the Deliverable, the Guideline, the Closed Minutes and the review Decisions of this Meeting.
+2. Record the reviewer's report in the Meeting Record under Section 16.2.
+3. Present the saved Deliverable and the reviewer's report to the user.
+4. Give the user Agenda space for the user's own review.
+5. Consolidate the reviewer's report and the user's review.
+6. The review may make new Decisions.
+   A new Decision may change a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
+7. Record each Finding and each new Decision in the Meeting Record under Section 7.
+
+### 17.2 Edit loop
+
+1. Turn each new Decision that changes the Deliverable into an edit instruction.
+2. Send the instruction to the original Sub-agent to continue, or to a new Sub-agent.
+3. The Prompt carries the Guideline, the current Deliverable and the review Decisions of this Meeting.
+   Until Section 10 consolidates them, these Decisions stand in for the consolidated Guideline.
+4. In a Workflow with numbered drafts, each edit round produces the next numbered draft.
+5. The reviewer Sub-agent steps in where the Guideline says. It checks again after its findings are applied.
+6. Accept the candidate under Section 16.3 step 12. Save it.
+   Run the save checks on it.
+7. Record each round in the review item of the Meeting Record.
+   A round holds the time, the Decision reference, the instruction and the Sub-agent report content.
+8. Continue at Section 17.1 step 1 with the edited Deliverable.
+9. A review Decision authorizes its edit. It needs no new PROCEED EXECUTION.
+
+### 17.3 End of review
+
+1. The review ends when the user says the Deliverable is OK.
+2. Ask the user whether this version is the Stable version.
+3. Record the answer as a Decision in the Meeting Record.
+4. After the user's OK, run no further writing checking unless the user asks.
+5. Save and verify the review item outcomes in the Meeting Record.
+
+Rationale: review Decisions reach the Guideline through the Closed Minutes at Section 10 step 1.

@@ -31,6 +31,7 @@ Several Identities may use or maintain the same Knowledge Base. No Knowledge Bas
 
 A Knowledge Base has a free format. Its headings must be numbered. Use Heading styles, not bold text.
 Create a new Knowledge Base from the [general Knowledge Base](../../templates/general-knowledge-base.md) layout.
+
 The Operating Guide always keeps the six template items: Purpose, Names, Metadata, Sections, Formatting and Local QA criteria.
 Put Scope and authority statements inside Purpose. Never replace the Operating Guide with another structure.
 
@@ -116,7 +117,7 @@ Experience is handled separately under Section 11.
 8. Include useful paragraph-level source references where helpful.
    Place each reference inside its paragraph. Never continue a block with new content after its source line.
 9. Scan for duplicates. Each fact appears in one place. Other places use a short cross-reference.
-10. Before saving, run writing checking on the complete consolidated text under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.1.
+10. Run writing checking on the complete consolidated text under the [workflow-qa](../workflow-qa/SKILL.md) Skill Section 2.1.
 11. After the last change, read the complete saved Knowledge Base and verify it.
     Check the Operating Guide against the template, the heading styles and the contents list.
 12. Verify its line in the 00 Index.
@@ -198,7 +199,8 @@ Frozen Job Records and Minutes need no Experience entry.
 ### 12.1 Purpose
 
 A Deliverable Guideline holds the complete current guidance for one Deliverable.
-It tells the Execution Agent what to produce and why each guidance point exists.
+It tells the executing Agent what to produce and why each guidance point exists.
+The executing Agent is an Execution Identity or a Meeting Agent that runs a Meeting Job.
 Every Deliverable has a Guideline, whatever its Workflow, including work done without a Workflow.
 
 ### 12.2 Rules
@@ -209,11 +211,14 @@ Every Deliverable has a Guideline, whatever its Workflow, including work done wi
 3. Keep Rationale and Design Intent with each guidance point.
 4. Use the Knowledge Base format in Section 3.
 5. Its content depends on the Deliverable. No Workflow fixes a Guideline content template.
+6. When a Meeting Agent executes the Deliverable, the Guideline holds the Execution arrangement.
+   The [meeting-agent](../meeting-agent/SKILL.md) Skill Section 7 item 14 lists its content.
 
 ### 12.3 Owner and timing
 
 1. The Meeting Agent that governs the Deliverable creates and maintains the Guideline.
-2. Create it at the Meeting that decides the Deliverable.
+2. Discuss its content at the Meeting that decides the Deliverable. The Minutes then hold everything the Guideline needs.
+   Create it after that Meeting closes, from the verified Closed Minutes, under the [meeting-agent](../meeting-agent/SKILL.md) Skill Section 10 step 1.
 3. Consolidate it after every review Meeting, from the verified Closed Minutes.
 4. Guideline consolidation runs beside scoped Knowledge Base consolidation under Section 7.
 
@@ -235,3 +240,5 @@ The Meeting Agent proposes the arrangement for each Deliverable. The user confir
 1. The Handoff to the Execution Agent names the Guideline link and the latest Closed Minutes.
    In Google, the link is the Guideline Tab link.
 2. The Execution Agent produces the Deliverable from the Guideline and the relevant Knowledge Bases.
+3. In a Meeting Job, the Job item reads the Guideline link from Authoritative Sources in the Meeting Record.
+   The Sub-agents produce the Deliverable from the Guideline and the relevant Knowledge Bases.

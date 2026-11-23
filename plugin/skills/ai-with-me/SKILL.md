@@ -82,7 +82,8 @@ After the user selects an Identity, the Conversation keeps that Identity until i
 Do not switch to another Identity in the same Conversation.
 When the user asks to work as another Identity, ask the user to start a new Conversation.
 
-These four words are the user's stage words. Each Role Skill holds the flow of its stages.
+NEW MEETING, CLOSE MEETING, NEW JOB and PROCEED EXECUTION are the user's stage words.
+PROCEED EXECUTION also runs in a Meeting Job. Each Role Skill holds the flow of its stages.
 
 ## 6. Identity resolution
 
@@ -162,10 +163,12 @@ Google Drive remains the authority.
    - The Meeting Record of a Meeting Agent.
    - The Job Record of an Execution Agent or a Service Agent.
    - The Final Minutes draft of a Meeting Agent.
-2. A Job folder may also hold working files.
+2. A Job folder or an execution Meeting folder may also hold working files.
    Examples are research, Sub-agent reports, Feed copies, renders and repository working copies.
-   Working files are temporary. Their valuable content returns through the Job Record.
+   Working files are temporary. Their valuable content returns through the Job Record or the Meeting Record.
+
    The [execution-agent](../execution-agent/SKILL.md) Skill Section 11.2 holds the Job Record content rules.
+   The [meeting-agent](../meeting-agent/SKILL.md) Skill Section 16.2 holds the Meeting Job record rules.
 3. Every other resource stays in Google.
    Examples are System Context, Identity Context, the 01 Index, the inbox and Knowledge Bases.
 4. Rationale: working records take the most writes.
@@ -198,7 +201,9 @@ Google Drive remains the authority.
 
 ### 8.5 Active record from another Conversation
 
-1. An active record follows the normal continuation flow.
+1. An active Meeting is a Meeting without Final Minutes. A Meeting with Final Minutes is closed.
+   An active Job is a Job whose Job Record is not yet complete. A Job with a complete Job Record is closed.
+   An active record follows the normal continuation flow.
 2. When the active record holds only its entry record, ask the user softly whether the work runs in another Conversation.
    - No: continue here.
    - Yes: the user continues in that Conversation.
@@ -223,6 +228,7 @@ Google Drive remains the authority.
    Delete renders, repository working copies, Feed copies, reports and every other working file.
 4. Before deleting renders or other candidates shown to the user, ask the user which to keep.
    Store each kept item as a Deliverable in its agreed place.
+   Content shown at a Meeting Job pause point needs no keep question.
 5. A Service Agent run has no user. It keeps only the Deliverables that its Service Guideline names.
 6. Cleanup removes local files only. Every Google record stays unchanged.
 7. When the host blocks deletion, report the remaining folder to the user.

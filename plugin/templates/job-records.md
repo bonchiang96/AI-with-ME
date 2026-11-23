@@ -21,6 +21,7 @@
    - Completion.
 
    It does not repeat Responsibility or the Record's own Locator.
+   A Job is active until its Job Record is complete. Then it is closed.
 
 4. **Sections.** Each new Job Tab starts with these five Chapter headings:
 
@@ -35,15 +36,18 @@
    Each new Job is a new Tab after the latest Tab.
    The record is append-oriented.
    Chapter 4 is chronological.
+
    Record Learning Candidates in Chapter 4 when they happen.
    Record each Sub-agent report and the Parent's useful research in Chapter 4 as content, when it arrives.
    Record valuable information from discussion with the user in Chapter 4.
    Write structure in English. Keep content in the content language that Global Communication Rules Section 2 sets.
    Keep User's words in each Learning Candidate.
+
    Record each Execution user review round as an edit record in Chapter 4.
    An edit record holds the item, the time, the User's words and the change.
    Add a remark when its change differs from an earlier decision.
    An earlier decision is a Decision in the Closed Minutes, a Knowledge Base or the Deliverable Guideline.
+
    Write each time in the Google System Rules date and time format.
    With an Agent workspace, this Tab starts as the entry record. The Job Record syncs to Google at Job completion.
 

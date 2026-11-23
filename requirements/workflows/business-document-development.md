@@ -11,13 +11,16 @@ Return to the [Requirements Overview](../README.md).
    3. Confirm the structure.
 
    The user makes final decisions under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
+   The Meeting that decides the document discusses its Guideline content.
    After the Meeting closes, the Meeting Agent creates the document's Deliverable Guideline under [Foundation Section 4.12](../01-foundation.md#4-scoped-knowledge-base).
    By default, the Guideline is Tab 1 of the Deliverable file and the drafts follow it.
 
-2. **Full draft and QA.** The shared Execution Agent writes one full draft.
+2. **Full draft and QA.** The executing Agent writes one full draft.
+   It is the shared Execution Agent or the Meeting Agent in a Meeting Job under [Meeting Lifecycle Section 6](../03-meeting-lifecycle.md#6-meeting-job).
    Every draft includes its own complete QA under [Quality Section 1](../06-quality.md#1-deliverable-quality-and-independent-qa).
    The user reviews each draft in a Meeting.
    Apply the revision ownership rule in [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows).
+
    For a decision-maker reader, show the WHY and the business value at the start.
    Use short paragraphs, specific benefits and clear headings.
    Rationale: dense narration hides the value even when the content is present.
@@ -28,6 +31,8 @@ Return to the [Requirements Overview](../README.md).
    - The previous draft.
    - Relevant Closed Minutes.
    - Relevant Knowledge Bases.
+
+   In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 
 4. **Stable version.** When the user approves a draft, the Meeting Agent records it as the Stable version in the Minutes.
    The Stable version is the baseline for later drafts.

@@ -8,7 +8,9 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 
 ## 1. Applicability
 
-1. All Sub-agent Prompts and Plugin Development Prompts use the complete PROFIT + A Framework.
+1. All Sub-agent Prompts and Plugin Development Prompts use the PROFIT + A Framework.
+   PROFIT is always complete. For a Sub-agent Prompt, the A is optional.
+   Rationale: a Sub-agent has no user to give a start signal.
 2. Write them in Strict Mode under the [Global Writing Rules](../global-writing-rules/SKILL.md).
 3. PROFIT defines the task. A defines the readiness handshake before execution.
 
@@ -34,7 +36,7 @@ Define these six elements:
 
 ## 4. Acknowledgement
 
-Acknowledgement is always the final part of the Prompt.
+When a Prompt includes the Acknowledgement, it is the final part of the Prompt.
 Apply the handshake for the selected Feed Mode:
 
 1. **Provide Now.** The AI confirms readiness. It waits for the user's explicit start signal.

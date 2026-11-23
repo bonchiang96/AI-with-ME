@@ -112,6 +112,7 @@ Return to the [Requirements Overview](README.md).
    With a workspace, the Agent must use it for its working records.
    The Agent states the working mode to the user at entry, and the workspace path at Opening or record establishment.
    Without a workspace, the Agent writes every record directly to Google.
+
    The workspace root is `~/ai-with-me/`, with one folder per Identity named by its Agent Key.
    When that path is not writable, the Agent chooses another persistent path and states it.
    A temporary folder, such as `/tmp` or a session scratch folder, is never a workspace.
@@ -123,8 +124,11 @@ Return to the [Requirements Overview](README.md).
     - The Job Record.
     - The Final Minutes draft.
 
-    A Job folder may also hold temporary working files, such as research, Sub-agent reports, Feed copies, renders and repository working copies.
+    A Job folder or an execution Meeting folder may also hold temporary working files.
+    Examples are research, Sub-agent reports, Feed copies, renders and repository working copies.
+
     Their valuable content returns through the Job Record under [Execution Lifecycle Section 5.8](04-execution-lifecycle.md#5-job-record).
+    In a Meeting Job, it returns through the Meeting Record under [Meeting Lifecycle Section 6.2](03-meeting-lifecycle.md#6-meeting-job).
     Every other resource stays in Google.
     Rationale: working records take the most writes, so the workspace removes most Google writes from the Conversation.
 
@@ -143,13 +147,17 @@ Return to the [Requirements Overview](README.md).
 14. **Sync performer and check.** When the Agent can use a Sub-agent, a Sub-agent performs the sync with the cheapest model available.
     Otherwise the Agent performs the sync itself.
     The performer of every sync does a readback in Google. The readback checks the content first, then the heading styles.
+
     The completion sync runs at Meeting close and at Job completion.
     After the Sub-agent's readback, the Agent does its own readback and confirms the result.
     An interim sync needs only the Sub-agent's readback.
     Rationale: only the completion sync makes the Google record final. A second readback in between costs time and tokens.
     The Agent handles a sync failure itself.
 
-15. **Active record from another Conversation.** When an active record holds only its entry record, the Agent asks the user softly whether the work runs in another Conversation.
+15. **Active record from another Conversation.** Active Meetings and active Jobs follow [Meeting Lifecycle Section 1.2](03-meeting-lifecycle.md#1-initialization-and-preparation) and [Execution Lifecycle Section 1.3](04-execution-lifecycle.md#1-stages-and-intake).
+    An active record may hold only its entry record.
+    The Agent then asks the user softly whether the work runs in another Conversation.
+
     The user continues here, returns to that Conversation, or chooses to restart or continue from what Google holds.
     This step is a user choice, not failure handling.
 
@@ -159,9 +167,13 @@ Return to the [Requirements Overview](README.md).
     1. The Agent's own readback confirms that the Google record is complete and correct.
     2. Each Deliverable is in its agreed place.
 
-    Cleanup deletes the whole Meeting or Job folder, including the working record file, renders, repository working copies and every other working file.
+    Cleanup deletes the whole Meeting or Job folder, including the working record file.
+    It also deletes renders, repository working copies and every other working file.
+
     Before deleting renders or other candidates shown to the user, the Agent asks the user which to keep. Each kept item is stored as a Deliverable in its agreed place.
+    Content shown at a Meeting Job pause point needs no keep question.
     A Service Agent run keeps only the Deliverables that its Service Guideline names.
+
     Cleanup removes local files only. Every Google record stays unchanged.
     When the host blocks deletion, the Agent reports the remaining folder to the user.
     Rationale: after the sync, the valuable content is in Google and each Deliverable is in its agreed place. Nobody reads or reuses the local working files.

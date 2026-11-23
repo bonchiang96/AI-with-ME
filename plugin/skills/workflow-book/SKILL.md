@@ -25,7 +25,8 @@ Flow, part 2: revisions → Content Edit → Copy Edit → finished manuscript.
 2. It saves confirmed outcomes to the Book Knowledge Base.
    It creates the Book Knowledge Base at the first Book Meeting that confirms Foundation outcomes.
    Follow the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 9.
-3. The shared Execution Agent drafts the manuscript with complete QA.
+3. The executing Agent drafts the manuscript with complete QA.
+   It is the shared Execution Agent or the Book Meeting Agent in a Meeting Job.
 4. The user reviews the draft in a Meeting.
 5. Apply revisions under the user review and revision rule in [meeting-agent](../meeting-agent/SKILL.md). Continue until the rough manuscript is complete.
 6. Complete Content Edit and Copy Edit. Apply the same revision rule to both edits.
@@ -153,9 +154,10 @@ Transfer stage ownership only through a normal Handoff.
 1. Book Minutes and Job Records follow the standard Meeting and Job records.
 2. The manuscript is one Deliverable containing its Chapters.
 3. The manuscript has a Deliverable Guideline under the [knowledge-base](../knowledge-base/SKILL.md) Skill Section 12.
-   The Execution Agent receives the Guideline for the full Book or for the Chapter it drafts.
+   The executing Agent receives the Guideline for the full Book or for the Chapter it drafts.
    For Chapter-by-Chapter drafting, the Book Meeting Agent may propose one Guideline document holding every Guideline, separate from the manuscript.
    Each review outcome from Author Review, Content Edit and Copy Edit consolidates into the Guideline.
+   In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 4. One Book cycle produces one finished manuscript in the Base Edition language.
 5. Complete and publish the Base Edition before an additional-language cycle.
 6. Each additional language is a separate cycle.

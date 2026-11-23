@@ -7,7 +7,9 @@ Return to the [Requirements Overview](../README.md).
 1. **Framework purpose.** PROFIT + A must provide a reusable Framework for defining AI tasks and Prompts.
    PROFIT defines the task. A defines the readiness handshake before execution.
 
-2. **Prompt applicability.** All Sub-agent Prompts and future Plugin Development Prompts must use the complete PROFIT + A Framework.
+2. **Prompt applicability.** All Sub-agent Prompts and future Plugin Development Prompts must use the PROFIT + A Framework.
+   PROFIT is always complete. For a Sub-agent Prompt, the A is optional.
+   Rationale: a Sub-agent has no user to give a start signal.
    Apply Strict Mode under [Global Writing Rules](../global-writing-rules.md).
 
 3. **PROFIT elements.** Define these six elements for the task:
@@ -53,7 +55,7 @@ Return to the [Requirements Overview](../README.md).
       - Changes.
       - Replacement.
 
-5. **Acknowledgement.** Acknowledgement must remain the final part of the Prompt.
+5. **Acknowledgement.** When a Prompt includes the Acknowledgement, it must remain the final part of the Prompt.
    Apply the readiness handshake for the selected Feed Mode:
 
    1. **Provide Now.** The AI confirms readiness. It waits for the user's explicit start signal before execution.
@@ -79,6 +81,7 @@ Return to the [Requirements Overview](../README.md).
 8. **Global Writing Rules for Sub-agents.** A Sub-agent that writes a Deliverable needs the Global Writing Rules.
    A Sub-agent that checks or reviews written content needs them as well.
    A Sub-agent that only copies text to Google does not.
+
    The Insight tells such a Sub-agent to load the Global Writing Rules Skill.
    It tells the Sub-agent to write or check under the Global Writing Rules.
    The Insight also names the Writing Mode.

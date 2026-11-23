@@ -194,6 +194,7 @@ Return to the [Requirements Overview](README.md).
 11. **Indexes.** Each Identity keeps its index as a Google Docs file under [Section 5.2](#5-identity-folder-index-and-inbox).
 
 12. **Handoff.** Agents exchange Work Requests and Completion Notices through inbox files.
+    The Handoff of a Meeting Job to the next Meeting is its Future Topic under [Meeting Lifecycle Section 3.5](03-meeting-lifecycle.md#3-closing-and-handoff).
     Inbox use follows [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
     Identity discovery and essential governance must remain possible through Google resources.
 
@@ -332,6 +333,7 @@ Return to the [Requirements Overview](README.md).
    The general Knowledge Base stores Experience only under [Section 4.9](#4-scoped-knowledge-base).
    Multiple Identities may use or maintain the same Knowledge Base.
    No Knowledge Base belongs to an Identity.
+
    Any Identity may add the Knowledge Base folder index line when it creates a Knowledge Base.
    Any Identity may update the line's Description when the Knowledge Base's Topic changes.
    The Description changes only then.
@@ -393,7 +395,7 @@ Return to the [Requirements Overview](README.md).
       Replace its Rationale and Design Intent with those of the new truth.
    4. Apply [Global Writing Rules](global-writing-rules.md) Standard Mode.
    5. Useful paragraph-level source references may be included.
-   6. Run writing checking before saving, under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
+   6. Run writing checking under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
 
 6. **Execution sources.** Execution must use relevant scoped Knowledge Bases for current subject knowledge.
    It must use the Deliverable Guideline for current Deliverable guidance.
@@ -453,7 +455,8 @@ Return to the [Requirements Overview](README.md).
 
 12. **Deliverable Guideline.** Every Deliverable must have a Deliverable Guideline, whatever its Workflow.
     It holds the complete current guidance for that Deliverable.
-    It tells the Execution Agent what to produce and why each guidance point exists.
+    It tells the executing Agent what to produce and why each guidance point exists.
+    The executing Agent is an Execution Identity or a Meeting Agent that runs a Meeting Job.
 
     Apply these rules:
 
@@ -463,11 +466,13 @@ Return to the [Requirements Overview](README.md).
     3. Keep Rationale and Design Intent with each guidance point.
     4. It uses the Knowledge Base format under [Section 4.11](#4-scoped-knowledge-base).
     5. Its content depends on the Deliverable. No Workflow fixes a Guideline content template.
+    6. When a Meeting Agent executes the Deliverable, the Guideline holds the Execution arrangement under [Meeting Lifecycle Section 2.6](03-meeting-lifecycle.md#2-discussion-and-outcomes).
 
     Ownership and timing:
 
     1. The Meeting Agent that governs the Deliverable creates and maintains the Guideline.
-    2. It creates the Guideline at the Meeting that decides the Deliverable.
+    2. The Meeting that decides the Deliverable discusses the Guideline content. The Minutes then hold everything the Guideline needs.
+       The Meeting Agent creates the Guideline after that Meeting closes, from the verified Closed Minutes.
     3. It consolidates the Guideline after every review Meeting, from the verified Closed Minutes.
     4. Guideline consolidation runs beside scoped Knowledge Base consolidation.
 
@@ -485,6 +490,7 @@ Return to the [Requirements Overview](README.md).
     The Handoff to the Execution Agent names the Guideline link and the latest Closed Minutes.
     In Google, the link is the Guideline Tab link.
     The Execution Agent produces the Deliverable from the Guideline and the relevant Knowledge Bases.
+    In a Meeting Job, the Job item reads the Guideline link from the Meeting Record under [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job).
 
 ## 5. Identity folder, index and inbox
 
@@ -510,10 +516,12 @@ Return to the [Requirements Overview](README.md).
 3. **Index keys and columns.** Each key uses a letter and a number, such as M-0003:
 
    - D for Deliverable.
-   - M for Meeting.
+   - M for a discussion Meeting.
+   - MJ for an execution Meeting, which holds a Meeting Job. MJ keys have their own sequence, from MJ-0001.
    - J for Job.
 
    Keys carry no Identity key.
+   The Meetings Chapter lists M and MJ rows.
    Each Chapter uses these template columns:
 
    - Deliverables: Key, Title, Type, Location, Condition, From.
@@ -522,6 +530,8 @@ Return to the [Requirements Overview](README.md).
 
    A From cell names the sender Identity and its record key, linked to that record.
    In the Jobs Chapter, the From cell names the sending Meeting the same way.
+   For a Meeting Job package, the From cell names this Identity and the MJ key, linked to the Final Minutes.
+
    The index lists what exists. It is not a live tracker.
    Google version history shows when a row changed.
    Each Identity may amend its columns through Minutes.
@@ -529,7 +539,11 @@ Return to the [Requirements Overview](README.md).
 4. **Deliverable rows.** A Deliverable row records a package or set rather than every file.
    A new version leaves the index unchanged.
    Condition values are Draft, Stable, Frozen and Archived.
-   The originating Meeting Agent registers a Deliverable when it processes the Completion Notice.
+
+   Only the originating Meeting Agent registers a Deliverable from a Completion Notice.
+   It registers the Deliverable in the Agenda item that holds the notice.
+   A Meeting Job package is registered at indexed closure under [Meeting Lifecycle Section 3.4](03-meeting-lifecycle.md#3-closing-and-handoff).
+
    Register a Deliverable package when it first appears.
    Changes inside an indexed package need no index change.
    The Agent judges when an index or Identity Context update is needed.

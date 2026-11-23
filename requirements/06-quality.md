@@ -35,16 +35,20 @@ Return to the [Requirements Overview](README.md).
 
    1. It applies to Final Minutes, Knowledge Bases and text Deliverables, under [Global Writing Rules Section 8](global-writing-rules.md#8-follow-and-checking).
    2. Other outputs follow the Global Writing Rules without separate checking. Examples are Meeting Records, Job Records, Deliverable Guidelines, Identity Context and inbox messages.
-   3. It runs on the complete final version before the version is written to Google. In Workspace mode, it runs before the sync.
+   3. It runs on the complete final version. In Workspace mode, it runs before the sync.
+      In Google mode, the final version is written to Google first. The checking then runs on the Google version.
    4. For Final Minutes and Knowledge Bases, the Parent writes. A new reviewer Sub-agent receives only the final version, its Writing Mode and the Global Writing Rules.
    5. The reviewer checks and enhances the text and replies with feedback. It never translates the content.
    6. The Parent applies feedback about the Global Writing Rules. The Parent ignores feedback that changes the meaning. The Parent makes the final judgment.
    7. One reviewer round is enough.
    8. Without a genuine Sub-agent, the Parent does the checking itself, with the mechanical scan.
    9. Text Deliverables follow the author and reviewer roles under [Execution Lifecycle Section 4](04-execution-lifecycle.md#4-execution-parent-and-sub-agents) and the review rounds of their Workflow.
+      In a Meeting Job, the Parent accepts on the reviewer Sub-agent's last report under [Meeting Lifecycle Section 6.3](03-meeting-lifecycle.md#6-meeting-job).
    10. Non-text Deliverables, such as a website, are outside writing checking.
    11. It includes a language check under [Global Communication Rules Section 2](global-communication-rules.md#2-language). The content keeps its original language, or the content language that an instruction sets under Section 2.4 of those rules. In Final Minutes, each material Decision keeps its User's words. In Knowledge Bases, User's words stay with the knowledge they explain. User's words stay untranslated. Writing checking does not check the wording of User's words.
    12. In Final Minutes, writing checking confirms that no user example, imagined situation or thinking aloud is recorded as a Decision.
+   13. Text that changes in user review needs no new writing checking. It runs again only when the user asks.
+       Rationale: the user has read the final version.
 
    Rationale: an Agent that checks its own writing tends to record PASS without checking. A reviewer who did not take part in the Meeting reads the text as a reader does.
 
@@ -52,7 +56,7 @@ Return to the [Requirements Overview](README.md).
 
    1. Read back the complete saved artifact. A draft in the Conversation is not evidence.
    2. Content: check each Local QA criterion in the artifact's Operating Guide.
-   3. Writing: confirm that writing checking ran and that the saved text matches the checked version.
+   3. Writing: confirm that writing checking ran and that the saved text matches the checked version. Changes from user review under writing checking item 13 also match.
    4. Formatting: check each heading style against the Operating Guide. Check the Easy to Read rule in Section 1.5.
    5. Correct every failure. Read back the saved artifact again.
    6. Record PASS or FAIL for each dimension with the findings. Record PASS only for a check actually performed.
@@ -109,6 +113,7 @@ Return to the [Requirements Overview](README.md).
     The Execution Agent runs it as a Job Scope, usually through a Sub-agent.
     It may be review-only. It may run periodically.
     The user requests a QA Job from the Execution Agent through a Meeting or directly.
+
     Its assessments and reports must be independent, complete and objective.
     It must inspect every approved item at the authorized depth.
     It may inspect other working Scopes only within specifically approved Job Scope.

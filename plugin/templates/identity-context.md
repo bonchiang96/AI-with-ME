@@ -62,6 +62,8 @@
 
    1. Future Topics is one readable list. Exclude statuses, counters and removal history.
    2. A Meeting Agent Future Topic has a Topic Name, a short Description and a precise source reference.
+      A Meeting Job Future Topic is named "Meeting Job: <Deliverable>".
+      Its source references are the Closed Minutes, the Deliverable Guideline link and the storage place.
    3. An Execution Agent Future Topic has the Work Request Ref and From values. It also has an Agent-authored Description, exact sources and relevant prerequisites.
    4. Working Group holds peer Identities, Handoff relationships, useful Identity pairings and collaboration patterns.
    5. Important Learning holds Identity-level Experience: what helps this Identity work better.

@@ -115,6 +115,7 @@ Return to the [Requirements Overview](README.md).
 2. **Job Record.** Each Job has one Tab in the 02 Job Records file.
    The Tab name holds the date, the time and the Job key, without a status.
    A Service Job key uses S and a number in sequence.
+
    The Parent records every report and every valuable result when it returns, under [Execution Lifecycle Section 5.8](04-execution-lifecycle.md#5-job-record).
    The Parent consolidates every result into one complete Job Record after execution.
    After the completion sync, the Parent cleans the Job's workspace folder under [Environments and Acceptance Section 2.16](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).

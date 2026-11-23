@@ -209,6 +209,7 @@ A sentence that contains Chinese follows Section 7.2. Every other sentence follo
 
 2. **Writing checking.** Writing checking means checking and enhancing the text.
    Check the complete final version against these rules and its Writing Mode. Then correct and improve it.
+
    Check the output in its final language.
    When Global Communication Rules apply, check against them as well.
    Check the content language and the placement of User's words under Global Communication Rules Section 2.

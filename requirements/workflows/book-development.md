@@ -19,7 +19,8 @@ Return to the [Requirements Overview](../README.md).
    1. The Book Meeting Agent develops Book Foundation and Outline with the user.
    2. It saves confirmed outcomes to the Book Knowledge Base.
       It creates the Book Knowledge Base at the first Book Meeting that confirms Foundation outcomes.
-   3. The shared Execution Agent drafts the manuscript with complete QA.
+   3. The executing Agent drafts the manuscript with complete QA.
+      It is the shared Execution Agent or the Book Meeting Agent in a Meeting Job.
    4. The user reviews the draft in a Meeting.
    5. Apply revisions under [System, Identity and Entry Section 2.19](../02-system-identity-and-entry.md#2-agent-responsibilities-stage-words-and-workflows) and continue until the rough manuscript is complete.
    6. Complete Content Edit and Copy Edit under [Section 3](#3-manuscript-completion-and-review).
@@ -281,10 +282,11 @@ Return to the [Requirements Overview](../README.md).
    The manuscript is one Deliverable containing its Chapters.
 
 2. **Manuscript Guideline.** The manuscript has a Deliverable Guideline under [Foundation Section 4.12](../01-foundation.md#4-scoped-knowledge-base).
-   The Execution Agent receives the Guideline for the full Book or for the Chapter it drafts.
+   The executing Agent receives the Guideline for the full Book or for the Chapter it drafts.
    For Chapter-by-Chapter drafting, the Book Meeting Agent may propose one Guideline document holding every Guideline.
    The manuscript is then a separate file.
    Each review outcome from Author Review, Content Edit and Copy Edit consolidates into the Guideline.
+   In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 
 3. **Base Edition.** One Book cycle produces one finished manuscript in the Base Edition language.
    Complete and publish the Base Edition before beginning an additional-language cycle.

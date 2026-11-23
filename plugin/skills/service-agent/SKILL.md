@@ -1,6 +1,6 @@
 ---
 name: service-agent
-description: The common Service Agent Lifecycle of AI with ME. Runs schedule-triggered or event-triggered work for one Meeting Identity without a person. Covers intake with the idle, blocked and executed outcomes, the Execution Plan from the Service Guideline, the proceed gate, Sub-agent execution, the fallback Handoff, the run log and the Job Record. Use after the ai-with-me entry Skill when the selected Identity has the Service Agent Role.
+description: The common Service Agent Lifecycle of AI with ME. Runs schedule-triggered or event-triggered work for one Meeting Identity without a person. Covers intake with the idle, blocked and executed outcomes, the Execution Plan from the Service Guideline and the proceed gate. Also covers Sub-agent execution, the fallback Handoff, the run log and the Job Record. Use after the ai-with-me entry Skill when the selected Identity has the Service Agent Role.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
@@ -36,7 +36,8 @@ System Rules take priority over this Skill.
 
 ## 2. Start of a run
 
-1. A run starts from a trigger: a scheduled task, an event, or a test run that the governing Meeting Agent triggers.
+1. A run starts from a trigger: a scheduled task, an event or a test run.
+   The governing Meeting Agent triggers a test run.
 2. Each run is a new Conversation. Take nothing from an earlier run except what the records hold.
 3. Resolve the Identity from the Agent Key in the trigger.
 4. Read the 00 Identity Context: the Service Guideline, Important Learning and Important Things.
@@ -46,7 +47,8 @@ System Rules take priority over this Skill.
 ## 3. Intake
 
 1. Retrieve the data the way the Service Guideline states.
-   Examples of a source are a Google Docs file, a Google Sheets file, or an application reached through an MCP server or a command line tool.
+   Examples of a source are a Google Docs file and a Google Sheets file.
+   A source may also be an application reached through an MCP server or a command line tool.
 2. Analyze and judge the data the way the Service Guideline states.
 3. Check every intake requirement in the Service Guideline.
 4. End intake with exactly one outcome:
@@ -98,11 +100,13 @@ System Rules take priority over this Skill.
    - Execution meets any problem.
 3. Record the item as fallback in the Job Record, with the reason.
 4. Hand the Job back to the governing Meeting Agent.
-   After the Job Record is saved, add one Information row to the governing Meeting Agent's 02 Inbox under the [inbox](../inbox/SKILL.md) Skill.
+   First save the Job Record.
+   Then add one Information row to the governing Meeting Agent's 02 Inbox under the [inbox](../inbox/SKILL.md) Skill.
    Ref is the Job key. The Message names the fallback items and links the Job Record Tab.
    Send one row for each Job, not one for each item.
 5. Notify the user only when the Service Guideline says so, through the channel it names.
-6. When a run cannot follow the Service Guideline at all, record the run with the Status that matches how far it went.
+6. A run may be unable to follow the Service Guideline at all.
+   Then record the run with the Status that matches how far it went.
    Use blocked before a Job opens and executed after. State the problem in the Description.
    Inform the governing Meeting Agent with one Information row the same way.
 

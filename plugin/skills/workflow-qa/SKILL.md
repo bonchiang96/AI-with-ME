@@ -31,8 +31,9 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    It follows the checking rules in the [global-writing-rules](../global-writing-rules/SKILL.md) Skill Section 8.
 2. Other outputs follow the Global Writing Rules without separate checking.
    Examples are Meeting Records, Job Records, Deliverable Guidelines, Identity Context and inbox messages.
-3. Run the checking on the complete final version before it is written to Google.
+3. Run the checking on the complete final version.
    In Workspace mode, run it on the workspace version before the sync.
+   In Google mode, write the final version to Google first. Then run the checking on the Google version.
 4. For Final Minutes and Knowledge Bases, the Parent writes and a new reviewer Sub-agent checks:
    1. The Parent gives the reviewer only the final version, its Writing Mode and the Global Writing Rules.
    2. The reviewer checks and enhances the text. It replies with feedback. It never translates the content.
@@ -41,6 +42,7 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    5. One reviewer round is enough.
 5. Without a genuine Sub-agent, the Parent does the checking itself, with the mechanical scan.
 6. Text Deliverables follow the author and reviewer roles in the [execution-agent](../execution-agent/SKILL.md) Skill Section 10.
+   In a Meeting Job, they follow the [meeting-agent](../meeting-agent/SKILL.md) Skill Section 16.3.
    Text Deliverables also follow the review rounds of their Workflow.
 7. Non-text Deliverables, such as a website, are outside writing checking.
    Their QA follows their Workflow and output-specific checks.
@@ -52,6 +54,8 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    3. User's words stay untranslated.
    4. Writing checking does not check the wording of User's words.
 9. In Final Minutes, writing checking confirms that no user example, imagined situation or thinking aloud is recorded as a Decision.
+10. Text that changes in user review needs no new writing checking. Run it again only when the user asks.
+    Rationale: the user has read the final version.
 
 ### 2.2 Save checks
 
@@ -60,6 +64,7 @@ For every artifact that requires full verification, perform these steps in order
 1. Read back the complete saved artifact. A draft in the Conversation is not evidence.
 2. **Content.** Check each Local QA criterion in the artifact's Operating Guide.
 3. **Writing.** Confirm that writing checking under Section 2.1 ran and that the saved text matches the checked version.
+   Changes from user review under Section 2.1 item 10 also match.
 4. **Formatting.** Check each heading style against the Operating Guide. Check that the artifact is easy to read under Section 3.
 5. Correct every failure. Read back the saved artifact again.
 6. Record PASS or FAIL for each dimension with the findings.
