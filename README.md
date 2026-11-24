@@ -89,7 +89,7 @@ A Service Agent sends no notice for a normal run. When you ask, its Meeting Agen
 
 | Dependency | Need | Purpose |
 | --- | --- | --- |
-| Claude or ChatGPT with plugin support | Required | Runs the Plugin and its twelve Skills. |
+| Claude or ChatGPT with plugin support | Required | Runs the Plugin and its thirteen Skills. |
 | Google Drive and Google Docs connectors | Required | Hold the System, each Identity's context and every record. The Plugin does not ship them. |
 | An Agent workspace | Optional | A writable folder, in the cloud or on your device, where Agents keep working records before they sync to Google. |
 | GitHub, GitLab or another store | Optional | Holds a Deliverable when Google Drive does not fit it. |
@@ -111,7 +111,7 @@ The plugin is ready to use. It also syncs to Claude Code under the same account.
 
 1. Give ChatGPT the repository URL: `https://github.com/bonchiang96/AI-with-ME`.
 2. Ask it to create a private plugin with **Plugin Creator** from every file in the `plugin/` folder, keeping the folder structure.
-3. Check that the private plugin lists all twelve Skills.
+3. Check that the private plugin lists all thirteen Skills.
 
 Do not use the Codex CLI for this. It installs into that environment, not your account.
 
@@ -141,6 +141,7 @@ Your settings live in **Google System Rules**, inside the Google Drive folder na
 | Records and knowledge | `inbox`, `knowledge-base` |
 | Workflows | `workflow-book`, `workflow-business-document`, `workflow-qa`, `profit-a` |
 | Rules | `global-writing-rules`, `global-communication-rules` |
+| Guidelines | `execution-in-meeting` |
 
 The Plugin also ships ten Google Docs templates.
 

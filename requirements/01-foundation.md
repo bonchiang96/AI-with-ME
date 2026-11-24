@@ -466,7 +466,7 @@ Return to the [Requirements Overview](README.md).
     3. Keep Rationale and Design Intent with each guidance point.
     4. It uses the Knowledge Base format under [Section 4.11](#4-scoped-knowledge-base).
     5. Its content depends on the Deliverable. No Workflow fixes a Guideline content template.
-    6. When a Meeting Agent executes the Deliverable, the Guideline holds the Execution arrangement under [Meeting Lifecycle Section 2.6](03-meeting-lifecycle.md#2-discussion-and-outcomes).
+    6. When a Meeting Agent executes the Deliverable, the Guideline may hold the Execution arrangement under [Meeting Lifecycle Section 2.6](03-meeting-lifecycle.md#2-discussion-and-outcomes).
 
     Ownership and timing:
 
@@ -490,7 +490,7 @@ Return to the [Requirements Overview](README.md).
     The Handoff to the Execution Agent names the Guideline link and the latest Closed Minutes.
     In Google, the link is the Guideline Tab link.
     The Execution Agent produces the Deliverable from the Guideline and the relevant Knowledge Bases.
-    In a Meeting Job, the Job item reads the Guideline link from the Meeting Record under [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job).
+    In a Meeting Job, the Meeting Agent reads the Guideline link from the Meeting Record under [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job).
 
 ## 5. Identity folder, index and inbox
 
@@ -516,12 +516,11 @@ Return to the [Requirements Overview](README.md).
 3. **Index keys and columns.** Each key uses a letter and a number, such as M-0003:
 
    - D for Deliverable.
-   - M for a discussion Meeting.
-   - MJ for an execution Meeting, which holds a Meeting Job. MJ keys have their own sequence, from MJ-0001.
+   - M for Meeting.
    - J for Job.
 
    Keys carry no Identity key.
-   The Meetings Chapter lists M and MJ rows.
+   Every Meeting has an M key, including a Meeting that makes a Deliverable.
    Each Chapter uses these template columns:
 
    - Deliverables: Key, Title, Type, Location, Condition, From.
@@ -530,7 +529,7 @@ Return to the [Requirements Overview](README.md).
 
    A From cell names the sender Identity and its record key, linked to that record.
    In the Jobs Chapter, the From cell names the sending Meeting the same way.
-   For a Meeting Job package, the From cell names this Identity and the MJ key, linked to the Final Minutes.
+   The From cell of a Meeting's own Deliverable names this Identity and the M key, linked to the Final Minutes.
 
    The index lists what exists. It is not a live tracker.
    Google version history shows when a row changed.

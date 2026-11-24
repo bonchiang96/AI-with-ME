@@ -42,12 +42,12 @@ Return to the [Requirements Overview](README.md).
    Propose a bounded Agenda that may combine compatible selected matters.
    Every Meeting Agenda must allow meaningful free user input.
 
-   Each Meeting Job is one Job item. A Meeting may hold several Job items.
+   Making the Deliverable of a Meeting Job is one Agenda item. A review Agenda item may follow it.
+   The Agenda items follow the way of working under [Section 6.1](#6-meeting-job). A Meeting may hold several Meeting Jobs.
 
    The proposed Agenda shows each Job Scope.
    A Job Scope holds the Deliverable, its storage place, the Guideline link, the deciding Closed Minutes and the relevant Knowledge Bases.
-   A review item follows right after each Job item. Every Job item has its review item.
-   The user's Agenda confirmation confirms each Job Scope.
+   The user's Agenda confirmation confirms each Job Scope. It is the start signal of the Meeting Job.
 
 4. **Message selection.** A Message selected for the current Agenda must retain its Ref and From values.
    Unselected new matters enter Future Topics only when the user explicitly chooses future consideration.
@@ -59,9 +59,8 @@ Return to the [Requirements Overview](README.md).
    Apply the user-supplied Context rule in [Foundation Section 3.5](01-foundation.md#3-identity-context).
 
 5. **Opening.** Open the Meeting only after the user confirms its Agenda. Establish its Meeting Record as a new Tab in the Meeting Records file.
-   Use the next M key for a discussion Meeting.
-   Use the next MJ key for an execution Meeting.
-   MJ keys have their own sequence, from MJ-0001. The next key comes from the Meetings Chapter of the index.
+   Every Meeting uses the next M key, including a Meeting that makes a Deliverable.
+   The next key comes from the Meetings Chapter of the index.
 
    With an Agent workspace, the Tab is the entry record. The Meeting Record continues in the workspace under [Environments and Acceptance Section 2.9](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    The Final Minutes are drafted there and sync to Google at Meeting close.
@@ -147,20 +146,21 @@ Return to the [Requirements Overview](README.md).
 
    Agree with the user who executes each Deliverable: an Execution Identity or this Meeting Agent.
 
-   When this Meeting Agent executes, the Guideline content includes the Execution arrangement:
+   When this Meeting Agent executes, the Guideline content may set the Execution arrangement:
 
+   - The Agenda items of the Meeting Job.
    - The Sub-agent roles and their number, such as worker and reviewer.
-     The arrangement always holds a reviewer Sub-agent.
-   - When the reviewer steps in.
-   - Who acts on the reviewer's findings.
-   - The reviewer's second check after its findings are applied. By default, the reviewer checks again.
+   - When a reviewer steps in, and who acts on its findings.
+   - Whether the Parent reviews.
    - Where Sub-agents continue and where they stop for the user. Each stop is a pause point.
+
+   The Meeting Agent may adapt the Execution arrangement to the situation under [Requirements Overview Section 1.6](README.md#1-framework-definition).
 
    The Meeting that decides a Meeting Job does not run it.
    The Job runs in the next Meeting, after the Guideline and the Knowledge Base are consolidated.
 
 7. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Identity's own Responsibility and Scope. Prepare other Agents' work for handoff.
-   A Meeting Job is not an Action. It runs as a Job item under [Section 6](#6-meeting-job).
+   A Meeting Job is not an Action. It runs in Agenda items under [Section 6](#6-meeting-job).
 
 ## 3. Closing and handoff
 
@@ -177,9 +177,9 @@ Return to the [Requirements Overview](README.md).
    Include the intended Handoff Plan.
 
    Include the full Guideline content for each Deliverable the Meeting decided.
-   For a Meeting Job decided in the Meeting, include the executor and the Execution arrangement.
+   For a Meeting Job decided in the Meeting, include the executor and any Execution arrangement.
    Its Handoff Plan names its Future Topic as the Handoff to the next Meeting.
-   For a Meeting Job run here, include the approved Plan, the accepted Deliverables, the review Decisions and the Stable Decision.
+   For a Meeting Job run here, include the agreed Plan, the accepted Deliverables, the review Decisions and the Stable Decision.
 
    Record each Deliverable's storage place under [Environments and Acceptance Section 2.6](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Identify material gaps without speculation.
@@ -210,11 +210,11 @@ Return to the [Requirements Overview](README.md).
    Preserve closed Meeting records and Minutes as immutable records.
 
 4. **Indexed closure.** After the Final Minutes are verified, add one Meetings row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox).
-   The row uses the M or MJ key.
+   The row uses the M key.
 
-   In an execution Meeting, then register or update each Meeting Job package.
+   For each Meeting Job run in the Meeting, then register or update its package.
    Verify each row.
-   The package's Condition is Stable when the user decided Stable in the review item. Otherwise it is Draft.
+   The package's Condition is Stable when the user decided Stable in the Meeting. Otherwise it is Draft.
    Rationale: the Meeting Record and the Final Minutes reach Google at Meeting close.
 
    Indexing follows [Environments and Acceptance Section 2.8](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
@@ -292,7 +292,7 @@ Return to the [Requirements Overview](README.md).
 
 2. **Shared metadata.** Both artifacts must identify:
 
-   - Meeting ID, an M key or an MJ key.
+   - Meeting ID, an M key.
    - Identity.
    - Role.
    - Topic.
@@ -313,7 +313,7 @@ Return to the [Requirements Overview](README.md).
 
    Preserve accepted outcomes under [Section 2](#2-discussion-and-outcomes) rather than a conversation transcript.
    Persistence follows [Section 2.4](#2-discussion-and-outcomes).
-   In an execution Meeting, the Meeting Record also holds the Meeting Job content under [Section 6.2](#6-meeting-job).
+   For a Meeting Job, the Meeting Record also holds the Meeting Job content under [Section 6.2](#6-meeting-job).
 
 4. **Final Minutes.** Final Minutes must have five Chapters:
 
@@ -336,71 +336,55 @@ Return to the [Requirements Overview](README.md).
 
 ## 6. Meeting Job
 
-1. **Purpose.** A Meeting Job is a Job that a Meeting Agent runs with its own Sub-agents.
-   It runs as one Job item of an execution Meeting. It starts and completes inside that Job item.
+1. **Purpose.** A Meeting Job is Deliverable work that a Meeting Agent does with its own Sub-agents in a Meeting.
+   The Meeting runs the Meeting flow. Making the Deliverable is one Agenda item. A review Agenda item may follow it.
 
-   The Parent is the Meeting Agent. The Parent coordinates. Sub-agents prepare the Execution Plan and do the execution.
+   The Parent is the Meeting Agent. The Parent assigns Sub-agents inside the Agenda item.
    The Sub-agents share the Identity's Identity Context.
 
-   The Plan, PROCEED EXECUTION and the Sub-agent method follow [Execution Lifecycle Sections 2 and 4](04-execution-lifecycle.md#2-proposal-and-execution). This Section states only the differences.
+   When the Deliverable Guideline sets the way of working, the Meeting Job follows its way.
+   When no Deliverable Guideline sets it, the Meeting Job follows the [Execution in Meeting guideline](guidelines/execution-in-meeting.md).
+   The Meeting Agent uses [Execution Lifecycle Section 4](04-execution-lifecycle.md#4-execution-parent-and-sub-agents) only for its Sub-agent mechanisms.
 
-2. **Record.** A Meeting Job has no Job Record. The Meeting Record of the execution Meeting is its record.
+2. **Record.** A Meeting Job has no Job Record. The Meeting Record of the Meeting is its record.
    The Parent records every Sub-agent report and result in the Meeting Record as a Finding, a Decision or an Action.
    These records need no user acceptance.
    Rationale: every action and edit of a Sub-agent must have a record.
 
    The record holds the report content itself. A local path or a short summary alone does not preserve it.
+   The agreed Plan and the user's input at each pause point are recorded as Decisions.
    Sub-agents do not modify the Meeting Record.
    With an Agent workspace, the Sub-agents' working files stay in the Meeting's workspace folder.
 
-3. **Job item.** The user's Agenda confirmation has confirmed the Job Scope.
-   The Experience search at NEW MEETING serves the Job item. Complete these steps in order:
+3. **Making the Deliverable.** The user's Agenda confirmation has confirmed the Job Scope.
+   The Experience search at NEW MEETING serves the Meeting Job. Complete these steps in order:
 
    1. Read the Job Scope from Authoritative Sources in the Meeting Record.
-   2. A planner Sub-agent prepares the Execution Plan under the Execution arrangement in the Guideline.
-      Each item's User Review element lists its pause points.
-   3. Save and verify the Plan in the Meeting Record. Check that it follows the Execution arrangement.
-   4. Present the Plan item by item. The planner Sub-agent revises it for each user adjustment.
-   5. The user approves the Plan with PROCEED EXECUTION. Record the approval and its time as a Decision.
-   6. New Sub-agents execute under the Execution arrangement. The planner does not execute.
-   7. The reviewer Sub-agent reviews each candidate where the Guideline says.
-      The Agent that the Guideline names acts on the reviewer's findings. The reviewer then checks again.
-   8. At each pause point, the Parent shows the work to the user without an acceptance review.
-      The user's input is recorded as a Decision. The same Sub-agent continues.
-   9. A missing substantive decision is discussed in the Meeting and recorded as a Decision.
-   10. The Parent accepts each candidate on the reviewer's last report. The Parent does not review the candidate itself.
-       Rationale: the Parent's context holds the whole Meeting. A reviewer Sub-agent reviews with a clean context.
-   11. Save each accepted Deliverable in its agreed place.
-       Run the save checks under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
-   12. Record each accepted Deliverable as an Action with its exact location and outcome.
-   13. The Job item ends when every Plan item is accepted, saved and past its pause points.
+   2. Work through the Agenda items in the way of working under [Section 6.1](#6-meeting-job).
+   3. A missing substantive decision is discussed in the Meeting and recorded as a Decision.
+   4. Save each accepted Deliverable in its agreed place.
+      Run the save checks under [Quality Section 1.3](06-quality.md#1-deliverable-quality-and-independent-qa).
+   5. Record each accepted Deliverable as an Action with its exact location and outcome.
 
-   Execution user review under [Execution Lifecycle Section 2.9](04-execution-lifecycle.md#2-proposal-and-execution) does not apply.
-   Pause points and the review item take its place.
+   The user reviews the Deliverable at pause points and in review Agenda items.
 
-4. **Review item.** The review item follows its completed Job item.
-   It judges the Deliverable as a Meeting Agent. Its Decisions may change earlier Decisions.
+4. **Review.** A review Agenda item judges the Deliverable as a Meeting Agent.
+   AI review and human review may be separate Agenda items.
 
-   A reviewer Sub-agent does the AI review. The Parent consolidates the reviewer's result and the user's review.
-   Complete these steps:
-
-   1. A reviewer Sub-agent reviews the saved Deliverable for fidelity, the Global Writing Rules and presentation style.
-   2. Present the Deliverable and the reviewer's report. Give the user Agenda space for the user's own review.
-   3. Consolidate both reviews. Record each Finding and each new Decision in the Meeting Record.
-   4. Each new Decision that changes the Deliverable becomes an edit instruction to the original Sub-agent or a new Sub-agent.
-      Until the Meeting closes, the review Decisions stand in for the consolidated Guideline.
-      In a Workflow with numbered drafts, each edit round produces the next numbered draft.
-   5. The reviewer steps in where the Guideline says.
-      The Parent accepts on the reviewer's last report. The Parent saves the candidate.
-      The Parent runs the save checks.
-   6. Record each round with its time, Decision reference, instruction and Sub-agent report content. Continue at step 1.
-   7. The review ends when the user says the Deliverable is OK.
+   1. A review may make new Decisions. A new Decision may change an earlier Decision.
+   2. A Decision that a review makes is decision making inside the Meeting.
+      It is recorded with each Finding under [Section 2](#2-discussion-and-outcomes).
+   3. A review Decision authorizes its edit.
+   4. Until the Meeting closes, the review Decisions stand in for the consolidated Guideline.
+   5. In a Workflow with numbered drafts, each edit round produces the next numbered draft.
+   6. Each accepted edited Deliverable is saved and passes the save checks.
+   7. Each edit round is recorded with its time, Decision reference, instruction and Sub-agent report content.
+   8. The review ends when the user says the Deliverable is OK.
       Ask whether this version is the Stable version. Record the answer as a Decision.
-   8. After the user's OK, no further writing checking runs unless the user asks.
+   9. After the user's OK, no further writing checking runs unless the user asks.
 
-   A review Decision authorizes its edit. It needs no new PROCEED EXECUTION.
    Review Decisions reach the Guideline through the Closed Minutes at post-closure consolidation under [Section 3.7](#3-closing-and-handoff).
 
-5. **Number of Jobs.** A Meeting may run any number of Meeting Jobs. Each Job is one Job item.
+5. **Number of Jobs.** A Meeting may run any number of Meeting Jobs.
    When the Identity needs a Job, it runs in the next Meeting.
    The Identity may also hand the work to an Execution Identity.

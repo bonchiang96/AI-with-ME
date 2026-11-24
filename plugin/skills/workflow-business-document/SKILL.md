@@ -52,7 +52,7 @@ Each revision produces a new numbered draft based on:
 - Relevant Closed Minutes.
 - Relevant Knowledge Bases.
 
-In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
+In a Meeting Job review, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 
 ## 5. Stable version
 

@@ -211,7 +211,7 @@ Every Deliverable has a Guideline, whatever its Workflow, including work done wi
 3. Keep Rationale and Design Intent with each guidance point.
 4. Use the Knowledge Base format in Section 3.
 5. Its content depends on the Deliverable. No Workflow fixes a Guideline content template.
-6. When a Meeting Agent executes the Deliverable, the Guideline holds the Execution arrangement.
+6. When a Meeting Agent executes the Deliverable, the Guideline may hold the Execution arrangement.
    The [meeting-agent](../meeting-agent/SKILL.md) Skill Section 7 item 14 lists its content.
 
 ### 12.3 Owner and timing
@@ -240,5 +240,5 @@ The Meeting Agent proposes the arrangement for each Deliverable. The user confir
 1. The Handoff to the Execution Agent names the Guideline link and the latest Closed Minutes.
    In Google, the link is the Guideline Tab link.
 2. The Execution Agent produces the Deliverable from the Guideline and the relevant Knowledge Bases.
-3. In a Meeting Job, the Job item reads the Guideline link from Authoritative Sources in the Meeting Record.
+3. In a Meeting Job, the Meeting Agent reads the Guideline link from Authoritative Sources in the Meeting Record.
    The Sub-agents produce the Deliverable from the Guideline and the relevant Knowledge Bases.

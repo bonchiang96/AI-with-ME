@@ -32,7 +32,7 @@ Return to the [Requirements Overview](../README.md).
    - Relevant Closed Minutes.
    - Relevant Knowledge Bases.
 
-   In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
+   In a Meeting Job review, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 
 4. **Stable version.** When the user approves a draft, the Meeting Agent records it as the Stable version in the Minutes.
    The Stable version is the baseline for later drafts.

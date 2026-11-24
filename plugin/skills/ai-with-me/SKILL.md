@@ -25,6 +25,9 @@ Flow, part 2: select Identity → open Identity Context and index → load Role 
    When the Skill is already loaded in this Conversation, apply its rules.
 4. System Rules take priority over the Plugin. Apply the System Rules of the actual environment.
 5. When an arrangement is undecided, show it to the user as undecided. Do not invent governance.
+6. Rules are fixed. The Global Writing Rules and the Global Communication Rules are Rules.
+   A guideline tells you what you can do. Adapt it to the situation.
+   How Sub-agents divide the work is guideline content, such as the number of workers and reviewers.
 
 ## 3. User authority
 
@@ -83,7 +86,7 @@ Do not switch to another Identity in the same Conversation.
 When the user asks to work as another Identity, ask the user to start a new Conversation.
 
 NEW MEETING, CLOSE MEETING, NEW JOB and PROCEED EXECUTION are the user's stage words.
-PROCEED EXECUTION also runs in a Meeting Job. Each Role Skill holds the flow of its stages.
+Each Role Skill holds the flow of its stages.
 
 ## 6. Identity resolution
 
@@ -163,7 +166,7 @@ Google Drive remains the authority.
    - The Meeting Record of a Meeting Agent.
    - The Job Record of an Execution Agent or a Service Agent.
    - The Final Minutes draft of a Meeting Agent.
-2. A Job folder or an execution Meeting folder may also hold working files.
+2. A Job folder or a Meeting folder may also hold working files.
    Examples are research, Sub-agent reports, Feed copies, renders and repository working copies.
    Working files are temporary. Their valuable content returns through the Job Record or the Meeting Record.
 

@@ -42,7 +42,7 @@ Every Lifecycle points to these steps. A change to quality checking changes only
    5. One reviewer round is enough.
 5. Without a genuine Sub-agent, the Parent does the checking itself, with the mechanical scan.
 6. Text Deliverables follow the author and reviewer roles in the [execution-agent](../execution-agent/SKILL.md) Skill Section 10.
-   In a Meeting Job, they follow the [meeting-agent](../meeting-agent/SKILL.md) Skill Section 16.3.
+   In a Meeting Job, they follow the [meeting-agent](../meeting-agent/SKILL.md) Skill Section 16.
    Text Deliverables also follow the review rounds of their Workflow.
 7. Non-text Deliverables, such as a website, are outside writing checking.
    Their QA follows their Workflow and output-specific checks.

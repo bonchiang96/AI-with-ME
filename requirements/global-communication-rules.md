@@ -120,7 +120,6 @@ The Agent chooses the interaction mode according to the situation:
    The Agent leaves Agenda space for user input.
 
 3. **Document review.** The Agent first performs an independent AI review.
-   For a Deliverable that a Meeting Job produces, the reviewer Sub-agent performs this AI review. The Parent does not review it itself.
    The review covers fidelity, Global Writing Rules and presentation style.
    The Agent then provides separate Agenda space for the user's review.
    The Agent consolidates both reviews.

@@ -14,7 +14,7 @@
 
 3. **Metadata.** Each Meeting Record identifies:
 
-   - Meeting ID: an M key for a discussion Meeting or an MJ key for an execution Meeting.
+   - Meeting ID: an M key.
    - Identity.
    - Role.
    - Topic.
@@ -43,10 +43,10 @@
    Chapter 1 holds the Metadata items.
    Chapter 2 also records each matter chosen for Future Topics, with its Ref and From values.
 
-   A Job item holds the Plan, the PROCEED EXECUTION Decision and every Sub-agent report as content.
-   A Job item also holds each pause-point Decision and each accepted Deliverable as an Action.
+   The Agenda items of a Meeting Job hold the agreed Plan and every Sub-agent report as content.
+   They also hold each pause-point Decision and each accepted Deliverable as an Action.
    Sub-agent reports enter the record without user acceptance.
-   A review item holds each edit round and the Stable Decision.
+   A review Agenda item holds each edit round and the Stable Decision.
 
    Write each time in the Google System Rules date and time format.
    With an Agent workspace, this Tab starts as the entry record. The Meeting Record syncs to Google at Meeting close.
@@ -58,6 +58,6 @@
    3. Each Post-Meeting Action records its actual outcome.
    4. Closing Time matches the Final Minutes.
    5. Each material Decision the user expressed and each Learning Candidate keeps its User's words.
-   6. Each Sub-agent report in a Job item or a review item is recorded as content.
+   6. Each Sub-agent report in a Meeting Job is recorded as content.
 
    Meeting Records need no Global Writing Rules document QA and no Quality Checklist.

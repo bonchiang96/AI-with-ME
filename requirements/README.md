@@ -54,6 +54,11 @@ This Overview is the main file of the Requirements. It links every Requirements 
 
 5. **Interaction modes.** Agents choose interaction modes under [Global Communication Rules Section 5](global-communication-rules.md#5-interaction-modes).
 
+6. **Rules and guidelines.** Rules are fixed. The Global Writing Rules and the Global Communication Rules are Rules.
+   A guideline tells the AI what it can do. The AI may adapt it to the situation.
+   How Sub-agents divide the work is guideline content, not Rules.
+   Examples are the number of workers and reviewers, whether the Parent reviews and when the user steps in.
+
 ## 2. Binding Non-functional Requirements
 
 These Non-functional Requirements bind relevant design and maintenance of:
@@ -169,7 +174,9 @@ The Requirements consist of this Overview and the files below. Each file links b
 11. [PROFIT + A Framework](workflows/profit-a.md) — The reusable Framework for defining AI tasks and Prompts.
 12. [Global Writing Rules](global-writing-rules.md) — Writing rules and Writing Modes for every output.
 13. [Global Communication Rules](global-communication-rules.md) — Language and conversation rules for communication with the user.
+14. [Execution in Meeting guideline](guidelines/execution-in-meeting.md) — The default guideline for a Meeting Job without its own way of working.
 
 The Plugin packages both rule files as Skills: global-writing-rules and global-communication-rules. Agents load them without Google Drive reads.
+The Plugin packages the Execution in Meeting guideline as the execution-in-meeting Skill.
 
 Language defaults and user overrides follow [Global Communication Rules](global-communication-rules.md).

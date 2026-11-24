@@ -11,7 +11,7 @@ The folder contains:
 
 1. [plugin.json](plugin/plugin.json): the Agent Plugins manifest.
 2. [.claude-plugin/plugin.json](plugin/.claude-plugin/plugin.json): the Claude plugin manifest.
-3. [skills](plugin/skills/): the twelve Agent Skills, including the Global Writing Rules and Global Communication Rules Skills.
+3. [skills](plugin/skills/): the thirteen Agent Skills, including the Global Writing Rules and Global Communication Rules Skills.
 4. [templates](plugin/templates/): the standard file templates with their Operating Guides.
 5. [LICENSE](plugin/LICENSE): the MIT License.
 
@@ -32,11 +32,11 @@ Give your AI the Repository URL and the commit you choose. The AI completes thes
 2. Locate the plugin folder and this guide.
 3. Assess dependencies in its actual environment.
 4. Install the whole plugin folder through the host's own Private Plugin mechanism, within granted permissions.
-5. Verify that the host lists all twelve Skills.
+5. Verify that the host lists all thirteen Skills.
 
 When the AI cannot install the Plugin itself, it explains the limitation and guides the permitted next step.
 
-The twelve Skills are:
+The thirteen Skills are:
 
 1. ai-with-me, the System entry.
 2. meeting-agent.
@@ -50,6 +50,7 @@ The twelve Skills are:
 10. profit-a.
 11. global-writing-rules.
 12. global-communication-rules.
+13. execution-in-meeting, the Execution in Meeting guideline.
 
 ## 3. Install on each host
 
@@ -87,6 +88,6 @@ When that folder is confirmed absent, it starts Bootstrap.
 ## 6. Updates
 
 An update reinstalls the whole plugin folder from a chosen commit of this Repository.
-Verify again that the host lists all twelve Skills.
+Verify again that the host lists all thirteen Skills.
 Installation and updates never change your Google records or governance resources.
 The installed Plugin runs normal work without routine GitHub reads.

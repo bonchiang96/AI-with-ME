@@ -15,8 +15,8 @@ Return to the [Requirements Overview](README.md).
    7. Context maintenance, Experience Capture and final communication under [Section 3](#3-completion-and-communication).
 
    Each step preserves its assigned owner and approval boundaries.
-   A Meeting Agent reuses the Plan, PROCEED EXECUTION and the Sub-agent method in a Meeting Job without a Job Record.
-   [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job) holds its differences.
+   A Meeting Agent uses the Sub-agent mechanisms of [Section 4](#4-execution-parent-and-sub-agents) in a Meeting Job.
+   [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job) holds the Meeting Job.
 
 2. **Two approvals.** Obtain explicit confirmation of the selected Job Scope. Obtain separate PROCEED EXECUTION approval for the latest saved Execution Plan.
 

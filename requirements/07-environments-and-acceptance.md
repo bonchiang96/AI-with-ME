@@ -124,7 +124,7 @@ Return to the [Requirements Overview](README.md).
     - The Job Record.
     - The Final Minutes draft.
 
-    A Job folder or an execution Meeting folder may also hold temporary working files.
+    A Job folder or a Meeting folder may also hold temporary working files.
     Examples are research, Sub-agent reports, Feed copies, renders and repository working copies.
 
     Their valuable content returns through the Job Record under [Execution Lifecycle Section 5.8](04-execution-lifecycle.md#5-job-record).

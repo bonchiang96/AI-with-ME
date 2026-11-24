@@ -286,7 +286,7 @@ Return to the [Requirements Overview](../README.md).
    For Chapter-by-Chapter drafting, the Book Meeting Agent may propose one Guideline document holding every Guideline.
    The manuscript is then a separate file.
    Each review outcome from Author Review, Content Edit and Copy Edit consolidates into the Guideline.
-   In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
+   In a Meeting Job review, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 
 3. **Base Edition.** One Book cycle produces one finished manuscript in the Base Edition language.
    Complete and publish the Base Edition before beginning an additional-language cycle.

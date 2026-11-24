@@ -157,7 +157,7 @@ Transfer stage ownership only through a normal Handoff.
    The executing Agent receives the Guideline for the full Book or for the Chapter it drafts.
    For Chapter-by-Chapter drafting, the Book Meeting Agent may propose one Guideline document holding every Guideline, separate from the manuscript.
    Each review outcome from Author Review, Content Edit and Copy Edit consolidates into the Guideline.
-   In a Meeting Job review item, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
+   In a Meeting Job review, that Meeting's review Decisions stand in for the consolidated Guideline until the Meeting closes.
 4. One Book cycle produces one finished manuscript in the Base Edition language.
 5. Complete and publish the Base Edition before an additional-language cycle.
 6. Each additional language is a separate cycle.

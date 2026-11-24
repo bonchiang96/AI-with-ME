@@ -178,7 +178,7 @@ Return to the [Requirements Overview](README.md).
 
    An Execution Identity executes each Deliverable that the user assigns to it.
    The user chooses which Identity executes each Deliverable.
-   A discussion Meeting has an M key. An execution Meeting holds at least one Job item and has an MJ key.
+   Every Meeting has an M key, including a Meeting that makes a Deliverable.
 
    Each Meeting Identity governs only its assigned Scope.
    A governance assignment may include applicable operating rules.
@@ -236,8 +236,7 @@ Return to the [Requirements Overview](README.md).
 10. **Meeting execution responsibility.** A Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables within [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
 11. **Stage words.** NEW MEETING, CLOSE MEETING, NEW JOB and PROCEED EXECUTION are the user's stage words.
-    PROCEED EXECUTION also approves the Plan of a Meeting Job in its Job item.
-    A Meeting Job needs no NEW JOB.
+    A Meeting Job starts at the user's Agenda confirmation. It needs no NEW JOB.
     Each stage flow lives in the Role Skill of the Plugin.
     A stage word must respect these limits:
 
@@ -301,7 +300,7 @@ Return to the [Requirements Overview](README.md).
     Each Identity may customize how a Workflow runs within its approved work.
     The default is one full draft. A large Book may use Chapter-by-Chapter drafting.
 
-19. **User review and revision ownership.** A Deliverable that a Meeting Job produces is reviewed in its review item under [Meeting Lifecycle Section 6.4](03-meeting-lifecycle.md#6-meeting-job).
+19. **User review and revision ownership.** A Deliverable that a Meeting Job produces is reviewed in its review Agenda items under [Meeting Lifecycle Section 6.4](03-meeting-lifecycle.md#6-meeting-job).
     This rule applies in every Workflow and in work without a Workflow.
 
     In Book and Business Document Workflows, the user makes final decisions.

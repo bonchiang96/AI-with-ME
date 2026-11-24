@@ -43,7 +43,7 @@ Return to the [Requirements Overview](README.md).
    7. One reviewer round is enough.
    8. Without a genuine Sub-agent, the Parent does the checking itself, with the mechanical scan.
    9. Text Deliverables follow the author and reviewer roles under [Execution Lifecycle Section 4](04-execution-lifecycle.md#4-execution-parent-and-sub-agents) and the review rounds of their Workflow.
-      In a Meeting Job, the Parent accepts on the reviewer Sub-agent's last report under [Meeting Lifecycle Section 6.3](03-meeting-lifecycle.md#6-meeting-job).
+      In a Meeting Job, they follow the way of working under [Meeting Lifecycle Section 6.1](03-meeting-lifecycle.md#6-meeting-job).
    10. Non-text Deliverables, such as a website, are outside writing checking.
    11. It includes a language check under [Global Communication Rules Section 2](global-communication-rules.md#2-language). The content keeps its original language, or the content language that an instruction sets under Section 2.4 of those rules. In Final Minutes, each material Decision keeps its User's words. In Knowledge Bases, User's words stay with the knowledge they explain. User's words stay untranslated. Writing checking does not check the wording of User's words.
    12. In Final Minutes, writing checking confirms that no user example, imagined situation or thinking aloud is recorded as a Decision.
