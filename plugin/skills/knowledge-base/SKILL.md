@@ -200,7 +200,7 @@ Frozen Job Records and Minutes need no Experience entry.
 
 A Deliverable Guideline holds the complete current guidance for one Deliverable.
 It tells the executing Agent what to produce and why each guidance point exists.
-The executing Agent is an Execution Identity or a Meeting Agent that runs a Meeting Job.
+The executing Agent is an Execution Identity or a Meeting Agent that makes the Deliverable in a Meeting.
 Every Deliverable has a Guideline, whatever its Workflow, including work done without a Workflow.
 
 ### 12.2 Rules

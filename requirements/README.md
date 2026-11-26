@@ -10,7 +10,10 @@ This Overview is the main file of the Requirements. It links every Requirements 
    - Google governance resources.
    - Their operating relationships.
 
-   It is a portable AI Operating Framework across supported environments.
+   AI with ME is a documentation hub, operated by a portable AI Operating Framework, with knowledge transfer as its target.
+
+   - The documentation hub is what it is. All knowledge and records live in the hub. Each Identity is responsible for one Scope of the hub.
+   - The portable AI Operating Framework is how it operates. The Plugin's Rules, Lifecycles, guidelines and templates let any AI read and write the hub the same way in any environment.
 
 2. **Core purpose.** The Framework's core purpose is knowledge transfer.
    AI helps users express their knowledge accurately in written form.

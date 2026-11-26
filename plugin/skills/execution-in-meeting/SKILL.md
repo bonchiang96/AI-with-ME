@@ -1,6 +1,6 @@
 ---
 name: execution-in-meeting
-description: The AI with ME Execution in Meeting guideline. Suggests how a Meeting Agent makes a Deliverable with its own Sub-agents inside a Meeting. Covers the suggested Agenda, the Plan, how Sub-agents divide the work, AI review and human review. Use in a Meeting Job when no Deliverable Guideline sets the way of working.
+description: The AI with ME Execution in Meeting guideline. Suggests how a Meeting Agent makes a Deliverable with its own Sub-agents inside a Meeting. Covers the suggested Agenda, the Plan, how Sub-agents divide the work, AI review and human review. Use in a Meeting Job when the Deliverable Guideline sets no way of working.
 compatibility: Requires the Google Drive and Google Docs connectors through the host. The Plugin does not ship the connectors.
 ---
 
@@ -13,8 +13,8 @@ compatibility: Requires the Google Drive and Google Docs connectors through the 
 3. The Meeting runs the Meeting flow of the [meeting-agent](../meeting-agent/SKILL.md) Skill. This guideline works inside that flow.
 4. When the Deliverable Guideline sets the way of working, follow its way.
    It sets arrangements such as the Agenda items, the number of workers and the number of reviewers.
-5. When no Deliverable Guideline sets the way of working, follow this guideline.
-   Rationale: every Deliverable has a different way of working. This default guides a Meeting Job whose Deliverable Guideline sets no way of working.
+5. When the Deliverable Guideline sets no way of working, follow this guideline.
+   Rationale: every Deliverable has a different way of working. This default guides Deliverable work whose Guideline sets no way of working.
 
 ## 2. Suggested Agenda
 

@@ -1,8 +1,8 @@
 {
   "name": "ai-with-me",
   "displayName": "AI with ME - Operating Framework",
-  "version": "0.33.0",
-  "description": "AI with ME - Operating Framework. Meeting, Execution and Service Agents, Workflows, rules and templates for knowledge transfer. Requires Google Drive and Google Docs access.",
+  "version": "0.34.0",
+  "description": "AI with ME - Operating Framework. A documentation hub, operated by a portable AI Operating Framework, with knowledge transfer as its target. Meeting, Execution and Service Agents, Workflows, rules and templates. Requires Google Drive and Google Docs access.",
   "author": {
     "name": "Rocher Lee"
   },

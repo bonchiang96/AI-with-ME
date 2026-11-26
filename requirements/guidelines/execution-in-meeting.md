@@ -8,13 +8,13 @@ Return to the [Requirements Overview](../README.md).
    It tells the Meeting Agent what it can do in a Meeting Job. The Meeting Agent may adapt it to the situation.
    The Global Writing Rules and the Global Communication Rules stay fixed.
 
-2. **Place in the Meeting flow.** The Meeting Job runs the Meeting flow under [Meeting Lifecycle Section 6](../03-meeting-lifecycle.md#6-meeting-job).
+2. **Place in the Meeting flow.** Every Meeting follows the same Meeting flow under [Meeting Lifecycle Section 6](../03-meeting-lifecycle.md#6-meeting-job).
    This guideline works inside that flow.
 
-3. **Priority.** When the Deliverable Guideline sets the way of working, the Meeting Job follows its way.
+3. **Priority.** When the Deliverable Guideline sets the way of working, the Meeting Agent follows its way.
    The Deliverable Guideline sets arrangements such as the Agenda items, the number of workers and the number of reviewers.
-   When no Deliverable Guideline sets the way of working, the Meeting Job follows this guideline.
-   Rationale: every Deliverable has a different way of working. This default guides a Meeting Job whose Deliverable Guideline sets no way of working.
+   When the Deliverable Guideline sets no way of working, the Meeting Agent follows this guideline.
+   Rationale: every Deliverable has a different way of working. This default guides Deliverable work whose Guideline sets no way of working.
 
 4. **Packaging.** The Plugin packages this guideline as the execution-in-meeting Skill.
 

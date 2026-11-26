@@ -16,10 +16,12 @@ Return to the [Requirements Overview](README.md).
 
    1. Check for an active Meeting under [Section 1.2](#1-initialization-and-preparation).
    2. Read the inbox under [Records, Messaging and Experiences Section 2.6](05-records-messaging-and-experiences.md#2-messaging).
-   3. Review Future Topics. A Future Topic named "Meeting Job: <Deliverable>" is the Handoff of a Meeting Job under [Section 6](#6-meeting-job).
-      Take the Meeting Job from that Future Topic.
+   3. Review Future Topics. A Future Topic named "Meeting Job: <Deliverable>" hands Deliverable work to this Meeting under [Section 6](#6-meeting-job).
    4. Search Experiences under [Records, Messaging and Experiences Section 3.3](05-records-messaging-and-experiences.md#3-experience-learning).
    5. Establish the Agenda under [Section 1.3](#1-initialization-and-preparation).
+
+   Guidance: with an empty Identity Context and no Knowledge Base, the Meeting Agent starts with information gathering about the Scope.
+   At NEW MEETING, it may propose to collect information about the Scope with the user.
 
 2. **Active Meeting continuity.** An active Meeting is a Meeting without Final Minutes. A Meeting with Final Minutes is closed.
    At NEW MEETING, first check the latest Tab of the Meeting Records file for an active Meeting. Prioritize continuing it.
@@ -42,12 +44,13 @@ Return to the [Requirements Overview](README.md).
    Propose a bounded Agenda that may combine compatible selected matters.
    Every Meeting Agenda must allow meaningful free user input.
 
-   Making the Deliverable of a Meeting Job is one Agenda item. A review Agenda item may follow it.
-   The Agenda items follow the way of working under [Section 6.1](#6-meeting-job). A Meeting may hold several Meeting Jobs.
+   Making a Deliverable is one Agenda item. A review Agenda item may follow it.
+   The Agenda items follow the way of working under [Section 6.1](#6-meeting-job). A Meeting may make several Deliverables.
 
    The proposed Agenda shows each Job Scope.
-   A Job Scope holds the Deliverable, its storage place, the Guideline link, the deciding Closed Minutes and the relevant Knowledge Bases.
-   The user's Agenda confirmation confirms each Job Scope. It is the start signal of the Meeting Job.
+   A Job Scope holds the Deliverable, its storage place, the Guideline link, the latest Closed Minutes and the relevant Knowledge Bases.
+   The Job Scope comes from the Deliverable Guideline and the place where it is stored.
+   The user's Agenda confirmation confirms each Job Scope. It starts the Deliverable work.
 
 4. **Message selection.** A Message selected for the current Agenda must retain its Ref and From values.
    Unselected new matters enter Future Topics only when the user explicitly chooses future consideration.
@@ -73,7 +76,8 @@ Return to the [Requirements Overview](README.md).
    - The confirmed Agenda.
    - Authoritative source references.
 
-   For each Meeting Job, copy the deciding Closed Minutes link, the Guideline link and the storage place into Authoritative Sources.
+   For each Deliverable on the Agenda, copy its Job Scope sources into Authoritative Sources.
+   They are the latest Closed Minutes link, the Guideline link and the storage place.
 
 6. **Future Topic transfer.** Remove selected existing Future Topics only after their new Meeting Record is successfully established. Preserve unselected entries.
    After the Meeting Record is established, complete these steps:
@@ -107,7 +111,7 @@ Return to the [Requirements Overview](README.md).
 
    A user's example, imagined situation or thinking aloud is not a Decision.
    When the Agent cannot tell whether a statement is a Decision, ask the user.
-   This rule covers the user's own Findings and Decisions. Sub-agent reports in a Meeting Job follow [Section 6.2](#6-meeting-job).
+   This rule covers the user's own Findings and Decisions. Sub-agent reports follow [Section 6.2](#6-meeting-job).
 
    An accepted Finding does not automatically approve an option.
 
@@ -148,7 +152,7 @@ Return to the [Requirements Overview](README.md).
 
    When this Meeting Agent executes, the Guideline content may set the Execution arrangement:
 
-   - The Agenda items of the Meeting Job.
+   - The Agenda items that make the Deliverable.
    - The Sub-agent roles and their number, such as worker and reviewer.
    - When a reviewer steps in, and who acts on its findings.
    - Whether the Parent reviews.
@@ -156,11 +160,18 @@ Return to the [Requirements Overview](README.md).
 
    The Meeting Agent may adapt the Execution arrangement to the situation under [Requirements Overview Section 1.6](README.md#1-framework-definition).
 
-   The Meeting that decides a Meeting Job does not run it.
-   The Job runs in the next Meeting, after the Guideline and the Knowledge Base are consolidated.
+   A Meeting can make or change a Deliverable when its Deliverable Guideline exists.
+   The Guideline holds the concept of the Deliverable.
+
+   - When the Guideline exists, the Meeting makes or changes the Deliverable.
+     Each change that affects the Guideline is recorded as a Decision of the Meeting.
+     The Deliverable follows the latest Decisions.
+     After close, these Decisions are edited into the Guideline or a Knowledge Base under [Section 3.7](#3-closing-and-handoff).
+   - When no Guideline exists, the Meeting discusses the Guideline content.
+     The Guideline is created after close. A later Meeting makes the Deliverable.
 
 7. **Actions.** Identified Actions remain pending until their authorized execution phase unless the user explicitly authorizes earlier execution. Execute only actions within the Meeting Identity's own Responsibility and Scope. Prepare other Agents' work for handoff.
-   A Meeting Job is not an Action. It runs in Agenda items under [Section 6](#6-meeting-job).
+   Making a Deliverable in a Meeting is not an Action. It happens in Agenda items under [Section 6](#6-meeting-job).
 
 ## 3. Closing and handoff
 
@@ -177,9 +188,9 @@ Return to the [Requirements Overview](README.md).
    Include the intended Handoff Plan.
 
    Include the full Guideline content for each Deliverable the Meeting decided.
-   For a Meeting Job decided in the Meeting, include the executor and any Execution arrangement.
-   Its Handoff Plan names its Future Topic as the Handoff to the next Meeting.
-   For a Meeting Job run here, include the agreed Plan, the accepted Deliverables, the review Decisions and the Stable Decision.
+   For each Deliverable the Meeting decided, include the executor and any Execution arrangement.
+   When a later Meeting makes it, the Handoff Plan names its Future Topic as the Handoff.
+   For Deliverable work in the Meeting, include the agreed Plan, the accepted Deliverables, the review Decisions and the Stable Decision.
 
    Record each Deliverable's storage place under [Environments and Acceptance Section 2.6](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
    Identify material gaps without speculation.
@@ -212,7 +223,7 @@ Return to the [Requirements Overview](README.md).
 4. **Indexed closure.** After the Final Minutes are verified, add one Meetings row to the index under [Foundation Section 5.3](01-foundation.md#5-identity-folder-index-and-inbox).
    The row uses the M key.
 
-   For each Meeting Job run in the Meeting, then register or update its package.
+   For each Deliverable made in the Meeting, then register or update its package.
    Verify each row.
    The package's Condition is Stable when the user decided Stable in the Meeting. Otherwise it is Draft.
    Rationale: the Meeting Record and the Final Minutes reach Google at Meeting close.
@@ -229,9 +240,9 @@ Return to the [Requirements Overview](README.md).
    - A precise source reference.
 
    Include each matter recorded for Future Topics at Opening.
-   A Meeting Job decided in the Meeting is named "Meeting Job: <Deliverable>".
+   When a later Meeting makes a Deliverable decided in the Meeting, its Future Topic is named "Meeting Job: <Deliverable>".
    Its source references are the Closed Minutes, the Deliverable Guideline link and the storage place.
-   This Future Topic completes the Handoff of the Meeting Job to the next Meeting.
+   This Future Topic hands the Deliverable work to a later Meeting.
    After the Future Topics are saved, delete each inbox row whose matter they now hold.
 
    Keep one readable list. Exclude:
@@ -251,14 +262,15 @@ Return to the [Requirements Overview](README.md).
       In the same step, create the Deliverable Guideline for each Deliverable the Meeting decided.
       Write it from the Closed Minutes in its agreed place.
       Consolidate each other affected Deliverable Guideline in the same step under [Foundation Section 4.12](01-foundation.md#4-scoped-knowledge-base).
-      Review Decisions of a Meeting Job reach the Guideline in this step.
+      Each Decision of the Meeting that affects a Guideline reaches it in this step.
    2. Perform full-lifecycle Experience Capture under [Records, Messaging and Experiences Section 3](05-records-messaging-and-experiences.md#3-experience-learning).
    3. Update Identity Context in one step under [Foundation Section 3.14](01-foundation.md#3-identity-context).
       Include Future Topics, Working Group, Important Learning and Important Things or High-Priority Items.
    4. Send the authorized Handoff last as an inbox row under [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
       A Handoff for Deliverable work names the Deliverable Guideline link and the latest Closed Minutes.
-      The Handoff of a Meeting Job is its Future Topic under [Section 3.5](#3-closing-and-handoff). It needs no inbox row.
-      The Meeting Job's results return to the Parent without a Completion Notice.
+      Deliverable work handed to a later Meeting has its Handoff in a Future Topic under [Section 3.5](#3-closing-and-handoff).
+      It needs no inbox row.
+      This work sends no Completion Notice.
 
    Each recipient applies its own Role Lifecycle, Scope selection and approval gates.
 
@@ -313,7 +325,7 @@ Return to the [Requirements Overview](README.md).
 
    Preserve accepted outcomes under [Section 2](#2-discussion-and-outcomes) rather than a conversation transcript.
    Persistence follows [Section 2.4](#2-discussion-and-outcomes).
-   For a Meeting Job, the Meeting Record also holds the Meeting Job content under [Section 6.2](#6-meeting-job).
+   For Deliverable work, the Meeting Record also holds its content under [Section 6.2](#6-meeting-job).
 
 4. **Final Minutes.** Final Minutes must have five Chapters:
 
@@ -336,17 +348,18 @@ Return to the [Requirements Overview](README.md).
 
 ## 6. Meeting Job
 
-1. **Purpose.** A Meeting Job is Deliverable work that a Meeting Agent does with its own Sub-agents in a Meeting.
-   The Meeting runs the Meeting flow. Making the Deliverable is one Agenda item. A review Agenda item may follow it.
+1. **Purpose.** Meeting Job is a concept. It names a Meeting doing Deliverable work with the Meeting Agent's own Sub-agents.
+   Every Meeting follows the same Meeting flow. Making the Deliverable is one Agenda item. A review Agenda item may follow it.
+   [Section 2.6](#2-discussion-and-outcomes) sets when a Meeting can make a Deliverable.
 
    The Parent is the Meeting Agent. The Parent assigns Sub-agents inside the Agenda item.
    The Sub-agents share the Identity's Identity Context.
 
-   When the Deliverable Guideline sets the way of working, the Meeting Job follows its way.
-   When no Deliverable Guideline sets it, the Meeting Job follows the [Execution in Meeting guideline](guidelines/execution-in-meeting.md).
+   When the Deliverable Guideline sets the way of working, the Meeting Agent follows its way.
+   When the Deliverable Guideline sets no way of working, the Meeting Agent follows the [Execution in Meeting guideline](guidelines/execution-in-meeting.md).
    The Meeting Agent uses [Execution Lifecycle Section 4](04-execution-lifecycle.md#4-execution-parent-and-sub-agents) only for its Sub-agent mechanisms.
 
-2. **Record.** A Meeting Job has no Job Record. The Meeting Record of the Meeting is its record.
+2. **Record.** Deliverable work in a Meeting has no Job Record. The Meeting Record of the Meeting is its record.
    The Parent records every Sub-agent report and result in the Meeting Record as a Finding, a Decision or an Action.
    These records need no user acceptance.
    Rationale: every action and edit of a Sub-agent must have a record.
@@ -357,7 +370,7 @@ Return to the [Requirements Overview](README.md).
    With an Agent workspace, the Sub-agents' working files stay in the Meeting's workspace folder.
 
 3. **Making the Deliverable.** The user's Agenda confirmation has confirmed the Job Scope.
-   The Experience search at NEW MEETING serves the Meeting Job. Complete these steps in order:
+   The Experience search at NEW MEETING serves this work. Complete these steps in order:
 
    1. Read the Job Scope from Authoritative Sources in the Meeting Record.
    2. Work through the Agenda items in the way of working under [Section 6.1](#6-meeting-job).
@@ -385,6 +398,5 @@ Return to the [Requirements Overview](README.md).
 
    Review Decisions reach the Guideline through the Closed Minutes at post-closure consolidation under [Section 3.7](#3-closing-and-handoff).
 
-5. **Number of Jobs.** A Meeting may run any number of Meeting Jobs.
-   When the Identity needs a Job, it runs in the next Meeting.
+5. **Number of Deliverables.** A Meeting may make any number of Deliverables.
    The Identity may also hand the work to an Execution Identity.

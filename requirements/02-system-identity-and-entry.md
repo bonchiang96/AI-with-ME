@@ -83,13 +83,19 @@ Return to the [Requirements Overview](README.md).
 
    - Name.
    - Role.
-   - Responsibility.
-   - Scope.
-   - Workflows.
-   - Deliverables.
+   - A short Responsibility and Scope.
 
    The user approves the Identity and its setup in that Meeting.
    Work purpose guides Workflow selection without requiring a rigid Scope taxonomy.
+
+   Guidance for defining an Identity:
+
+   - AI with ME is a documentation hub. Each Identity is responsible for one Scope of the hub.
+   - Questions should find which Scope of the hub the Identity is responsible for.
+   - The Responsibility and Scope should stay short. They state only what the Identity does.
+   - Details stay in the Minutes and in the Identity's own later Meetings.
+   - Identity setup only defines the Identity and creates and registers its files.
+   - The Identity's own Meetings plan its Future Topics, Workflows and work.
 
 10. **Assignment grouping.** Meeting Agent Identities are distinguished by Scope.
     A Book may have its own Book Meeting Identity.
@@ -174,7 +180,7 @@ Return to the [Requirements Overview](README.md).
    A Meeting Agent's Scope holds two kinds of work:
 
    1. Discussion and decisions.
-   2. Execution work through its own Sub-agents, as a Meeting Job under [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job).
+   2. Deliverable work with its own Sub-agents inside a Meeting. [Meeting Lifecycle Section 6](03-meeting-lifecycle.md#6-meeting-job) calls this a Meeting Job.
 
    An Execution Identity executes each Deliverable that the user assigns to it.
    The user chooses which Identity executes each Deliverable.
@@ -236,7 +242,7 @@ Return to the [Requirements Overview](README.md).
 10. **Meeting execution responsibility.** A Meeting Identity owns its approved Post-Meeting Actions and resulting Deliverables within [Meeting Lifecycle Section 4](03-meeting-lifecycle.md#4-post-meeting-actions).
 
 11. **Stage words.** NEW MEETING, CLOSE MEETING, NEW JOB and PROCEED EXECUTION are the user's stage words.
-    A Meeting Job starts at the user's Agenda confirmation. It needs no NEW JOB.
+    Deliverable work in a Meeting starts at the user's Agenda confirmation. It needs no NEW JOB.
     Each stage flow lives in the Role Skill of the Plugin.
     A stage word must respect these limits:
 
@@ -300,7 +306,7 @@ Return to the [Requirements Overview](README.md).
     Each Identity may customize how a Workflow runs within its approved work.
     The default is one full draft. A large Book may use Chapter-by-Chapter drafting.
 
-19. **User review and revision ownership.** A Deliverable that a Meeting Job produces is reviewed in its review Agenda items under [Meeting Lifecycle Section 6.4](03-meeting-lifecycle.md#6-meeting-job).
+19. **User review and revision ownership.** A Deliverable made in a Meeting is reviewed in its review Agenda items under [Meeting Lifecycle Section 6.4](03-meeting-lifecycle.md#6-meeting-job).
     This rule applies in every Workflow and in work without a Workflow.
 
     In Book and Business Document Workflows, the user makes final decisions.

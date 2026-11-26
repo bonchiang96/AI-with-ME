@@ -54,7 +54,7 @@ Return to the [Requirements Overview](README.md).
    - Recipient relevance.
 
    Send it only after the full assigned Protocol completes. It must not instruct the recipient or create new execution authority.
-   A Meeting Job sends no Completion Notice under [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff).
+   Deliverable work in a Meeting sends no Completion Notice under [Meeting Lifecycle Section 3.7](03-meeting-lifecycle.md#3-closing-and-handoff).
 
 4. **Inbox reading.** Inbox reading follows the start order in [Meeting Lifecycle Section 1.1](03-meeting-lifecycle.md#1-initialization-and-preparation) and [Execution Lifecycle Section 1.3](04-execution-lifecycle.md#1-stages-and-intake).
 

@@ -2,7 +2,7 @@
 
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-AI with ME - Operating Framework lets you work with a team of AI Agents the way you work with a team of people. You organise AI Agents into Identities, each responsible for one area, like the departments of a company. You discuss and decide in Meetings. Execution Agents turn those decisions into finished work, such as a book, a business document, a website or a plan. Every decision and record stays in your own Google Drive, so the work continues across conversations and AI platforms.
+AI with ME is a documentation hub, operated by a portable AI Operating Framework, with knowledge transfer as its target. It lets you work with a team of AI Agents the way you work with a team of people. You organise AI Agents into Identities, each responsible for one area, like the departments of a company. You discuss and decide in Meetings. Execution Agents turn those decisions into finished work, such as a book, a business document, a website or a plan. Every decision and record stays in your own Google Drive, so the work continues across conversations and AI platforms.
 
 ## Core ideas
 

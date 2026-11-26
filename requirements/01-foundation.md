@@ -134,7 +134,8 @@ Return to the [Requirements Overview](README.md).
 
    1. Create documents as Google Docs with native tables.
    2. Name each Tab with the pattern date — Topic — key, such as 2026-10-27 — Plugin Build — J-0256.
-   3. Write each date and time as YYYY-MM-DD HH:MM in 24-hour time with the time-zone abbreviation, such as 2026-10-27 19:45 MYT.
+   3. Write each date and time as YYYY-MM-DD HH:MM in 24-hour time with the time-zone abbreviation.
+      An example is 2026-10-27 19:45 MYT.
 
    Local System Rules contents follow [Environments and Acceptance Section 2.2](07-environments-and-acceptance.md#2-hybrid-local-working-and-deliverable-storage).
 
@@ -194,7 +195,7 @@ Return to the [Requirements Overview](README.md).
 11. **Indexes.** Each Identity keeps its index as a Google Docs file under [Section 5.2](#5-identity-folder-index-and-inbox).
 
 12. **Handoff.** Agents exchange Work Requests and Completion Notices through inbox files.
-    The Handoff of a Meeting Job to the next Meeting is its Future Topic under [Meeting Lifecycle Section 3.5](03-meeting-lifecycle.md#3-closing-and-handoff).
+    Deliverable work handed to a later Meeting has its Handoff in a Future Topic under [Meeting Lifecycle Section 3.5](03-meeting-lifecycle.md#3-closing-and-handoff).
     Inbox use follows [Records, Messaging and Experiences Section 2](05-records-messaging-and-experiences.md#2-messaging).
     Identity discovery and essential governance must remain possible through Google resources.
 
@@ -456,7 +457,7 @@ Return to the [Requirements Overview](README.md).
 12. **Deliverable Guideline.** Every Deliverable must have a Deliverable Guideline, whatever its Workflow.
     It holds the complete current guidance for that Deliverable.
     It tells the executing Agent what to produce and why each guidance point exists.
-    The executing Agent is an Execution Identity or a Meeting Agent that runs a Meeting Job.
+    The executing Agent is an Execution Identity or a Meeting Agent that makes the Deliverable in a Meeting.
 
     Apply these rules:
 
@@ -541,7 +542,7 @@ Return to the [Requirements Overview](README.md).
 
    Only the originating Meeting Agent registers a Deliverable from a Completion Notice.
    It registers the Deliverable in the Agenda item that holds the notice.
-   A Meeting Job package is registered at indexed closure under [Meeting Lifecycle Section 3.4](03-meeting-lifecycle.md#3-closing-and-handoff).
+   A package made in a Meeting is registered at indexed closure under [Meeting Lifecycle Section 3.4](03-meeting-lifecycle.md#3-closing-and-handoff).
 
    Register a Deliverable package when it first appears.
    Changes inside an indexed package need no index change.

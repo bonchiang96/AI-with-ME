@@ -56,7 +56,7 @@
    4. The Handoff Plan is present.
    5. Each Deliverable has its agreed storage place.
    6. Each Deliverable this Meeting decided has its full Guideline content.
-   7. Each Meeting Job decided here has its executor and any Execution arrangement.
-   8. Each Meeting Job run here has its agreed Plan, accepted Deliverables, review Decisions and Stable Decision.
+   7. Each Deliverable this Meeting decided has its executor and any Execution arrangement.
+   8. Deliverable work in this Meeting has its agreed Plan, accepted Deliverables, review Decisions and Stable Decision.
    9. Material gaps are identified without speculation.
    10. The file holds only current truth.
